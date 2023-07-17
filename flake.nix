@@ -28,10 +28,8 @@
                 with purs-nix.ps-pkgs;
                 [
                   prelude
-                  console
                   effect
                   aff
-                  maybe
                 ];
               # FFI dependencies
               #foreign."Temporal.Client".src = inputs.temporal-client;

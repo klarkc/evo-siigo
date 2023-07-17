@@ -1,9 +1,12 @@
 module Main where
 
-import Prelude (Unit)
-
+import Prelude (Unit, bind, pure, unit)
+import Effect.Aff (launchAff_)
 import Effect (Effect)
-import Effect.Console (log)
+import Temporal.Client.Connection (defaultConnectionOptions, connect)
 
 main :: Effect Unit
-main = log "Hello, World!"
+main =
+  launchAff_ do
+    _ <- connect defaultConnectionOptions
+    pure unit
