@@ -3,8 +3,9 @@
     purs-nix.url = "github:purs-nix/purs-nix";
     nixpkgs.follows = "purs-nix/nixpkgs";
     utils.url = "github:ursi/flake-utils";
-    # optional
-    # ps-tools.follows = "purs-nix/ps-tools";
+    ps-tools.follows = "purs-nix/ps-tools";
+    temporal-client.url = "https://esm.sh/@temporalio/client";
+    temporal-client.flake = false;
   };
 
   outputs = { self, utils, ... }@inputs:
@@ -15,7 +16,7 @@
     in
     utils.apply-systems
       { inherit inputs systems; }
-      ({ system, pkgs, ... }:
+      ({ system, pkgs, ps-tools, ... }:
         let
           purs-nix = inputs.purs-nix { inherit system; };
           ps = purs-nix.purs
@@ -29,9 +30,11 @@
                   prelude
                   console
                   effect
+                  aff
+                  maybe
                 ];
               # FFI dependencies
-              # foreign.Main.node_modules = [];
+              #foreign."Temporal.Client".src = inputs.temporal-client;
             };
           ps-command = ps.command { };
         in
@@ -46,7 +49,8 @@
                   [
                     ps-command
                     # optional devShell tools
-                    # ps-tools.for-0_15.purescript-language-server
+                    ps-tools.for-0_15.purescript-language-server
+                    ps-tools.for-0_15.purty
                     # purs-nix.esbuild
                     # purs-nix.purescript
                     # nodejs

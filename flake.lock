@@ -308,7 +308,12 @@
           "purs-nix",
           "nixpkgs"
         ],
+        "ps-tools": [
+          "purs-nix",
+          "ps-tools"
+        ],
         "purs-nix": "purs-nix",
+        "temporal-client": "temporal-client",
         "utils": "utils_4"
       }
     },
@@ -327,6 +332,18 @@
         "ref": "nightly",
         "repo": "rust-analyzer",
         "type": "github"
+      }
+    },
+    "temporal-client": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-0OZRSPUHp+g0S7+EtyYG9msXnk8AbADIXSRqm0oNv1A=",
+        "type": "file",
+        "url": "https://esm.sh/@temporalio/client"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://esm.sh/@temporalio/client"
       }
     },
     "utils": {
