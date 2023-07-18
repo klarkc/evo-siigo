@@ -1,11 +1,11 @@
 {
   inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     purs-nix.url = "github:purs-nix/purs-nix";
-    nixpkgs.follows = "purs-nix/nixpkgs";
     utils.url = "github:ursi/flake-utils";
     ps-tools.follows = "purs-nix/ps-tools";
-    temporal-client.url = "https://esm.sh/@temporalio/client";
-    temporal-client.flake = false;
+    npmlock2nix.url = "github:nix-community/npmlock2nix";
+    npmlock2nix.flake = false;
   };
 
   outputs = { self, utils, ... }@inputs:
@@ -13,12 +13,21 @@
       # TODO add missing arm to match standard systems
       #  right now purs-nix is only compatible with x86_64-linux
       systems = [ "x86_64-linux" ];
+      make-pkgs = system: import inputs.nixpkgs {
+        inherit system;
+        # required by npmlock2nix
+        config.permittedInsecurePackages = [
+          "nodejs-16.20.1"
+        ];
+      };
     in
     utils.apply-systems
-      { inherit inputs systems; }
+      { inherit inputs systems make-pkgs; }
       ({ system, pkgs, ps-tools, ... }:
         let
+          npmlock2nix = import inputs.npmlock2nix { inherit pkgs; };
           purs-nix = inputs.purs-nix { inherit system; };
+          node_modules = npmlock2nix.v2.node_modules { src = ./.; } + /node_modules;
           ps = purs-nix.purs
             {
               # Project dir (src, test)
@@ -32,28 +41,42 @@
                   aff
                 ];
               # FFI dependencies
-              #foreign."Temporal.Client".src = inputs.temporal-client;
+              foreign."Temporal.Client.Connection" = { inherit node_modules; };
             };
           ps-command = ps.command { };
+
         in
         {
-          packages.default = ps.output { };
+          apps.default =
+            {
+              type = "app";
+              program = "${self.packages.${system}.default}";
+            };
 
-          devShells.default =
-            pkgs.mkShell
-              {
-                packages =
-                  with pkgs;
-                  [
-                    ps-command
-                    # optional devShell tools
-                    ps-tools.for-0_15.purescript-language-server
-                    ps-tools.for-0_15.purty
-                    # purs-nix.esbuild
-                    # purs-nix.purescript
-                    # nodejs
-                  ];
-              };
+          packages =
+            with ps;
+            {
+              default = pkgs.writeScript "evo-siigo" ''
+                #!${pkgs.nodejs}/bin/node
+                import("${self.packages.${system}.output}/Main/index.js").then(m=>m.main())
+              '';
+
+              output = output { };
+            };
+
+          devShells.default = pkgs.mkShell {
+            packages =
+              with pkgs;
+              [
+                ps-command
+                # optional devShell tools
+                ps-tools.for-0_15.purescript-language-server
+                ps-tools.for-0_15.purty
+                # purs-nix.esbuild
+                # purs-nix.purescript
+                # nodejs
+              ];
+          };
         });
 
   # --- Flake Local Nix Configuration ----------------------------
