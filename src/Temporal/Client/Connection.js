@@ -11,7 +11,7 @@ export const connectionCtor = Connection
 export function connectImpl(ctor) {
 	return function(options) {
 		return function(onError, onSuccess) {
-			ctor.connect(ctor, options)
+			ctor.connect(options)
 				.then(onSuccess)
 				.catch(onError)
 			// TODO cancel pending connection
