@@ -8,16 +8,20 @@ module Temporal.Client.Workflow
 import Prelude (($))
 import Effect (Effect)
 import Effect.Aff (Aff)
-import Effect.Aff.Compat (EffectFnAff, fromEffectFnAff)
+import Promise.Aff (Promise, toAff)
 import Data.Function.Uncurried (Fn3, runFn3)
 
 data WorkflowClient
 
 data WorkflowHandle
 
-data WorkflowStartOptions
+type WorkflowStartOptions
+  = {}
 
-foreign import startWorkflowImpl :: forall a. Fn3 WorkflowClient a WorkflowStartOptions (EffectFnAff WorkflowHandle)
+foreign import startWorkflowImpl :: forall a. Fn3 WorkflowClient a WorkflowStartOptions (Promise WorkflowHandle)
 
-startWorkflow :: forall a b. Record ( workflow :: WorkflowClient | a ) -> b -> WorkflowStartOptions -> Aff WorkflowHandle
-startWorkflow client workflowDef startOptions = fromEffectFnAff $ runFn3 startWorkflowImpl client.workflow workflowDef startOptions
+startWorkflow_ :: forall a. WorkflowClient -> a -> WorkflowStartOptions -> Promise WorkflowHandle
+startWorkflow_ = runFn3 startWorkflowImpl
+
+startWorkflow :: forall a b. { workflow :: WorkflowClient | a } -> b -> WorkflowStartOptions -> Aff WorkflowHandle
+startWorkflow { workflow } wfDef wfStartOpt = toAff $ startWorkflow_ workflow wfDef wfStartOpt
