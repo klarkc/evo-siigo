@@ -41,6 +41,7 @@
                   aff
                 ];
               # FFI dependencies
+              foreign."Temporal.Client" = { inherit node_modules; };
               foreign."Temporal.Client.Connection" = { inherit node_modules; };
             };
           ps-command = ps.command { };
