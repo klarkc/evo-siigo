@@ -4,18 +4,19 @@ module Temporal.Client
   , IClientOptions
   , ClientOptions
   , Client
+  , module C
   ) where
 
 import Effect (Effect)
 import Effect.Uncurried as EU
-import Temporal.Client.Connection (Connection)
+import Temporal.Client.Connection as C
 
 foreign import data ClientCtor :: Type
 
 foreign import data Client :: Type
 
 type IClientOptions
-  = ( connection :: Connection )
+  = ( connection :: C.Connection )
 
 type ClientOptions
   = Record IClientOptions

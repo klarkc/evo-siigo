@@ -11,12 +11,13 @@ import Prelude
 import Effect.Aff (launchAff_)
 import Effect (Effect)
 import Effect.Class (liftEffect)
-import Temporal.Client.Connection
+import Temporal.Client
   ( defaultConnectionOptions
   , connect
   , close
+  , createClient
+  , defaultClientOptions
   )
-import Temporal.Client (createClient, defaultClientOptions)
 
 main :: Effect Unit
 main =
