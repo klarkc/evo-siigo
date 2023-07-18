@@ -14,6 +14,7 @@ import Effect.Class (liftEffect)
 import Temporal.Client
   ( defaultConnectionOptions
   , connect
+  , startWorkflow
   , close
   , createClient
   , defaultClientOptions
@@ -24,5 +25,6 @@ main =
   launchAff_ do
     connection <- connect defaultConnectionOptions
     client <- liftEffect $ createClient defaultClientOptions
+    workflowHandler <- startWorkflow client ?hello ?options
     close connection
     pure unit

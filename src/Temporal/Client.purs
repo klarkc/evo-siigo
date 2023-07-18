@@ -3,17 +3,32 @@ module Temporal.Client
   , defaultClientOptions
   , IClientOptions
   , ClientOptions
+  , IClient
   , Client
   , module C
+  , module W
   ) where
 
 import Effect (Effect)
-import Effect.Uncurried as EU
-import Temporal.Client.Connection as C
+import Effect.Uncurried (EffectFn2, runEffectFn2)
+import Temporal.Client.Connection
+  ( Connection
+  , ConnectionCtor
+  , ConnectionOptions
+  , close
+  , connect
+  , defaultConnectionOptions
+  )
+  as C
+import Temporal.Client.Workflow
+  ( WorkflowClient
+  , WorkflowHandle
+  , WorkflowStartOptions
+  , startWorkflow
+  )
+  as W
 
 foreign import data ClientCtor :: Type
-
-foreign import data Client :: Type
 
 type IClientOptions
   = ( connection :: C.Connection )
@@ -21,14 +36,20 @@ type IClientOptions
 type ClientOptions
   = Record IClientOptions
 
+type IClient
+  = ( workflow :: W.WorkflowClient )
+
+type Client
+  = Record IClient
+
 foreign import clientCtor :: ClientCtor
 
 foreign import defaultClientOptionsImpl :: ClientCtor -> ClientOptions
 
-foreign import createClientImpl :: EU.EffectFn2 ClientCtor ClientOptions Client
+foreign import createClientImpl :: EffectFn2 ClientCtor ClientOptions Client
 
 defaultClientOptions :: ClientOptions
 defaultClientOptions = defaultClientOptionsImpl clientCtor
 
 createClient :: ClientOptions -> Effect Client
-createClient = EU.runEffectFn2 createClientImpl clientCtor
+createClient = runEffectFn2 createClientImpl clientCtor
