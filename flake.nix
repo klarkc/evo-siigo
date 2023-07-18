@@ -40,6 +40,7 @@
                   effect
                   aff
                   js-promise-aff
+                  unlift
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };

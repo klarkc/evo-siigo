@@ -8,7 +8,7 @@ import Prelude
   , unit
   , discard
   )
-import Effect.Aff (launchAff_)
+import Effect.Aff (Aff, launchAff_)
 import Effect (Effect)
 import Effect.Class (liftEffect)
 import Temporal.Client
@@ -20,11 +20,18 @@ import Temporal.Client
   , defaultClientOptions
   )
 
+processSale :: Aff Unit
+processSale = pure unit
+
 main :: Effect Unit
 main =
   launchAff_ do
     connection <- connect defaultConnectionOptions
     client <- liftEffect $ createClient defaultClientOptions
-    workflowHandler <- startWorkflow client ?hello ?options
+    workflowHandler <-
+      startWorkflow client processSale
+        { taskQueue: "sales"
+        , workflowId: "process-sale-1"
+        }
     close connection
     pure unit
