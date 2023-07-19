@@ -28,6 +28,9 @@
           npmlock2nix = import inputs.npmlock2nix { inherit pkgs; };
           purs-nix = inputs.purs-nix { inherit system; };
           node_modules = npmlock2nix.v2.node_modules { src = ./.; } + /node_modules;
+          ulid_ = pkgs.lib.recursiveUpdate purs-nix.ps-pkgs.ulid {
+            purs-nix-info.foreign.Ulid = { inherit node_modules; };
+          };
           ps = purs-nix.purs
             {
               # Project dir (src, test)
@@ -41,6 +44,7 @@
                   aff
                   js-promise-aff
                   unlift
+                  ulid_
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };
