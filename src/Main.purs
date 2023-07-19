@@ -19,6 +19,7 @@ import Temporal.Client
   , createClient
   , defaultClientOptions
   )
+import Temporal.Worker (createWorker, runWorker)
 
 processSale :: Aff Unit
 processSale = pure unit
@@ -28,10 +29,14 @@ main =
   launchAff_ do
     connection <- connect defaultConnectionOptions
     client <- liftEffect $ createClient defaultClientOptions
+    let
+      taskQueue = "sales"
     workflowHandler <-
       startWorkflow client processSale
-        { taskQueue: "sales"
+        { taskQueue
         , workflowId: "process-sale-1"
         }
     close connection
+    worker <- createWorker { taskQueue }
+    runWorker worker
     pure unit

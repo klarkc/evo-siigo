@@ -1,7 +1,3 @@
-async function fn() {
-	return 'foo';
-}
-
 export function startWorkflowImpl(wfClient, wfDefProm, wfStartOptions) {
 	// start expects AsyncFunction
 	// so we wrap the promise inside of it
