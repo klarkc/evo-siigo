@@ -1,31 +1,64 @@
-module Temporal.Worker (Worker, createWorker, runWorker) where
+module Temporal.Worker
+  ( Worker
+  , createWorker
+  , runWorker
+  , bundleWorkflowCode
+  ) where
 
-import Prelude ((<<<), Unit)
-import Data.Function.Uncurried (Fn1, Fn2, runFn1, runFn2)
+import Prelude
+  ( (<<<)
+  , ($)
+  , Unit
+  )
+import Data.Function.Uncurried (Fn1, runFn1)
 import Effect.Aff (Aff)
 import Promise.Aff (Promise, toAff)
+import Foreign.Object (Object, fromHomogeneous)
+import Type.Row.Homogeneous (class Homogeneous)
 
-type WorkerOptions
-  = { taskQueue :: String }
+type WorkflowBundle
+  = { code :: String
+    }
+
+type WorkerOptions :: forall k. (k -> Type) -> k -> Type
+type WorkerOptions f a
+  = { taskQueue :: String
+    , activities :: f a
+    , workflowBundle :: WorkflowBundle
+    }
 
 data WorkerCtor
 
 data Worker
 
-foreign import workerCtor :: WorkerCtor
+type BundleOptions
+  = { workflowsPath :: String
+    }
 
-foreign import createWorkerImpl :: Fn2 WorkerCtor WorkerOptions (Promise Worker)
+foreign import createWorkerImpl :: forall a. Fn1 (WorkerOptions Object a) (Promise Worker)
+
+createWorker_ :: forall r a. Homogeneous r a => WorkerOptions Record r -> Promise Worker
+createWorker_ rec =
+  runFn1 createWorkerImpl
+    $ rec
+        { activities = fromHomogeneous $ rec.activities
+        }
+
+createWorker :: forall r a. Homogeneous r a => WorkerOptions Record r -> Aff Worker
+createWorker = toAff <<< createWorker_
 
 foreign import runWorkerImpl :: Fn1 Worker (Promise Unit)
-
-createWorker_ :: WorkerOptions -> Promise Worker
-createWorker_ = runFn2 createWorkerImpl workerCtor
-
-createWorker :: WorkerOptions -> Aff Worker
-createWorker = toAff <<< createWorker_
 
 runWorker_ :: Worker -> Promise Unit
 runWorker_ = runFn1 runWorkerImpl
 
 runWorker :: Worker -> Aff Unit
 runWorker = toAff <<< runWorker_
+
+foreign import bundleWorkflowCodeImpl :: Fn1 BundleOptions (Promise WorkflowBundle)
+
+bundleWorkflowCode_ :: BundleOptions -> Promise WorkflowBundle
+bundleWorkflowCode_ = runFn1 bundleWorkflowCodeImpl
+
+bundleWorkflowCode :: BundleOptions -> Aff WorkflowBundle
+bundleWorkflowCode = toAff <<< bundleWorkflowCode_

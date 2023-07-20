@@ -40,11 +40,16 @@
                 with purs-nix.ps-pkgs;
                 [
                   prelude
+                  console
                   effect
                   aff
                   js-promise-aff
                   unlift
                   ulid_
+                  foreign
+                  foreign-object
+                  parallel
+                  node-path
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };
@@ -68,7 +73,6 @@
                 #!${pkgs.nodejs}/bin/node
                 import("${self.packages.${system}.output}/Main/index.js").then(m=>m.main())
               '';
-
               output = output { };
             };
 

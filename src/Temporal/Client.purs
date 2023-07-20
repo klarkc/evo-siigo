@@ -25,6 +25,7 @@ import Temporal.Client.Workflow
   , WorkflowHandle
   , WorkflowStartOptions
   , startWorkflow
+  , result
   )
   as W
 
