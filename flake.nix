@@ -60,7 +60,7 @@
           purs-watch = pkgs.writeShellApplication {
             name = "purs-watch";
             runtimeInputs = with pkgs; [ entr ps-command ];
-            text = ''find {src,test} | entr -s "purs-nix $*"'';
+            text = ''find src | entr -s "purs-nix $*"'';
           };
           concurrent = pkgs.writeShellApplication {
             name = "concurrent";
