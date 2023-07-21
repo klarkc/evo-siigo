@@ -57,7 +57,38 @@
               foreign."Temporal.Worker" = { inherit node_modules; };
             };
           ps-command = ps.command { };
-
+          purs-watch = pkgs.writeShellApplication {
+            name = "purs-watch";
+            runtimeInputs = with pkgs; [ entr ps-command ];
+            text = ''find {src,test} | entr -s "purs-nix $*"'';
+          };
+          concurrent = pkgs.writeShellApplication {
+            name = "concurrent";
+            runtimeInputs = with pkgs; [
+              concurrently
+            ];
+            text = ''
+              concurrently\
+                --color "auto"\
+                --prefix "[{command}]"\
+                --handle-input\
+                --restart-tries 10\
+                "$@"
+            '';
+          };
+          dev = pkgs.writeShellApplication {
+            name = "dev";
+            runtimeInputs = with pkgs; [
+              purs-watch
+              concurrent
+              temporalite
+            ];
+            text = ''concurrent \
+              "purs-watch compile"\
+              "temporalite start --namespace defaul"
+              "${self.packages.${system}.default}"
+            '';
+          };
         in
         {
           apps.default =
@@ -85,7 +116,14 @@
                 ps-tools.for-0_15.purescript-language-server
                 ps-tools.for-0_15.purty
                 nodejs
+                dev
               ];
+            shellHook = ''
+              alias log_='printf "\033[1;32m%s\033[0m\n" "$@"'
+              alias info_='printf "\033[1;34m[INFO] %s\033[0m\n" "$@"'
+              log_ "Welcome to evo-siigo shell."
+              info_ "Available commands: dev."
+            '';
           };
         });
 
