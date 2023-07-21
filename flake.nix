@@ -25,6 +25,7 @@
       { inherit inputs systems make-pkgs; }
       ({ system, pkgs, ps-tools, ... }:
         let
+          inherit (ps-tools.for-0_15) purescript purty purescript-language-server;
           npmlock2nix = import inputs.npmlock2nix { inherit pkgs; };
           purs-nix = inputs.purs-nix { inherit system; };
           node_modules = npmlock2nix.v2.node_modules { src = ./.; } + /node_modules;
@@ -55,6 +56,8 @@
               foreign."Temporal.Client" = { inherit node_modules; };
               foreign."Temporal.Client.Connection" = { inherit node_modules; };
               foreign."Temporal.Worker" = { inherit node_modules; };
+              # compiler
+              inherit purescript;
             };
           ps-command = ps.command { };
           purs-watch = pkgs.writeShellApplication {
@@ -76,17 +79,17 @@
                 "$@"
             '';
           };
+          devRuntimeInputs = with pkgs; [
+            purs-watch
+            concurrent
+            temporalite
+          ];
           dev = pkgs.writeShellApplication {
             name = "dev";
-            runtimeInputs = with pkgs; [
-              purs-watch
-              concurrent
-              temporalite
-            ];
+            runtimeInputs = devRuntimeInputs;
             text = ''concurrent \
-              "purs-watch compile"\
+              "purs-watch run"\
               "temporalite start --namespace default"
-              "${self.packages.${system}.default}"
             '';
           };
         in
@@ -109,14 +112,13 @@
 
           devShells.default = pkgs.mkShell {
             packages =
-              with pkgs;
-              [
+              devRuntimeInputs
+              ++ [
                 ps-command
-                # optional devShell tools
-                ps-tools.for-0_15.purescript-language-server
-                ps-tools.for-0_15.purty
-                nodejs
-                dev
+                purescript
+                purty
+                purescript-language-server
+                pkgs.nodejs
               ];
             shellHook = ''
               alias log_='printf "\033[1;32m%s\033[0m\n" "$@"'
