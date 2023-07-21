@@ -85,7 +85,7 @@
             ];
             text = ''concurrent \
               "purs-watch compile"\
-              "temporalite start --namespace defaul"
+              "temporalite start --namespace default"
               "${self.packages.${system}.default}"
             '';
           };
