@@ -1,11 +1,12 @@
 module Activities where
 
 import Prelude (($), pure, discard)
-import Effect.Aff (Aff)
 import Effect.Console (log)
 import Effect.Class (liftEffect)
+import Temporal.Activity (Activity(Activity))
 
-readSale :: Aff String
-readSale = do
-  liftEffect $ log "reading sale"
-  pure "this is the sale"
+readSale :: Activity "readSale" String
+readSale =
+  Activity do
+    liftEffect $ log "reading sale"
+    pure "this is the sale"

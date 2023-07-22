@@ -14,6 +14,7 @@ import Effect.Aff.Unlift (class MonadUnliftAff, unliftAff, askUnliftAff)
 import Promise (class Flatten)
 import Promise.Aff (Promise, toAff, fromAff)
 import Data.Function.Uncurried (Fn1, Fn3, runFn1, runFn3)
+import Temporal.Workflow (Workflow)
 
 data WorkflowClient
 
@@ -29,7 +30,7 @@ foreign import startWorkflowImpl :: forall a. Fn3 WorkflowClient a WorkflowStart
 startWorkflow_ :: forall a. WorkflowClient -> a -> WorkflowStartOptions -> Promise WorkflowHandle
 startWorkflow_ = runFn3 startWorkflowImpl
 
-startWorkflow :: forall a b r. { workflow :: WorkflowClient | r } -> a -> WorkflowStartOptions -> Aff WorkflowHandle
+startWorkflow :: forall a r. { workflow :: WorkflowClient | r } -> a -> WorkflowStartOptions -> Aff WorkflowHandle
 startWorkflow { workflow } wfType wfStartOpt =
   toAff
     $ startWorkflow_ workflow wfType wfStartOpt

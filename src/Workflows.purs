@@ -1,13 +1,18 @@
 module Workflows where
 
-import Prelude (($), Void, Unit, show, bind, void)
-import Effect.Aff (Aff)
-import Effect.Console (log)
-import Effect.Class (liftEffect)
 import Activities (readSale)
-import Data.Function.Uncurried (Fn0)
+import Temporal.Workflow (Workflow)
+import Type.Proxy (Proxy(Proxy))
+import Data.Tuple.Nested ((/\))
 
-processSale :: Void -> Aff Unit
-processSale _ = do
-  sale <- readSale
-  void $ liftEffect $ log $ show sale
+type Workflows a
+  = Proxy (Record a)
+
+_processSales :: Proxy "processSales"
+_processSales = Proxy
+
+processSales :: Workflow _
+processSales = runActivity _readSales
+
+workflows :: Workflows (_processSale /\ _)
+workflows = Proxy
