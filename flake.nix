@@ -115,6 +115,7 @@
               devRuntimeInputs
               ++ [
                 ps-command
+                dev
                 purescript
                 purty
                 purescript-language-server
