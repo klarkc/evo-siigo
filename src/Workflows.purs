@@ -1,13 +1,11 @@
 module Workflows where
 
-import Prelude (($), Void, Unit, show, bind, void)
-import Effect.Aff (Aff)
-import Effect.Console (log)
-import Effect.Class (liftEffect)
+import Prelude (($), Void)
+import Effect.Unsafe (unsafePerformEffect)
+import Promise (Promise)
+import Promise.Aff (fromAff)
 import Activities (readSale)
-import Data.Function.Uncurried (Fn0)
 
-processSale :: Void -> Aff Unit
-processSale _ = do
-  sale <- readSale
-  void $ liftEffect $ log $ show sale
+-- FIXME unsafePerformEffect usage
+processSale :: Void -> Promise String
+processSale _ = unsafePerformEffect $ fromAff readSale

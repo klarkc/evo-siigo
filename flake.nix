@@ -44,6 +44,7 @@
                   console
                   effect
                   aff
+                  js-promise
                   js-promise-aff
                   unlift
                   ulid_
