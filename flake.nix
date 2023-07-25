@@ -52,6 +52,7 @@
                   foreign-object
                   parallel
                   node-path
+                  httpurple
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };

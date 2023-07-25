@@ -1,11 +1,11 @@
 module Workflows where
 
-import Prelude (($), Void)
+import Prelude (($))
 import Effect.Unsafe (unsafePerformEffect)
 import Promise (Promise)
 import Promise.Aff (fromAff)
-import Activities (readSale)
+import Activities (SaleID, Sale, readSale)
 
 -- FIXME unsafePerformEffect usage
-processSale :: Void -> Promise String
-processSale _ = unsafePerformEffect $ fromAff readSale
+processSale :: SaleID -> Promise Sale
+processSale saleID = unsafePerformEffect $ fromAff $ readSale saleID

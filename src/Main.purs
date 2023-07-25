@@ -6,8 +6,6 @@ import Prelude
   , (<>)
   , bind
   , discard
-  , pure
-  , unit
   )
 import Effect.Aff (Aff, launchAff_)
 import Effect (Effect)
@@ -25,9 +23,18 @@ import Temporal.Client
   , defaultClientOptions
   )
 import Temporal.Worker (createWorker, runWorker, bundleWorkflowCode)
-import Workflows (processSale)
 import Activities (readSale)
 import Node.Path (resolve)
+import HTTPurple
+ ( class Generic
+ , RouteDuplex'
+ , ServerM
+ , (/)
+ , serve
+ , segment
+ , mkRoute
+ , noContent
+ )
 
 taskQueue :: String
 taskQueue = "sales"
@@ -58,8 +65,8 @@ getResults wfHandler con = do
   close con
   liftEffect $ log "done"
 
-main :: Effect Unit
-main =
+runTemporal :: String -> Effect Unit
+runTemporal saleID =
   launchAff_ do
     con <- connect defaultConnectionOptions
     client <- liftEffect $ createClient defaultClientOptions
@@ -67,5 +74,21 @@ main =
       startWorkflow client "processSale"
         { taskQueue
         , workflowId: "process-sale-1"
+        , args: [ saleID ]
         }
     (startWorker <> getResults wfHandler con)
+
+data Route = ProcessSale String
+derive instance Generic Route _
+
+route :: RouteDuplex' Route
+route = mkRoute
+  { "ProcessSale": "process-sale" / segment
+  }
+
+main :: ServerM
+main = serve { port: 8080 } { route, router }
+  where
+  router { route: ProcessSale saleID } = do
+     liftEffect $ runTemporal saleID
+     noContent

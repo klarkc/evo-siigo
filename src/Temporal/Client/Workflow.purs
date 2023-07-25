@@ -6,30 +6,27 @@ module Temporal.Client.Workflow
   , WorkflowStartOptions
   ) where
 
-import Prelude (($), (<<<), bind)
-import Effect.Class (liftEffect)
+import Prelude (($), (<<<))
 import Effect.Aff (Aff)
-import Effect.Aff.Class (liftAff)
-import Effect.Aff.Unlift (class MonadUnliftAff, unliftAff, askUnliftAff)
-import Promise (class Flatten)
-import Promise.Aff (Promise, toAff, fromAff)
+import Promise.Aff (Promise, toAff)
 import Data.Function.Uncurried (Fn1, Fn3, runFn1, runFn3)
 
 data WorkflowClient
 
 data WorkflowHandle
 
-type WorkflowStartOptions
+type WorkflowStartOptions a
   = { taskQueue :: String
     , workflowId :: String
+    , args :: Array a
     }
 
-foreign import startWorkflowImpl :: forall a. Fn3 WorkflowClient a WorkflowStartOptions (Promise WorkflowHandle)
+foreign import startWorkflowImpl :: forall a b. Fn3 WorkflowClient a (WorkflowStartOptions b) (Promise WorkflowHandle)
 
-startWorkflow_ :: forall a. WorkflowClient -> a -> WorkflowStartOptions -> Promise WorkflowHandle
+startWorkflow_ :: forall a b. WorkflowClient -> a -> (WorkflowStartOptions b) -> Promise WorkflowHandle
 startWorkflow_ = runFn3 startWorkflowImpl
 
-startWorkflow :: forall a b r. { workflow :: WorkflowClient | r } -> a -> WorkflowStartOptions -> Aff WorkflowHandle
+startWorkflow :: forall a b r. { workflow :: WorkflowClient | r } -> a -> (WorkflowStartOptions b) -> Aff WorkflowHandle
 startWorkflow { workflow } wfType wfStartOpt =
   toAff
     $ startWorkflow_ workflow wfType wfStartOpt
