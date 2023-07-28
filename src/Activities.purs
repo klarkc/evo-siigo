@@ -1,5 +1,5 @@
 module Activities
-  ( module S
+  ( module EA
   ) where
 
-import Sale (SaleID, Sale, readSale) as S
+import Evo.Activities (readEvoSale) as EA

@@ -53,6 +53,8 @@
                   parallel
                   node-path
                   httpurple
+                  fetch
+                  yoga-json
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };
