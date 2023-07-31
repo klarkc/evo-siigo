@@ -2,17 +2,23 @@ module Workflows where
 
 import Prelude (($), bind, pure)
 import Effect.Unsafe (unsafePerformEffect)
+import Effect.Class (liftEffect)
 import Promise (Promise)
-import Promise.Aff (fromAff)
-import Evo.Activities (EvoSale, readEvoSale)
+import Promise.Aff (fromAff, toAff)
+import Temporal.Workflow (proxyActivities)
+import Activities (EvoSale, options)
 
-type SaleID = String
-data Sale = SaleFromEvo EvoSale
+type SaleID
+  = String
+
+data Sale
+  = SaleFromEvo EvoSale
 
 -- FIXME unsafePerformEffect usage
 processSale :: SaleID -> Promise Sale
 processSale saleID =
   unsafePerformEffect
     $ fromAff do
-        evoSale <- readEvoSale saleID
+        { readEvoSale } <- liftEffect $ proxyActivities options
+        evoSale <- toAff $ readEvoSale saleID
         pure $ SaleFromEvo evoSale

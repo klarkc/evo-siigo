@@ -23,7 +23,7 @@ import Temporal.Client
   , defaultClientOptions
   )
 import Temporal.Worker (createWorker, runWorker, bundleWorkflowCode)
-import Activities (readEvoSale)
+import Activities (activities)
 import Node.Path (resolve)
 import HTTPurple
  ( class Generic
@@ -52,9 +52,7 @@ startWorker = do
     createWorker
       { taskQueue
       , workflowBundle
-      , activities:
-          { readEvoSale
-          }
+      , activities
       }
   runWorker worker
 

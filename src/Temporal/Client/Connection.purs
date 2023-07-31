@@ -7,7 +7,7 @@ module Temporal.Client.Connection
   , Connection
   ) where
 
-import Prelude (($), (<<<), Unit)
+import Prelude ((<<<), Unit)
 import Effect.Aff (Aff)
 import Data.Function.Uncurried (Fn1, Fn2, runFn1, runFn2)
 import Promise.Aff (Promise, toAff)
