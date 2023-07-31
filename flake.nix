@@ -25,10 +25,11 @@
       { inherit inputs systems make-pkgs; }
       ({ system, pkgs, ps-tools, ... }:
         let
+          inherit (pkgs) nodejs;
           inherit (ps-tools.for-0_15) purescript purty purescript-language-server;
           npmlock2nix = import inputs.npmlock2nix { inherit pkgs; };
           purs-nix = inputs.purs-nix { inherit system; };
-          node_modules = npmlock2nix.v2.node_modules { src = ./.; } + /node_modules;
+          node_modules = npmlock2nix.v2.node_modules { src = ./.; inherit nodejs; } + /node_modules;
           ulid_ = pkgs.lib.recursiveUpdate purs-nix.ps-pkgs.ulid {
             purs-nix-info.foreign.Ulid = { inherit node_modules; };
           };
@@ -57,13 +58,14 @@
                   fetch
                   yoga-json
                   newtype
+                  fetch-yoga-json
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };
               foreign."Temporal.Client.Connection" = { inherit node_modules; };
               foreign."Temporal.Worker" = { inherit node_modules; };
               # compiler
-              inherit purescript;
+              inherit purescript nodejs;
             };
           ps-command = ps.command { };
           purs-watch = pkgs.writeShellApplication {

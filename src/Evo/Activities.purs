@@ -1,14 +1,19 @@
-module Evo.Activities (EvoSaleID, EvoSale, readEvoSale) where
+module Evo.Activities (EvoResponse, Fetch, EvoSaleID, EvoSale, readEvoSale) where
 
 import Prelude
   ( ($)
   , (<>)
-  , discard
+  , Void
+  , Unit
   , pure
+  , bind
   )
 import Effect.Aff (Aff)
-import Effect.Console (log)
-import Effect.Class (liftEffect)
+import Fetch (ResponseR, Response)
+import Fetch.Yoga.Json (fromJSON)
+import Foreign (Foreign)
+
+type Fetch a = String -> Aff a
 
 type EvoSaleID
   = String
@@ -16,7 +21,15 @@ type EvoSaleID
 type EvoSale
   = { id :: EvoSaleID }
 
-readEvoSale :: EvoSaleID -> Aff EvoSale
-readEvoSale id = do
-  liftEffect $ log $ "reading evo sale " <> id
-  pure $ { id }
+type EvoResponse = { json :: EvoSale }
+
+baseUrl :: String
+baseUrl = "https://evo-integracao.w12app.com.br"
+
+readEvoSale :: Fetch Response -> EvoSaleID -> Aff EvoSale
+readEvoSale fetch id = do
+  let
+    url = baseUrl <> "/api/v1/sales/" <> id
+  { json } <- fetch url
+  res :: EvoResponse <- fromJSON json
+  pure res.json

@@ -1,6 +1,5 @@
-import Workflow from "@temporalio/workflow"
+export {
+	proxyActivities as proxyActivitiesImpl,
+	proxyLocalActivities as proxyLocalActivitiesImpl
+} from "@temporalio/workflow"
 
-export function proxyActivitiesImpl(options) {
-	console.log('proxyActivitiesImpl', options)
-	return Workflow.proxyActivities(options)
-}

@@ -6,6 +6,7 @@ import Prelude
   , (<>)
   , bind
   , discard
+  , flip
   )
 import Effect.Aff (Aff, launchAff_)
 import Effect (Effect)
@@ -23,7 +24,7 @@ import Temporal.Client
   , defaultClientOptions
   )
 import Temporal.Worker (createWorker, runWorker, bundleWorkflowCode)
-import Activities (activities)
+import Activities (createActivities)
 import Node.Path (resolve)
 import HTTPurple
  ( class Generic
@@ -35,6 +36,7 @@ import HTTPurple
  , mkRoute
  , noContent
  )
+import Fetch (fetch)
 
 taskQueue :: String
 taskQueue = "sales"
@@ -52,7 +54,7 @@ startWorker = do
     createWorker
       { taskQueue
       , workflowBundle
-      , activities
+      , activities: createActivities $ (flip fetch) {}
       }
   runWorker worker
 
