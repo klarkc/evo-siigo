@@ -40,6 +40,7 @@
               dependencies =
                 with purs-nix.ps-pkgs;
                 [
+                  debug
                   prelude
                   console
                   effect
@@ -55,6 +56,7 @@
                   httpurple
                   fetch
                   yoga-json
+                  newtype
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };
@@ -96,6 +98,14 @@
               "temporalite start --namespace default"
             '';
           };
+          dev-debug = pkgs.writeShellApplication {
+            name = "dev-debug";
+            runtimeInputs = devRuntimeInputs ++ [ ps-command ];
+            text = ''concurrent \
+              "TEMPORAL_DEBUG=1 NODE_OPTIONS=--inspect-brk purs-nix run"\
+              "temporalite start --namespace default"
+            '';
+          };
         in
         {
           apps.default =
@@ -120,6 +130,7 @@
               ++ [
                 ps-command
                 dev
+                dev-debug
                 purescript
                 purty
                 purescript-language-server
@@ -129,7 +140,7 @@
               alias log_='printf "\033[1;32m%s\033[0m\n" "$@"'
               alias info_='printf "\033[1;34m[INFO] %s\033[0m\n" "$@"'
               log_ "Welcome to evo-siigo shell."
-              info_ "Available commands: dev."
+              info_ "Available commands: dev, dev-debug."
             '';
           };
         });
