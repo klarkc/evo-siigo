@@ -59,6 +59,9 @@
                   yoga-json
                   newtype
                   fetch-yoga-json
+                  node-process
+                  node-buffer
+                  dotenv
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };
