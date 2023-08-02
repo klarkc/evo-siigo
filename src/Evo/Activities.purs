@@ -1,35 +1,29 @@
-module Evo.Activities (EvoOptions, EvoResponse, Fetch, EvoSaleID, EvoSale, readEvoSale) where
+module Evo.Activities (EvoOptions, Fetch, EvoSaleID, EvoSale, readEvoSale) where
 
 import Prelude
   ( ($)
   , (<>)
-  , Void
-  , Unit
   , pure
   , bind
   , show
   , discard
   )
 import Effect (Effect)
-import Effect.Aff (Error, Aff, throwError, error)
+import Effect.Aff (Aff, throwError, error)
 import Effect.Class (liftEffect)
 import Effect.Console (log)
-import Fetch (ResponseR, Response)
+import Fetch (Response)
 import Fetch.Yoga.Json (fromJSON)
-import Foreign (Foreign)
-import Type.Proxy (Proxy(Proxy))
 
 type Fetch a
   = String -> Record a -> Aff Response
 
 type EvoSaleID
-  = String
+  = Int
 
 type EvoSale
-  = Foreign
-
-type EvoResponse
-  = { json :: EvoSale }
+  = { idSale :: EvoSaleID
+    }
 
 type EvoRequestHeaders
   = { authorization :: String }
@@ -50,7 +44,7 @@ readEvoSale :: EvoOptions ( headers :: EvoRequestHeaders ) -> EvoSaleID -> Aff E
 readEvoSale { fetch, base64, auth } id = do
   auth_ <- liftEffect $ base64 $ auth.username <> ":" <> auth.password
   let
-    url = baseUrl <> "/api/v1/sales/" <> id
+    url = baseUrl <> "/api/v1/sales/" <> (show id)
 
     options =
       { headers: { authorization: "Basic " <> auth_ }
@@ -60,8 +54,5 @@ readEvoSale { fetch, base64, auth } id = do
     log $ show options
   res <- fetch url options
   case res.status of
-    200 -> do
-      --{ json } :: EvoResponse <- fromJSON res.json
-      fr <- res.json
-      pure fr
+    200 -> fromJSON res.json
     _ -> throwError $ error $ "Request failed with " <> show res.status <> " status"

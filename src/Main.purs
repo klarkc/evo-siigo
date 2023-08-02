@@ -9,12 +9,12 @@ import Prelude
   , discard
   , pure
   )
-import Control.Monad.Error.Class (class MonadThrow, liftMaybe)
+import Control.Monad.Error.Class (liftMaybe)
 import Effect.Aff (Aff, launchAff_)
 import Effect (Effect)
 import Effect.Class (liftEffect)
 import Effect.Console (log)
-import Effect.Exception (Error, error)
+import Effect.Exception (error)
 import Temporal.Client
   ( WorkflowHandle
   , Connection
@@ -27,7 +27,7 @@ import Temporal.Client
   , defaultClientOptions
   )
 import Temporal.Worker (createWorker, runWorker, bundleWorkflowCode)
-import Activities (Fetch, EvoSale, createActivities)
+import Activities (createActivities)
 import Node.Path (resolve)
 import Node.Process (lookupEnv)
 import Node.Buffer as NB
