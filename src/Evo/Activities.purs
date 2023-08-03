@@ -1,9 +1,16 @@
-module Evo.Activities (EvoOptions, Fetch, EvoSaleID, EvoSale, readEvoSale) where
+module Evo.Activities
+  ( EvoOptions
+  , Fetch
+  , EvoSaleID
+  , EvoSale
+  , EvoReceivableID
+  , EvoReceivable
+  , readEvoSale
+  ) where
 
 import Prelude
   ( ($)
   , (<>)
-  , pure
   , bind
   , show
   , discard
@@ -21,8 +28,16 @@ type Fetch a
 type EvoSaleID
   = Int
 
+type EvoReceivableID
+  = Int
+
+type EvoReceivable
+  = { idReceivable :: EvoReceivableID
+    }
+
 type EvoSale
   = { idSale :: EvoSaleID
+    , receivables :: Array EvoReceivable
     }
 
 type EvoRequestHeaders
