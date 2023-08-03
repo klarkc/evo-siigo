@@ -51,7 +51,7 @@ readEvoSale { fetch, base64, auth } id = do
       }
   liftEffect do
     log $ "Fetching " <> url
-    log $ show options
+    --log $ show options
   res <- fetch url options
   case res.status of
     200 -> fromJSON res.json
