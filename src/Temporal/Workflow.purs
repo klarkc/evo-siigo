@@ -7,9 +7,11 @@ module Temporal.Workflow
   , proxyLocalActivities
   ) where
 
+import Prelude ((<<<))
 import Effect(Effect)
 import Effect.Aff (Aff)
 import Effect.Uncurried (EffectFn1, runEffectFn1)
+import Effect.Class (liftEffect)
 import Data.Newtype (class Newtype)
 
 newtype ActivityFunction a b
@@ -26,10 +28,14 @@ type ActivityOptions = { startToCloseTimeout :: Duration }
 
 foreign import proxyActivitiesImpl :: forall r. EffectFn1 ActivityOptions (Activities r)
 
-proxyActivities :: forall r. ActivityOptions -> Effect (Activities r)
-proxyActivities = runEffectFn1 proxyActivitiesImpl
+proxyActivities_ :: forall r. ActivityOptions -> Effect (Activities r)
+proxyActivities_ = runEffectFn1 proxyActivitiesImpl
+
+proxyActivities = liftEffect <<< proxyActivities_
 
 foreign import proxyLocalActivitiesImpl :: forall r. EffectFn1 ActivityOptions (Activities r)
 
-proxyLocalActivities :: forall r. ActivityOptions -> Effect (Activities r)
-proxyLocalActivities = runEffectFn1 proxyLocalActivitiesImpl
+proxyLocalActivities_ :: forall r. ActivityOptions -> Effect (Activities r)
+proxyLocalActivities_ = runEffectFn1 proxyLocalActivitiesImpl
+
+proxyLocalActivities = liftEffect <<< proxyLocalActivities_

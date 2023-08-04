@@ -62,6 +62,8 @@
                   node-process
                   node-buffer
                   dotenv
+                  monad-logger
+                  record
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };

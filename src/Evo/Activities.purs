@@ -5,7 +5,11 @@ module Evo.Activities
   , EvoSale
   , EvoReceivableID
   , EvoReceivable
+  , EvoMemberID
+  , EvoMember
+  , EvoRequestHeaders
   , readEvoSale
+  , readEvoMember
   ) where
 
 import Prelude
@@ -14,6 +18,7 @@ import Prelude
   , bind
   , show
   , discard
+  , pure
   )
 import Effect (Effect)
 import Effect.Aff (Aff, throwError, error)
@@ -31,13 +36,26 @@ type EvoSaleID
 type EvoReceivableID
   = Int
 
+type EvoMemberID
+  = Int
+
 type EvoReceivable
   = { idReceivable :: EvoReceivableID
+    , status ::
+        { id :: Int
+        , name :: String
+        }
     }
 
 type EvoSale
   = { idSale :: EvoSaleID
+    , idMember :: EvoMemberID
     , receivables :: Array EvoReceivable
+    }
+
+type EvoMember
+  = { idMember :: EvoMemberID
+    , firstName :: String
     }
 
 type EvoRequestHeaders
@@ -55,19 +73,41 @@ type EvoOptions a
 baseUrl :: String
 baseUrl = "https://evo-integracao.w12app.com.br"
 
-readEvoSale :: EvoOptions ( headers :: EvoRequestHeaders ) -> EvoSaleID -> Aff EvoSale
-readEvoSale { fetch, base64, auth } id = do
+buildHeaders :: forall a. EvoOptions a -> Aff { authorization :: String }
+buildHeaders { base64, auth } = do
   auth_ <- liftEffect $ base64 $ auth.username <> ":" <> auth.password
-  let
-    url = baseUrl <> "/api/v1/sales/" <> (show id)
+  pure { authorization: "Basic " <> auth_ }
 
-    options =
-      { headers: { authorization: "Basic " <> auth_ }
-      }
+buildURL :: String -> String
+buildURL path = baseUrl <> "/api/v1/" <> path
+
+handleRes :: forall r a. { status :: Int | r } -> Aff a -> Aff a
+handleRes res success = case res.status of
+  200 -> success
+  _ -> throwError $ error $ "Request failed with " <> show res.status <> " status"
+
+readEvoSale :: EvoOptions ( headers :: EvoRequestHeaders ) -> EvoSaleID -> Aff EvoSale
+readEvoSale opt@{ fetch } id = do
+  headers <- buildHeaders opt
+  let
+    url = buildURL $ "sales/" <> show id
+
+    options = { headers }
   liftEffect do
     log $ "Fetching " <> url
-    --log $ show options
+  --log $ show options
   res <- fetch url options
-  case res.status of
-    200 -> fromJSON res.json
-    _ -> throwError $ error $ "Request failed with " <> show res.status <> " status"
+  handleRes res $ fromJSON res.json
+
+readEvoMember :: EvoOptions ( headers :: EvoRequestHeaders ) -> EvoMemberID -> Aff EvoMember
+readEvoMember opt@{ fetch } id = do
+  headers <- buildHeaders opt
+  let
+    url = buildURL $ "members/" <> show id
+
+    options = { headers }
+  liftEffect do
+    log $ "Fetching " <> url
+  --log $ show options
+  res <- fetch url options
+  handleRes res $ fromJSON res.json
