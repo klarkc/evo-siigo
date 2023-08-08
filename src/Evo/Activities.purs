@@ -51,6 +51,7 @@ type EvoSale
   = { idSale :: EvoSaleID
     , idMember :: EvoMemberID
     , receivables :: Array EvoReceivable
+    , document :: String
     }
 
 type EvoMember

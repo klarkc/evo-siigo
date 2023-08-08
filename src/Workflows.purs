@@ -4,6 +4,7 @@ import Prelude
   ( ($)
   , (>>=)
   , (==)
+  , (>=)
   , Unit
   , bind
   , pure
@@ -14,10 +15,12 @@ import Control.Monad.Reader (ReaderT, runReaderT, ask)
 import Control.Monad.Logger.Trans (LoggerT, runLoggerT)
 import Control.Monad.Logger.Class as Log
 import Control.Monad.State (StateT, modify_, get, evalStateT)
+import Control.Monad.Error.Class (liftMaybe)
 import Effect.Aff (Aff)
 import Effect.Aff.Class (liftAff)
 import Effect.Class (class MonadEffect, liftEffect)
 import Effect.Console (log) as EC
+import Effect.Exception (error)
 import Promise (Promise)
 import Promise.Aff (toAff)
 import Promise.Unsafe (unsafeFromAff)
@@ -39,7 +42,7 @@ data Customer
   = CustomerFromEvo EvoMember
 
 type ProcessSaleOutput
-  = Maybe Customer
+  = Boolean
 
 type WorkflowT a s m b
   = ReaderT a (StateT s (LoggerT m)) b
@@ -59,7 +62,11 @@ runWorkflow = runWorkflowT
 type ProcessSaleState
   = { sale :: Maybe Sale
     , customer :: Maybe Customer
+    , isRegistered :: Boolean
     }
+
+useSale :: Workflow SaleID ProcessSaleState Sale
+useSale = get >>= \{ sale } -> liftMaybe (error "No sale available") sale
 
 -- FIXME unsafeFromAff usage
 processSale :: SaleID -> Promise ProcessSaleOutput
@@ -68,14 +75,16 @@ processSale i =
     $ runWorkflow processSale_ i
         { sale: Nothing
         , customer: Nothing
+        , isRegistered: false
         }
 
 processSale_ :: Workflow SaleID ProcessSaleState ProcessSaleOutput
 processSale_ = do
   fetchSaleFromEvo
   fetchCustomerFromEvo
-  { customer } <- get
-  pure customer
+  fetchIsRegisteredFromSiigo
+  { isRegistered } <- get
+  pure isRegistered
 
 fetchSaleFromEvo :: Workflow SaleID ProcessSaleState Unit
 fetchSaleFromEvo = do
@@ -90,9 +99,17 @@ fetchSaleFromEvo = do
 fetchCustomerFromEvo :: Workflow SaleID ProcessSaleState Unit
 fetchCustomerFromEvo = do
   { readEvoMember } <- proxyActivities options
-  st <- get
-  case st of
-    { sale: Just (SaleFromEvo evoSale) } -> do
-      evoMember <- liftAff $ toAff $ readEvoMember evoSale.idMember
-      modify_ \r -> r { customer = Just $ evoMember }
-    _ -> pure unit
+  (SaleFromEvo evoSale) <- useSale
+  evoMember <- liftAff $ toAff $ readEvoMember evoSale.idMember
+  modify_ \r -> r { customer = Just $ evoMember }
+
+fetchIsRegisteredFromSiigo :: Workflow SaleID ProcessSaleState Unit
+fetchIsRegisteredFromSiigo = do
+  (SaleFromEvo evoSale) <- useSale
+  { searchSiigoCustomers } <- proxyActivities options
+  siigoCustomers <- liftAff $ toAff $ searchSiigoCustomers evoSale.document
+  let isRegistered = length siigoCustomers >= 0
+  modify_ \r -> r { isRegistered = isRegistered }
+  case isRegistered of
+       true -> Log.debug empty "Discarding customer already registered on Siigo"
+       _ -> pure unit
