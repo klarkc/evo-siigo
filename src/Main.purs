@@ -71,11 +71,12 @@ startWorker = do
     password <- lookupEnv_ "EVO_PASSWORD"
     pure { username, password }
   let evo = { fetch, base64, auth }
+      siigo = { fetch }
   worker <-
     createWorker
       { taskQueue
       , workflowBundle
-      , activities: createActivities { evo }
+      , activities: createActivities { evo, siigo }
       }
   runWorker worker
 

@@ -4,11 +4,8 @@ module Activities
   , options
   ) where
 
-import Prelude ((<<<), ($), map)
-import Promise.Aff (Promise)
 import Evo.Activities
   ( EvoOptions
-  , Fetch
   , EvoSaleID
   , EvoSale
   , EvoMemberID
@@ -18,25 +15,27 @@ import Evo.Activities
   , readEvoMember
   )
   as EA
+import Siigo.Activities
+  ( SiigoOptions
+  , searchSiigoCustomers
+  )
+  as SA
 import Temporal.Workflow (ActivityOptions)
-import Promise.Unsafe (unsafeFromAff)
-import Foreign (Foreign, unsafeToForeign)
-import Effect.Aff (Aff)
+import Temporal.Activity (Activity)
 
 type Activities
-  = { readEvoSale :: EA.EvoSaleID -> Promise Foreign
-    , readEvoMember :: EA.EvoMemberID -> Promise Foreign
+  = { readEvoSale :: Activity
+    , readEvoMember :: Activity
+    , searchSiigoCustomers :: Activity
     }
 
 options :: ActivityOptions
 options = { startToCloseTimeout: 60000 }
 
-unsafeToActivity :: forall b t. (b -> Aff t) -> b -> Promise Foreign
-unsafeToActivity fn = unsafeFromAff <<< map unsafeToForeign <<< fn
-
 -- TODO remove unsafeToActivity usage
-createActivities :: { evo :: EA.EvoOptions ( headers :: EA.EvoRequestHeaders ) } -> Activities
-createActivities { evo } =
-  { readEvoSale: unsafeToActivity $ EA.readEvoSale evo
-  , readEvoMember: unsafeToActivity $ EA.readEvoMember evo
+createActivities :: { evo :: EA.EvoOptions, siigo :: SA.SiigoOptions } -> Activities
+createActivities { evo, siigo } =
+  { readEvoSale: EA.readEvoSale evo
+  , readEvoMember: EA.readEvoMember evo
+  , searchSiigoCustomers: SA.searchSiigoCustomers siigo
   }

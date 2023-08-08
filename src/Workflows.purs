@@ -25,18 +25,16 @@ import Promise (Promise)
 import Promise.Aff (toAff)
 import Promise.Unsafe (unsafeFromAff)
 import Temporal.Workflow (proxyActivities)
-import Activities (EvoMember, EvoSale, options)
+import Activities (EvoMember, options)
 import Data.Array (length, filter)
 import Data.Maybe (Maybe(Nothing, Just))
 import Data.Log.Message (Message)
 import Data.Log.Formatter.Pretty (prettyFormatter)
 import Data.Log.Tag (empty)
+import Sale (Sale(SaleFromEvo))
 
 type SaleID
   = String
-
-data Sale
-  = SaleFromEvo EvoSale
 
 data Customer
   = CustomerFromEvo EvoMember
@@ -67,6 +65,9 @@ type ProcessSaleState
 
 useSale :: Workflow SaleID ProcessSaleState Sale
 useSale = get >>= \{ sale } -> liftMaybe (error "No sale available") sale
+
+useCustomer :: Workflow SaleID ProcessSaleState Customer
+useCustomer = get >>= \{ customer } -> liftMaybe (error "No customer available") customer
 
 -- FIXME unsafeFromAff usage
 processSale :: SaleID -> Promise ProcessSaleOutput
@@ -101,13 +102,13 @@ fetchCustomerFromEvo = do
   { readEvoMember } <- proxyActivities options
   (SaleFromEvo evoSale) <- useSale
   evoMember <- liftAff $ toAff $ readEvoMember evoSale.idMember
-  modify_ \r -> r { customer = Just $ evoMember }
+  modify_ \r -> r { customer = Just $ (CustomerFromEvo evoMember) }
 
 fetchIsRegisteredFromSiigo :: Workflow SaleID ProcessSaleState Unit
 fetchIsRegisteredFromSiigo = do
-  (SaleFromEvo evoSale) <- useSale
+  (CustomerFromEvo evoMember) <- useCustomer
   { searchSiigoCustomers } <- proxyActivities options
-  siigoCustomers <- liftAff $ toAff $ searchSiigoCustomers evoSale.document
+  siigoCustomers <- liftAff $ toAff $ searchSiigoCustomers evoMember.document
   let isRegistered = length siigoCustomers >= 0
   modify_ \r -> r { isRegistered = isRegistered }
   case isRegistered of
