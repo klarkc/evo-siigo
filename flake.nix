@@ -64,6 +64,7 @@
                   dotenv
                   monad-logger
                   record
+                  free
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };

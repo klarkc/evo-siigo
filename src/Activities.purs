@@ -1,41 +1,17 @@
 module Activities
-  ( module EA
+  (
+    Activities
   , createActivities
-  , options
   ) where
 
 import Evo.Activities
-  ( EvoOptions
-  , EvoSaleID
-  , EvoSale
-  , EvoMemberID
-  , EvoMember
-  , EvoRequestHeaders
-  , readEvoSale
-  , readEvoMember
+  ( loadEvoAuthHeaders
   )
-  as EA
-import Siigo.Activities
-  ( SiigoOptions
-  , searchSiigoCustomers
-  )
-  as SA
-import Temporal.Workflow (ActivityOptions)
 import Temporal.Activity (Activity)
 
 type Activities
-  = { readEvoSale :: Activity
-    , readEvoMember :: Activity
-    , searchSiigoCustomers :: Activity
+  = { loadEvoAuthHeaders :: Activity
     }
 
-options :: ActivityOptions
-options = { startToCloseTimeout: 60000 }
-
--- TODO remove unsafeToActivity usage
-createActivities :: { evo :: EA.EvoOptions, siigo :: SA.SiigoOptions } -> Activities
-createActivities { evo, siigo } =
-  { readEvoSale: EA.readEvoSale evo
-  , readEvoMember: EA.readEvoMember evo
-  , searchSiigoCustomers: SA.searchSiigoCustomers siigo
-  }
+createActivities :: Activities
+createActivities = { loadEvoAuthHeaders }

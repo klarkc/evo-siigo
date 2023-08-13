@@ -1,33 +1,25 @@
 module Evo.Activities
-  ( EvoOptions
-  , EvoSaleID
-  , EvoSale
-  , EvoReceivableID
-  , EvoReceivable
-  , EvoMemberID
-  , EvoMember
-  , EvoRequestHeaders
-  , readEvoSale
-  , readEvoMember
+  (
+  -- EvoSaleID
+  --, EvoSale
+  --, EvoReceivableID
+  --, EvoReceivable
+  --, EvoMemberID
+  --, EvoMember
+  EvoAuthHeaders
+  , loadEvoAuthHeaders
+  --, readEvoSale
+  --, readEvoMember
   ) where
 
 import Prelude
-  ( ($)
-  , (<>)
-  , bind
-  , show
-  , discard
-  , pure
+  ( (<>)
   )
-import Effect (Effect)
-import Effect.Aff (Aff)
-import Effect.Aff.Class (liftAff)
-import Effect.Class (liftEffect)
-import Effect.Console (log)
-import Fetch.Yoga.Json (fromJSON)
-import Fetch.Function (Fetch)
-import Fetch.Response (handleResponse)
-import Temporal.Activity (Activity, unsafeRunActivityM, askInput)
+import Temporal.Activity
+  ( Activity
+  )
+import Temporal.Build (output)
+import Temporal.Build.Unsafe (unsafeRunBuild)
 
 type EvoSaleID
   = Int
@@ -58,57 +50,68 @@ type EvoMember
     , document :: String
     }
 
-type EvoRequestHeaders
-  = { authorization :: String }
+type EvoAuthHeaders
+  = ( authorization :: String
+    )
 
-type EvoOptions
-  = { fetch :: Fetch ( headers :: EvoRequestHeaders )
-    , base64 :: String -> Effect String
-    , auth ::
-        { username :: String
-        , password :: String
-        }
-    }
+--baseUrl :: String
+--baseUrl = "https://evo-integracao.w12app.com.br"
+--
+--buildURL :: String -> String
+--buildURL path = baseUrl <> "/api/v1/" <> path
+--
+--askInputAuthHeaders :: forall r. Activity { authHeaders :: EvoAuthHeaders | r }
+--askInputAuthHeaders = askInput >>= \r -> pure r.authHeaders
 
-baseUrl :: String
-baseUrl = "https://evo-integracao.w12app.com.br"
+--askInputID :: forall r. Activity { id :: a | r }
+--askInputID = askInput >>= \r -> pure r.id
 
-buildHeaders :: EvoOptions -> Aff { authorization :: String }
-buildHeaders { base64, auth } = do
-  auth_ <- liftEffect $ base64 $ auth.username <> ":" <> auth.password
-  pure { authorization: "Basic " <> auth_ }
 
-buildURL :: String -> String
-buildURL path = baseUrl <> "/api/v1/" <> path
+loadEvoAuthHeaders :: Activity
+loadEvoAuthHeaders _ = unsafeRunBuild @{} @(Record EvoAuthHeaders) do
+  output { authorization: "Basic " <> "auth_" }
+--  unsafeRunActivityM do
+--    lookupEnv <- askEnv LookupEnv
+--    base64 <- askEnv Base64
+--    authHeaders :: Record EvoAuthHeaders <-
+--      liftEffect do
+--        username <- lookupEnv "EVO_USERNAME"
+--        password <- lookupEnv "EVO_PASSWORD"
+--        auth_ <- base64 $ username <> ":" <> password
+--        pure { authorization: "Basic " <> auth_ }
+--    pure authHeaders
 
-readEvoSale :: EvoOptions -> Activity
-readEvoSale opt@{ fetch } =
-  unsafeRunActivityM do
-    id :: EvoSaleID <- askInput
-    evoSale :: EvoSale <- liftAff do
-      headers <- buildHeaders opt
-      let
-        url = buildURL $ "sales/" <> show id
-
-        options = { headers }
-      liftEffect $ log $ "Fetching " <> url
-      --log $ show options
-      res <- fetch url options
-      handleResponse res $ fromJSON res.json
-    pure evoSale
-
-readEvoMember :: EvoOptions -> Activity
-readEvoMember opt@{ fetch } =
-  unsafeRunActivityM do
-    id :: EvoMemberID <- askInput
-    evoMember :: EvoMember <-
-      liftAff do
-        headers <- liftAff $ buildHeaders opt
-        let
-          url = buildURL $ "members/" <> show id
-
-          options = { headers }
-        liftEffect $ log $ "Fetching " <> url
-        res <- fetch url options
-        handleResponse res $ fromJSON res.json
-    pure evoMember
+--readEvoSale :: Activity
+--readEvoSale =
+--  unsafeRunActivityM do
+--    id :: EvoSaleID <- askInputID
+--    headers <- askInputAuthHeaders
+--    fetch <- askEnvFetch
+--    evoSale :: EvoSale <-
+--      liftAff do
+--        let
+--          url = buildURL $ "sales/" <> show id
+--
+--          options = { headers }
+--        liftEffect $ log $ "Fetching " <> url
+--        --log $ show options
+--        res <- fetch url options
+--        handleResponse res $ fromJSON res.json
+--    pure evoSale
+--
+--readEvoMember :: Activity
+--readEvoMember =
+--  unsafeRunActivityM do
+--    id :: EvoMemberID <- askInputID
+--    headers :: Record EvoAuthHeaders <- askInputAuthHeaders
+--    fetch <- askEnvFetch
+--    evoMember :: EvoMember <-
+--      liftAff do
+--        let
+--          url = buildURL $ "members/" <> show id
+--
+--          options = { headers }
+--        liftEffect $ log $ "Fetching " <> url
+--        res <- fetch url options
+--        handleResponse res $ fromJSON res.json
+--    pure evoMember

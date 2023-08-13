@@ -2,17 +2,27 @@ module Temporal.Activity.Trans
   ( ActivityT
   , runActivityT
   , askInput
+  , askEnv
+  , askEnvFetch
   ) where
 
+import Prelude (($), (>>=), pure)
 import Control.Monad.Reader (ReaderT, runReaderT, ask)
 import Control.Monad (class Monad)
+import Control.Monad.Trans.Class (lift)
 
-type ActivityT :: forall k. Type -> (k -> Type) -> k -> Type
-type ActivityT a m b
-  = ReaderT a m b
+type ActivityT :: forall k. Type -> Type -> (k -> Type) -> k -> Type
+type ActivityT input env m output
+  = ReaderT env (ReaderT input m) output
 
-runActivityT :: forall r m a. ReaderT r m a -> r -> m a
-runActivityT = runReaderT
+runActivityT :: forall input env m output. ActivityT input env m output -> env -> input -> m output
+runActivityT act env = runReaderT $ runReaderT act env
 
-askInput :: forall a m. Monad m => ActivityT a m a
-askInput = ask
+askInput :: forall input env m. Monad m => ActivityT input env m input
+askInput = lift ask
+
+askEnv :: forall input env m. Monad m => ActivityT input env m env
+askEnv = ask
+
+askEnvFetch :: forall input r f m. Monad m => ActivityT input { fetch :: f | r } m f
+askEnvFetch = askEnv >>= \r -> pure r.fetch
