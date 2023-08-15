@@ -1,27 +1,34 @@
 module Workflows (processSale) where
 
+import Debug (spy)
 import Prelude
   ( ($)
+  , (<>)
   , bind
+  , show
   )
-import Temporal.Build (output, useInput)
-import Temporal.Workflow (Workflow, liftBuild)
+import Temporal.Workflow (ActivityForeign, Workflow, useInput, proxyActivities, defaultProxyOptions, output, runActivity)
 import Temporal.Workflow.Unsafe (unsafeRunWorkflowBuild)
+import Activities (ActivitiesI_)
 import Evo.Activities (EvoAuthHeaders)
+import Promise (Promise)
+import Foreign (Foreign)
 
---type SaleID
---  = String
+type SaleID = String
 
 type EvoAuthHeaders_ = Record EvoAuthHeaders
+
+type ActivitiesForeign = ActivitiesI_ ActivityForeign
 
 --loadEvoAuthHeaders :: WorkflowBuild EvoAuthHeaders_ Foreign
 --loadEvoAuthHeaders = ?q LoadEvoAuthHeaders
 
 processSale :: Workflow
-processSale i = unsafeRunWorkflowBuild @String do
-  i_ <- liftBuild $ useInput i
-  liftBuild $ output i_
-  --loadEvoAuthHeaders
+processSale i = unsafeRunWorkflowBuild @ActivitiesForeign @String @EvoAuthHeaders_ do
+  saleID :: SaleID <- useInput i
+  { loadEvoAuthHeaders } <- proxyActivities defaultProxyOptions
+  authHeaders <- runActivity loadEvoAuthHeaders
+  output authHeaders
 
 --authEvo :: forall a. Workflow a ProcessSaleState Unit
 --authEvo = do

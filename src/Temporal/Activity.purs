@@ -2,7 +2,7 @@ module Temporal.Activity
   (
   -- runActivity
   --, ActivityF
-  Activity
+    Activity
   , ActivityBuildF
   , ActivityBuild
   ) where
@@ -10,6 +10,7 @@ module Temporal.Activity
 import Temporal.Build (Fn, BuildF, Build)
 
 type Activity = Fn
+
 type ActivityBuildF inp out n = BuildF inp out n
 type ActivityBuild inp out n = Build inp out n
 

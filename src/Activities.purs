@@ -1,6 +1,8 @@
 module Activities
   (
     Activities
+  , ActivitiesI
+  , ActivitiesI_
   , createActivities
   ) where
 
@@ -9,9 +11,10 @@ import Evo.Activities
   )
 import Temporal.Activity (Activity)
 
-type Activities
-  = { loadEvoAuthHeaders :: Activity
-    }
+type ActivitiesI_ actFr = ( loadEvoAuthHeaders :: actFr )
+type ActivitiesI = ActivitiesI_ Activity 
+
+type Activities = Record ActivitiesI
 
 createActivities :: Activities
 createActivities = { loadEvoAuthHeaders }
