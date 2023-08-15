@@ -7,6 +7,7 @@ module Evo.Activities
   --, EvoMemberID
   --, EvoMember
   EvoAuthHeaders
+  , EvoAuthHeadersI
   , loadEvoAuthHeaders
   --, readEvoSale
   --, readEvoMember
@@ -14,12 +15,25 @@ module Evo.Activities
 
 import Prelude
   ( (<>)
+  , ($)
+  , bind
+  , pure
   )
+import Promise (Promise)
 import Temporal.Activity
   ( Activity
+  , liftOperation
+  , output
   )
-import Temporal.Build (output)
-import Temporal.Build.Unsafe (unsafeRunBuild)
+import Temporal.Exchange
+  ( ExchangeI
+  , ExchangeO
+  )
+import Temporal.Activity.Unsafe (unsafeRunActivity)
+import Temporal.Platform
+  ( lookupEnv
+  , base64
+  )
 
 type EvoSaleID
   = Int
@@ -50,9 +64,12 @@ type EvoMember
     , document :: String
     }
 
-type EvoAuthHeaders
+type EvoAuthHeadersI
   = ( authorization :: String
     )
+
+type EvoAuthHeaders
+  = Record EvoAuthHeadersI
 
 --baseUrl :: String
 --baseUrl = "https://evo-integracao.w12app.com.br"
@@ -67,19 +84,14 @@ type EvoAuthHeaders
 --askInputID = askInput >>= \r -> pure r.id
 
 
-loadEvoAuthHeaders :: Activity
-loadEvoAuthHeaders _ = unsafeRunBuild @{} @(Record EvoAuthHeaders) do
-  output { authorization: "Basic " <> "auth_" }
---  unsafeRunActivityM do
---    lookupEnv <- askEnv LookupEnv
---    base64 <- askEnv Base64
---    authHeaders :: Record EvoAuthHeaders <-
---      liftEffect do
---        username <- lookupEnv "EVO_USERNAME"
---        password <- lookupEnv "EVO_PASSWORD"
---        auth_ <- base64 $ username <> ":" <> password
---        pure { authorization: "Basic " <> auth_ }
---    pure authHeaders
+loadEvoAuthHeaders :: ExchangeI -> Promise ExchangeO
+loadEvoAuthHeaders _ = unsafeRunActivity @{} @EvoAuthHeaders do
+    authHeaders <- liftOperation do
+        username <- lookupEnv "EVO_USERNAME"
+        password <- lookupEnv "EVO_PASSWORD"
+        auth_ <- base64 $ username <> ":" <> password
+        pure { authorization: "Basic " <> auth_ }
+    output authHeaders
 
 --readEvoSale :: Activity
 --readEvoSale =

@@ -1,10 +1,10 @@
-module Temporal.Workflow.Unsafe (unsafeRunWorkflowBuild ) where
+module Temporal.Workflow.Unsafe (unsafeRunWorkflow) where
 
 import Prelude (($))
-import Temporal.Workflow (WorkflowBuild, runWorkflowBuild)
+import Temporal.Workflow (Workflow, runWorkflow)
 import Yoga.JSON (class ReadForeign, class WriteForeign)
 import Promise (class Flatten, Promise)
 import Promise.Unsafe (unsafeFromAff)
 
-unsafeRunWorkflowBuild :: forall @act @inp @out n. ReadForeign inp => Flatten n n => WriteForeign out => WorkflowBuild act inp out n -> Promise n
-unsafeRunWorkflowBuild p = unsafeFromAff $ runWorkflowBuild p
+unsafeRunWorkflow :: forall @act @inp @out n. ReadForeign inp => Flatten n n => WriteForeign out => Workflow act inp out n -> Promise n
+unsafeRunWorkflow p = unsafeFromAff $ runWorkflow p

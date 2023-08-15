@@ -1,47 +1,44 @@
 module Temporal.Workflow
   ( ProxyActivityOptions
   , Duration
-  , WorkflowBuild
-  , WorkflowBuildF
-  , Workflow
   , ActivityForeign
-  , runWorkflowBuild
+  , Workflow
+  , WorkflowF
+  , runWorkflow
   , proxyActivities
   , proxyLocalActivities
   , output
   , useInput
   , runActivity
-  , liftBuild
+  , liftExchange
   , defaultProxyOptions
   ) where
 
-import Debug (spy)
-import Prelude(
-($),
-  (<$>),
-  (<<<), pure, bind, void, flip,
-  const,
-  discard)
+import Prelude
+  ( ($)
+  , (<$>)
+  , (<<<)
+  , pure
+  , bind
+  )
 import Effect(Effect)
 import Effect.Uncurried (EffectFn1, runEffectFn1)
-import Effect.Exception (Error, error)
-import Effect.Aff (Aff, launchAff_, forkAff, joinFiber)
+import Effect.Aff (Aff, forkAff, joinFiber)
 import Effect.Class (liftEffect)
-import Control.Monad.State (StateT, execStateT)
-import Control.Monad.Error.Class (liftMaybe, liftEither)
-import Promise (Rejection, Promise, then_, race, thenOrCatch)
+import Promise (Promise)
 import Promise.Aff (toAff)
 import Foreign (Foreign, unsafeFromForeign)
 import Control.Monad.Free (Free, foldFree, liftF, hoistFree, wrap)
-import Temporal.Build (Fn, Build, BuildF, runBuild, output, useInput) as B
 import Data.NaturalTransformation (type (~>))
-import Data.Newtype (class Newtype, unwrap)
-import Data.Maybe (Maybe(Nothing))
-import Data.Either (Either(Left, Right))
 import Data.Function.Uncurried (Fn0, runFn0)
 import Yoga.JSON (class WriteForeign, class ReadForeign)
-
-type Workflow = B.Fn
+import Temporal.Exchange
+  ( Exchange
+  , ExchangeF
+  , runExchange
+  , output
+  , useInput
+  ) as TE
 
 type ActivityForeign = Fn0 (Promise Foreign)
 
@@ -64,41 +61,41 @@ foreign import proxyLocalActivitiesImpl :: forall r. EffectFn1 ProxyActivityOpti
 proxyLocalActivities_ :: forall r. ProxyActivityOptions -> Effect (Record r)
 proxyLocalActivities_ = runEffectFn1 proxyLocalActivitiesImpl
 
-data WorkflowBuildF act inp out n =
-  Building (B.BuildF inp out n)
+data WorkflowF act inp out n =
+  LiftExchange (TE.ExchangeF inp out n)
   | ProxyActivities ProxyActivityOptions (Record act -> n)
   | ProxyLocalActivities ProxyActivityOptions (Record act -> n)
   | RunActivity ActivityForeign (Foreign -> n)
 
-type WorkflowBuild act inp out n = Free (WorkflowBuildF act inp out) n
+type Workflow act inp out n = Free (WorkflowF act inp out) n
 
-liftBuild :: forall act inp out. B.Build inp out ~> WorkflowBuild act inp out
-liftBuild = hoistFree Building
+liftExchange :: forall act inp out. TE.Exchange inp out ~> Workflow act inp out
+liftExchange = hoistFree LiftExchange
 
-output :: forall act inp out. out -> WorkflowBuild act inp out Foreign
-output = liftBuild <<< B.output
+output :: forall act inp out. out -> Workflow act inp out Foreign
+output = liftExchange <<< TE.output
 
-useInput :: forall act inp out. Foreign -> WorkflowBuild act inp out inp
-useInput = liftBuild <<< B.useInput
+useInput :: forall act inp out. Foreign -> Workflow act inp out inp
+useInput = liftExchange <<< TE.useInput
 
-proxyActivities :: forall act inp out. ProxyActivityOptions -> WorkflowBuild act inp out (Record act)
+proxyActivities :: forall act inp out. ProxyActivityOptions -> Workflow act inp out (Record act)
 proxyActivities options = wrap $ ProxyActivities options pure
 
-proxyLocalActivities :: forall act inp out. ProxyActivityOptions -> WorkflowBuild act inp out (Record act)
+proxyLocalActivities :: forall act inp out. ProxyActivityOptions -> Workflow act inp out (Record act)
 proxyLocalActivities options = wrap $ ProxyLocalActivities options pure
 
-runActivity :: forall act inp out a. ActivityForeign -> WorkflowBuild act inp out a
+runActivity :: forall act inp out a. ActivityForeign -> Workflow act inp out a
 runActivity actFr = wrap $ RunActivity actFr (pure <<< unsafeFromForeign)
 
-workflowBuild :: forall act inp out. ReadForeign inp => WriteForeign out => WorkflowBuildF act inp out ~> Aff
-workflowBuild = case _ of
-  Building buildF -> B.runBuild $ liftF buildF
+workflow :: forall act inp out. ReadForeign inp => WriteForeign out => WorkflowF act inp out ~> Aff
+workflow = case _ of
+  LiftExchange exchangeF -> TE.runExchange $ liftF exchangeF
   ProxyActivities opt reply -> liftEffect $ reply <$> proxyActivities_ opt
   ProxyLocalActivities opt reply -> liftEffect $ reply <$> proxyLocalActivities_ opt
   RunActivity wfAcFr reply -> do
-     wfAcFib <- forkAff $ toAff $ spy "wfAc" $ runActivityForeign wfAcFr
-     wfAcFr <- joinFiber wfAcFib
-     pure $ reply $ spy "wfAcFr" $ wfAcFr
+     wfAcFib <- forkAff $ toAff $ runActivityForeign wfAcFr
+     wfAcFr_ <- joinFiber wfAcFib
+     pure $ reply $ wfAcFr_
 
-runWorkflowBuild :: forall @act @inp @out. ReadForeign inp => WriteForeign out => WorkflowBuild act inp out ~> Aff
-runWorkflowBuild p = foldFree workflowBuild p
+runWorkflow :: forall @act @inp @out. ReadForeign inp => WriteForeign out => Workflow act inp out ~> Aff
+runWorkflow p = foldFree workflow p
