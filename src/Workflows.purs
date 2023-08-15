@@ -14,29 +14,30 @@ import Temporal.Workflow
   )
 import Temporal.Workflow.Unsafe (unsafeRunWorkflow)
 import Temporal.Exchange (ExchangeI, ExchangeO)
-import Evo.Activities (EvoAuthHeaders)
+import Evo.Activities (EvoSaleID, EvoSale, EvoAuthHeaders)
 import Activities (ActivitiesI_)
 
 type SaleID = String
 
 type ActivitiesForeign = ActivitiesI_ ActivityForeign
 
---loadEvoAuthHeaders :: WorkflowBuild EvoAuthHeaders_ Foreign
---loadEvoAuthHeaders = ?q LoadEvoAuthHeaders
+--fetchSaleFromEvo :: Workflow SaleID ProcessSaleState Unit
+--fetchSaleFromEvo = do
+--  saleID <- ask
+--  { readEvoSale } <- proxyActivities options
+--  evoSale <- liftAff $ toAff $ readEvoSale saleID
+--  let pendingRecv = filter (\r -> r.status.name == "open") evoSale.receivables
+--  case length pendingRecv of
+--    0 -> modify_ \r -> r { sale = Just $ SaleFromEvo evoSale }
+--    _ -> Log.debug empty "Discarding sale with pending receivables"
 
 processSale :: ExchangeI -> Promise ExchangeO
-processSale i = unsafeRunWorkflow @ActivitiesForeign @String @EvoAuthHeaders do
-  saleID :: SaleID <- useInput i
-  { loadEvoAuthHeaders } <- proxyActivities defaultProxyOptions
-  authHeaders <- runActivity loadEvoAuthHeaders
-  output authHeaders
-
---authEvo :: forall a. Workflow a ProcessSaleState Unit
---authEvo = do
---  { loadEvoAuthHeaders } <- proxyActivities options
---  authHeaders <- liftAff $ toAff $ spy "loadEvoAuthHeaders" $ loadEvoAuthHeaders 
---  pure unit
-  --modify_ \r -> r { authHeaders = authHeaders }
+processSale i = unsafeRunWorkflow @ActivitiesForeign @String @EvoSale do
+  act <- proxyActivities defaultProxyOptions
+  headers <- runActivity act.loadEvoAuthHeaders {}
+  saleID <- useInput i
+  evoSale <- runActivity act.readEvoSale { id: saleID, headers }
+  output evoSale
 
 --data Customer
 --  = CustomerFromEvo EvoMember
@@ -53,8 +54,6 @@ processSale i = unsafeRunWorkflow @ActivitiesForeign @String @EvoAuthHeaders do
 --runWorkflowT :: forall a b s m. MonadEffect m => WorkflowT a s m b -> a -> s -> m b
 --runWorkflowT w i st = runLoggerT (evalStateT (runReaderT w i) st) logMessage
 --
---logMessage :: forall m. MonadEffect m => Message -> m Unit
---logMessage msg = liftEffect $ prettyFormatter msg >>= EC.log
 --
 --runWorkflow :: forall a b s. Workflow a s b -> a -> s -> Aff b
 --runWorkflow = runWorkflowT
@@ -98,15 +97,6 @@ processSale i = unsafeRunWorkflow @ActivitiesForeign @String @EvoAuthHeaders do
 --  pure unit
   --modify_ \r -> r { authHeaders = authHeaders }
 
---fetchSaleFromEvo :: Workflow SaleID ProcessSaleState Unit
---fetchSaleFromEvo = do
---  saleID <- ask
---  { readEvoSale } <- proxyActivities options
---  evoSale <- liftAff $ toAff $ readEvoSale saleID
---  let pendingRecv = filter (\r -> r.status.name == "open") evoSale.receivables
---  case length pendingRecv of
---    0 -> modify_ \r -> r { sale = Just $ SaleFromEvo evoSale }
---    _ -> Log.debug empty "Discarding sale with pending receivables"
 --
 --fetchCustomerFromEvo :: Workflow SaleID ProcessSaleState Unit
 --fetchCustomerFromEvo = do

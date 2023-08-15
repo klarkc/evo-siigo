@@ -27,10 +27,10 @@ import Effect.Aff (Aff, forkAff, joinFiber)
 import Effect.Class (liftEffect)
 import Promise (Promise)
 import Promise.Aff (toAff)
-import Foreign (Foreign, unsafeFromForeign)
+import Foreign (Foreign, unsafeFromForeign, unsafeToForeign)
 import Control.Monad.Free (Free, foldFree, liftF, hoistFree, wrap)
 import Data.NaturalTransformation (type (~>))
-import Data.Function.Uncurried (Fn0, runFn0)
+import Data.Function.Uncurried (Fn1, runFn1)
 import Yoga.JSON (class WriteForeign, class ReadForeign)
 import Temporal.Exchange
   ( Exchange
@@ -40,9 +40,10 @@ import Temporal.Exchange
   , useInput
   ) as TE
 
-type ActivityForeign = Fn0 (Promise Foreign)
+type ActivityForeign = Fn1 Foreign (Promise Foreign)
 
-runActivityForeign fn = runFn0 fn
+runActivityForeign :: ActivityForeign -> Foreign -> Promise Foreign
+runActivityForeign fn fnInp = runFn1 fn fnInp
 
 type Duration = Int
 
@@ -65,7 +66,7 @@ data WorkflowF act inp out n =
   LiftExchange (TE.ExchangeF inp out n)
   | ProxyActivities ProxyActivityOptions (Record act -> n)
   | ProxyLocalActivities ProxyActivityOptions (Record act -> n)
-  | RunActivity ActivityForeign (Foreign -> n)
+  | RunActivity ActivityForeign Foreign (Foreign -> n)
 
 type Workflow act inp out n = Free (WorkflowF act inp out) n
 
@@ -84,16 +85,16 @@ proxyActivities options = wrap $ ProxyActivities options pure
 proxyLocalActivities :: forall act inp out. ProxyActivityOptions -> Workflow act inp out (Record act)
 proxyLocalActivities options = wrap $ ProxyLocalActivities options pure
 
-runActivity :: forall act inp out a. ActivityForeign -> Workflow act inp out a
-runActivity actFr = wrap $ RunActivity actFr (pure <<< unsafeFromForeign)
+runActivity :: forall act actIn inp out a. ActivityForeign -> actIn -> Workflow act inp out a
+runActivity actFr actIn = wrap $ RunActivity actFr (unsafeToForeign actIn) (pure <<< unsafeFromForeign)
 
 workflow :: forall act inp out. ReadForeign inp => WriteForeign out => WorkflowF act inp out ~> Aff
 workflow = case _ of
   LiftExchange exchangeF -> TE.runExchange $ liftF exchangeF
   ProxyActivities opt reply -> liftEffect $ reply <$> proxyActivities_ opt
   ProxyLocalActivities opt reply -> liftEffect $ reply <$> proxyLocalActivities_ opt
-  RunActivity wfAcFr reply -> do
-     wfAcFib <- forkAff $ toAff $ runActivityForeign wfAcFr
+  RunActivity wfAcFr wfAcIn reply -> do
+     wfAcFib <- forkAff $ toAff $ runActivityForeign wfAcFr wfAcIn
      wfAcFr_ <- joinFiber wfAcFib
      pure $ reply $ wfAcFr_
 

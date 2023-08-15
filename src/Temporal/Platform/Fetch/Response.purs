@@ -1,4 +1,4 @@
-module Fetch.Response (handleResponse) where
+module Temporal.Platform.Fetch.Response (handleResponse) where
 
 import Prelude (($), (<>), show)
 import Effect.Aff (Aff, throwError, error)

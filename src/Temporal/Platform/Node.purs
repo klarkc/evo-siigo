@@ -1,4 +1,4 @@
-module Platform.Node (lookupEnv, base64, module F) where
+module Temporal.Platform.Node (lookupEnv, base64, module F) where
 
 import Prelude (($), (>>=), (<>), bind)
 import Effect (Effect)

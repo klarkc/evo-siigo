@@ -1,15 +1,15 @@
 module Evo.Activities
   (
-  -- EvoSaleID
-  --, EvoSale
-  --, EvoReceivableID
-  --, EvoReceivable
-  --, EvoMemberID
+   EvoSaleID
+  , EvoSale
+  , EvoReceivableID
+  , EvoReceivable
+  , EvoMemberID
   --, EvoMember
-  EvoAuthHeaders
+  , EvoAuthHeaders
   , EvoAuthHeadersI
   , loadEvoAuthHeaders
-  --, readEvoSale
+  , readEvoSale
   --, readEvoMember
   ) where
 
@@ -18,12 +18,15 @@ import Prelude
   , ($)
   , bind
   , pure
+  , show
+  , discard
   )
 import Promise (Promise)
 import Temporal.Activity
   ( Activity
   , liftOperation
   , output
+  , useInput
   )
 import Temporal.Exchange
   ( ExchangeI
@@ -33,7 +36,13 @@ import Temporal.Activity.Unsafe (unsafeRunActivity)
 import Temporal.Platform
   ( lookupEnv
   , base64
+  , info
+  , fetch
+  , awaitFetch
   )
+
+type EvoInput
+  = ( headers :: EvoAuthHeaders )
 
 type EvoSaleID
   = Int
@@ -71,18 +80,14 @@ type EvoAuthHeadersI
 type EvoAuthHeaders
   = Record EvoAuthHeadersI
 
---baseUrl :: String
---baseUrl = "https://evo-integracao.w12app.com.br"
---
---buildURL :: String -> String
---buildURL path = baseUrl <> "/api/v1/" <> path
---
---askInputAuthHeaders :: forall r. Activity { authHeaders :: EvoAuthHeaders | r }
---askInputAuthHeaders = askInput >>= \r -> pure r.authHeaders
+baseUrl :: String
+baseUrl = "https://evo-integracao.w12app.com.br"
+
+buildURL :: String -> String
+buildURL path = baseUrl <> "/api/v1/" <> path
 
 --askInputID :: forall r. Activity { id :: a | r }
 --askInputID = askInput >>= \r -> pure r.id
-
 
 loadEvoAuthHeaders :: ExchangeI -> Promise ExchangeO
 loadEvoAuthHeaders _ = unsafeRunActivity @{} @EvoAuthHeaders do
@@ -93,23 +98,16 @@ loadEvoAuthHeaders _ = unsafeRunActivity @{} @EvoAuthHeaders do
         pure { authorization: "Basic " <> auth_ }
     output authHeaders
 
---readEvoSale :: Activity
---readEvoSale =
---  unsafeRunActivityM do
---    id :: EvoSaleID <- askInputID
---    headers <- askInputAuthHeaders
---    fetch <- askEnvFetch
---    evoSale :: EvoSale <-
---      liftAff do
---        let
---          url = buildURL $ "sales/" <> show id
---
---          options = { headers }
---        liftEffect $ log $ "Fetching " <> url
---        --log $ show options
---        res <- fetch url options
---        handleResponse res $ fromJSON res.json
---    pure evoSale
+readEvoSale :: ExchangeI -> Promise ExchangeO
+readEvoSale i = unsafeRunActivity @{ id :: String | EvoInput }  @EvoSale do
+    { id, headers } <- useInput i
+    evoSale <- liftOperation do
+        let
+          url = buildURL $ "sales/" <> id
+          options = { headers }
+        info $ "Fetching " <> url
+        awaitFetch $ fetch url options
+    output evoSale
 --
 --readEvoMember :: Activity
 --readEvoMember =
