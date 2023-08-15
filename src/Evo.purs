@@ -1,9 +1,8 @@
-module Evo where
---module Evo
---  ( module EA
---  ) where
---
---import Evo.Activities
---  ( EvoSale
---  )
---  as EA
+module Evo
+  ( module EA
+  ) where
+
+import Evo.Activities
+  ( EvoSale
+  )
+  as EA

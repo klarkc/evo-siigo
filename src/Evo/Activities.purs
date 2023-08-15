@@ -18,13 +18,12 @@ import Prelude
   , ($)
   , bind
   , pure
-  , show
   , discard
   )
 import Promise (Promise)
 import Temporal.Activity
-  ( Activity
-  , liftOperation
+  ( liftOperation
+  , liftLogger
   , output
   , useInput
   )
@@ -36,10 +35,10 @@ import Temporal.Activity.Unsafe (unsafeRunActivity)
 import Temporal.Platform
   ( lookupEnv
   , base64
-  , info
   , fetch
   , awaitFetch
   )
+import Temporal.Logger (info)
 
 type EvoInput
   = ( headers :: EvoAuthHeaders )
@@ -101,12 +100,11 @@ loadEvoAuthHeaders _ = unsafeRunActivity @{} @EvoAuthHeaders do
 readEvoSale :: ExchangeI -> Promise ExchangeO
 readEvoSale i = unsafeRunActivity @{ id :: String | EvoInput }  @EvoSale do
     { id, headers } <- useInput i
-    evoSale <- liftOperation do
-        let
-          url = buildURL $ "sales/" <> id
-          options = { headers }
-        info $ "Fetching " <> url
-        awaitFetch $ fetch url options
+    let
+      url = buildURL $ "sales/" <> id
+      options = { headers }
+    liftLogger $ info $ "Fetching " <> url
+    evoSale <- liftOperation $ awaitFetch $ fetch url options
     output evoSale
 --
 --readEvoMember :: Activity

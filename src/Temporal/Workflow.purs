@@ -11,6 +11,7 @@ module Temporal.Workflow
   , useInput
   , runActivity
   , liftExchange
+  , liftLogger
   , defaultProxyOptions
   ) where
 
@@ -24,7 +25,7 @@ import Prelude
 import Effect(Effect)
 import Effect.Uncurried (EffectFn1, runEffectFn1)
 import Effect.Aff (Aff, forkAff, joinFiber)
-import Effect.Class (liftEffect)
+import Effect.Class (liftEffect) as EC
 import Promise (Promise)
 import Promise.Aff (toAff)
 import Foreign (Foreign, unsafeFromForeign, unsafeToForeign)
@@ -39,6 +40,11 @@ import Temporal.Exchange
   , output
   , useInput
   ) as TE
+import Temporal.Logger
+  ( LoggerF
+  , Logger
+  , runLogger
+  ) as TL
 
 type ActivityForeign = Fn1 Foreign (Promise Foreign)
 
@@ -62,8 +68,9 @@ foreign import proxyLocalActivitiesImpl :: forall r. EffectFn1 ProxyActivityOpti
 proxyLocalActivities_ :: forall r. ProxyActivityOptions -> Effect (Record r)
 proxyLocalActivities_ = runEffectFn1 proxyLocalActivitiesImpl
 
-data WorkflowF act inp out n =
-  LiftExchange (TE.ExchangeF inp out n)
+data WorkflowF act inp out n
+  = LiftExchange (TE.ExchangeF inp out n)
+  | LiftLogger (TL.LoggerF n)
   | ProxyActivities ProxyActivityOptions (Record act -> n)
   | ProxyLocalActivities ProxyActivityOptions (Record act -> n)
   | RunActivity ActivityForeign Foreign (Foreign -> n)
@@ -72,6 +79,9 @@ type Workflow act inp out n = Free (WorkflowF act inp out) n
 
 liftExchange :: forall act inp out. TE.Exchange inp out ~> Workflow act inp out
 liftExchange = hoistFree LiftExchange
+
+liftLogger :: forall act inp out. TL.Logger ~> Workflow act inp out
+liftLogger = hoistFree LiftLogger
 
 output :: forall act inp out. out -> Workflow act inp out Foreign
 output = liftExchange <<< TE.output
@@ -91,8 +101,9 @@ runActivity actFr actIn = wrap $ RunActivity actFr (unsafeToForeign actIn) (pure
 workflow :: forall act inp out. ReadForeign inp => WriteForeign out => WorkflowF act inp out ~> Aff
 workflow = case _ of
   LiftExchange exchangeF -> TE.runExchange $ liftF exchangeF
-  ProxyActivities opt reply -> liftEffect $ reply <$> proxyActivities_ opt
-  ProxyLocalActivities opt reply -> liftEffect $ reply <$> proxyLocalActivities_ opt
+  LiftLogger logF -> EC.liftEffect $ TL.runLogger $ liftF logF
+  ProxyActivities opt reply -> EC.liftEffect $ reply <$> proxyActivities_ opt
+  ProxyLocalActivities opt reply -> EC.liftEffect $ reply <$> proxyLocalActivities_ opt
   RunActivity wfAcFr wfAcIn reply -> do
      wfAcFib <- forkAff $ toAff $ runActivityForeign wfAcFr wfAcIn
      wfAcFr_ <- joinFiber wfAcFib

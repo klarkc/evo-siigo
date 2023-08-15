@@ -1,9 +1,15 @@
 module Workflows (processSale) where
 
 import Prelude
-  ( bind
+  ( (==)
+  , ($)
+  , bind
+  , pure
+  , discard
   )
 import Promise (Promise)
+import Data.Maybe (Maybe(Just, Nothing))
+import Data.Array (filter, length)
 import Temporal.Workflow
   ( ActivityForeign
   , useInput
@@ -11,13 +17,15 @@ import Temporal.Workflow
   , defaultProxyOptions
   , output
   , runActivity
+  , liftLogger
   )
 import Temporal.Workflow.Unsafe (unsafeRunWorkflow)
 import Temporal.Exchange (ExchangeI, ExchangeO)
-import Evo.Activities (EvoSaleID, EvoSale, EvoAuthHeaders)
+import Temporal.Logger (info)
 import Activities (ActivitiesI_)
+import Sale (Sale(SaleFromEvo))
 
-type SaleID = String
+--type SaleID = String
 
 type ActivitiesForeign = ActivitiesI_ ActivityForeign
 
@@ -32,12 +40,18 @@ type ActivitiesForeign = ActivitiesI_ ActivityForeign
 --    _ -> Log.debug empty "Discarding sale with pending receivables"
 
 processSale :: ExchangeI -> Promise ExchangeO
-processSale i = unsafeRunWorkflow @ActivitiesForeign @String @EvoSale do
+processSale i = unsafeRunWorkflow @ActivitiesForeign @String @(Maybe Sale) do
   act <- proxyActivities defaultProxyOptions
   headers <- runActivity act.loadEvoAuthHeaders {}
   saleID <- useInput i
   evoSale <- runActivity act.readEvoSale { id: saleID, headers }
-  output evoSale
+  let pendingRecv = filter (\r -> r.status.name == "open") evoSale.receivables
+  sale <- case length pendingRecv of
+    0 -> pure $ Just $ SaleFromEvo evoSale
+    _ -> do
+       liftLogger $ info "Discarding sale with pending receivables"
+       pure Nothing
+  output sale
 
 --data Customer
 --  = CustomerFromEvo EvoMember
