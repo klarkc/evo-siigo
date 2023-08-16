@@ -18,6 +18,7 @@ import Siigo.Activities
   , searchSiigoCustomers
   )
 
+type ActivitiesI_ :: forall k. k -> Row k
 type ActivitiesI_ actFr =
   ( loadEvoAuthHeaders :: actFr
   , readEvoSale :: actFr

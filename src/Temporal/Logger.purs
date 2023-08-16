@@ -40,14 +40,19 @@ type Logger n
 log :: DLL.LogLevel -> String -> Logger Unit
 log l s = wrap $ Log l s $ pure unit
 
+trace :: String -> Logger Unit
 trace = log DLL.Trace
 
+debug :: String -> Logger Unit
 debug = log DLL.Debug
 
+info :: String -> Logger Unit
 info = log DLL.Debug
 
+warn :: String -> Logger Unit
 warn = log DLL.Warn
 
+error :: String -> Logger Unit
 error = log DLL.Error
 
 logger :: LoggerF ~> Effect
