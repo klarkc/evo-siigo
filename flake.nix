@@ -26,7 +26,7 @@
       ({ system, pkgs, ps-tools, ... }:
         let
           inherit (pkgs) nodejs;
-          inherit (ps-tools.for-0_15) purescript purty purescript-language-server;
+          inherit (ps-tools.for-0_15) purescript purs-tidy purescript-language-server;
           npmlock2nix = import inputs.npmlock2nix { inherit pkgs; };
           purs-nix = inputs.purs-nix { inherit system; };
           node_modules = npmlock2nix.v2.node_modules { src = ./.; inherit nodejs; } + /node_modules;
@@ -140,7 +140,7 @@
                 dev
                 dev-debug
                 purescript
-                purty
+                purs-tidy
                 purescript-language-server
                 pkgs.nodejs
               ];
