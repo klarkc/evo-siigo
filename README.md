@@ -7,6 +7,8 @@ Integration between different CRM platforms using [Temporal](https://temporal.io
 #.env
 EVO_USERNAME=foo
 EVO_PASSWORD=hackme
+SIIGO_USERNAME=foo
+SIIGO_ACCESS_KEY=hackme
 ```
 
 ```bash
