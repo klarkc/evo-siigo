@@ -11,11 +11,19 @@ import Temporal.Exchange (ExchangeI, ExchangeO)
 import Evo.Activities
   ( loadEvoAuthHeaders
   , readEvoSale
+  , readEvoMember
+  )
+import Siigo.Activities
+  ( loadSiigoAuthHeaders
+  , searchSiigoCustomers
   )
 
 type ActivitiesI_ actFr =
   ( loadEvoAuthHeaders :: actFr
   , readEvoSale :: actFr
+  , readEvoMember :: actFr
+  , loadSiigoAuthHeaders :: actFr
+  , searchSiigoCustomers :: actFr
   )
 type ActivitiesI = ActivitiesI_ (ExchangeI -> Promise ExchangeO) 
 
@@ -25,4 +33,7 @@ createActivities :: Activities
 createActivities =
   { loadEvoAuthHeaders
   , readEvoSale
+  , readEvoMember
+  , loadSiigoAuthHeaders
+  , searchSiigoCustomers
   }

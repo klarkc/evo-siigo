@@ -5,12 +5,12 @@ module Evo.Activities
   , EvoReceivableID
   , EvoReceivable
   , EvoMemberID
-  --, EvoMember
+  , EvoMember
   , EvoAuthHeaders
   , EvoAuthHeadersI
   , loadEvoAuthHeaders
   , readEvoSale
-  --, readEvoMember
+  , readEvoMember
   ) where
 
 import Prelude
@@ -85,9 +85,6 @@ baseUrl = "https://evo-integracao.w12app.com.br"
 buildURL :: String -> String
 buildURL path = baseUrl <> "/api/v1/" <> path
 
---askInputID :: forall r. Activity { id :: a | r }
---askInputID = askInput >>= \r -> pure r.id
-
 loadEvoAuthHeaders :: ExchangeI -> Promise ExchangeO
 loadEvoAuthHeaders _ = unsafeRunActivity @{} @EvoAuthHeaders do
     authHeaders <- liftOperation do
@@ -103,23 +100,16 @@ readEvoSale i = unsafeRunActivity @{ id :: String | EvoInput }  @EvoSale do
     let
       url = buildURL $ "sales/" <> id
       options = { headers }
-    liftLogger $ info $ "Fetching " <> url
+    liftLogger $ info $ "GET " <> url
     evoSale <- liftOperation $ awaitFetch $ fetch url options
     output evoSale
---
---readEvoMember :: Activity
---readEvoMember =
---  unsafeRunActivityM do
---    id :: EvoMemberID <- askInputID
---    headers :: Record EvoAuthHeaders <- askInputAuthHeaders
---    fetch <- askEnvFetch
---    evoMember :: EvoMember <-
---      liftAff do
---        let
---          url = buildURL $ "members/" <> show id
---
---          options = { headers }
---        liftEffect $ log $ "Fetching " <> url
---        res <- fetch url options
---        handleResponse res $ fromJSON res.json
---    pure evoMember
+
+readEvoMember :: ExchangeI -> Promise ExchangeO
+readEvoMember i = unsafeRunActivity @{ id :: String | EvoInput }  @EvoMember do
+    { id, headers } <- useInput i
+    let
+      url = buildURL $ "members/" <> id
+      options = { headers }
+    liftLogger $ info $ "GET " <> url
+    evoMember <- liftOperation $ awaitFetch $ fetch url options
+    output evoMember

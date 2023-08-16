@@ -9,7 +9,7 @@ module Temporal.Platform
   ) where
 
 import Data.Log.Level (LogLevel) as Exports
-import Fetch (fetch) as Exports
+import Fetch (Method(..), fetch) as Exports
 
 import Prelude
   ( ($)
@@ -48,7 +48,7 @@ base64 s = wrap $ Base64 s pure
 awaitFetch_ :: Aff Response -> Operation Response
 awaitFetch_ res = wrap $ AwaitFetchResponse res pure 
 
-awaitFetch :: forall json. ReadForeign json => Aff Response -> Operation json
+awaitFetch :: forall @json. ReadForeign json => Aff Response -> Operation json
 awaitFetch res = do
   res_ <- awaitFetch_ res
   liftAff $ handleResponse res_ $ fromJSON res_.json
