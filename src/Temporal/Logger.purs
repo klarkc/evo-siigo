@@ -29,13 +29,12 @@ import Data.JSDate (now)
 import Effect (Effect)
 import Effect.Class (liftEffect)
 import Effect.Console (log) as EC
+
 -- TODO inject platform dependency
 
-data LoggerF n
-  = Log DLL.LogLevel String n
+data LoggerF n = Log DLL.LogLevel String n
 
-type Logger n
-  = Free LoggerF n
+type Logger n = Free LoggerF n
 
 log :: DLL.LogLevel -> String -> Logger Unit
 log l s = wrap $ Log l s $ pure unit

@@ -12,8 +12,7 @@ import Control.Monad (class Monad)
 import Control.Monad.Trans.Class (lift)
 
 type ActivityT :: forall k. Type -> Type -> (k -> Type) -> k -> Type
-type ActivityT input env m output
-  = ReaderT env (ReaderT input m) output
+type ActivityT input env m output = ReaderT env (ReaderT input m) output
 
 runActivityT :: forall input env m output. ActivityT input env m output -> env -> input -> m output
 runActivityT act env = runReaderT $ runReaderT act env

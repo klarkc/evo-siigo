@@ -26,15 +26,15 @@ import Temporal.Worker (createWorker, runWorker, bundleWorkflowCode)
 import Activities (createActivities)
 import Node.Path (resolve)
 import HTTPurple
- ( class Generic
- , RouteDuplex'
- , ServerM
- , (/)
- , serve
- , segment
- , mkRoute
- , noContent
- )
+  ( class Generic
+  , RouteDuplex'
+  , ServerM
+  , (/)
+  , serve
+  , segment
+  , mkRoute
+  , noContent
+  )
 import Dotenv (loadFile)
 
 taskQueue :: String
@@ -79,6 +79,7 @@ runTemporal saleID =
     (startWorker <> getResults wfHandler con)
 
 data Route = ProcessSale String
+
 derive instance Generic Route _
 
 route :: RouteDuplex' Route
@@ -90,5 +91,5 @@ main :: ServerM
 main = serve { port: 8080 } { route, router }
   where
   router { route: ProcessSale saleID } = do
-     liftEffect $ runTemporal saleID
-     noContent
+    liftEffect $ runTemporal saleID
+    noContent

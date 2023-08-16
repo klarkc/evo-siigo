@@ -6,7 +6,7 @@ module Temporal.Exchange
   , useInput
   , output
   , runExchange
-   ) where
+  ) where
 
 import Prelude
   ( ($)
@@ -28,13 +28,13 @@ import Yoga.JSON (class WriteForeign, class ReadForeign, read, write)
 type ExchangeI = Foreign
 type ExchangeO = Foreign
 
-data ExchangeF inp out next =
-  UseInput ExchangeI (inp -> next)
+data ExchangeF inp out next
+  = UseInput ExchangeI (inp -> next)
   | WriteOutput out (ExchangeO -> next)
 
 derive instance Functor (ExchangeF inp out)
 
-type Exchange inp out next = Free (ExchangeF inp out) next 
+type Exchange inp out next = Free (ExchangeF inp out) next
 
 useInput :: forall inp out. ExchangeI -> Exchange inp out inp
 useInput i = wrap $ UseInput i pure

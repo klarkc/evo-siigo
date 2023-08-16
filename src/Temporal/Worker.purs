@@ -16,24 +16,24 @@ import Promise.Aff (Promise, toAff)
 import Foreign.Object (Object, fromHomogeneous)
 import Type.Row.Homogeneous (class Homogeneous)
 
-type WorkflowBundle
-  = { code :: String
-    }
+type WorkflowBundle =
+  { code :: String
+  }
 
 type WorkerOptions :: forall k. (k -> Type) -> k -> Type
-type WorkerOptions f a
-  = { taskQueue :: String
-    , activities :: f a
-    , workflowBundle :: WorkflowBundle
-    }
+type WorkerOptions f a =
+  { taskQueue :: String
+  , activities :: f a
+  , workflowBundle :: WorkflowBundle
+  }
 
 data WorkerCtor
 
 data Worker
 
-type BundleOptions
-  = { workflowsPath :: String
-    }
+type BundleOptions =
+  { workflowsPath :: String
+  }
 
 foreign import createWorkerImpl :: forall a. Fn1 (WorkerOptions Object a) (Promise Worker)
 

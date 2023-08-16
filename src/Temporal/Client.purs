@@ -18,30 +18,24 @@ import Temporal.Client.Connection
   , close
   , connect
   , defaultConnectionOptions
-  )
-  as C
+  ) as C
 import Temporal.Client.Workflow
   ( WorkflowClient
   , WorkflowHandle
   , WorkflowStartOptions
   , startWorkflow
   , result
-  )
-  as W
+  ) as W
 
 foreign import data ClientCtor :: Type
 
-type IClientOptions
-  = ( connection :: C.Connection )
+type IClientOptions = (connection :: C.Connection)
 
-type ClientOptions
-  = Record IClientOptions
+type ClientOptions = Record IClientOptions
 
-type IClient
-  = ( workflow :: W.WorkflowClient )
+type IClient = (workflow :: W.WorkflowClient)
 
-type Client
-  = Record IClient
+type Client = Record IClient
 
 foreign import clientCtor :: ClientCtor
 

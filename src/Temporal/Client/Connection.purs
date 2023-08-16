@@ -16,8 +16,7 @@ foreign import data ConnectionCtor :: Type
 
 foreign import data Connection :: Type
 
-type ConnectionOptions
-  = {}
+type ConnectionOptions = {}
 
 foreign import connectionCtor :: ConnectionCtor
 

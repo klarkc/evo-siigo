@@ -1,6 +1,5 @@
 module Activities
-  (
-    Activities
+  ( Activities
   , ActivitiesI
   , ActivitiesI_
   , createActivities
@@ -26,7 +25,8 @@ type ActivitiesI_ actFr =
   , loadSiigoAuthHeaders :: actFr
   , searchSiigoCustomers :: actFr
   )
-type ActivitiesI = ActivitiesI_ (ExchangeI -> Promise ExchangeO) 
+
+type ActivitiesI = ActivitiesI_ (ExchangeI -> Promise ExchangeO)
 
 type Activities = Record ActivitiesI
 

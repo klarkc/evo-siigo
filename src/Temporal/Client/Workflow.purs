@@ -15,11 +15,11 @@ data WorkflowClient
 
 data WorkflowHandle
 
-type WorkflowStartOptions a
-  = { taskQueue :: String
-    , workflowId :: String
-    , args :: Array a
-    }
+type WorkflowStartOptions a =
+  { taskQueue :: String
+  , workflowId :: String
+  , args :: Array a
+  }
 
 foreign import startWorkflowImpl :: forall a b. Fn3 WorkflowClient a (WorkflowStartOptions b) (Promise WorkflowHandle)
 
