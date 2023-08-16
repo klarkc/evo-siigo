@@ -1,4 +1,4 @@
-module Promise.Unsafe (class UnsafeWarning, unsafeFromAff) where
+module Temporal.Promise.Unsafe (class UnsafeWarning, unsafeFromAff) where
 
 import Prelude ((<<<))
 import Effect.Unsafe (unsafePerformEffect)
