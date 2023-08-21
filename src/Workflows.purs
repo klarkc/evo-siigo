@@ -7,7 +7,6 @@ module Workflows
 import Prelude
   ( (==)
   , ($)
-  , (>=)
   , (<$>)
   , bind
   , discard
@@ -32,7 +31,7 @@ import Temporal.Workflow.Unsafe (unsafeRunWorkflow)
 import Temporal.Exchange (ISO(ISO), ExchangeI, ExchangeO)
 import Temporal.Logger (info, warn, liftMaybe)
 import Evo (EvoAuthHeaders, EvoSale, EvoMember)
-import Siigo (SiigoAuthHeaders, SiigoResponse, SiigoNewInvoice, SiigoInvoice, SiigoDate(SiigoDate))
+import Siigo (SiigoAuthHeaders, SiigoNewInvoice, SiigoInvoice, SiigoDate(SiigoDate))
 
 type ActivitiesJson = ActivitiesI_ ActivityJson
 
@@ -66,47 +65,37 @@ processSale i = unsafeRunWorkflow @ActivitiesJson @String @(Maybe SiigoInvoice) 
        , headers: evoHeaders
        }
       let iden = evoMember.document
-      siigoCustomers :: SiigoResponse <- runActivity act.searchSiigoCustomers
-       { iden
-       , headers: siigoHeaders
-       }
-      let isRegistered = siigoCustomers.pagination.total_results >= 0
-      case isRegistered of
-           true -> do
-              liftLogger $ info "Discarding customer already registered on Siigo"
-              pure Nothing
-           _ -> do
-              saleItem <- liftLogger $ liftMaybe
-                "Evo sale does not have any sale itens"
-                $ evoSale.saleItens !! 0
-              discount <- fromMaybe
-                0.0
-                (warn "Evo sale discount is Nothing, reading as 0.0")
-                saleItem.discount
-              let (ISO (DateTime date _)) = evoSale.saleDate
-                  payments = (\{ ammount: value, dueDate: (ISO (DateTime d _))} -> {
-                    id: 2782,
-                    due_date: SiigoDate d,
-                    value
-                  }) <$> evoSale.receivables
-              siigoInvoice :: SiigoInvoice <- runActivity act.createSiigoInvoice 
-                { invoice:
-                    { document: { id: 12083 }
-                    , date: SiigoDate date
-                    , customer: { identification: iden }
-                    , seller: 312
-                    , items:
-                      [ { code: "c-10032124-2023-07-11-12-00-32"
-                        , quantity: saleItem.quantity
-                        , price: saleItem.itemValue
-                        , discount
-                        }
-                      ]
-                    , payments
-                    } :: SiigoNewInvoice
-                  , headers: siigoHeaders
+      saleItem <- liftLogger $ liftMaybe
+        "Evo sale does not have any sale itens"
+        $ evoSale.saleItens !! 0
+      discount <- fromMaybe
+        0.0
+        (warn "Evo sale discount is Nothing, reading as 0.0")
+        saleItem.discount
+      let (ISO (DateTime date _)) = evoSale.saleDate
+          payments = (\{ ammount: value, dueDate: (ISO (DateTime d _))} -> {
+            id: 2782,
+            due_date: SiigoDate d,
+            value
+          }) <$> evoSale.receivables
+      siigoInvoice :: SiigoInvoice <- runActivity act.createSiigoInvoice 
+        { invoice:
+            { document: { id: 12083 }
+            , date: SiigoDate date
+            , customer: { identification: iden }
+            , seller: 312
+            , items:
+              [ { code: "c-10032124-2023-07-11-12-00-32"
+                , quantity: saleItem.quantity
+                , price: saleItem.itemValue
+                , discount
                 }
-              pure $ Just $ siigoInvoice
+              ]
+            , payments
+            } :: SiigoNewInvoice
+          , headers: siigoHeaders
+        }
+      pure $ Just $ siigoInvoice
     _ -> do
        liftLogger $ info "Discarding sale with pending receivables"
        pure Nothing
