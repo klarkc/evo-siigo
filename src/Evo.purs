@@ -9,6 +9,7 @@ module Evo
   , EvoDate
   , EvoSaleItem
   , EvoReceivableID
+  , EvoContact
   ) where
 
 import Data.Maybe (Maybe)
@@ -26,6 +27,12 @@ type EvoMember
   = { idMember :: EvoMemberID
     , firstName :: String
     , document :: String
+    , contacts :: Array EvoContact
+    }
+
+type EvoContact
+  = { contactType :: String
+    , description :: String
     }
 
 type EvoAuthHeadersI

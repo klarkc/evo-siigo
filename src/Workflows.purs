@@ -8,6 +8,9 @@ import Prelude
   ( (==)
   , ($)
   , (<$>)
+  , (>=)
+  , (&&)
+  , (/=)
   , bind
   , discard
   , show
@@ -15,7 +18,7 @@ import Prelude
   )
 import Promise (Promise)
 import Data.Maybe (Maybe(Just, Nothing))
-import Data.Array ((!!), filter, length)
+import Data.Array (filter, length, head)
 import Data.DateTime(DateTime(DateTime))
 import Temporal.Workflow
   ( ActivityJson
@@ -31,7 +34,13 @@ import Temporal.Workflow.Unsafe (unsafeRunWorkflow)
 import Temporal.Exchange (ISO(ISO), ExchangeI, ExchangeO)
 import Temporal.Logger (info, warn, liftMaybe)
 import Evo (EvoAuthHeaders, EvoSale, EvoMember)
-import Siigo (SiigoAuthHeaders, SiigoNewInvoice, SiigoInvoice, SiigoDate(SiigoDate))
+import Siigo 
+  ( SiigoAuthHeaders
+  , SiigoNewInvoice
+  , SiigoInvoice
+  , SiigoDate(SiigoDate)
+  , SiigoResponse
+  )
 
 type ActivitiesJson = ActivitiesI_ ActivityJson
 
@@ -64,10 +73,28 @@ processSale i = unsafeRunWorkflow @ActivitiesJson @String @(Maybe SiigoInvoice) 
        { id: show evoSale.idMember
        , headers: evoHeaders
        }
-      let iden = evoMember.document
+      siigoCustomers :: SiigoResponse <- runActivity act.searchSiigoCustomers
+       { iden: evoMember.document
+       , headers: siigoHeaders
+       }
+      let isRegistered = siigoCustomers.pagination.total_results >= 0
+      iden <- case isRegistered of
+           true -> do
+              liftLogger $ info "Customer already registered on Siigo, skipping registration"
+              pure $ evoMember.document
+           false -> do
+              liftLogger $ info "Customer not registered on Siigo, registering"
+              cellphone <- liftLogger $ liftMaybe
+                "Evo member does not have valid Cellphone"
+                $ head
+                $ filter
+                    (\c -> c.contactType == "Cellphone" && c.description /= "")
+                    evoMember.contacts
+              pure $ evoMember.document
       saleItem <- liftLogger $ liftMaybe
         "Evo sale does not have any sale itens"
-        $ evoSale.saleItens !! 0
+        $ head
+        $ evoSale.saleItens
       discount <- fromMaybe
         0.0
         (warn "Evo sale discount is Nothing, reading as 0.0")
