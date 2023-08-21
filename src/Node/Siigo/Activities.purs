@@ -36,7 +36,7 @@ type SiigoError
     }
 
 type SiigoErrorResponse
-  = { "Errors" :: Maybe (Array SiigoError)
+  = { "Errors" :: Array SiigoError
     }
 
 type SiigoInput

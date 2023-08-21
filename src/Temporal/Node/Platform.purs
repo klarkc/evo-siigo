@@ -15,11 +15,12 @@ import Fetch (Method(..), Response, fetch) as Exports
 import Prelude
   ( class Show
   , (<$>)
+  , ($)
+  , (<>)
+  , (>=)
   , pure
   , bind
   , discard
-  , ($)
-  , (<>)
   , show
   )
 import Control.Monad.Free (Free, foldFree, wrap, liftF, hoistFree)
@@ -64,16 +65,16 @@ awaitFetch :: forall @jsonError @json. DecodeJson json => DecodeJson jsonError =
 awaitFetch res = do
   res_ <- awaitAff res
   let status = res_.status
-  case status of
-   200 -> do
+  case status >= 200 of
+   true -> do
       j <- awaitAff $ fromJson res_.json
       liftLogger $ TL.debug $ "RES " <> show j
       pure j
-   s -> do
+   _ -> do
       jsonErr :: jsonError <- awaitAff $ fromJson res_.json
       liftLogger do
          TL.error $ "ERROR " <> show jsonErr
-         TL.logAndThrow $ "Request failed with " <> show s <> " status"
+         TL.logAndThrow $ "Request failed with " <> show status <> " status"
 
 operate :: OperationF ~> Aff
 operate = case _ of
