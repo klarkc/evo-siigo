@@ -11,6 +11,7 @@ import Prelude
   , discard
   , pure
   )
+import Data.Maybe (Maybe)
 import Data.Argonaut.Encode (toJsonString)
 import Promise (Promise)
 import Record (union)
@@ -28,18 +29,18 @@ import Siigo
   )
 
 type SiigoError
-  = { "Errors" :: Array
-                  { "Code" :: String
-                  , "Message" :: String
-                  , "Params" :: Array String
-                  , "Detail" :: String
-                  }
+  = { "Code" :: String
+    , "Message" :: String
+    , "Params" :: Array String
+    , "Detail" :: String
+    }
+
+type SiigoErrorResponse
+  = { "Errors" :: Maybe (Array SiigoError)
     }
 
 type SiigoInput
   = ( headers :: SiigoAuthHeaders )
-
-
 
 createSiigoInvoice :: ExchangeI -> Promise ExchangeO
 createSiigoInvoice i = unsafeRunActivity @{ invoice :: SiigoNewInvoice | SiigoInput } @SiigoInvoice do
@@ -80,7 +81,7 @@ loadSiigoAuthHeaders _ = unsafeRunActivity @{} @SiigoAuthHeaders do
               , body
               }
         liftLogger $ info $ "POST " <> url
-        { access_token } :: SiigoAuthToken <- awaitFetch @SiigoError $ fetch url options
+        { access_token } :: SiigoAuthToken <- awaitFetch @SiigoErrorResponse $ fetch url options
         pure { authorization: "Bearer " <> access_token }
     output authHeaders
 
