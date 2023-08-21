@@ -1,4 +1,4 @@
-module Temporal.Worker
+module Temporal.Node.Worker
   ( Worker
   , createWorker
   , runWorker

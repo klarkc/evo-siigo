@@ -1,4 +1,4 @@
-module Temporal.Activity.Trans
+module Temporal.Node.Activity.Trans
   ( ActivityT
   , runActivityT
   , askInput

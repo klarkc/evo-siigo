@@ -1,14 +1,5 @@
-module Evo.Activities
-  (
-   EvoSaleID
-  , EvoSale
-  , EvoReceivableID
-  , EvoReceivable
-  , EvoMemberID
-  , EvoMember
-  , EvoAuthHeaders
-  , EvoAuthHeadersI
-  , loadEvoAuthHeaders
+module Node.Evo.Activities
+  ( loadEvoAuthHeaders
   , readEvoSale
   , readEvoMember
   ) where
@@ -21,9 +12,8 @@ import Prelude
   , discard
   )
 import Promise (Promise)
-import Temporal.Activity
+import Temporal.Node.Activity
   ( liftOperation
-  , liftLogger
   , output
   , useInput
   )
@@ -31,53 +21,26 @@ import Temporal.Exchange
   ( ExchangeI
   , ExchangeO
   )
-import Temporal.Activity.Unsafe (unsafeRunActivity)
-import Temporal.Platform
+import Temporal.Logger (info)
+import Temporal.Node.Activity.Unsafe (unsafeRunActivity)
+import Temporal.Node.Platform
   ( lookupEnv
   , base64
   , fetch
   , awaitFetch
+  , liftLogger
   )
-import Temporal.Logger (info)
+import Evo
+  ( EvoAuthHeaders
+  , EvoSale
+  , EvoMember
+  )
+
+type EvoError
+  = {}
 
 type EvoInput
   = ( headers :: EvoAuthHeaders )
-
-type EvoSaleID
-  = Int
-
-type EvoReceivableID
-  = Int
-
-type EvoMemberID
-  = Int
-
-type EvoReceivable
-  = { idReceivable :: EvoReceivableID
-    , status ::
-        { id :: Int
-        , name :: String
-        }
-    }
-
-type EvoSale
-  = { idSale :: EvoSaleID
-    , idMember :: EvoMemberID
-    , receivables :: Array EvoReceivable
-    }
-
-type EvoMember
-  = { idMember :: EvoMemberID
-    , firstName :: String
-    , document :: String
-    }
-
-type EvoAuthHeadersI
-  = ( authorization :: String
-    )
-
-type EvoAuthHeaders
-  = Record EvoAuthHeadersI
 
 baseUrl :: String
 baseUrl = "https://evo-integracao.w12app.com.br"
@@ -100,8 +63,9 @@ readEvoSale i = unsafeRunActivity @{ id :: String | EvoInput }  @EvoSale do
     let
       url = buildURL $ "sales/" <> id
       options = { headers }
-    liftLogger $ info $ "GET " <> url
-    evoSale <- liftOperation $ awaitFetch $ fetch url options
+    evoSale <- liftOperation do
+      liftLogger $ info $ "GET " <> url
+      awaitFetch @EvoError $ fetch url options
     output evoSale
 
 readEvoMember :: ExchangeI -> Promise ExchangeO
@@ -110,6 +74,7 @@ readEvoMember i = unsafeRunActivity @{ id :: String | EvoInput }  @EvoMember do
     let
       url = buildURL $ "members/" <> id
       options = { headers }
-    liftLogger $ info $ "GET " <> url
-    evoMember <- liftOperation $ awaitFetch $ fetch url options
+    evoMember <- liftOperation do
+       liftLogger $ info $ "GET " <> url
+       awaitFetch @EvoError $ fetch url options
     output evoMember

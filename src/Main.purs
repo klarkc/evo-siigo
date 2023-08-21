@@ -11,6 +11,8 @@ import Effect.Aff (Aff, launchAff_)
 import Effect (Effect)
 import Effect.Class (liftEffect)
 import Effect.Console (log)
+import Node.Path (resolve)
+import Node.Activities (createActivities)
 import Temporal.Client
   ( WorkflowHandle
   , Connection
@@ -22,9 +24,7 @@ import Temporal.Client
   , createClient
   , defaultClientOptions
   )
-import Temporal.Worker (createWorker, runWorker, bundleWorkflowCode)
-import Activities (createActivities)
-import Node.Path (resolve)
+import Temporal.Node.Worker (createWorker, runWorker, bundleWorkflowCode)
 import HTTPurple
   ( class Generic
   , RouteDuplex'

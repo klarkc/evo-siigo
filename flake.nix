@@ -55,16 +55,17 @@
                   parallel
                   node-path
                   httpurple
+                  argonaut
                   fetch
-                  yoga-json
+                  fetch-argonaut
                   newtype
-                  fetch-yoga-json
                   node-process
                   node-buffer
                   dotenv
                   monad-logger
                   record
                   free
+                  formatters
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };
