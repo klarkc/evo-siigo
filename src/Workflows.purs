@@ -8,6 +8,7 @@ import Prelude
   ( (==)
   , ($)
   , (>=)
+  , (<$>)
   , bind
   , discard
   , show
@@ -75,9 +76,6 @@ processSale i = unsafeRunWorkflow @ActivitiesJson @String @(Maybe SiigoInvoice) 
               liftLogger $ info "Discarding customer already registered on Siigo"
               pure Nothing
            _ -> do
-              receivable <- liftLogger $ liftMaybe
-                "Evo sale does not have any receivables"
-                $ evoSale.receivables !! 0
               saleItem <- liftLogger $ liftMaybe
                 "Evo sale does not have any sale itens"
                 $ evoSale.saleItens !! 0
@@ -86,7 +84,11 @@ processSale i = unsafeRunWorkflow @ActivitiesJson @String @(Maybe SiigoInvoice) 
                 (warn "Evo sale discount is Nothing, reading as 0.0")
                 saleItem.discount
               let (ISO (DateTime date _)) = evoSale.saleDate
-                  (ISO (DateTime due_date _)) = receivable.dueDate
+                  payments = (\{ ammount: value, dueDate: (ISO (DateTime d _))} -> {
+                    id: 2782,
+                    due_date: SiigoDate d,
+                    value
+                  }) <$> evoSale.receivables
               siigoInvoice :: SiigoInvoice <- runActivity act.createSiigoInvoice 
                 { invoice:
                     { document: { id: 12083 }
@@ -100,12 +102,7 @@ processSale i = unsafeRunWorkflow @ActivitiesJson @String @(Maybe SiigoInvoice) 
                         , discount
                         }
                       ]
-                    , payments:
-                      [ { id: 1
-                        , value: receivable.ammount
-                        , due_date: SiigoDate due_date
-                        }
-                      ]
+                    , payments
                     } :: SiigoNewInvoice
                   , headers: siigoHeaders
                 }
