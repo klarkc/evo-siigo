@@ -40,6 +40,7 @@ import Siigo
   , SiigoInvoice
   , SiigoDate(SiigoDate)
   , SiigoResponse
+  , SiigoAddress
   )
 
 type ActivitiesJson = ActivitiesI_ ActivityJson
@@ -52,6 +53,7 @@ type ActivitiesI_ actFr =
   , loadSiigoAuthHeaders :: actFr
   , searchSiigoCustomers :: actFr
   , createSiigoInvoice :: actFr
+  , searchSiigoAddresses :: actFr
   )
 
 type ActivitiesI = ActivitiesI_ (ExchangeI -> Promise ExchangeO)
@@ -90,6 +92,16 @@ processSale i = unsafeRunWorkflow @ActivitiesJson @String @(Maybe SiigoInvoice) 
                 $ filter
                     (\c -> c.contactType == "Cellphone" && c.description /= "")
                     evoMember.contacts
+              addresses :: Array SiigoAddress <- runActivity act.searchSiigoAddresses
+                { cityName: evoMember.city
+                , stateName: evoMember.state
+                , countryName: "Colombia"
+                , countryCode : "CO"
+                }
+              address <- liftLogger $ liftMaybe
+                "Could not find a corresponding address for the given Evo address"
+                $ head
+                $ addresses
               pure $ evoMember.document
       saleItem <- liftLogger $ liftMaybe
         "Evo sale does not have any sale itens"

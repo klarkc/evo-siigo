@@ -12,6 +12,7 @@ import Node.Siigo.Activities
   ( loadSiigoAuthHeaders
   , searchSiigoCustomers
   , createSiigoInvoice
+  , searchSiigoAddresses
   )
 import Workflows (ActivitiesI)
 
@@ -25,4 +26,5 @@ createActivities =
   , loadSiigoAuthHeaders
   , searchSiigoCustomers
   , createSiigoInvoice
+  , searchSiigoAddresses
   }

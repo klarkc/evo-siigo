@@ -343,6 +343,7 @@
           "ps-tools"
         ],
         "purs-nix": "purs-nix",
+        "simple-csv": "simple-csv",
         "utils": "utils_4"
       }
     },
@@ -360,6 +361,22 @@
         "owner": "rust-lang",
         "ref": "nightly",
         "repo": "rust-analyzer",
+        "type": "github"
+      }
+    },
+    "simple-csv": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1676010843,
+        "narHash": "sha256-YySHr6M0r3n8zZnbQLyAkE38m4NWtMFOhEzw/zeMHCo=",
+        "owner": "smartermaths",
+        "repo": "purescript-simple-csv",
+        "rev": "1bfa7d77cf533756a0a706804c04696677fb9221",
+        "type": "github"
+      },
+      "original": {
+        "owner": "smartermaths",
+        "repo": "purescript-simple-csv",
         "type": "github"
       }
     },

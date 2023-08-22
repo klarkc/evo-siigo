@@ -6,6 +6,8 @@
     ps-tools.follows = "purs-nix/ps-tools";
     npmlock2nix.url = "github:nix-community/npmlock2nix";
     npmlock2nix.flake = false;
+    simple-csv.url = "github:smartermaths/purescript-simple-csv";
+    simple-csv.flake = false;
   };
 
   outputs = { self, utils, ... }@inputs:
@@ -32,6 +34,21 @@
           node_modules = npmlock2nix.v2.node_modules { src = ./.; inherit nodejs; } + /node_modules;
           ulid_ = pkgs.lib.recursiveUpdate purs-nix.ps-pkgs.ulid {
             purs-nix-info.foreign.Ulid = { inherit node_modules; };
+          };
+          simple-csv_ = purs-nix.build {
+            name = "simple-csv";
+            src.path = inputs.simple-csv;
+            info.dependencies = with purs-nix.ps-pkgs; [
+              arrays
+              "assert"
+              control
+              effect
+              either
+              maybe
+              prelude
+              string-parsers
+              strings
+            ];
           };
           ps = purs-nix.purs
             {
@@ -66,6 +83,7 @@
                   record
                   free
                   formatters
+                  simple-csv_
                 ];
               # FFI dependencies
               foreign."Temporal.Client" = { inherit node_modules; };

@@ -28,6 +28,8 @@ type EvoMember
     , firstName :: String
     , document :: String
     , contacts :: Array EvoContact
+    , city :: String
+    , state :: String
     }
 
 type EvoContact

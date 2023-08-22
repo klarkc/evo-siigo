@@ -2,30 +2,49 @@ module Node.Siigo.Activities
   ( searchSiigoCustomers
   , loadSiigoAuthHeaders
   , createSiigoInvoice
+  , searchSiigoAddresses
   ) where
 
 import Prelude
   ( ($)
   , (<>)
+  , (<<<)
   , bind
   , discard
   , pure
+  , show
   )
+import Control.Alt ((<|>))
+import Control.Alternative (guard)
 import Data.Maybe (Maybe)
+import Data.Array ((!!), mapMaybe)
+import Data.Bifunctor (lmap)
 import Data.Argonaut.Encode (toJsonString)
+import Data.String (toUpper)
+import Data.String.Unicode (caselessMatch)
+import Effect.Exception (error)
 import Promise (Promise)
 import Record (union)
+import Text.CSV (parse)
 import Temporal.Exchange (ExchangeI, ExchangeO)
-import Temporal.Logger (info)
+import Temporal.Logger (LoggerE(LoggerE), info, liftEither)
 import Temporal.Node.Activity (liftOperation, useInput, output)
 import Temporal.Node.Activity.Unsafe (unsafeRunActivity)
-import Temporal.Node.Platform (Method(POST), fetch, lookupEnv, awaitFetch, liftLogger)
+import Temporal.Node.Platform
+  ( Method(POST)
+  , fetch
+  , lookupEnv
+  , awaitFetch
+  , awaitFetch_
+  , liftLogger
+  )
 import Siigo
   ( SiigoAuthHeaders
   , SiigoAuthToken
   , SiigoInvoice
   , SiigoResponse
   , SiigoNewInvoice
+  , SiigoAddress
   )
 
 type SiigoError
@@ -84,6 +103,40 @@ loadSiigoAuthHeaders _ = unsafeRunActivity @{} @SiigoAuthHeaders do
         { access_token } :: SiigoAuthToken <- awaitFetch @SiigoErrorResponse $ fetch url options
         pure { authorization: "Bearer " <> access_token }
     output authHeaders
+
+type SearchSiigoAddressesParams = SiigoAddress
+
+addrFromCsvRow :: SearchSiigoAddressesParams -> Array String -> Maybe SiigoAddress 
+addrFromCsvRow p r = let eq_ s = guard <<< caselessMatch s in do
+ cityName <- r !! 2
+ cityName `eq_` p.cityName
+ stateName <- r !! 1
+ stateName `eq_` p.stateName
+ countryName <- r !! 0 
+ countryCode <- r !! 3
+ (   countryName `eq_` p.countryName
+ <|> countryCode `eq_` p.countryCode
+ )
+ stateCode <- r !! 4
+ cityCode <- r !! 5
+ pure { cityName
+      , stateName
+      , countryName
+      , countryCode: toUpper countryCode
+      , stateCode
+      , cityCode
+      }
+
+searchSiigoAddresses :: ExchangeI -> Promise ExchangeO
+searchSiigoAddresses i = unsafeRunActivity @SearchSiigoAddressesParams @(Array SiigoAddress) do
+    p <- useInput i
+    csv<- liftOperation do
+       url <- lookupEnv "SIIGO_ADDRESS_CSV_URL"
+       res <- awaitFetch_ $ fetch url {}
+       liftLogger
+        $ liftEither
+        $ (\err -> LoggerE $ error $ "CSV parsing failed with: " <> show err ) `lmap` parse res
+    output $ mapMaybe (addrFromCsvRow p) csv
 
 buildURL :: String -> String
 buildURL path = baseUrl <> "/v1/" <> path

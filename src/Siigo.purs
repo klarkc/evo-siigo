@@ -12,6 +12,7 @@ module Siigo
   , SiigoDocID
   , SiigoSellerID 
   , SiigoPaymentID
+  , SiigoAddress
   ) where
 
 import Prelude (($), bind, pure, bottom)
@@ -107,3 +108,11 @@ instance EncodeJson SiigoDate where
     $ format dateFormatter
     $ DateTime d bottom
 
+type SiigoAddress
+  = { cityName :: String
+    , stateName :: String
+    , countryName :: String
+    , countryCode :: String
+    , stateCode :: String
+    , cityCode :: String
+    }

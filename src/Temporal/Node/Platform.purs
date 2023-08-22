@@ -7,6 +7,7 @@ module Temporal.Node.Platform
   , lookupEnv
   , base64
   , awaitFetch
+  , awaitFetch_
   ) where
 
 import Data.Log.Level (LogLevel) as Exports
@@ -74,6 +75,21 @@ awaitFetch res = do
       jsonErr :: jsonError <- awaitAff $ fromJson res_.json
       liftLogger do
          TL.error $ "ERROR " <> show jsonErr
+         TL.logAndThrow $ "Request failed with " <> show status <> " status"
+
+awaitFetch_ :: Aff F.Response -> Operation String
+awaitFetch_ res = do
+  res_ <- awaitAff res
+  let status = res_.status
+  case status >= 200 of
+   true -> do
+      j <- awaitAff $ res_.text
+      liftLogger $ TL.debug $ "RES " <> j
+      pure j
+   _ -> do
+      err <- awaitAff $ res_.text
+      liftLogger do
+         TL.error $ "ERROR " <> show err
          TL.logAndThrow $ "Request failed with " <> show status <> " status"
 
 operate :: OperationF ~> Aff
