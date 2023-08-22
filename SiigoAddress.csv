@@ -1,0 +1,4606 @@
+País,Estado / Departamento,Ciudad,Código país,Código Estado / Departamento,Código ciudad
+Colombia,Antioquia,Abejorral,Co,05,05002
+Colombia,Antioquia,Abriaquí,Co,05,05004
+Colombia,Antioquia,Alejandría,Co,05,05021
+Colombia,Antioquia,Amagá,Co,05,05030
+Colombia,Antioquia,Amalfi,Co,05,05031
+Colombia,Antioquia,Andes,Co,05,05034
+Colombia,Antioquia,Angelópolis,Co,05,05036
+Colombia,Antioquia,Angostura,Co,05,05038
+Colombia,Antioquia,Anorí,Co,05,05040
+Colombia,Antioquia,Anza,Co,05,05044
+Colombia,Antioquia,Apartadó,Co,05,05045
+Colombia,Antioquia,Arboletes,Co,05,05051
+Colombia,Antioquia,Argelia,Co,05,05055
+Colombia,Antioquia,Armenia,Co,05,05059
+Colombia,Antioquia,Barbosa,Co,05,05079
+Colombia,Antioquia,Bello,Co,05,05088
+Colombia,Antioquia,Belmira,Co,05,05086
+Colombia,Antioquia,Betania,Co,05,05091
+Colombia,Antioquia,Betulia,Co,05,05093
+Colombia,Antioquia,Briceño,Co,05,05107
+Colombia,Antioquia,Buriticá,Co,05,05113
+Colombia,Antioquia,Cáceres,Co,05,05120
+Colombia,Antioquia,Caicedo,Co,05,05125
+Colombia,Antioquia,Caldas,Co,05,05129
+Colombia,Antioquia,Campamento,Co,05,05134
+Colombia,Antioquia,Cañasgordas,Co,05,05138
+Colombia,Antioquia,Caracolí,Co,05,05142
+Colombia,Antioquia,Caramanta,Co,05,05145
+Colombia,Antioquia,Carepa,Co,05,05147
+Colombia,Antioquia,Carolina,Co,05,05150
+Colombia,Antioquia,Caucasia,Co,05,05154
+Colombia,Antioquia,Chigorodó,Co,05,05172
+Colombia,Antioquia,Cisneros,Co,05,05190
+Colombia,Antioquia,Ciudad Bolívar,Co,05,05101
+Colombia,Antioquia,Cocorná,Co,05,05197
+Colombia,Antioquia,Concepción,Co,05,05206
+Colombia,Antioquia,Concordia,Co,05,05209
+Colombia,Antioquia,Copacabana,Co,05,05212
+Colombia,Antioquia,Dabeiba,Co,05,05234
+Colombia,Antioquia,Don Matías,Co,05,05237
+Colombia,Antioquia,Ebéjico,Co,05,05240
+Colombia,Antioquia,El Bagre,Co,05,05250
+Colombia,Antioquia,El Carmen De Viboral,Co,05,05148
+Colombia,Antioquia,El Santuario,Co,05,05697
+Colombia,Antioquia,Entrerrios,Co,05,05264
+Colombia,Antioquia,Envigado,Co,05,05266
+Colombia,Antioquia,Fredonia,Co,05,05282
+Colombia,Antioquia,Frontino,Co,05,05284
+Colombia,Antioquia,Giraldo,Co,05,05306
+Colombia,Antioquia,Girardota,Co,05,05308
+Colombia,Antioquia,Gómez Plata,Co,05,05310
+Colombia,Antioquia,Granada,Co,05,05313
+Colombia,Antioquia,Guadalupe,Co,05,05315
+Colombia,Antioquia,Guarne,Co,05,05318
+Colombia,Antioquia,Guatape,Co,05,05321
+Colombia,Antioquia,Heliconia,Co,05,05347
+Colombia,Antioquia,Hispania,Co,05,05353
+Colombia,Antioquia,Itagui,Co,05,05360
+Colombia,Antioquia,Ituango,Co,05,05361
+Colombia,Antioquia,Jardín,Co,05,05364
+Colombia,Antioquia,Jericó,Co,05,05368
+Colombia,Antioquia,La Ceja,Co,05,05376
+Colombia,Antioquia,La Estrella,Co,05,05380
+Colombia,Antioquia,La Pintada,Co,05,05390
+Colombia,Antioquia,La Unión,Co,05,05400
+Colombia,Antioquia,Liborina,Co,05,05411
+Colombia,Antioquia,Maceo,Co,05,05425
+Colombia,Antioquia,Marinilla,Co,05,05440
+Colombia,Antioquia,Medellín,Co,05,05001
+Colombia,Antioquia,Montebello,Co,05,05467
+Colombia,Antioquia,Murindó,Co,05,05475
+Colombia,Antioquia,Mutatá,Co,05,05480
+Colombia,Antioquia,Nariño,Co,05,05483
+Colombia,Antioquia,Nechí,Co,05,05495
+Colombia,Antioquia,Necoclí,Co,05,05490
+Colombia,Antioquia,Olaya,Co,05,05501
+Colombia,Antioquia,Peñol,Co,05,05541
+Colombia,Antioquia,Peque,Co,05,05543
+Colombia,Antioquia,Pueblorrico,Co,05,05576
+Colombia,Antioquia,Puerto Berrío,Co,05,05579
+Colombia,Antioquia,Puerto Nare,Co,05,05585
+Colombia,Antioquia,Puerto Triunfo,Co,05,05591
+Colombia,Antioquia,Remedios,Co,05,05604
+Colombia,Antioquia,Retiro,Co,05,05607
+Colombia,Antioquia,Rionegro,Co,05,05615
+Colombia,Antioquia,Sabanalarga,Co,05,05628
+Colombia,Antioquia,Sabaneta,Co,05,05631
+Colombia,Antioquia,Salgar,Co,05,05642
+Colombia,Antioquia,San Andrés,Co,05,05647
+Colombia,Antioquia,San Carlos,Co,05,05649
+Colombia,Antioquia,San Francisco,Co,05,05652
+Colombia,Antioquia,San Jerónimo,Co,05,05656
+Colombia,Antioquia,San José De La Montaña,Co,05,05658
+Colombia,Antioquia,San Juan De Urabá,Co,05,05659
+Colombia,Antioquia,San Luis,Co,05,05660
+Colombia,Antioquia,San Pedro,Co,05,05664
+Colombia,Antioquia,San Pedro De Uraba,Co,05,05665
+Colombia,Antioquia,San Rafael,Co,05,05667
+Colombia,Antioquia,San Roque,Co,05,05670
+Colombia,Antioquia,San Vicente,Co,05,05674
+Colombia,Antioquia,Santa Bárbara,Co,05,05679
+Colombia,Antioquia,Santa Rosa De Osos,Co,05,05686
+Colombia,Antioquia,Santafé De Antioquia,Co,05,05042
+Colombia,Antioquia,Santo Domingo,Co,05,05690
+Colombia,Antioquia,Segovia,Co,05,05736
+Colombia,Antioquia,Sonson,Co,05,05756
+Colombia,Antioquia,Sopetrán,Co,05,05761
+Colombia,Antioquia,Támesis,Co,05,05789
+Colombia,Antioquia,Tarazá,Co,05,05790
+Colombia,Antioquia,Tarso,Co,05,05792
+Colombia,Antioquia,Titiribí,Co,05,05809
+Colombia,Antioquia,Toledo,Co,05,05819
+Colombia,Antioquia,Turbo,Co,05,05837
+Colombia,Antioquia,Uramita,Co,05,05842
+Colombia,Antioquia,Urrao,Co,05,05847
+Colombia,Antioquia,Valdivia,Co,05,05854
+Colombia,Antioquia,Valparaíso,Co,05,05856
+Colombia,Antioquia,Vegachí,Co,05,05858
+Colombia,Antioquia,Venecia,Co,05,05861
+Colombia,Antioquia,Vigía Del Fuerte,Co,05,05873
+Colombia,Antioquia,Yalí,Co,05,05885
+Colombia,Antioquia,Yarumal,Co,05,05887
+Colombia,Antioquia,Yolombó,Co,05,05890
+Colombia,Antioquia,Yondó,Co,05,05893
+Colombia,Antioquia,Zaragoza,Co,05,05895
+Colombia,Atlántico,Baranoa,Co,08,08078
+Colombia,Atlántico,Barranquilla,Co,08,08001
+Colombia,Atlántico,Campo De La Cruz,Co,08,08137
+Colombia,Atlántico,Candelaria,Co,08,08141
+Colombia,Atlántico,Galapa,Co,08,08296
+Colombia,Atlántico,Juan De Acosta,Co,08,08372
+Colombia,Atlántico,Luruaco,Co,08,08421
+Colombia,Atlántico,Malambo,Co,08,08433
+Colombia,Atlántico,Manatí,Co,08,08436
+Colombia,Atlántico,Palmar De Varela,Co,08,08520
+Colombia,Atlántico,Piojó,Co,08,08549
+Colombia,Atlántico,Polonuevo,Co,08,08558
+Colombia,Atlántico,Ponedera,Co,08,08560
+Colombia,Atlántico,Puerto Colombia,Co,08,08573
+Colombia,Atlántico,Repelón,Co,08,08606
+Colombia,Atlántico,Sabanagrande,Co,08,08634
+Colombia,Atlántico,Sabanalarga,Co,08,08638
+Colombia,Atlántico,Santa Lucía,Co,08,08675
+Colombia,Atlántico,Santo Tomás,Co,08,08685
+Colombia,Atlántico,Soledad,Co,08,08758
+Colombia,Atlántico,Suan,Co,08,08770
+Colombia,Atlántico,Tubará,Co,08,08832
+Colombia,Atlántico,Usiacurí,Co,08,08849
+Colombia,Bogotá D.C,Bogotá,Co,11,11001
+Colombia,Bolívar,Achí,Co,13,13006
+Colombia,Bolívar,Altos Del Rosario,Co,13,13030
+Colombia,Bolívar,Arenal,Co,13,13042
+Colombia,Bolívar,Arjona,Co,13,13052
+Colombia,Bolívar,Arroyohondo,Co,13,13062
+Colombia,Bolívar,Barranco De Loba,Co,13,13074
+Colombia,Bolívar,Calamar,Co,13,13140
+Colombia,Bolívar,Cantagallo,Co,13,13160
+Colombia,Bolívar,Cartagena,Co,13,13001
+Colombia,Bolívar,Cicuco,Co,13,13188
+Colombia,Bolívar,Clemencia,Co,13,13222
+Colombia,Bolívar,Córdoba,Co,13,13212
+Colombia,Bolívar,El Carmen De Bolívar,Co,13,13244
+Colombia,Bolívar,El Guamo,Co,13,13248
+Colombia,Bolívar,El Peñón,Co,13,13268
+Colombia,Bolívar,Hatillo De Loba,Co,13,13300
+Colombia,Bolívar,Magangué,Co,13,13430
+Colombia,Bolívar,Mahates,Co,13,13433
+Colombia,Bolívar,Margarita,Co,13,13440
+Colombia,Bolívar,María La Baja,Co,13,13442
+Colombia,Bolívar,Mompós,Co,13,13468
+Colombia,Bolívar,Montecristo,Co,13,13458
+Colombia,Bolívar,Morales,Co,13,13473
+Colombia,Bolívar,Pinillos,Co,13,13549
+Colombia,Bolívar,Regidor,Co,13,13580
+Colombia,Bolívar,Río Viejo,Co,13,13600
+Colombia,Bolívar,San Cristóbal,Co,13,13620
+Colombia,Bolívar,San Estanislao,Co,13,13647
+Colombia,Bolívar,San Fernando,Co,13,13650
+Colombia,Bolívar,San Jacinto,Co,13,13654
+Colombia,Bolívar,San Jacinto Del Cauca,Co,13,13655
+Colombia,Bolívar,San Juan Nepomuceno,Co,13,13657
+Colombia,Bolívar,San Martín De Loba,Co,13,13667
+Colombia,Bolívar,San Pablo,Co,13,13670
+Colombia,Bolívar,Santa Catalina,Co,13,13673
+Colombia,Bolívar,Santa Rosa,Co,13,13683
+Colombia,Bolívar,Santa Rosa Del Sur,Co,13,13688
+Colombia,Bolívar,Simití,Co,13,13744
+Colombia,Bolívar,Soplaviento,Co,13,13760
+Colombia,Bolívar,Talaigua Nuevo,Co,13,13780
+Colombia,Bolívar,Tiquisio,Co,13,13810
+Colombia,Bolívar,Turbaco,Co,13,13836
+Colombia,Bolívar,Turbaná,Co,13,13838
+Colombia,Bolívar,Villanueva,Co,13,13873
+Colombia,Bolívar,Zambrano,Co,13,13894
+Colombia,Bolívar,Norosí,Co,13,13490
+Colombia,Boyacá,Almeida,Co,15,15022
+Colombia,Boyacá,Aquitania,Co,15,15047
+Colombia,Boyacá,Arcabuco,Co,15,15051
+Colombia,Boyacá,Belén,Co,15,15087
+Colombia,Boyacá,Berbeo,Co,15,15090
+Colombia,Boyacá,Betéitiva,Co,15,15092
+Colombia,Boyacá,Boavita,Co,15,15097
+Colombia,Boyacá,Boyacá,Co,15,15104
+Colombia,Boyacá,Briceño,Co,15,15106
+Colombia,Boyacá,Buenavista,Co,15,15109
+Colombia,Boyacá,Busbanzá,Co,15,15114
+Colombia,Boyacá,Caldas,Co,15,15131
+Colombia,Boyacá,Campohermoso,Co,15,15135
+Colombia,Boyacá,Cerinza,Co,15,15162
+Colombia,Boyacá,Chinavita,Co,15,15172
+Colombia,Boyacá,Chiquinquirá,Co,15,15176
+Colombia,Boyacá,Chíquiza,Co,15,15232
+Colombia,Boyacá,Chiscas,Co,15,15180
+Colombia,Boyacá,Chita,Co,15,15183
+Colombia,Boyacá,Chitaraque,Co,15,15185
+Colombia,Boyacá,Chivatá,Co,15,15187
+Colombia,Boyacá,Chivor,Co,15,15236
+Colombia,Boyacá,Ciénega,Co,15,15189
+Colombia,Boyacá,Cómbita,Co,15,15204
+Colombia,Boyacá,Coper,Co,15,15212
+Colombia,Boyacá,Corrales,Co,15,15215
+Colombia,Boyacá,Covarachía,Co,15,15218
+Colombia,Boyacá,Cubará,Co,15,15223
+Colombia,Boyacá,Cucaita,Co,15,15224
+Colombia,Boyacá,Cuítiva,Co,15,15226
+Colombia,Boyacá,Duitama,Co,15,15238
+Colombia,Boyacá,El Cocuy,Co,15,15244
+Colombia,Boyacá,El Espino,Co,15,15248
+Colombia,Boyacá,Firavitoba,Co,15,15272
+Colombia,Boyacá,Floresta,Co,15,15276
+Colombia,Boyacá,Gachantivá,Co,15,15293
+Colombia,Boyacá,Gameza,Co,15,15296
+Colombia,Boyacá,Garagoa,Co,15,15299
+Colombia,Boyacá,Guacamayas,Co,15,15317
+Colombia,Boyacá,Guateque,Co,15,15322
+Colombia,Boyacá,Guayatá,Co,15,15325
+Colombia,Boyacá,Güicán,Co,15,15332
+Colombia,Boyacá,Iza,Co,15,15362
+Colombia,Boyacá,Jenesano,Co,15,15367
+Colombia,Boyacá,Jericó,Co,15,15368
+Colombia,Boyacá,La Capilla,Co,15,15380
+Colombia,Boyacá,La Uvita,Co,15,15403
+Colombia,Boyacá,La Victoria,Co,15,15401
+Colombia,Boyacá,Labranzagrande,Co,15,15377
+Colombia,Boyacá,Macanal,Co,15,15425
+Colombia,Boyacá,Maripí,Co,15,15442
+Colombia,Boyacá,Miraflores,Co,15,15455
+Colombia,Boyacá,Mongua,Co,15,15464
+Colombia,Boyacá,Monguí,Co,15,15466
+Colombia,Boyacá,Moniquirá,Co,15,15469
+Colombia,Boyacá,Motavita,Co,15,15476
+Colombia,Boyacá,Muzo,Co,15,15480
+Colombia,Boyacá,Nobsa,Co,15,15491
+Colombia,Boyacá,Nuevo Colón,Co,15,15494
+Colombia,Boyacá,Oicatá,Co,15,15500
+Colombia,Boyacá,Otanche,Co,15,15507
+Colombia,Boyacá,Pachavita,Co,15,15511
+Colombia,Boyacá,Páez,Co,15,15514
+Colombia,Boyacá,Paipa,Co,15,15516
+Colombia,Boyacá,Pajarito,Co,15,15518
+Colombia,Boyacá,Panqueba,Co,15,15522
+Colombia,Boyacá,Pauna,Co,15,15531
+Colombia,Boyacá,Paya,Co,15,15533
+Colombia,Boyacá,Paz De Río,Co,15,15537
+Colombia,Boyacá,Pesca,Co,15,15542
+Colombia,Boyacá,Pisba,Co,15,15550
+Colombia,Boyacá,Puerto Boyacá,Co,15,15572
+Colombia,Boyacá,Quípama,Co,15,15580
+Colombia,Boyacá,Ramiriquí,Co,15,15599
+Colombia,Boyacá,Ráquira,Co,15,15600
+Colombia,Boyacá,Rondón,Co,15,15621
+Colombia,Boyacá,Saboyá,Co,15,15632
+Colombia,Boyacá,Sáchica,Co,15,15638
+Colombia,Boyacá,Samacá,Co,15,15646
+Colombia,Boyacá,San Eduardo,Co,15,15660
+Colombia,Boyacá,San José De Pare,Co,15,15664
+Colombia,Boyacá,San Luis De Gaceno,Co,15,15667
+Colombia,Boyacá,San Mateo,Co,15,15673
+Colombia,Boyacá,San Miguel De Sema,Co,15,15676
+Colombia,Boyacá,San Pablo De Borbur,Co,15,15681
+Colombia,Boyacá,Santa María,Co,15,15690
+Colombia,Boyacá,Santa Rosa De Viterbo,Co,15,15693
+Colombia,Boyacá,Santa Sofía,Co,15,15696
+Colombia,Boyacá,Santana,Co,15,15686
+Colombia,Boyacá,Sativanorte,Co,15,15720
+Colombia,Boyacá,Sativasur,Co,15,15723
+Colombia,Boyacá,Siachoque,Co,15,15740
+Colombia,Boyacá,Soatá,Co,15,15753
+Colombia,Boyacá,Socha,Co,15,15757
+Colombia,Boyacá,Socotá,Co,15,15755
+Colombia,Boyacá,Sogamoso,Co,15,15759
+Colombia,Boyacá,Somondoco,Co,15,15761
+Colombia,Boyacá,Sora,Co,15,15762
+Colombia,Boyacá,Soracá,Co,15,15764
+Colombia,Boyacá,Sotaquirá,Co,15,15763
+Colombia,Boyacá,Susacón,Co,15,15774
+Colombia,Boyacá,Sutamarchán,Co,15,15776
+Colombia,Boyacá,Sutatenza,Co,15,15778
+Colombia,Boyacá,Tasco,Co,15,15790
+Colombia,Boyacá,Tenza,Co,15,15798
+Colombia,Boyacá,Tibaná,Co,15,15804
+Colombia,Boyacá,Tibasosa,Co,15,15806
+Colombia,Boyacá,Tinjacá,Co,15,15808
+Colombia,Boyacá,Tipacoque,Co,15,15810
+Colombia,Boyacá,Toca,Co,15,15814
+Colombia,Boyacá,Togüí,Co,15,15816
+Colombia,Boyacá,Tópaga,Co,15,15820
+Colombia,Boyacá,Tota,Co,15,15822
+Colombia,Boyacá,Tunja,Co,15,15001
+Colombia,Boyacá,Tununguá,Co,15,15832
+Colombia,Boyacá,Turmequé,Co,15,15835
+Colombia,Boyacá,Tuta,Co,15,15837
+Colombia,Boyacá,Tutazá,Co,15,15839
+Colombia,Boyacá,Umbita,Co,15,15842
+Colombia,Boyacá,Ventaquemada,Co,15,15861
+Colombia,Boyacá,Villa De Leyva,Co,15,15407
+Colombia,Boyacá,Viracachá,Co,15,15879
+Colombia,Boyacá,Zetaquira,Co,15,15897
+Colombia,Caldas,Aguadas,Co,17,17013
+Colombia,Caldas,Anserma,Co,17,17042
+Colombia,Caldas,Aranzazu,Co,17,17050
+Colombia,Caldas,Belalcázar,Co,17,17088
+Colombia,Caldas,Chinchiná,Co,17,17174
+Colombia,Caldas,Filadelfia,Co,17,17272
+Colombia,Caldas,La Dorada,Co,17,17380
+Colombia,Caldas,La Merced,Co,17,17388
+Colombia,Caldas,Manizales,Co,17,17001
+Colombia,Caldas,Manzanares,Co,17,17433
+Colombia,Caldas,Marmato,Co,17,17442
+Colombia,Caldas,Marquetalia,Co,17,17444
+Colombia,Caldas,Marulanda,Co,17,17446
+Colombia,Caldas,Neira,Co,17,17486
+Colombia,Caldas,Norcasia,Co,17,17495
+Colombia,Caldas,Pácora,Co,17,17513
+Colombia,Caldas,Palestina,Co,17,17524
+Colombia,Caldas,Pensilvania,Co,17,17541
+Colombia,Caldas,Riosucio,Co,17,17614
+Colombia,Caldas,Risaralda,Co,17,17616
+Colombia,Caldas,Salamina,Co,17,17653
+Colombia,Caldas,Samaná,Co,17,17662
+Colombia,Caldas,San José,Co,17,17665
+Colombia,Caldas,Supía,Co,17,17777
+Colombia,Caldas,Victoria,Co,17,17867
+Colombia,Caldas,Villamaría,Co,17,17873
+Colombia,Caldas,Viterbo,Co,17,17877
+Colombia,Caquetá,Albania,Co,18,18029
+Colombia,Caquetá,Belén De Los Andaquies,Co,18,18094
+Colombia,Caquetá,Cartagena Del Chairá,Co,18,18150
+Colombia,Caquetá,Curillo,Co,18,18205
+Colombia,Caquetá,El Doncello,Co,18,18247
+Colombia,Caquetá,El Paujil,Co,18,18256
+Colombia,Caquetá,Florencia,Co,18,18001
+Colombia,Caquetá,La Montañita,Co,18,18410
+Colombia,Caquetá,Milán,Co,18,18460
+Colombia,Caquetá,Morelia,Co,18,18479
+Colombia,Caquetá,Puerto Rico,Co,18,18592
+Colombia,Caquetá,San José Del Fragua,Co,18,18610
+Colombia,Caquetá,San Vicente Del Caguán,Co,18,18753
+Colombia,Caquetá,Solano,Co,18,18756
+Colombia,Caquetá,Solita,Co,18,18785
+Colombia,Caquetá,Valparaíso,Co,18,18860
+Colombia,Cauca,Almaguer,Co,19,19022
+Colombia,Cauca,Argelia,Co,19,19050
+Colombia,Cauca,Balboa,Co,19,19075
+Colombia,Cauca,Bolívar,Co,19,19100
+Colombia,Cauca,Buenos Aires,Co,19,19110
+Colombia,Cauca,Cajibío,Co,19,19130
+Colombia,Cauca,Caldono,Co,19,19137
+Colombia,Cauca,Caloto,Co,19,19142
+Colombia,Cauca,Corinto,Co,19,19212
+Colombia,Cauca,El Tambo,Co,19,19256
+Colombia,Cauca,Florencia,Co,19,19290
+Colombia,Cauca,Guapi,Co,19,19318
+Colombia,Cauca,Inzá,Co,19,19355
+Colombia,Cauca,Jambaló,Co,19,19364
+Colombia,Cauca,La Sierra,Co,19,19392
+Colombia,Cauca,La Vega,Co,19,19397
+Colombia,Cauca,López,Co,19,19418
+Colombia,Cauca,Mercaderes,Co,19,19450
+Colombia,Cauca,Miranda,Co,19,19455
+Colombia,Cauca,Morales,Co,19,19473
+Colombia,Cauca,Padilla,Co,19,19513
+Colombia,Cauca,Paez,Co,19,19517
+Colombia,Cauca,Patía,Co,19,19532
+Colombia,Cauca,Piamonte,Co,19,19533
+Colombia,Cauca,Piendamó,Co,19,19548
+Colombia,Cauca,Popayán,Co,19,19001
+Colombia,Cauca,Puerto Tejada,Co,19,19573
+Colombia,Cauca,Puracé,Co,19,19585
+Colombia,Cauca,Rosas,Co,19,19622
+Colombia,Cauca,San Sebastián,Co,19,19693
+Colombia,Cauca,Santa Rosa,Co,19,19701
+Colombia,Cauca,Santander De Quilichao,Co,19,19698
+Colombia,Cauca,Silvia,Co,19,19743
+Colombia,Cauca,Sotara,Co,19,19760
+Colombia,Cauca,Suárez,Co,19,19780
+Colombia,Cauca,Sucre,Co,19,19785
+Colombia,Cauca,Timbío,Co,19,19807
+Colombia,Cauca,Timbiquí,Co,19,19809
+Colombia,Cauca,Toribio,Co,19,19821
+Colombia,Cauca,Totoró,Co,19,19824
+Colombia,Cauca,Villa Rica,Co,19,19845
+Colombia,Cauca,Guachené,Co,19,19300
+Colombia,Cesar,Aguachica,Co,20,20011
+Colombia,Cesar,Agustín Codazzi,Co,20,20013
+Colombia,Cesar,Astrea,Co,20,20032
+Colombia,Cesar,Becerril,Co,20,20045
+Colombia,Cesar,Bosconia,Co,20,20060
+Colombia,Cesar,Chimichagua,Co,20,20175
+Colombia,Cesar,Chiriguaná,Co,20,20178
+Colombia,Cesar,Curumaní,Co,20,20228
+Colombia,Cesar,El Copey,Co,20,20238
+Colombia,Cesar,El Paso,Co,20,20250
+Colombia,Cesar,Gamarra,Co,20,20295
+Colombia,Cesar,González,Co,20,20310
+Colombia,Cesar,La Gloria,Co,20,20383
+Colombia,Cesar,La Jagua De Ibirico,Co,20,20400
+Colombia,Cesar,La Paz,Co,20,20621
+Colombia,Cesar,Manaure,Co,20,20443
+Colombia,Cesar,Pailitas,Co,20,20517
+Colombia,Cesar,Pelaya,Co,20,20550
+Colombia,Cesar,Pueblo Bello,Co,20,20570
+Colombia,Cesar,Río De Oro,Co,20,20614
+Colombia,Cesar,San Alberto,Co,20,20710
+Colombia,Cesar,San Diego,Co,20,20750
+Colombia,Cesar,San Martín,Co,20,20770
+Colombia,Cesar,Tamalameque,Co,20,20787
+Colombia,Cesar,Valledupar,Co,20,20001
+Colombia,Córdoba,Ayapel,Co,23,23068
+Colombia,Córdoba,Buenavista,Co,23,23079
+Colombia,Córdoba,Canalete,Co,23,23090
+Colombia,Córdoba,Cereté,Co,23,23162
+Colombia,Córdoba,Chimá,Co,23,23168
+Colombia,Córdoba,Chinú,Co,23,23182
+Colombia,Córdoba,Ciénaga De Oro,Co,23,23189
+Colombia,Córdoba,Cotorra,Co,23,23300
+Colombia,Córdoba,La Apartada,Co,23,23350
+Colombia,Córdoba,Lorica,Co,23,23417
+Colombia,Córdoba,Los Córdobas,Co,23,23419
+Colombia,Córdoba,Momil,Co,23,23464
+Colombia,Córdoba,Montelíbano,Co,23,23466
+Colombia,Córdoba,Montería,Co,23,23001
+Colombia,Córdoba,Moñitos,Co,23,23500
+Colombia,Córdoba,Planeta Rica,Co,23,23555
+Colombia,Córdoba,Pueblo Nuevo,Co,23,23570
+Colombia,Córdoba,Puerto Escondido,Co,23,23574
+Colombia,Córdoba,Puerto Libertador,Co,23,23580
+Colombia,Córdoba,Purísima,Co,23,23586
+Colombia,Córdoba,Sahagún,Co,23,23660
+Colombia,Córdoba,San Andrés Sotavento,Co,23,23670
+Colombia,Córdoba,San Antero,Co,23,23672
+Colombia,Córdoba,San Bernardo Del Viento,Co,23,23675
+Colombia,Córdoba,San Carlos,Co,23,23678
+Colombia,Córdoba,San Pelayo,Co,23,23686
+Colombia,Córdoba,Tierralta,Co,23,23807
+Colombia,Córdoba,Valencia,Co,23,23855
+Colombia,Córdoba,San José de Uré,Co,23,23682
+Colombia,Córdoba,Tuchín,Co,23,23815
+Colombia,Cundinamarca,Agua De Dios,Co,25,25001
+Colombia,Cundinamarca,Albán,Co,25,25019
+Colombia,Cundinamarca,Anapoima,Co,25,25035
+Colombia,Cundinamarca,Anolaima,Co,25,25040
+Colombia,Cundinamarca,Apulo,Co,25,25599
+Colombia,Cundinamarca,Arbeláez,Co,25,25053
+Colombia,Cundinamarca,Beltrán,Co,25,25086
+Colombia,Cundinamarca,Bituima,Co,25,25095
+Colombia,Cundinamarca,Bojacá,Co,25,25099
+Colombia,Cundinamarca,Cabrera,Co,25,25120
+Colombia,Cundinamarca,Cachipay,Co,25,25123
+Colombia,Cundinamarca,Cajicá,Co,25,25126
+Colombia,Cundinamarca,Caparrapí,Co,25,25148
+Colombia,Cundinamarca,Caqueza,Co,25,25151
+Colombia,Cundinamarca,Carmen De Carupa,Co,25,25154
+Colombia,Cundinamarca,Chaguaní,Co,25,25168
+Colombia,Cundinamarca,Chía,Co,25,25175
+Colombia,Cundinamarca,Chipaque,Co,25,25178
+Colombia,Cundinamarca,Choachí,Co,25,25181
+Colombia,Cundinamarca,Chocontá,Co,25,25183
+Colombia,Cundinamarca,Cogua,Co,25,25200
+Colombia,Cundinamarca,Cota,Co,25,25214
+Colombia,Cundinamarca,Cucunubá,Co,25,25224
+Colombia,Cundinamarca,El Colegio,Co,25,25245
+Colombia,Cundinamarca,El Peñón,Co,25,25258
+Colombia,Cundinamarca,El Rosal,Co,25,25260
+Colombia,Cundinamarca,Facatativá,Co,25,25269
+Colombia,Cundinamarca,Fomeque,Co,25,25279
+Colombia,Cundinamarca,Fosca,Co,25,25281
+Colombia,Cundinamarca,Funza,Co,25,25286
+Colombia,Cundinamarca,Fúquene,Co,25,25288
+Colombia,Cundinamarca,Fusagasugá,Co,25,25290
+Colombia,Cundinamarca,Gachala,Co,25,25293
+Colombia,Cundinamarca,Gachancipá,Co,25,25295
+Colombia,Cundinamarca,Gachetá,Co,25,25297
+Colombia,Cundinamarca,Gama,Co,25,25299
+Colombia,Cundinamarca,Girardot,Co,25,25307
+Colombia,Cundinamarca,Granada,Co,25,25312
+Colombia,Cundinamarca,Guachetá,Co,25,25317
+Colombia,Cundinamarca,Guaduas,Co,25,25320
+Colombia,Cundinamarca,Guasca,Co,25,25322
+Colombia,Cundinamarca,Guataquí,Co,25,25324
+Colombia,Cundinamarca,Guatavita,Co,25,25326
+Colombia,Cundinamarca,Guayabal De Siquima,Co,25,25328
+Colombia,Cundinamarca,Guayabetal,Co,25,25335
+Colombia,Cundinamarca,Gutiérrez,Co,25,25339
+Colombia,Cundinamarca,Jerusalén,Co,25,25368
+Colombia,Cundinamarca,Junín,Co,25,25372
+Colombia,Cundinamarca,La Calera,Co,25,25377
+Colombia,Cundinamarca,La Mesa,Co,25,25386
+Colombia,Cundinamarca,La Palma,Co,25,25394
+Colombia,Cundinamarca,La Peña,Co,25,25398
+Colombia,Cundinamarca,La Vega,Co,25,25402
+Colombia,Cundinamarca,Lenguazaque,Co,25,25407
+Colombia,Cundinamarca,Macheta,Co,25,25426
+Colombia,Cundinamarca,Madrid,Co,25,25430
+Colombia,Cundinamarca,Manta,Co,25,25436
+Colombia,Cundinamarca,Medina,Co,25,25438
+Colombia,Cundinamarca,Mosquera,Co,25,25473
+Colombia,Cundinamarca,Nariño,Co,25,25483
+Colombia,Cundinamarca,Nemocón,Co,25,25486
+Colombia,Cundinamarca,Nilo,Co,25,25488
+Colombia,Cundinamarca,Nimaima,Co,25,25489
+Colombia,Cundinamarca,Nocaima,Co,25,25491
+Colombia,Cundinamarca,Pacho,Co,25,25513
+Colombia,Cundinamarca,Paime,Co,25,25518
+Colombia,Cundinamarca,Pandi,Co,25,25524
+Colombia,Cundinamarca,Paratebueno,Co,25,25530
+Colombia,Cundinamarca,Pasca,Co,25,25535
+Colombia,Cundinamarca,Puerto Salgar,Co,25,25572
+Colombia,Cundinamarca,Pulí,Co,25,25580
+Colombia,Cundinamarca,Quebradanegra,Co,25,25592
+Colombia,Cundinamarca,Quetame,Co,25,25594
+Colombia,Cundinamarca,Quipile,Co,25,25596
+Colombia,Cundinamarca,Ricaurte,Co,25,25612
+Colombia,Cundinamarca,San Antonio Del Tequendama,Co,25,25645
+Colombia,Cundinamarca,San Bernardo,Co,25,25649
+Colombia,Cundinamarca,San Cayetano,Co,25,25653
+Colombia,Cundinamarca,San Francisco,Co,25,25658
+Colombia,Cundinamarca,San Juan De Río Seco,Co,25,25662
+Colombia,Cundinamarca,Sasaima,Co,25,25718
+Colombia,Cundinamarca,Sesquilé,Co,25,25736
+Colombia,Cundinamarca,Sibaté,Co,25,25740
+Colombia,Cundinamarca,Silvania,Co,25,25743
+Colombia,Cundinamarca,Simijaca,Co,25,25745
+Colombia,Cundinamarca,Soacha,Co,25,25754
+Colombia,Cundinamarca,Sopó,Co,25,25758
+Colombia,Cundinamarca,Subachoque,Co,25,25769
+Colombia,Cundinamarca,Suesca,Co,25,25772
+Colombia,Cundinamarca,Supatá,Co,25,25777
+Colombia,Cundinamarca,Susa,Co,25,25779
+Colombia,Cundinamarca,Sutatausa,Co,25,25781
+Colombia,Cundinamarca,Tabio,Co,25,25785
+Colombia,Cundinamarca,Tausa,Co,25,25793
+Colombia,Cundinamarca,Tena,Co,25,25797
+Colombia,Cundinamarca,Tenjo,Co,25,25799
+Colombia,Cundinamarca,Tibacuy,Co,25,25805
+Colombia,Cundinamarca,Tibirita,Co,25,25807
+Colombia,Cundinamarca,Tocaima,Co,25,25815
+Colombia,Cundinamarca,Tocancipá,Co,25,25817
+Colombia,Cundinamarca,Topaipí,Co,25,25823
+Colombia,Cundinamarca,Ubalá,Co,25,25839
+Colombia,Cundinamarca,Ubaque,Co,25,25841
+Colombia,Cundinamarca,Une,Co,25,25845
+Colombia,Cundinamarca,Útica,Co,25,25851
+Colombia,Cundinamarca,Venecia,Co,25,25506
+Colombia,Cundinamarca,Vergara,Co,25,25862
+Colombia,Cundinamarca,Vianí,Co,25,25867
+Colombia,Cundinamarca,Villa De San Diego De Ubate,Co,25,25843
+Colombia,Cundinamarca,Villagómez,Co,25,25871
+Colombia,Cundinamarca,Villapinzón,Co,25,25873
+Colombia,Cundinamarca,Villeta,Co,25,25875
+Colombia,Cundinamarca,Viotá,Co,25,25878
+Colombia,Cundinamarca,Yacopí,Co,25,25885
+Colombia,Cundinamarca,Zipacón,Co,25,25898
+Colombia,Cundinamarca,Zipaquirá,Co,25,25899
+Colombia,Chocó,Acandí,Co,27,27006
+Colombia,Chocó,Alto Baudo,Co,27,27025
+Colombia,Chocó,Atrato,Co,27,27050
+Colombia,Chocó,Bagadó,Co,27,27073
+Colombia,Chocó,Bahía Solano,Co,27,27075
+Colombia,Chocó,Bajo Baudó,Co,27,27077
+Colombia,Chocó,Belén De Bajirá,Co,27,27086
+Colombia,Chocó,Bojaya,Co,27,27099
+Colombia,Chocó,Carmen Del Darien,Co,27,27150
+Colombia,Chocó,Cértegui,Co,27,27160
+Colombia,Chocó,Condoto,Co,27,27205
+Colombia,Chocó,El Cantón Del San Pablo,Co,27,27135
+Colombia,Chocó,El Carmen De Atrato,Co,27,27245
+Colombia,Chocó,El Litoral Del San Juan,Co,27,27250
+Colombia,Chocó,Istmina,Co,27,27361
+Colombia,Chocó,Juradó,Co,27,27372
+Colombia,Chocó,Lloró,Co,27,27413
+Colombia,Chocó,Medio Atrato,Co,27,27425
+Colombia,Chocó,Medio Baudó,Co,27,27430
+Colombia,Chocó,Medio San Juan,Co,27,27450
+Colombia,Chocó,Nóvita,Co,27,27491
+Colombia,Chocó,Nuquí,Co,27,27495
+Colombia,Chocó,Quibdó,Co,27,27001
+Colombia,Chocó,Río Iro,Co,27,27580
+Colombia,Chocó,Río Quito,Co,27,27600
+Colombia,Chocó,Riosucio,Co,27,27615
+Colombia,Chocó,San José Del Palmar,Co,27,27660
+Colombia,Chocó,Sipí,Co,27,27745
+Colombia,Chocó,Tadó,Co,27,27787
+Colombia,Chocó,Unguía,Co,27,27800
+Colombia,Chocó,Unión Panamericana,Co,27,27810
+Colombia,Huila,Acevedo,Co,41,41006
+Colombia,Huila,Agrado,Co,41,41013
+Colombia,Huila,Aipe,Co,41,41016
+Colombia,Huila,Algeciras,Co,41,41020
+Colombia,Huila,Altamira,Co,41,41026
+Colombia,Huila,Baraya,Co,41,41078
+Colombia,Huila,Campoalegre,Co,41,41132
+Colombia,Huila,Colombia,Co,41,41206
+Colombia,Huila,Elías,Co,41,41244
+Colombia,Huila,Garzón,Co,41,41298
+Colombia,Huila,Gigante,Co,41,41306
+Colombia,Huila,Guadalupe,Co,41,41319
+Colombia,Huila,Hobo,Co,41,41349
+Colombia,Huila,Iquira,Co,41,41357
+Colombia,Huila,Isnos,Co,41,41359
+Colombia,Huila,La Argentina,Co,41,41378
+Colombia,Huila,La Plata,Co,41,41396
+Colombia,Huila,Nátaga,Co,41,41483
+Colombia,Huila,Neiva,Co,41,41001
+Colombia,Huila,Oporapa,Co,41,41503
+Colombia,Huila,Paicol,Co,41,41518
+Colombia,Huila,Palermo,Co,41,41524
+Colombia,Huila,Palestina,Co,41,41530
+Colombia,Huila,Pital,Co,41,41548
+Colombia,Huila,Pitalito,Co,41,41551
+Colombia,Huila,Rivera,Co,41,41615
+Colombia,Huila,Saladoblanco,Co,41,41660
+Colombia,Huila,San Agustín,Co,41,41668
+Colombia,Huila,Santa María,Co,41,41676
+Colombia,Huila,Suaza,Co,41,41770
+Colombia,Huila,Tarqui,Co,41,41791
+Colombia,Huila,Tello,Co,41,41799
+Colombia,Huila,Teruel,Co,41,41801
+Colombia,Huila,Tesalia,Co,41,41797
+Colombia,Huila,Timaná,Co,41,41807
+Colombia,Huila,Villavieja,Co,41,41872
+Colombia,Huila,Yaguará,Co,41,41885
+Colombia,La Guajira,Albania,Co,44,44035
+Colombia,La Guajira,Barrancas,Co,44,44078
+Colombia,La Guajira,Dibulla,Co,44,44090
+Colombia,La Guajira,Distracción,Co,44,44098
+Colombia,La Guajira,El Molino,Co,44,44110
+Colombia,La Guajira,Fonseca,Co,44,44279
+Colombia,La Guajira,Hatonuevo,Co,44,44378
+Colombia,La Guajira,La Jagua Del Pilar,Co,44,44420
+Colombia,La Guajira,Maicao,Co,44,44430
+Colombia,La Guajira,Manaure,Co,44,44560
+Colombia,La Guajira,Riohacha,Co,44,44001
+Colombia,La Guajira,San Juan Del Cesar,Co,44,44650
+Colombia,La Guajira,Uribia,Co,44,44847
+Colombia,La Guajira,Urumita,Co,44,44855
+Colombia,La Guajira,Villanueva,Co,44,44874
+Colombia,Magdalena,Algarrobo,Co,47,47030
+Colombia,Magdalena,Aracataca,Co,47,47053
+Colombia,Magdalena,Ariguaní,Co,47,47058
+Colombia,Magdalena,Cerro San Antonio,Co,47,47161
+Colombia,Magdalena,Chibolo,Co,47,47170
+Colombia,Magdalena,Ciénaga,Co,47,47189
+Colombia,Magdalena,Concordia,Co,47,47205
+Colombia,Magdalena,El Banco,Co,47,47245
+Colombia,Magdalena,El Piñon,Co,47,47258
+Colombia,Magdalena,El Retén,Co,47,47268
+Colombia,Magdalena,Fundación,Co,47,47288
+Colombia,Magdalena,Guamal,Co,47,47318
+Colombia,Magdalena,Nueva Granada,Co,47,47460
+Colombia,Magdalena,Pedraza,Co,47,47541
+Colombia,Magdalena,Pijiño Del Carmen,Co,47,47545
+Colombia,Magdalena,Pivijay,Co,47,47551
+Colombia,Magdalena,Plato,Co,47,47555
+Colombia,Magdalena,Puebloviejo,Co,47,47570
+Colombia,Magdalena,Remolino,Co,47,47605
+Colombia,Magdalena,Sabanas De San Angel,Co,47,47660
+Colombia,Magdalena,Salamina,Co,47,47675
+Colombia,Magdalena,San Sebastián De Buenavista,Co,47,47692
+Colombia,Magdalena,San Zenón,Co,47,47703
+Colombia,Magdalena,Santa Ana,Co,47,47707
+Colombia,Magdalena,Santa Bárbara De Pinto,Co,47,47720
+Colombia,Magdalena,Santa Marta,Co,47,47001
+Colombia,Magdalena,Sitionuevo,Co,47,47745
+Colombia,Magdalena,Tenerife,Co,47,47798
+Colombia,Magdalena,Zapayán,Co,47,47960
+Colombia,Magdalena,Zona Bananera,Co,47,47980
+Colombia,Meta,Acacías,Co,50,50006
+Colombia,Meta,Barranca De Upía,Co,50,50110
+Colombia,Meta,Cabuyaro,Co,50,50124
+Colombia,Meta,Castilla La Nueva,Co,50,50150
+Colombia,Meta,Cubarral,Co,50,50223
+Colombia,Meta,Cumaral,Co,50,50226
+Colombia,Meta,El Calvario,Co,50,50245
+Colombia,Meta,El Castillo,Co,50,50251
+Colombia,Meta,El Dorado,Co,50,50270
+Colombia,Meta,Fuente De Oro,Co,50,50287
+Colombia,Meta,Granada,Co,50,50313
+Colombia,Meta,Guamal,Co,50,50318
+Colombia,Meta,La Macarena,Co,50,50350
+Colombia,Meta,Lejanías,Co,50,50400
+Colombia,Meta,Mapiripán,Co,50,50325
+Colombia,Meta,Mesetas,Co,50,50330
+Colombia,Meta,Puerto Concordia,Co,50,50450
+Colombia,Meta,Puerto Gaitán,Co,50,50568
+Colombia,Meta,Puerto Lleras,Co,50,50577
+Colombia,Meta,Puerto López,Co,50,50573
+Colombia,Meta,Puerto Rico,Co,50,50590
+Colombia,Meta,Restrepo,Co,50,50606
+Colombia,Meta,San Carlos De Guaroa,Co,50,50680
+Colombia,Meta,San Juan De Arama,Co,50,50683
+Colombia,Meta,San Juanito,Co,50,50686
+Colombia,Meta,San Martín,Co,50,50689
+Colombia,Meta,Uribe,Co,50,50370
+Colombia,Meta,Villavicencio,Co,50,50001
+Colombia,Meta,Vistahermosa,Co,50,50711
+Colombia,Nariño,Albán,Co,52,52019
+Colombia,Nariño,Aldana,Co,52,52022
+Colombia,Nariño,Ancuyá,Co,52,52036
+Colombia,Nariño,Arboleda,Co,52,52051
+Colombia,Nariño,Barbacoas,Co,52,52079
+Colombia,Nariño,Belén,Co,52,52083
+Colombia,Nariño,Buesaco,Co,52,52110
+Colombia,Nariño,Chachagüí,Co,52,52240
+Colombia,Nariño,Colón,Co,52,52203
+Colombia,Nariño,Consaca,Co,52,52207
+Colombia,Nariño,Contadero,Co,52,52210
+Colombia,Nariño,Córdoba,Co,52,52215
+Colombia,Nariño,Cuaspud,Co,52,52224
+Colombia,Nariño,Cumbal,Co,52,52227
+Colombia,Nariño,Cumbitara,Co,52,52233
+Colombia,Nariño,El Charco,Co,52,52250
+Colombia,Nariño,El Peñol,Co,52,52254
+Colombia,Nariño,El Rosario,Co,52,52256
+Colombia,Nariño,El Tablón De Gómez,Co,52,52258
+Colombia,Nariño,El Tambo,Co,52,52260
+Colombia,Nariño,Francisco Pizarro,Co,52,52520
+Colombia,Nariño,Funes,Co,52,52287
+Colombia,Nariño,Guachucal,Co,52,52317
+Colombia,Nariño,Guaitarilla,Co,52,52320
+Colombia,Nariño,Gualmatán,Co,52,52323
+Colombia,Nariño,Iles,Co,52,52352
+Colombia,Nariño,Imués,Co,52,52354
+Colombia,Nariño,Ipiales,Co,52,52356
+Colombia,Nariño,La Cruz,Co,52,52378
+Colombia,Nariño,La Florida,Co,52,52381
+Colombia,Nariño,La Llanada,Co,52,52385
+Colombia,Nariño,La Tola,Co,52,52390
+Colombia,Nariño,La Unión,Co,52,52399
+Colombia,Nariño,Leiva,Co,52,52405
+Colombia,Nariño,Linares,Co,52,52411
+Colombia,Nariño,Los Andes,Co,52,52418
+Colombia,Nariño,Magüi,Co,52,52427
+Colombia,Nariño,Mallama,Co,52,52435
+Colombia,Nariño,Mosquera,Co,52,52473
+Colombia,Nariño,Nariño,Co,52,52480
+Colombia,Nariño,Olaya Herrera,Co,52,52490
+Colombia,Nariño,Ospina,Co,52,52506
+Colombia,Nariño,Pasto,Co,52,52001
+Colombia,Nariño,Policarpa,Co,52,52540
+Colombia,Nariño,Potosí,Co,52,52560
+Colombia,Nariño,Providencia,Co,52,52565
+Colombia,Nariño,Puerres,Co,52,52573
+Colombia,Nariño,Pupiales,Co,52,52585
+Colombia,Nariño,Ricaurte,Co,52,52612
+Colombia,Nariño,Roberto Payán,Co,52,52621
+Colombia,Nariño,Samaniego,Co,52,52678
+Colombia,Nariño,San Bernardo,Co,52,52685
+Colombia,Nariño,San Lorenzo,Co,52,52687
+Colombia,Nariño,San Pablo,Co,52,52693
+Colombia,Nariño,San Pedro De Cartago,Co,52,52694
+Colombia,Nariño,Sandoná,Co,52,52683
+Colombia,Nariño,Santa Bárbara,Co,52,52696
+Colombia,Nariño,Santacruz,Co,52,52699
+Colombia,Nariño,Sapuyes,Co,52,52720
+Colombia,Nariño,Taminango,Co,52,52786
+Colombia,Nariño,Tangua,Co,52,52788
+Colombia,Nariño,Tumaco,Co,52,52835
+Colombia,Nariño,Túquerres,Co,52,52838
+Colombia,Nariño,Yacuanquer,Co,52,52885
+Colombia,Norte de Santander,Abrego,Co,54,54003
+Colombia,Norte de Santander,Arboledas,Co,54,54051
+Colombia,Norte de Santander,Bochalema,Co,54,54099
+Colombia,Norte de Santander,Bucarasica,Co,54,54109
+Colombia,Norte de Santander,Cachirá,Co,54,54128
+Colombia,Norte de Santander,Cácota,Co,54,54125
+Colombia,Norte de Santander,Chinácota,Co,54,54172
+Colombia,Norte de Santander,Chitagá,Co,54,54174
+Colombia,Norte de Santander,Convención,Co,54,54206
+Colombia,Norte de Santander,Cúcuta,Co,54,54001
+Colombia,Norte de Santander,Cucutilla,Co,54,54223
+Colombia,Norte de Santander,Durania,Co,54,54239
+Colombia,Norte de Santander,El Carmen,Co,54,54245
+Colombia,Norte de Santander,El Tarra,Co,54,54250
+Colombia,Norte de Santander,El Zulia,Co,54,54261
+Colombia,Norte de Santander,Gramalote,Co,54,54313
+Colombia,Norte de Santander,Hacarí,Co,54,54344
+Colombia,Norte de Santander,Herrán,Co,54,54347
+Colombia,Norte de Santander,La Esperanza,Co,54,54385
+Colombia,Norte de Santander,La Playa,Co,54,54398
+Colombia,Norte de Santander,Labateca,Co,54,54377
+Colombia,Norte de Santander,Los Patios,Co,54,54405
+Colombia,Norte de Santander,Lourdes,Co,54,54418
+Colombia,Norte de Santander,Mutiscua,Co,54,54480
+Colombia,Norte de Santander,Ocaña,Co,54,54498
+Colombia,Norte de Santander,Pamplona,Co,54,54518
+Colombia,Norte de Santander,Pamplonita,Co,54,54520
+Colombia,Norte de Santander,Puerto Santander,Co,54,54553
+Colombia,Norte de Santander,Ragonvalia,Co,54,54599
+Colombia,Norte de Santander,Salazar,Co,54,54660
+Colombia,Norte de Santander,San Calixto,Co,54,54670
+Colombia,Norte de Santander,San Cayetano,Co,54,54673
+Colombia,Norte de Santander,Santiago,Co,54,54680
+Colombia,Norte de Santander,Sardinata,Co,54,54720
+Colombia,Norte de Santander,Silos,Co,54,54743
+Colombia,Norte de Santander,Teorama,Co,54,54800
+Colombia,Norte de Santander,Tibú,Co,54,54810
+Colombia,Norte de Santander,Toledo,Co,54,54820
+Colombia,Norte de Santander,Villa Caro,Co,54,54871
+Colombia,Norte de Santander,Villa Del Rosario,Co,54,54874
+Colombia,Quindio,Armenia,Co,63,63001
+Colombia,Quindio,Buenavista,Co,63,63111
+Colombia,Quindio,Calarca,Co,63,63130
+Colombia,Quindio,Circasia,Co,63,63190
+Colombia,Quindio,Córdoba,Co,63,63212
+Colombia,Quindio,Filandia,Co,63,63272
+Colombia,Quindio,Génova,Co,63,63302
+Colombia,Quindio,La Tebaida,Co,63,63401
+Colombia,Quindio,Montenegro,Co,63,63470
+Colombia,Quindio,Pijao,Co,63,63548
+Colombia,Quindio,Quimbaya,Co,63,63594
+Colombia,Quindio,Salento,Co,63,63690
+Colombia,Risaralda,Apía,Co,66,66045
+Colombia,Risaralda,Balboa,Co,66,66075
+Colombia,Risaralda,Belén De Umbría,Co,66,66088
+Colombia,Risaralda,Dosquebradas,Co,66,66170
+Colombia,Risaralda,Guática,Co,66,66318
+Colombia,Risaralda,La Celia,Co,66,66383
+Colombia,Risaralda,La Virginia,Co,66,66400
+Colombia,Risaralda,Marsella,Co,66,66440
+Colombia,Risaralda,Mistrató,Co,66,66456
+Colombia,Risaralda,Pereira,Co,66,66001
+Colombia,Risaralda,Pueblo Rico,Co,66,66572
+Colombia,Risaralda,Quinchía,Co,66,66594
+Colombia,Risaralda,Santa Rosa De Cabal,Co,66,66682
+Colombia,Risaralda,Santuario,Co,66,66687
+Colombia,Santander,Aguada,Co,68,68013
+Colombia,Santander,Albania,Co,68,68020
+Colombia,Santander,Aratoca,Co,68,68051
+Colombia,Santander,Barbosa,Co,68,68077
+Colombia,Santander,Barichara,Co,68,68079
+Colombia,Santander,Barrancabermeja,Co,68,68081
+Colombia,Santander,Betulia,Co,68,68092
+Colombia,Santander,Bolívar,Co,68,68101
+Colombia,Santander,Bucaramanga,Co,68,68001
+Colombia,Santander,Cabrera,Co,68,68121
+Colombia,Santander,California,Co,68,68132
+Colombia,Santander,Capitanejo,Co,68,68147
+Colombia,Santander,Carcasí,Co,68,68152
+Colombia,Santander,Cepitá,Co,68,68160
+Colombia,Santander,Cerrito,Co,68,68162
+Colombia,Santander,Charalá,Co,68,68167
+Colombia,Santander,Charta,Co,68,68169
+Colombia,Santander,Chima,Co,68,68176
+Colombia,Santander,Chipatá,Co,68,68179
+Colombia,Santander,Cimitarra,Co,68,68190
+Colombia,Santander,Concepción,Co,68,68207
+Colombia,Santander,Confines,Co,68,68209
+Colombia,Santander,Contratación,Co,68,68211
+Colombia,Santander,Coromoro,Co,68,68217
+Colombia,Santander,Curití,Co,68,68229
+Colombia,Santander,El Carmen De Chucurí,Co,68,68235
+Colombia,Santander,El Guacamayo,Co,68,68245
+Colombia,Santander,El Peñón,Co,68,68250
+Colombia,Santander,El Playón,Co,68,68255
+Colombia,Santander,Encino,Co,68,68264
+Colombia,Santander,Enciso,Co,68,68266
+Colombia,Santander,Florián,Co,68,68271
+Colombia,Santander,Floridablanca,Co,68,68276
+Colombia,Santander,Galán,Co,68,68296
+Colombia,Santander,Gambita,Co,68,68298
+Colombia,Santander,Girón,Co,68,68307
+Colombia,Santander,Guaca,Co,68,68318
+Colombia,Santander,Guadalupe,Co,68,68320
+Colombia,Santander,Guapotá,Co,68,68322
+Colombia,Santander,Guavatá,Co,68,68324
+Colombia,Santander,Güepsa,Co,68,68327
+Colombia,Santander,Hato,Co,68,68344
+Colombia,Santander,Jesús María,Co,68,68368
+Colombia,Santander,Jordán,Co,68,68370
+Colombia,Santander,La Belleza,Co,68,68377
+Colombia,Santander,La Paz,Co,68,68397
+Colombia,Santander,Landázuri,Co,68,68385
+Colombia,Santander,Lebríja,Co,68,68406
+Colombia,Santander,Los Santos,Co,68,68418
+Colombia,Santander,Macaravita,Co,68,68425
+Colombia,Santander,Málaga,Co,68,68432
+Colombia,Santander,Matanza,Co,68,68444
+Colombia,Santander,Mogotes,Co,68,68464
+Colombia,Santander,Molagavita,Co,68,68468
+Colombia,Santander,Ocamonte,Co,68,68498
+Colombia,Santander,Oiba,Co,68,68500
+Colombia,Santander,Onzaga,Co,68,68502
+Colombia,Santander,Palmar,Co,68,68522
+Colombia,Santander,Palmas Del Socorro,Co,68,68524
+Colombia,Santander,Páramo,Co,68,68533
+Colombia,Santander,Piedecuesta,Co,68,68547
+Colombia,Santander,Pinchote,Co,68,68549
+Colombia,Santander,Puente Nacional,Co,68,68572
+Colombia,Santander,Puerto Parra,Co,68,68573
+Colombia,Santander,Puerto Wilches,Co,68,68575
+Colombia,Santander,Rionegro,Co,68,68615
+Colombia,Santander,Sabana De Torres,Co,68,68655
+Colombia,Santander,San Andrés,Co,68,68669
+Colombia,Santander,San Benito,Co,68,68673
+Colombia,Santander,San Gil,Co,68,68679
+Colombia,Santander,San Joaquín,Co,68,68682
+Colombia,Santander,San José De Miranda,Co,68,68684
+Colombia,Santander,San Miguel,Co,68,68686
+Colombia,Santander,San Vicente De Chucurí,Co,68,68689
+Colombia,Santander,Santa Bárbara,Co,68,68705
+Colombia,Santander,Santa Helena Del Opón,Co,68,68720
+Colombia,Santander,Simacota,Co,68,68745
+Colombia,Santander,Socorro,Co,68,68755
+Colombia,Santander,Suaita,Co,68,68770
+Colombia,Santander,Sucre,Co,68,68773
+Colombia,Santander,Suratá,Co,68,68780
+Colombia,Santander,Tona,Co,68,68820
+Colombia,Santander,Valle De San José,Co,68,68855
+Colombia,Santander,Vélez,Co,68,68861
+Colombia,Santander,Vetas,Co,68,68867
+Colombia,Santander,Villanueva,Co,68,68872
+Colombia,Santander,Zapatoca,Co,68,68895
+Colombia,Sucre,Buenavista,Co,70,70110
+Colombia,Sucre,Caimito,Co,70,70124
+Colombia,Sucre,Chalán,Co,70,70230
+Colombia,Sucre,Coloso,Co,70,70204
+Colombia,Sucre,Corozal,Co,70,70215
+Colombia,Sucre,Coveñas,Co,70,70221
+Colombia,Sucre,El Roble,Co,70,70233
+Colombia,Sucre,Galeras,Co,70,70235
+Colombia,Sucre,Guaranda,Co,70,70265
+Colombia,Sucre,La Unión,Co,70,70400
+Colombia,Sucre,Los Palmitos,Co,70,70418
+Colombia,Sucre,Majagual,Co,70,70429
+Colombia,Sucre,Morroa,Co,70,70473
+Colombia,Sucre,Ovejas,Co,70,70508
+Colombia,Sucre,Palmito,Co,70,70523
+Colombia,Sucre,Sampués,Co,70,70670
+Colombia,Sucre,San Benito Abad,Co,70,70678
+Colombia,Sucre,San Juan De Betulia,Co,70,70702
+Colombia,Sucre,San Marcos,Co,70,70708
+Colombia,Sucre,San Onofre,Co,70,70713
+Colombia,Sucre,San Pedro,Co,70,70717
+Colombia,Sucre,Santiago De Tolú,Co,70,70820
+Colombia,Sucre,Sincé,Co,70,70742
+Colombia,Sucre,Sincelejo,Co,70,70001
+Colombia,Sucre,Sucre,Co,70,70771
+Colombia,Sucre,Tolú Viejo,Co,70,70823
+Colombia,Tolima,Alpujarra,Co,73,73024
+Colombia,Tolima,Alvarado,Co,73,73026
+Colombia,Tolima,Ambalema,Co,73,73030
+Colombia,Tolima,Anzoátegui,Co,73,73043
+Colombia,Tolima,Armero,Co,73,73055
+Colombia,Tolima,Ataco,Co,73,73067
+Colombia,Tolima,Cajamarca,Co,73,73124
+Colombia,Tolima,Carmen De Apicalá,Co,73,73148
+Colombia,Tolima,Casabianca,Co,73,73152
+Colombia,Tolima,Chaparral,Co,73,73168
+Colombia,Tolima,Coello,Co,73,73200
+Colombia,Tolima,Coyaima,Co,73,73217
+Colombia,Tolima,Cunday,Co,73,73226
+Colombia,Tolima,Dolores,Co,73,73236
+Colombia,Tolima,Espinal,Co,73,73268
+Colombia,Tolima,Falan,Co,73,73270
+Colombia,Tolima,Flandes,Co,73,73275
+Colombia,Tolima,Fresno,Co,73,73283
+Colombia,Tolima,Guamo,Co,73,73319
+Colombia,Tolima,Herveo,Co,73,73347
+Colombia,Tolima,Honda,Co,73,73349
+Colombia,Tolima,Ibagué,Co,73,73001
+Colombia,Tolima,Icononzo,Co,73,73352
+Colombia,Tolima,Lérida,Co,73,73408
+Colombia,Tolima,Líbano,Co,73,73411
+Colombia,Tolima,Mariquita,Co,73,73443
+Colombia,Tolima,Melgar,Co,73,73449
+Colombia,Tolima,Murillo,Co,73,73461
+Colombia,Tolima,Natagaima,Co,73,73483
+Colombia,Tolima,Ortega,Co,73,73504
+Colombia,Tolima,Palocabildo,Co,73,73520
+Colombia,Tolima,Piedras,Co,73,73547
+Colombia,Tolima,Planadas,Co,73,73555
+Colombia,Tolima,Prado,Co,73,73563
+Colombia,Tolima,Purificación,Co,73,73585
+Colombia,Tolima,Rioblanco,Co,73,73616
+Colombia,Tolima,Roncesvalles,Co,73,73622
+Colombia,Tolima,Rovira,Co,73,73624
+Colombia,Tolima,Saldaña,Co,73,73671
+Colombia,Tolima,San Antonio,Co,73,73675
+Colombia,Tolima,San Luis,Co,73,73678
+Colombia,Tolima,Santa Isabel,Co,73,73686
+Colombia,Tolima,Suárez,Co,73,73770
+Colombia,Tolima,Valle De San Juan,Co,73,73854
+Colombia,Tolima,Venadillo,Co,73,73861
+Colombia,Tolima,Villahermosa,Co,73,73870
+Colombia,Tolima,Villarrica,Co,73,73873
+Colombia,Valle del Cauca,Alcalá,Co,76,76020
+Colombia,Valle del Cauca,Andalucía,Co,76,76036
+Colombia,Valle del Cauca,Ansermanuevo,Co,76,76041
+Colombia,Valle del Cauca,Argelia,Co,76,76054
+Colombia,Valle del Cauca,Bolívar,Co,76,76100
+Colombia,Valle del Cauca,Buenaventura,Co,76,76109
+Colombia,Valle del Cauca,Bugalagrande,Co,76,76113
+Colombia,Valle del Cauca,Caicedonia,Co,76,76122
+Colombia,Valle del Cauca,Cali,Co,76,76001
+Colombia,Valle del Cauca,Calima,Co,76,76126
+Colombia,Valle del Cauca,Candelaria,Co,76,76130
+Colombia,Valle del Cauca,Cartago,Co,76,76147
+Colombia,Valle del Cauca,Dagua,Co,76,76233
+Colombia,Valle del Cauca,El Águila,Co,76,76243
+Colombia,Valle del Cauca,El Cairo,Co,76,76246
+Colombia,Valle del Cauca,El Cerrito,Co,76,76248
+Colombia,Valle del Cauca,El Dovio,Co,76,76250
+Colombia,Valle del Cauca,Florida,Co,76,76275
+Colombia,Valle del Cauca,Ginebra,Co,76,76306
+Colombia,Valle del Cauca,Guacarí,Co,76,76318
+Colombia,Valle del Cauca,Guadalajara De Buga,Co,76,76111
+Colombia,Valle del Cauca,Jamundí,Co,76,76364
+Colombia,Valle del Cauca,La Cumbre,Co,76,76377
+Colombia,Valle del Cauca,La Unión,Co,76,76400
+Colombia,Valle del Cauca,La Victoria,Co,76,76403
+Colombia,Valle del Cauca,Obando,Co,76,76497
+Colombia,Valle del Cauca,Palmira,Co,76,76520
+Colombia,Valle del Cauca,Pradera,Co,76,76563
+Colombia,Valle del Cauca,Restrepo,Co,76,76606
+Colombia,Valle del Cauca,Riofrío,Co,76,76616
+Colombia,Valle del Cauca,Roldanillo,Co,76,76622
+Colombia,Valle del Cauca,San Pedro,Co,76,76670
+Colombia,Valle del Cauca,Sevilla,Co,76,76736
+Colombia,Valle del Cauca,Toro,Co,76,76823
+Colombia,Valle del Cauca,Trujillo,Co,76,76828
+Colombia,Valle del Cauca,Tuluá,Co,76,76834
+Colombia,Valle del Cauca,Ulloa,Co,76,76845
+Colombia,Valle del Cauca,Versalles,Co,76,76863
+Colombia,Valle del Cauca,Vijes,Co,76,76869
+Colombia,Valle del Cauca,Yotoco,Co,76,76890
+Colombia,Valle del Cauca,Yumbo,Co,76,76892
+Colombia,Valle del Cauca,Zarzal,Co,76,76895
+Colombia,Arauca,Arauca,Co,81,81001
+Colombia,Arauca,Arauquita,Co,81,81065
+Colombia,Arauca,Cravo Norte,Co,81,81220
+Colombia,Arauca,Fortul,Co,81,81300
+Colombia,Arauca,Puerto Rondón,Co,81,81591
+Colombia,Arauca,Saravena,Co,81,81736
+Colombia,Arauca,Tame,Co,81,81794
+Colombia,Casanare,Aguazul,Co,85,85010
+Colombia,Casanare,Chameza,Co,85,85015
+Colombia,Casanare,Hato Corozal,Co,85,85125
+Colombia,Casanare,La Salina,Co,85,85136
+Colombia,Casanare,Maní,Co,85,85139
+Colombia,Casanare,Monterrey,Co,85,85162
+Colombia,Casanare,Nunchía,Co,85,85225
+Colombia,Casanare,Orocué,Co,85,85230
+Colombia,Casanare,Paz De Ariporo,Co,85,85250
+Colombia,Casanare,Pore,Co,85,85263
+Colombia,Casanare,Recetor,Co,85,85279
+Colombia,Casanare,Sabanalarga,Co,85,85300
+Colombia,Casanare,Sácama,Co,85,85315
+Colombia,Casanare,San Luis De Palenque,Co,85,85325
+Colombia,Casanare,Támara,Co,85,85400
+Colombia,Casanare,Tauramena,Co,85,85410
+Colombia,Casanare,Trinidad,Co,85,85430
+Colombia,Casanare,Villanueva,Co,85,85440
+Colombia,Casanare,Yopal,Co,85,85001
+Colombia,Putumayo,Colón,Co,86,86219
+Colombia,Putumayo,Leguízamo,Co,86,86573
+Colombia,Putumayo,Mocoa,Co,86,86001
+Colombia,Putumayo,Orito,Co,86,86320
+Colombia,Putumayo,Puerto Asís,Co,86,86568
+Colombia,Putumayo,Puerto Caicedo,Co,86,86569
+Colombia,Putumayo,Puerto Guzmán,Co,86,86571
+Colombia,Putumayo,San Francisco,Co,86,86755
+Colombia,Putumayo,San Miguel,Co,86,86757
+Colombia,Putumayo,Santiago,Co,86,86760
+Colombia,Putumayo,Sibundoy,Co,86,86749
+Colombia,Putumayo,Valle Del Guamuez,Co,86,86865
+Colombia,Putumayo,Villagarzón,Co,86,86885
+Colombia,"Archipiélago de San Andrés, Providencia y Santa Ca",Providencia,Co,88,88564
+Colombia,"Archipiélago de San Andrés, Providencia y Santa Ca",San Andrés,Co,88,88001
+Colombia,Amazonas,El Encanto,Co,91,91263
+Colombia,Amazonas,La Chorrera,Co,91,91405
+Colombia,Amazonas,La Pedrera,Co,91,91407
+Colombia,Amazonas,La Victoria,Co,91,91430
+Colombia,Amazonas,Leticia,Co,91,91001
+Colombia,Amazonas,Miriti - Paraná,Co,91,91460
+Colombia,Amazonas,Puerto Alegría,Co,91,91530
+Colombia,Amazonas,Puerto Arica,Co,91,91536
+Colombia,Amazonas,Puerto Nariño,Co,91,91540
+Colombia,Amazonas,Puerto Santander,Co,91,91669
+Colombia,Amazonas,Tarapacá,Co,91,91798
+Colombia,Guainía,Barranco Minas,Co,94,94343
+Colombia,Guainía,Cacahual,Co,94,94886
+Colombia,Guainía,Inírida,Co,94,94001
+Colombia,Guainía,La Guadalupe,Co,94,94885
+Colombia,Guainía,Mapiripana,Co,94,94663
+Colombia,Guainía,Morichal,Co,94,94888
+Colombia,Guainía,Pana Pana,Co,94,94887
+Colombia,Guainía,Puerto Colombia,Co,94,94884
+Colombia,Guainía,San Felipe,Co,94,94883
+Colombia,Guaviare,Calamar,Co,95,95015
+Colombia,Guaviare,El Retorno,Co,95,95025
+Colombia,Guaviare,Miraflores,Co,95,95200
+Colombia,Guaviare,San José Del Guaviare,Co,95,95001
+Colombia,Vaupés,Caruru,Co,97,97161
+Colombia,Vaupés,Mitú,Co,97,97001
+Colombia,Vaupés,Pacoa,Co,97,97511
+Colombia,Vaupés,Papunaua,Co,97,97777
+Colombia,Vaupés,Taraira,Co,97,97666
+Colombia,Vaupés,Yavaraté,Co,97,97889
+Colombia,Vichada,Cumaribo,Co,99,99773
+Colombia,Vichada,La Primavera,Co,99,99524
+Colombia,Vichada,Puerto Carreño,Co,99,99001
+Colombia,Vichada,Santa Rosalía,Co,99,99624
+Ecuador,Azuay,Cuenca,Ec,01,01001
+Ecuador,Azuay,Camilo Ponce Enríquez,Ec,01,01002
+Ecuador,Azuay,Chordeleg,Ec,01,01003
+Ecuador,Azuay,El Pan,Ec,01,01004
+Ecuador,Azuay,Girón,Ec,01,01005
+Ecuador,Azuay,Guachapala,Ec,01,01006
+Ecuador,Azuay,Gualaceo,Ec,01,01007
+Ecuador,Azuay,Nabón,Ec,01,01008
+Ecuador,Azuay,Oña,Ec,01,01009
+Ecuador,Azuay,Paute,Ec,01,01010
+Ecuador,Azuay,Pucara,Ec,01,01011
+Ecuador,Azuay,San Fernando,Ec,01,01012
+Ecuador,Azuay,Santa Isabel,Ec,01,01013
+Ecuador,Azuay,Sevilla de Oro,Ec,01,01014
+Ecuador,Azuay,SígSig,Ec,01,01015
+Ecuador,Bolívar,Guaranda,Ec,02,02016
+Ecuador,Bolívar,Chimbo,Ec,02,02017
+Ecuador,Bolívar,Echeandía,Ec,02,02018
+Ecuador,Bolívar,San Miguel,Ec,02,02019
+Ecuador,Bolívar,Chillanes,Ec,02,02020
+Ecuador,Bolívar,Caluma,Ec,02,02021
+Ecuador,Bolívar,Las Naves,Ec,02,02022
+Ecuador,Cañar,Azogues,Ec,03,03023
+Ecuador,Cañar,Cañar,Ec,03,03024
+Ecuador,Cañar,Biblián,Ec,03,03025
+Ecuador,Cañar,La Troncal,Ec,03,03026
+Ecuador,Cañar,El Tambo,Ec,03,03027
+Ecuador,Cañar,Déleg,Ec,03,03028
+Ecuador,Cañar,Suscal,Ec,03,03029
+Ecuador,Carchi,Tulcán,Ec,04,04030
+Ecuador,Carchi,Espejo,Ec,04,04031
+Ecuador,Carchi,Montúfar,Ec,04,04032
+Ecuador,Carchi,Mira,Ec,04,04033
+Ecuador,Carchi,Bolívar,Ec,04,04034
+Ecuador,Carchi,San Pedro de Huaca,Ec,04,04035
+Ecuador,Chimborazo,Latacunga,Ec,06,06036
+Ecuador,Chimborazo,La Maná,Ec,06,06037
+Ecuador,Chimborazo,Pangua,Ec,06,06038
+Ecuador,Chimborazo,Pujilí,Ec,06,06039
+Ecuador,Chimborazo,Salcedo,Ec,06,06040
+Ecuador,Chimborazo,Saquislí,Ec,06,06041
+Ecuador,Chimborazo,Sigchos,Ec,06,06042
+Ecuador,Chimborazo,Riobamba,Ec,06,06043
+Ecuador,Chimborazo,Alausí,Ec,06,06044
+Ecuador,Chimborazo,Colta,Ec,06,06045
+Ecuador,Chimborazo,Chunchi,Ec,06,06046
+Ecuador,Chimborazo,Guamote,Ec,06,06047
+Ecuador,Chimborazo,Guano,Ec,06,06048
+Ecuador,Chimborazo,Penipe,Ec,06,06049
+Ecuador,Chimborazo,Pallatanga,Ec,06,06050
+Ecuador,Chimborazo,Chambo,Ec,06,06051
+Ecuador,Chimborazo,Cumandá,Ec,06,06052
+Ecuador,Guayas,Ibarra,Ec,14,14053
+Ecuador,Guayas,Antonio Ante,Ec,14,14054
+Ecuador,Guayas,Otavalo,Ec,14,14055
+Ecuador,Guayas,Cotacachi,Ec,14,14056
+Ecuador,Guayas,Pimampiro,Ec,14,14057
+Ecuador,Guayas,San Miguel de Urcuquí,Ec,14,14058
+Ecuador,Guayas,Loja,Ec,14,14059
+Ecuador,Guayas,Macará,Ec,14,14060
+Ecuador,Guayas,Paltas,Ec,14,14061
+Ecuador,Guayas,Puyango,Ec,14,14062
+Ecuador,Guayas,Saraguro,Ec,14,14063
+Ecuador,Guayas,Celica,Ec,14,14064
+Ecuador,Guayas,Catamayo,Ec,14,14065
+Ecuador,Guayas,Espíndola,Ec,14,14066
+Ecuador,Guayas,Gonzanamá,Ec,14,14067
+Ecuador,Guayas,Sozoranga,Ec,14,14068
+Ecuador,Guayas,Zapotillo,Ec,14,14069
+Ecuador,Guayas,Calvas,Ec,14,14070
+Ecuador,Guayas,Chaguarpamba,Ec,14,14071
+Ecuador,Guayas,Olmedo,Ec,14,14072
+Ecuador,Guayas,Pindal,Ec,14,14073
+Ecuador,Guayas,Quilanga,Ec,14,14074
+Ecuador,Pastaza,Quito,Ec,20,20075
+Ecuador,Pastaza,Cayambe,Ec,20,20076
+Ecuador,Pastaza,Mejía,Ec,20,20077
+Ecuador,Pastaza,Pedro Moncayo,Ec,20,20078
+Ecuador,Pastaza,Pedro Vicente Maldonado,Ec,20,20079
+Ecuador,Pastaza,Puerto Quito,Ec,20,20080
+Ecuador,Pastaza,Rumiñahui,Ec,20,20081
+Ecuador,Pastaza,San Miguel de los Bancos,Ec,20,20082
+Ecuador,Pastaza,Ambato,Ec,20,20083
+Ecuador,Pastaza,Baños,Ec,20,20084
+Ecuador,Pastaza,Cevallos,Ec,20,20085
+Ecuador,Pastaza,Mocha,Ec,20,20086
+Ecuador,Pastaza,Patate,Ec,20,20087
+Ecuador,Pastaza,Quero,Ec,20,20088
+Ecuador,Pastaza,San Pedro de Pelileo,Ec,20,20089
+Ecuador,Pastaza,Santiago de Píllaro,Ec,20,20090
+Ecuador,Pastaza,Tisaleo,Ec,20,20091
+Ecuador,Pastaza,Santo Domingo,Ec,20,20092
+Ecuador,El Oro,Machala,Ec,12,12093
+Ecuador,El Oro,Arenillas,Ec,12,12094
+Ecuador,El Oro,Atahualpa,Ec,12,12095
+Ecuador,El Oro,El Guabo,Ec,12,12096
+Ecuador,El Oro,Huaquillas,Ec,12,12097
+Ecuador,El Oro,La Concordia,Ec,12,12098
+Ecuador,El Oro,Marcabelí,Ec,12,12099
+Ecuador,El Oro,Pasaje,Ec,12,12100
+Ecuador,El Oro,Piñas,Ec,12,12101
+Ecuador,El Oro,Portovelo,Ec,12,12102
+Ecuador,El Oro,Rioverde,Ec,12,12103
+Ecuador,El Oro,Santa Rosa,Ec,12,12104
+Ecuador,El Oro,Zaruma,Ec,12,12105
+Ecuador,El Oro,Balsas,Ec,12,12106
+Ecuador,El Oro,Chilla,Ec,12,12107
+Ecuador,El Oro,Las Lajas,Ec,12,12108
+Ecuador,Esmeraldas,Esmeraldas,Ec,13,13109
+Ecuador,Esmeraldas,Eloy Alfaro,Ec,13,13110
+Ecuador,Esmeraldas,Muisne,Ec,13,13111
+Ecuador,Esmeraldas,Quinindé,Ec,13,13112
+Ecuador,Esmeraldas,San Lorenzo,Ec,13,13113
+Ecuador,Esmeraldas,Atacames,Ec,13,13114
+Ecuador,Guayas,Guayaquil,Ec,14,14115
+Ecuador,Guayas,Daule,Ec,14,14116
+Ecuador,Guayas,Durán,Ec,14,14117
+Ecuador,Guayas,Yaguachi,Ec,14,14118
+Ecuador,Guayas,Balzar,Ec,14,14119
+Ecuador,Guayas,Milagro,Ec,14,14120
+Ecuador,Guayas,Naranjal,Ec,14,14121
+Ecuador,Guayas,Samborondón,Ec,14,14122
+Ecuador,Guayas,El Triunfo,Ec,14,14123
+Ecuador,Guayas,Isidro Ayora,Ec,14,14124
+Ecuador,Guayas,Naranjito,Ec,14,14125
+Ecuador,Guayas,El Empalme,Ec,14,14126
+Ecuador,Guayas,Baquerizo Moreno,Ec,14,14127
+Ecuador,Guayas,Pedro Carbo,Ec,14,14128
+Ecuador,Guayas,Salitre,Ec,14,14129
+Ecuador,Guayas,Santa Lucía,Ec,14,14130
+Ecuador,Guayas,Palestina,Ec,14,14131
+Ecuador,Guayas,Balao,Ec,14,14132
+Ecuador,Guayas,Colimes,Ec,14,14133
+Ecuador,Guayas,Playas,Ec,14,14134
+Ecuador,Guayas,Simón Bolívar,Ec,14,14135
+Ecuador,Guayas,Coronel. Marcelino Maridueña,Ec,14,14136
+Ecuador,Guayas,Lomas de Sangentillo,Ec,14,14137
+Ecuador,Guayas,Nobol,Ec,14,14138
+Ecuador,Los Ríos,Babahoyo,Ec,15,15139
+Ecuador,Los Ríos,Baba,Ec,15,15140
+Ecuador,Los Ríos,Buena Fe,Ec,15,15141
+Ecuador,Los Ríos,Montalvo,Ec,15,15142
+Ecuador,Los Ríos,Puebloviejo,Ec,15,15143
+Ecuador,Los Ríos,Quevedo,Ec,15,15144
+Ecuador,Los Ríos,Quinsaloma,Ec,15,15145
+Ecuador,Los Ríos,Urdaneta,Ec,15,15146
+Ecuador,Los Ríos,Valencia,Ec,15,15147
+Ecuador,Los Ríos,Mocache,Ec,15,15148
+Ecuador,Los Ríos,Ventanas,Ec,15,15149
+Ecuador,Los Ríos,Vinces,Ec,15,15150
+Ecuador,Los Ríos,Palenque,Ec,15,15151
+Ecuador,Manabí,Portoviejo,Ec,16,16152
+Ecuador,Manabí,Bolívar,Ec,16,16153
+Ecuador,Manabí,Chone,Ec,16,16154
+Ecuador,Manabí,El Carmen,Ec,16,16155
+Ecuador,Manabí,Flavio Alfaro,Ec,16,16156
+Ecuador,Manabí,Jama,Ec,16,16157
+Ecuador,Manabí,Jaramijó,Ec,16,16158
+Ecuador,Manabí,Junín,Ec,16,16159
+Ecuador,Manabí,Jipijapa,Ec,16,16160
+Ecuador,Manabí,Manta,Ec,16,16161
+Ecuador,Manabí,Montecristi,Ec,16,16162
+Ecuador,Manabí,Olmedo,Ec,16,16163
+Ecuador,Manabí,Paján,Ec,16,16164
+Ecuador,Manabí,Pedernales,Ec,16,16165
+Ecuador,Manabí,Pichincha,Ec,16,16166
+Ecuador,Manabí,Puerto López,Ec,16,16167
+Ecuador,Manabí,Rocafuerte,Ec,16,16168
+Ecuador,Manabí,San Vicente,Ec,16,16169
+Ecuador,Manabí,Santa Ana,Ec,16,16170
+Ecuador,Manabí,Sucre,Ec,16,16171
+Ecuador,Manabí,Tosagua,Ec,16,16172
+Ecuador,Manabí,24 de mayo,Ec,16,16173
+Ecuador,Pastaza,Santa Elena,Ec,20,20174
+Ecuador,Pastaza,La Libertad,Ec,20,20175
+Ecuador,Pastaza,Salinas,Ec,20,20176
+Ecuador,Morona Santiago,Morona,Ec,18,18177
+Ecuador,Morona Santiago,Gualaquiza,Ec,18,18178
+Ecuador,Morona Santiago,Limón Indanza,Ec,18,18179
+Ecuador,Morona Santiago,Logroño,Ec,18,18180
+Ecuador,Morona Santiago,Pablo Sexto,Ec,18,18181
+Ecuador,Morona Santiago,Palora,Ec,18,18182
+Ecuador,Morona Santiago,Santiago,Ec,18,18183
+Ecuador,Morona Santiago,Sucúa,Ec,18,18184
+Ecuador,Morona Santiago,Huamboya,Ec,18,18185
+Ecuador,Morona Santiago,San Juan Bosco,Ec,18,18186
+Ecuador,Morona Santiago,Taisha,Ec,18,18187
+Ecuador,Morona Santiago,Tiwintza,Ec,18,18188
+Ecuador,Napo,Tena,Ec,19,19189
+Ecuador,Napo,Archidona,Ec,19,19190
+Ecuador,Napo,Carlos Julio Arosemena Tola,Ec,19,19191
+Ecuador,Napo,El Chaco,Ec,19,19192
+Ecuador,Napo,Quijos,Ec,19,19193
+Ecuador,Pastaza,Pastaza,Ec,20,20194
+Ecuador,Pastaza,Arajuno,Ec,20,20195
+Ecuador,Pastaza,Mera,Ec,20,20196
+Ecuador,Pastaza,Santa Clara,Ec,20,20197
+Ecuador,Zamora Chinchipe,Zamora,Ec,21,21198
+Ecuador,Zamora Chinchipe,Chinchipe,Ec,21,21199
+Ecuador,Zamora Chinchipe,Nangaritza,Ec,21,21200
+Ecuador,Zamora Chinchipe,Palanda,Ec,21,21201
+Ecuador,Zamora Chinchipe,Paquisha,Ec,21,21202
+Ecuador,Zamora Chinchipe,Yacuambi,Ec,21,21203
+Ecuador,Zamora Chinchipe,Yantzaza,Ec,21,21204
+Ecuador,Zamora Chinchipe,El Pangui,Ec,21,21205
+Ecuador,Zamora Chinchipe,Centinela del Cóndor,Ec,21,21206
+Ecuador,Pastaza,Lago Agrío,Ec,20,20207
+Ecuador,Pastaza,Cuyabeno,Ec,20,20208
+Ecuador,Pastaza,Gonzalo Pizarro,Ec,20,20209
+Ecuador,Pastaza,Putumayo,Ec,20,20210
+Ecuador,Pastaza,Shushufindi,Ec,20,20211
+Ecuador,Pastaza,Sucumbíos,Ec,20,20212
+Ecuador,Pastaza,Cascales,Ec,20,20213
+Ecuador,Napo,Orellana,Ec,19,19214
+Ecuador,Napo,Aguarico,Ec,19,19215
+Ecuador,Napo,La Joya de los Sachas,Ec,19,19216
+Ecuador,Napo,Loreto,Ec,19,19217
+Ecuador,Esmeraldas,San Cristóbal,Ec,13,13218
+Ecuador,Esmeraldas,Isabela,Ec,13,13219
+Ecuador,Esmeraldas,Santa Cruz,Ec,13,13220
+Perú,Amazonas,Chachapollas,Pe,05,05001
+Perú,Amazonas,Bagua,Pe,05,05002
+Perú,Amazonas,Bongara,Pe,05,05003
+Perú,Amazonas,Condorcanqui,Pe,05,05004
+Perú,Amazonas,Luya,Pe,05,05005
+Perú,Amazonas,Rodriguez de Mendoza,Pe,05,05006
+Perú,Amazonas,Utcubamba,Pe,05,05007
+Perú,Ancash,Huaraz,Pe,08,08008
+Perú,Ancash,Aija,Pe,08,08009
+Perú,Ancash,Antonio Raymondi,Pe,08,08010
+Perú,Ancash,Asunción,Pe,08,08011
+Perú,Ancash,Bolognesi,Pe,08,08012
+Perú,Ancash,Carhuaz,Pe,08,08013
+Perú,Ancash,Carlos Fermín Fitzcarrald,Pe,08,08014
+Perú,Ancash,Casma,Pe,08,08015
+Perú,Ancash,Corongo,Pe,08,08016
+Perú,Ancash,Huari,Pe,08,08017
+Perú,Ancash,Huarmey,Pe,08,08018
+Perú,Ancash,Huaylas,Pe,08,08019
+Perú,Ancash,Mariscal Luzuriaga,Pe,08,08020
+Perú,Ancash,Ocros,Pe,08,08021
+Perú,Ancash,Pallasca,Pe,08,08022
+Perú,Ancash,Pomabamba,Pe,08,08023
+Perú,Ancash,Recuay,Pe,08,08024
+Perú,Ancash,Santa,Pe,08,08025
+Perú,Ancash,Sihuas,Pe,08,08026
+Perú,Ancash,Yungay,Pe,08,08027
+Perú,Apurimac,Abancay,Pe,11,11028
+Perú,Apurimac,Antabamba,Pe,11,11029
+Perú,Apurimac,Aymaraes,Pe,11,11030
+Perú,Apurimac,Cotabambas,Pe,11,11031
+Perú,Apurimac,Grau,Pe,11,11032
+Perú,Apurimac,Chincheros,Pe,11,11033
+Perú,Apurimac,Andahuaylas,Pe,11,11034
+Perú,Arequipa,Arequipa,Pe,13,13035
+Perú,Arequipa,Camaná,Pe,13,13036
+Perú,Arequipa,Caravelí,Pe,13,13037
+Perú,Arequipa,Castilla,Pe,13,13038
+Perú,Arequipa,Caylloma,Pe,13,13039
+Perú,Arequipa,Condesuyos,Pe,13,13040
+Perú,Arequipa,Islay,Pe,13,13041
+Perú,Arequipa,La Unión,Pe,13,13042
+Perú,Ayacucho,Cangallo,Pe,15,15043
+Perú,Ayacucho,Huanta,Pe,15,15044
+Perú,Ayacucho,Huamanga,Pe,15,15045
+Perú,Ayacucho,Huancasancos,Pe,15,15046
+Perú,Ayacucho,La Mar,Pe,15,15047
+Perú,Ayacucho,Lucanas,Pe,15,15048
+Perú,Ayacucho,Parinacochas,Pe,15,15049
+Perú,Ayacucho,Paúcar del Sara Sara,Pe,15,15050
+Perú,Ayacucho,Sucre,Pe,15,15051
+Perú,Ayacucho,Victor Fajardo,Pe,15,15052
+Perú,Ayacucho,Vilcas Huamán,Pe,15,15053
+Perú,Cajamarca,San Ignacio,Pe,17,17054
+Perú,Cajamarca,Jaén,Pe,17,17055
+Perú,Cajamarca,Cutervo,Pe,17,17056
+Perú,Cajamarca,Chota,Pe,17,17057
+Perú,Cajamarca,Santa Cruz,Pe,17,17058
+Perú,Cajamarca,Hualgayoc,Pe,17,17059
+Perú,Cajamarca,Celendín,Pe,17,17060
+Perú,Cajamarca,San Miguel,Pe,17,17061
+Perú,Cajamarca,San Pablo,Pe,17,17062
+Perú,Cajamarca,Cajamarca,Pe,17,17063
+Perú,Cajamarca,Contumazá,Pe,17,17064
+Perú,Cajamarca,Cajabamba,Pe,17,17065
+Perú,Cajamarca,San Marcos,Pe,17,17066
+Perú,Callao,Callao,Pe,18,18067
+Perú,Callao,Bellavista,Pe,18,18068
+Perú,Callao,Carmen de la Legua-Reynoso,Pe,18,18069
+Perú,Callao,La Perla,Pe,18,18070
+Perú,Callao,La Punta,Pe,18,18071
+Perú,Callao,Ventanilla,Pe,18,18072
+Perú,Cusco,Cuzco,Pe,19,19073
+Perú,Cusco,Acomayo,Pe,19,19074
+Perú,Cusco,Anta,Pe,19,19075
+Perú,Cusco,Calca,Pe,19,19076
+Perú,Cusco,Canas,Pe,19,19077
+Perú,Cusco,Canchis,Pe,19,19078
+Perú,Cusco,Chumbivilcas,Pe,19,19079
+Perú,Cusco,Espinar,Pe,19,19080
+Perú,Cusco,La Convención,Pe,19,19081
+Perú,Cusco,Paruro,Pe,19,19082
+Perú,Cusco,Paucartambo,Pe,19,19083
+Perú,Cusco,Quispicanchi,Pe,19,19084
+Perú,Cusco,Urubamba,Pe,19,19085
+Perú,Huancavelica,Huancavelica,Pe,20,20086
+Perú,Huancavelica,Acobamba,Pe,20,20087
+Perú,Huancavelica,Angaraes,Pe,20,20088
+Perú,Huancavelica,Castrovirreyna,Pe,20,20089
+Perú,Huancavelica,Churcampa,Pe,20,20090
+Perú,Huancavelica,Huaytará,Pe,20,20091
+Perú,Huancavelica,Tayacaja,Pe,20,20092
+Perú,Huánuco,Huánuco,Pe,23,23093
+Perú,Huánuco,Ambo,Pe,23,23094
+Perú,Huánuco,Dos de Mayo,Pe,23,23095
+Perú,Huánuco,Huacaybamba,Pe,23,23096
+Perú,Huánuco,Huamalíes,Pe,23,23097
+Perú,Huánuco,Leoncio Prado,Pe,23,23098
+Perú,Huánuco,Marañón,Pe,23,23099
+Perú,Huánuco,Pachitea,Pe,23,23100
+Perú,Huánuco,Puerto Inca,Pe,23,23101
+Perú,Huánuco,Lauricocha,Pe,23,23102
+Perú,Huánuco,Yarowilca,Pe,23,23103
+Perú,Ica,Ica,Pe,25,25104
+Perú,Ica,Chincha,Pe,25,25105
+Perú,Ica,Nazca,Pe,25,25106
+Perú,Ica,Palpa,Pe,25,25107
+Perú,Ica,Pisco,Pe,25,25108
+Perú,Junín,Chanchamayo,Pe,27,27109
+Perú,Junín,Chupaca,Pe,27,27110
+Perú,Junín,Concepción,Pe,27,27111
+Perú,Junín,Huancayo,Pe,27,27112
+Perú,Junín,Jauja,Pe,27,27113
+Perú,Junín,Junín,Pe,27,27114
+Perú,Junín,Satipo,Pe,27,27115
+Perú,Junín,Tarma,Pe,27,27116
+Perú,Junín,Yauli,Pe,27,27117
+Perú,La Libertad,Trujillo,Pe,41,41118
+Perú,La Libertad,Ascope,Pe,41,41119
+Perú,La Libertad,Bolívar,Pe,41,41120
+Perú,La Libertad,Chepén,Pe,41,41121
+Perú,La Libertad,Gran Chimú,Pe,41,41122
+Perú,La Libertad,Julcán,Pe,41,41123
+Perú,La Libertad,Otuzco,Pe,41,41124
+Perú,La Libertad,Pacasmayo,Pe,41,41125
+Perú,La Libertad,Pataz,Pe,41,41126
+Perú,La Libertad,Sánchez Carrión,Pe,41,41127
+Perú,La Libertad,Santiago de Chuco,Pe,41,41128
+Perú,La Libertad,Virú,Pe,41,41129
+Perú,Lambayeque,Chiclayo,Pe,44,44130
+Perú,Lambayeque,Lambayeque,Pe,44,44131
+Perú,Lambayeque,Ferreñafe,Pe,44,44132
+Perú,Lima,Barranca,Pe,47,47133
+Perú,Lima,Cajatambo,Pe,47,47134
+Perú,Lima,Canta,Pe,47,47135
+Perú,Lima,Cañete,Pe,47,47136
+Perú,Lima,Huaral,Pe,47,47137
+Perú,Lima,Huarochirí,Pe,47,47138
+Perú,Lima,Huaura,Pe,47,47139
+Perú,Lima,Lima,Pe,47,47140
+Perú,Lima,Oyón,Pe,47,47141
+Perú,Lima,Yauyos,Pe,47,47142
+Perú,Loreto,Maynas,Pe,50,50143
+Perú,Loreto,Alto Amazonas,Pe,50,50144
+Perú,Loreto,Datem del Marañón,Pe,50,50145
+Perú,Loreto,Loreto,Pe,50,50146
+Perú,Loreto,Mariscal Ramón Castilla,Pe,50,50147
+Perú,Loreto,Requena,Pe,50,50148
+Perú,Loreto,Ucayali,Pe,50,50149
+Perú,Madre de Dios,Tambopata,Pe,52,52150
+Perú,Madre de Dios,Manu,Pe,52,52151
+Perú,Madre de Dios,Tahuamanu,Pe,52,52152
+Perú,Madre de Dios,Mariscal Nieto,Pe,52,54153
+Perú,Madre de Dios,General Sánchez Cerro,Pe,52,54154
+Perú,Madre de Dios,Ilo.,Pe,52,54155
+Perú,Pasco,Pasco,Pe,63,63156
+Perú,Pasco,Daniel Alcides Carrión,Pe,63,63157
+Perú,Pasco,Oxapampa,Pe,63,63158
+Perú,Piura,Ayabaca,Pe,66,66159
+Perú,Piura,Huancabamba,Pe,66,66160
+Perú,Piura,Morropón,Pe,66,66161
+Perú,Piura,Paita,Pe,66,66162
+Perú,Piura,Piura,Pe,66,66163
+Perú,Piura,Sechura,Pe,66,66164
+Perú,Piura,Sullana,Pe,66,66165
+Perú,Piura,Talara,Pe,66,66166
+Perú,Puno,Chucuito,Pe,68,68167
+Perú,Puno,Puno,Pe,68,68168
+Perú,Puno,San Antonio de Putina,Pe,68,68169
+Perú,Puno,San Roman,Pe,68,68170
+Perú,Puno,Lampa,Pe,68,68171
+Perú,Puno,Azángaro,Pe,68,68172
+Perú,Puno,Melgar,Pe,68,68173
+Perú,Puno,Carabaya,Pe,68,68174
+Perú,Puno,Sandia,Pe,68,68175
+Perú,Puno,Huancane,Pe,68,68176
+Perú,Puno,Moho,Pe,68,68177
+Perú,Puno,El Collao,Pe,68,68178
+Perú,Puno,Yunguyo,Pe,68,68179
+Perú,San Martín,Moyobamba,Pe,70,70180
+Perú,San Martín,Rioja,Pe,70,70181
+Perú,San Martín,Lamas,Pe,70,70182
+Perú,San Martín,San Martín,Pe,70,70183
+Perú,San Martín,Mariscal Cácres,Pe,70,70184
+Perú,San Martín,El Dorado,Pe,70,70185
+Perú,San Martín,Picota,Pe,70,70186
+Perú,San Martín,Bellavista,Pe,70,70187
+Perú,San Martín,Huallaga,Pe,70,70188
+Perú,San Martín,Tocache,Pe,70,70189
+Perú,Tacna,Tacna,Pe,73,73190
+Perú,Tacna,Candarave,Pe,73,73191
+Perú,Tacna,Jorge Basadre,Pe,73,73192
+Perú,Tacna,Tarata,Pe,73,73193
+Perú,Tumbes,Zarumilla,Pe,76,76194
+Perú,Tumbes,Tumbes,Pe,76,76195
+Perú,Tumbes,Contralmirante Villar,Pe,76,76196
+Perú,Ucayali,Coronel Portillo,Pe,81,81197
+Perú,Ucayali,Atalaya,Pe,81,81198
+Perú,Ucayali,Padre Abad,Pe,81,81199
+Perú,Ucayali,Purús,Pe,81,81200
+Afganistán,Badahan,Fayzabad,Af,01,0101
+Afganistán,Badgis,Qaleh-ye Now,Af,02,0201
+Afganistán,Baglan,Puli Khumri,Af,03,0301
+Afganistán,Balh,Mazari Sharif,Af,04,0401
+Afganistán,Bamiyan,Bamiyán,Af,05,0501
+Afganistán,Daikondi,Nili,Af,06,0601
+Afganistán,Farah,Farah,Af,07,0701
+Afganistán,Faryab,Maymanah,Af,08,0801
+Afganistán,Gazni,Gazni,Af,09,0901
+Afganistán,Gawr,Cagcaran,Af,10,1001
+Afganistán,Jost,Jost,Af,11,1101
+Afganistán,Helmand,Lashkar Gah,Af,12,1201
+Afganistán,Herat,Herat,Af,13,1301
+Afganistán,Jawzjan,ibargan,Af,14,1401
+Afganistán,Kabul,Kabul,Af,15,1501
+Afganistán,Kandahar,Kandahar,Af,16,1601
+Afganistán,Kapisa,Mahmud-i-Raqi,Af,17,1701
+Afganistán,Kunar,Asadabad,Af,18,1801
+Afganistán,Lagman,Mehtar Lam,Af,19,1901
+Afganistán,Lawgar,Pul-i-Alam,Af,20,2001
+Afganistán,Nangarhar,Jalalabad,Af,21,2101
+Afganistán,Nimruz,Zaranj,Af,22,2201
+Afganistán,Nuristan,Parun,Af,23,2301
+Afganistán,Paktiya,Gardez,Af,24,2401
+Afganistán,Paktika,Sharan,Af,25,2501
+Afganistán,Panjshir,Bazarak,Af,26,2601
+Afganistán,Parvan,Charikar,Af,27,2701
+Afganistán,Qunduz,Qunduz,Af,28,2801
+Afganistán,Samangan,Aybak,Af,29,2901
+Afganistán,Sar-e Pul,Sar-e Pul,Af,30,3001
+Afganistán,Tahar,Taloqan,Af,31,3101
+Afganistán,Uruzgan,Tarin Kowt,Af,32,3201
+Afganistán,Vardak,Meydan Shahr,Af,33,3301
+Afganistán,Zabul,Qalat,Af,34,3401
+Albania,Berat,Berat,Al,01,0101
+Albania,Dibr,Peshkopi,Al,02,0201
+Albania,Durrs,Durrs,Al,03,0301
+Albania,Elbasan,Elbasan,Al,04,0401
+Albania,Fier,Fier,Al,05,0501
+Albania,Gjirokastr,Gjirokastr,Al,06,0601
+Albania,Kor,Kor,Al,07,0701
+Albania,Kuks,Kuks,Al,08,0801
+Albania,Lezh,Lezh,Al,09,0901
+Albania,Shkodr,Shkodr,Al,10,1001
+Albania,Tirana,Tirana,Al,11,1101
+Albania,Vlor,Vlor,Al,12,1201
+Alemania,Baden-Wurtemberg,Stuttgart,De,01,0101
+Alemania,Baviera,Múnich,De,02,0201
+Alemania,Bayern,München,De,03,0301
+Alemania,Berlín,Berlin,De,04,0401
+Alemania,Brandeburgo,Potsdam,De,05,0501
+Alemania,"Brandenburg, Bramborska, Brannenborg",Podstupim,De,06,0601
+Alemania,Ciudad libre hanseática de Bremen,Bremen,De,07,0701
+Alemania,Ciudad libre y hanseática de Hamburgo,Hamburgo,De,08,0801
+Alemania,Hesse,Wiesbaden,De,09,0901
+Alemania,Mecklemburgo-Pomerania Occidental,Schwerin,De,10,1001
+Alemania,Baja Sajonia,Hanóver,De,11,1101
+Alemania,Niedersachsen,Hannover,De,12,1201
+Alemania,Renania del Norte-Westfalia Nordrhein-Westfalen,Düsseldorf,De,13,1301
+Alemania,Renania-Palatinado Rheinland-Pfalz,Maguncia,De,14,1401
+Alemania,Sarre,Saarbrücken,De,15,1501
+Alemania,Sajonia,Dresde,De,16,1601
+Alemania,Sachsen,Dresden,De,17,1701
+Alemania,Sajonia-Anhalt,Magdeburgo,De,18,1801
+Alemania,Sachsen-Anhalt,Magdeburg,De,19,1901
+Alemania,Schleswig-Holstein,Kiel,De,20,2001
+Alemania,Turingia,Érfurt,De,21,2101
+Alemania,Thüringen,Erfurt,De,22,2201
+Alemania,República Federal de Alemania,Berlín,De,23,2301
+Angola,Bengo,Caxito,Ao,01,0101
+Angola,Benguela,Benguela,Ao,02,0201
+Angola,Bié,Kuito,Ao,03,0301
+Angola,Cabinda,Cabinda,Ao,04,0401
+Angola,Kuando Kubango,Menongue,Ao,05,0501
+Angola,Kwanza-Norte,NDalatando,Ao,06,0601
+Angola,Kwanza-Sul,Sumbe,Ao,07,0701
+Angola,Cunene,NGiva,Ao,08,0801
+Angola,Huambo,Huambo,Ao,09,0901
+Angola,Huila,Lubango,Ao,10,1001
+Angola,Luanda,Luanda,Ao,11,1101
+Angola,Lunda-Norte,Lucapa,Ao,12,1201
+Angola,Lunda-Sul,Saurimo,Ao,13,1301
+Angola,Malanje,Malanje,Ao,14,1401
+Angola,Moxico,Lwena,Ao,15,1501
+Angola,Namibe,Namibe,Ao,16,1601
+Angola,Uíge,Uíge,Ao,17,1701
+Angola,Zaire,MBanza Kongo,Ao,18,1801
+Arabia Saudita,Yauf,Sakaka,Sa,01,0101
+Arabia Saudita,Frontera del Norte,Arar,Sa,02,0201
+Arabia Saudita,Tabuk,Tabuk,Sa,03,0301
+Arabia Saudita,Haíl,Haíl,Sa,04,0401
+Arabia Saudita,Medina,Medina,Sa,05,0501
+Arabia Saudita,Casim,Buraidá,Sa,06,0601
+Arabia Saudita,La Meca,La Meca,Sa,07,0701
+Arabia Saudita,Riad,Riad,Sa,08,0801
+Arabia Saudita,Provincia Oriental,Dammam,Sa,09,0901
+Arabia Saudita,Baha,Al Bahah,Sa,10,1001
+Arabia Saudita,Asir,Abha,Sa,11,1101
+Arabia Saudita,Jizán,Jizán,Sa,12,1201
+Arabia Saudita,Najrán,Najrán,Sa,13,1301
+Argelia, Adrar, Adrar,Dz,01,0101
+Argelia, Chlef, Chlef,Dz,02,0201
+Argelia, Laghouat, Laghouat,Dz,03,0301
+Argelia, Oum el-Bouaghi, Oum el-Bouaghi,Dz,04,0401
+Argelia, Batna, Batna,Dz,05,0501
+Argelia, Bugía, Bugía,Dz,06,0601
+Argelia, Biskra, Biskra,Dz,07,0701
+Argelia, Béchar, Béchar,Dz,08,0801
+Argelia, Blida, Blida,Dz,09,0901
+Argelia, Buira, Buira,Dz,10,1001
+Argelia, Tamanghasset, Tamanghasset,Dz,11,1101
+Argelia, Tébessa, Tébessa,Dz,12,1201
+Argelia, Tlemecén, Tlemecén,Dz,13,1301
+Argelia, Tiaret, Tiaret,Dz,14,1401
+Argelia, Tizi Ouzou, Tizi Ouzou,Dz,15,1501
+Argelia, Argel, Argel,Dz,16,1601
+Argelia, Djelfa, Djelfa,Dz,17,1701
+Argelia, Jijel, Jijel,Dz,18,1801
+Argelia, Sétif, Sétif,Dz,19,1901
+Argelia, Saida, Saida,Dz,20,2001
+Argelia, Skikda, Skikda,Dz,21,2101
+Argelia, Sidi Bel Abbes, Sidi Bel Abbes,Dz,22,2201
+Argelia, Annaba, Annaba,Dz,23,2301
+Argelia, Guelma, Guelma,Dz,24,2401
+Argelia, Constantina, Constantina,Dz,25,2501
+Argelia, Médéa, Médéa,Dz,26,2601
+Argelia, Mostaganem, Mostaganem,Dz,27,2701
+Argelia, MSila, MSila,Dz,28,2801
+Argelia, Muaskar, Muaskar,Dz,29,2901
+Argelia, Ouargla, Ouargla,Dz,30,3001
+Argelia, Orán, Orán,Dz,31,3101
+Argelia, El Bayadh, El Bayadh,Dz,32,3201
+Argelia, Illizi, Illizi,Dz,33,3301
+Argelia, Bordj Bou Arréridj, Bordj Bou Arréridj,Dz,34,3401
+Argelia, Bumerdés, Bumerdés,Dz,35,3501
+Argelia, El Tarf, El Tarf,Dz,36,3601
+Argelia, Tinduf, Tinduf,Dz,37,3701
+Argelia, Tissemsilt, Tissemsilt,Dz,38,3801
+Argelia, El Oued, El Oued,Dz,39,3901
+Argelia, Jenchela, Jenchela,Dz,40,4001
+Argelia, Souk Ahras, Souk Ahras,Dz,41,4101
+Argelia, Tipasa, Tipasa,Dz,42,4201
+Argelia, Mila, Mila,Dz,43,4301
+Argelia, Aín Defla, Aín Defla,Dz,44,4401
+Argelia, Naama, Naama,Dz,45,4501
+Argelia, An Témouchent, An Témouchent,Dz,46,4601
+Argelia, Gardaya, Gardaya,Dz,47,4701
+Argelia, Relizan, Relizan,Dz,48,4801
+Argentina,Buenos Aires - Ciudad de Buenos Aires,Gran Buenos Aires,Ar,01,0101
+Argentina,Córdoba,Gran Córdoba,Ar,02,0201
+Argentina,Santa Fe,Gran Rosario,Ar,03,0301
+Argentina,Santa Fe,Gran Santa Fe,Ar,03,0801
+Argentina,Mendoza,Gran Mendoza,Ar,04,0401
+Argentina,Tucumán,Gran San Miguel de Tucumán,Ar,05,0501
+Argentina,Buenos Aires,Gran La Plata,Ar,06,0601
+Argentina,Buenos Aires,Mar del Plata,Ar,06,0602
+Argentina,Buenos Aires,Gran Bahía Blanca,Ar,06,1601
+Argentina,Salta,Gran Salta,Ar,07,0701
+Argentina,San Juan,Gran San Juan,Ar,08,0901
+Argentina,Chaco,Gran Resistencia,Ar,09,1001
+Argentina,Santiago del Estero,Santiago del Estero - La Banda,Ar,10,1101
+Argentina,Corrientes,Gran Corrientes,Ar,11,1201
+Argentina,Neuquén - Río Negro,Neuquén - Plottier - Cipolletti,Ar,12,1301
+Argentina,Misiones,Gran Posadas,Ar,13,1401
+Argentina,Jujuy,Gran San Salvador de Jujuy,Ar,14,1501
+Argentina,Entre Ríos,Gran Paraná,Ar,15,1701
+Argentina,Formosa,Formosa,Ar,16,1801
+Argentina,San Luis,Gran San Luis,Ar,17,1901
+Armenia,Aragatsotn,Ashtarak,Am,01,0101
+Armenia,Ararat ,Artashat,Am,02,0201
+Armenia,Armavir ,Armavir ,Am,03,0301
+Armenia,Gegharkunik,Gavar ,Am,04,0401
+Armenia,Kotayk ,Hrazdan ,Am,05,0501
+Armenia,Lorri ,Vanadzor,Am,06,0601
+Armenia,Shirak ,Gyumri ,Am,07,0701
+Armenia,Syunik ,Kapan ,Am,08,0801
+Armenia,Tavush ,Ijevan ,Am,09,0901
+Armenia,Vayots Dzor ,Yeghegnadzor,Am,10,1001
+Armenia,Yereván,Yereván,Am,11,1101
+Australia,Nueva Gales del Sur,Sídney,Au,01,0101
+Australia,Victoria,Melbourne,Au,02,0201
+Australia,Queensland,Brisbane,Au,03,0301
+Australia,Australia Occidental,Perth,Au,04,0401
+Australia,Australia Meridional,Adelaida,Au,05,0501
+Australia,Territorio de la Capital Australiana,Canberra,Au,06,0601
+Australia,Tasmania,Hobart,Au,07,0701
+Australia,Territorio del Norte,Darwin,Au,08,0801
+Austria,Burgenland,Eisenstadt,At,01,0101
+Austria,Carintia,Klagenfurt,At,02,0201
+Austria,Baja Austria,Sankt Plten,At,03,0301
+Austria,Salzburgo,Salzburgo,At,04,0401
+Austria,Estiria,Graz,At,05,0501
+Austria,Tirol,Innsbruck,At,06,0601
+Austria,Alta Austria,Linz,At,07,0701
+Austria,Viena,Viena,At,08,0801
+Austria,Vorarlberg,Bregenz,At,09,0901
+Azerbaiyán,Bakú,Bakú,Az,01,0101
+Azerbaiyán,Ganja,Ganja,Az,02,0201
+Azerbaiyán,Sumqayit,Sumqayit,Az,03,0301
+Azerbaiyán,Mingachevir,Mingachevir,Az,04,0401
+Azerbaiyán,Lankaran,Lankaran,Az,05,0501
+Azerbaiyán,Shirvan,Shirvan,Az,06,0601
+Azerbaiyán,Najicheván,Najicheván,Az,07,0701
+Azerbaiyán,Smkir,Smkir,Az,08,0801
+Azerbaiyán,Ski,Ski,Az,09,0901
+Azerbaiyán,Yevlax,Yevlax,Az,10,1001
+Azerbaiyán,Xamaz,Xamaz,Az,11,1101
+Azerbaiyán,Clilabad,Clilabad,Az,12,1201
+Azerbaiyán,Stepanakert,Stepanakert,Az,13,1301
+Azerbaiyán,Agcabdi,Agcabdi,Az,14,1401
+Azerbaiyán,Samaxi,Samaxi,Az,15,1501
+Azerbaiyán,Salyan,Salyan,Az,16,1601
+Azerbaiyán,Agdam,Agdam,Az,17,1701
+Azerbaiyán,Neftala,Neftala,Az,18,1801
+Azerbaiyán,Quba,Quba,Az,19,1901
+Azerbaiyán,Brd,Brd,Az,20,2001
+Bahamas,Acklins,Spring Point,Bs,01,0101
+Bahamas,Nueva providencia,Nasáu,Bs,02,0201
+Bangladés,Daca,Daca,Bd,01,0101
+Bangladés,Chittagong,Chittagong,Bd,02,0201
+Bangladés,Narayanganj,Daca,Bd,03,0301
+Bangladés,Khulna,Khulna,Bd,04,0401
+Bangladés,Rajshahi,Rajshahi,Bd,05,0501
+Bangladés,Sylhet,Sylhet,Bd,06,0601
+Bangladés,Mymensingh,Daca,Bd,07,0701
+Bangladés,Comilla,Chittagong,Bd,08,0801
+Bangladés,Rangpur,Rajshahi,Bd,09,0901
+Bangladés,Barisal,Barisal,Bd,10,1001
+Bangladés,Bogra,Rajshahi,Bd,11,1101
+Bangladés,Jessore,Khulna,Bd,12,1201
+Barbados,Christ Church,Oistins,Bb,01,0101
+Barbados,Saint Andrew,Belleplaine,Bb,02,0201
+Barbados,Saint George,The Glebe,Bb,03,0301
+Barbados,Saint James,Holetown,Bb,04,0401
+Barbados,Saint Joseph,Bathsheba,Bb,05,0501
+Barbados,Saint Lucy,Checker Hall,Bb,06,0601
+Barbados,Saint Michael,Bridgetown,Bb,07,0701
+Barbados,Saint Peter,Speightstown,Bb,08,0801
+Barbados,Saint Philip,Six Cross Roads,Bb,09,0901
+Barbados,Saint Thomas,Sturges,Bb,10,1001
+Barbados,Saint John,Parroquia,Bb,11,1101
+Baréin,Muharraq,Al Muharraq,Bh,01,0101
+Baréin,Sur,Riffa,Bh,02,0201
+Baréin,Central,Madinat Isa,Bh,03,0301
+Baréin,Norte,Jidhafs,Bh,04,0401
+Bélgica,Comunidad Flamenca,Bruselas,Be,01,0101
+Bélgica,Comunidad Francesa,Bruselas,Be,02,0201
+Bélgica,Comunidad Germanófona,Eupen,Be,03,0301
+Belice,Belice,Ciudad de Belice,Bz,01,0101
+Belice,Cayo,San Ignacio,Bz,02,0201
+Belice,Corozal,Corozal,Bz,03,0301
+Belice,Orange Walk,Orange Walk Town,Bz,04,0401
+Belice,Stann Creek,Dangriga,Bz,05,0501
+Belice,Toledo,Punta Gorda,Bz,06,0601
+Benín,Alibori ,Kandi,Bj,01,0101
+Benín,Atakora,Natitingou,Bj,02,0201
+Benín,Atlantique,Ouidah,Bj,03,0301
+Benín,Borgou,Parakou,Bj,04,0401
+Benín,Collines,Savalou,Bj,05,0501
+Benín,Donga,Djougou,Bj,06,0601
+Benín,Kouffo,Aplahoué,Bj,07,0701
+Benín,Litoral,Cotonú,Bj,08,0801
+Benín,Mono,Lokossa,Bj,09,0901
+Benín,Ouémé,Porto Novo,Bj,10,1001
+Benín,Plateau,Pobè,Bj,11,1101
+Benín,Zou,Abomey,Bj,12,1201
+Bielorrusia,Minsk,Minsk,By,01,0101
+Bielorrusia,Gómel,Gómel,By,02,0201
+Bielorrusia,Maguilov,Maguilov,By,03,0301
+Bielorrusia,Vítebsk,Vítebsk,By,04,0401
+Bielorrusia,Grodno,Grodno,By,05,0501
+Bielorrusia,Brest,Brest,By,06,0601
+Bielorrusia,Babruisk,Babruisk,By,07,0701
+Bielorrusia,Baránavichi,Baránavichi,By,08,0801
+Bielorrusia,Borisov,Borisov,By,09,0901
+Bielorrusia,Orsha,Orsha,By,10,1001
+Bolivia, Beni,Trinidad,Bo,01,0101
+Bolivia, Chuquisaca,Sucre,Bo,02,0201
+Bolivia, Cochabamba,Cochabamba,Bo,03,0301
+Bolivia, La Paz,Nuestra Señora de La Paz,Bo,04,0401
+Bolivia, Oruro,Oruro,Bo,05,0501
+Bolivia, Pando,Cobija,Bo,06,0601
+Bolivia, Potosí,Potosí,Bo,07,0701
+Bolivia, Santa Cruz,Santa Cruz de la Sierra,Bo,08,0801
+Bolivia, Tarija,Tarija,Bo,09,0901
+"Bonaire, San Eustaquio Y Saba", Bonaire,Kralendijk,Bq,01,0101
+"Bonaire, San Eustaquio Y Saba", San Eustaquio,Oranjestad (San Eustaquio),Bq,02,0201
+"Bonaire, San Eustaquio Y Saba", Saba,The Bottom,Bq,03,0301
+Bosnia-Herzegovina,Cantón de Una-Sana,Bihac,Ba,01,0101
+Bosnia-Herzegovina,Cantón de Posavina,Oraje,Ba,02,0201
+Bosnia-Herzegovina,Cantón de Tuzla,Tuzla,Ba,03,0301
+Bosnia-Herzegovina,Zenicko-dobojski kanton,Zenica,Ba,04,0401
+Bosnia-Herzegovina,Cantón de Podrinje Bosnio,Gorade,Ba,05,0501
+Bosnia-Herzegovina,Cantón de Bosnia Central,Travnik,Ba,06,0601
+Bosnia-Herzegovina,Cantón de Herzegovina-Neretva,Mostar,Ba,07,0701
+Bosnia-Herzegovina,Cantón de Herzegovina Occidental,iroki Brijeg,Ba,08,0801
+Bosnia-Herzegovina,Cantón de Sarajevo,Sarajevo,Ba,09,0901
+Bosnia-Herzegovina,Condado de Herzeg-Bosnia,Livno,Ba,10,1001
+Botsuana,Distrito Central,Serowe,Bw,01,0101
+Botsuana,Distrito de Ghanzi,Ghanzi,Bw,02,0201
+Botsuana,Distrito de Kgalagadi,Tsabong,Bw,03,0301
+Botsuana,Distrito de Kgatleng,Mochudi,Bw,04,0401
+Botsuana,Distrito de Kweneng,Molepolole,Bw,05,0501
+Botsuana,Distrito Noreste,Masunga,Bw,06,0601
+Botsuana,Noroeste Central,Maun,Bw,07,0701
+Botsuana,Distrito Sudeste,Ramotswa,Bw,08,0801
+Botsuana,Distrito Sur,Kanye,Bw,09,0901
+Brasil,Amazonas,Manaos,Br,04,0401
+Brasil,Acre,Rio Branco,Br,01,0101
+Brasil,Alagoas,Maceió,Br,02,0201
+Brasil,Amapá,Macapá,Br,03,0301
+Brasil,Bahía,Salvador de Bahía,Br,05,0501
+Brasil,Ceará,Fortaleza,Br,06,0601
+Brasil,Espírito Santo,Vitória,Br,07,0701
+Brasil,Goiás,Goinia,Br,08,0801
+Brasil,Maranho,So Luís,Br,09,0901
+Brasil,Mato Grosso,Cuiabá,Br,10,1001
+Brasil,Mato Grosso del Sur,Campo Grande,Br,11,1101
+Brasil,Minas Gerais,Belo Horizonte,Br,12,1201
+Brasil,Estado de Pará,Belém do Pará,Br,13,1301
+Brasil,Paraíba,Joo Pessoa,Br,14,1401
+Brasil,Paraná,Curitiba,Br,15,1501
+Brasil,Estado de Pernambuco,Recife,Br,16,1601
+Brasil,Piauí,Teresina,Br,17,1701
+Brasil,Río de Janeiro,Río de Janeiro,Br,18,1801
+Brasil,Río Grande del Norte,Natal,Br,19,1901
+Brasil,Río Grande del Sur,Porto Alegre,Br,20,2001
+Brasil,Rondnia,Porto Velho,Br,21,2101
+Brasil,Roraima,Boa Vista,Br,22,2201
+Brasil,Santa Catarina,Florianópolis,Br,23,2301
+Brasil,So Paulo,So Paulo,Br,24,2401
+Brasil,Sergipe,Aracaju,Br,25,2501
+Brasil,Tocantins,Palmas,Br,26,2601
+Brasil,Distrito Federal,Brasilia,Br,27,2701
+Brasil,República Federal de Brasil,Brasilia,Br,28,2801
+Brunéi,Belait,Kuala Belait,Bn,01,0101
+Brunéi,Tutong,Tutong,Bn,02,0201
+Brunéi,Brunéi y Muara,Bandar Seri Begawan,Bn,03,0301
+Brunéi,Temburong,Bangar,Bn,04,0401
+Bulgaria,Blagoevgrad,Blagoevgrad,Bg,01,0101
+Bulgaria,Burgas,Burgas,Bg,02,0201
+Bulgaria,Dobrich,Dobrich,Bg,03,0301
+Bulgaria,Gabrovo,Gabrovo,Bg,04,0401
+Bulgaria,Haskovo,Haskovo,Bg,05,0501
+Bulgaria,Kardzhali,Kardzhali,Bg,06,0601
+Bulgaria,Kyustendil,Kyustendil,Bg,07,0701
+Bulgaria,Lovech,Lovech,Bg,08,0801
+Bulgaria,Montana,Montana,Bg,09,0901
+Bulgaria,Pazardzhik,Pazardzhik,Bg,10,1001
+Bulgaria,Pernik,Pernik,Bg,11,1101
+Bulgaria,Pleven,Pleven,Bg,12,1201
+Bulgaria,Plovdiv,Plovdiv,Bg,13,1301
+Bulgaria,Razgrad,Razgrad,Bg,14,1401
+Bulgaria,Ruse,Ruse,Bg,15,1501
+Bulgaria,Shumen,Shumen,Bg,16,1601
+Bulgaria,Silistra,Silistra,Bg,17,1701
+Bulgaria,Sliven,Sliven,Bg,18,1801
+Bulgaria,Smolyan,Smolyan,Bg,19,1901
+Bulgaria,Sofía,Sofía,Bg,20,2001
+Bulgaria,Sofía-Ciudad,Sofía-Ciudad,Bg,21,2101
+Bulgaria,Stara Zagora,Stara Zagora,Bg,22,2201
+Bulgaria,Targovishte,Targovishte,Bg,23,2301
+Bulgaria,Varna,Varna,Bg,24,2401
+Bulgaria,Veliko Tarnovo,Veliko Tarnovo,Bg,25,2501
+Bulgaria,Vidin,Vidin,Bg,26,2601
+Bulgaria,Vratsa,Vratsa,Bg,27,2701
+Bulgaria,Yambol,Yambol,Bg,28,2801
+Burkina Faso,Boucle du Mouhoun ,Dédougou,Bf,01,0101
+Burkina Faso,Cascades ,Banfora,Bf,02,0201
+Burkina Faso,Centro,Uagadugú,Bf,03,0301
+Burkina Faso,Centro-Este ,Tenkodogo,Bf,04,0401
+Burkina Faso,Centro-Norte ,Kaya,Bf,05,0501
+Burkina Faso,Centro-Oeste ,Koudougou,Bf,06,0601
+Burkina Faso,Centro-Sur ,Manga,Bf,07,0701
+Burkina Faso,Este ,Fada Ngourma,Bf,08,0801
+Burkina Faso,Hauts-Bassins,Bobo Dioulasso,Bf,09,0901
+Burkina Faso,Norte,Ouahigouya,Bf,10,1001
+Burkina Faso,Plateau-Central ,Ziniaré,Bf,11,1101
+Burkina Faso,Sahel ,Dori,Bf,12,1201
+Burkina Faso,Suroeste ,Gaoua,Bf,13,1301
+Burundi,Bubanza,Bubanza,Bi,01,0101
+Burundi,Buyumbura Mairie,Buyumbura Mairie,Bi,02,0201
+Burundi,Buyumbura Rural,Buyumbura Rural,Bi,03,0301
+Burundi,Bururi,Bururi,Bi,04,0401
+Burundi,Cankuzo,Cankuzo,Bi,05,0501
+Burundi,Cibitoke,Cibitoke,Bi,06,0601
+Burundi,Gitega,Gitega,Bi,07,0701
+Burundi,Karuzi,Karuzi,Bi,08,0801
+Burundi,Kayanza,Kayanza,Bi,09,0901
+Burundi,Kirundo,Kirundo,Bi,10,1001
+Burundi,Makamba,Makamba,Bi,11,1101
+Burundi,Muramvya,Muramvya,Bi,12,1201
+Burundi,Muyinga,Muyinga,Bi,13,1301
+Burundi,Mwaro,Mwaro,Bi,14,1401
+Burundi,Ngozi,Ngozi,Bi,15,1501
+Burundi,Rutana,Rutana,Bi,16,1601
+Burundi,Ruyigi,Ruyigi,Bi,17,1701
+Bután,Bumthang,Jakar,Bt,01,0101
+Bután,Chukha,Chukha,Bt,02,0201
+Bután,Dagana,Dagana,Bt,03,0301
+Bután,Gasa,Gasa,Bt,04,0401
+Bután,Haa,Haa,Bt,05,0501
+Bután,Lhuntse,Lhuntse,Bt,06,0601
+Bután,Mongar,Mongar,Bt,07,0701
+Bután,Paro,Paro,Bt,08,0801
+Bután,Pemagatshel,Permagatshel,Bt,09,0901
+Bután,Punakha,Punakha,Bt,10,1001
+Bután,Samdrup Jongkhar,Samdrup Jongkhar,Bt,11,1101
+Bután,Samtse,Samste,Bt,12,1201
+Bután,Sarpang,Sarpang,Bt,13,1301
+Bután,Timbu,Timbu,Bt,14,1401
+Bután,Trashigang,Trashigang,Bt,15,1501
+Bután,Trashiyangtse,Trashiyangtse,Bt,16,1601
+Bután,Trongsa,Trongsa,Bt,17,1701
+Bután,Tsirang,Damphu,Bt,18,1801
+Bután,Wangdue Phodrang,Wangdue Phodrang,Bt,19,1901
+Bután,Zhemgang,Zhemgang,Bt,20,2001
+Cabo Verde,Santiago,Santiago,Cv,01,0101
+Cabo Verde,Santo Anto,San Antón,Cv,02,0201
+Cabo Verde,Boavista,Buena Vista,Cv,03,0301
+Cabo Verde,Fogo,Fuego,Cv,04,0401
+Cabo Verde,So Nicolau,San Nicólas,Cv,05,0501
+Cabo Verde,Maio,Mayo,Cv,06,0601
+Cabo Verde,So Vicente,San Vicente,Cv,07,0701
+Cabo Verde,Sal,Sal,Cv,08,0801
+Cabo Verde,Brava,Brava,Cv,09,0901
+Cabo Verde,Santa Luzia,Santa Lucía,Cv,10,1001
+Camboya,Banteay Mean Chey,Sisophon,Kh,01,0101
+Camboya,Battambang,Battambang,Kh,02,0201
+Camboya,Kompung Cham,Kompung Cham,Kh,03,0301
+Camboya,Kompung Chinang,Kompung Chinang,Kh,04,0401
+Camboya,Kompung Speu,Kompung Speu,Kh,05,0501
+Camboya,Kompung Thom,Kompung Thom,Kh,06,0601
+Camboya,Kompot,Kompot,Kh,07,0701
+Camboya,Kandal,Ta Khmau,Kh,08,0801
+Camboya,Koh Kong,Koh Kong,Kh,09,0901
+Camboya,Kep,Ciudad de Kep,Kh,10,1001
+Camboya,Kratié,Kratié,Kh,11,1101
+Camboya,Mondol Kirí,Sen Monorom,Kh,12,1201
+Camboya,Oddar Mean Chey,Anglong Veng,Kh,13,1301
+Camboya,Pailín,Ciudad de Pailín,Kh,14,1401
+Camboya,Phnom Penh,Ciudad de Phnom Penh,Kh,15,1501
+Camboya,Sihanoukville,Ciudad de Sihanoukville,Kh,16,1601
+Camboya,Preah Wijía,Phnom Tbeng Mean Chey,Kh,17,1701
+Camboya,Pursat,Pursat,Kh,18,1801
+Camboya,Prey Veng,Prey Veng,Kh,19,1901
+Camboya,Ratanak Kirí,Banlung,Kh,20,2001
+Camboya,Siem Riep,Siem Riep,Kh,21,2101
+Camboya,Stung Treng,Stung Treng,Kh,22,2201
+Camboya,Svay Rieng,Svay Rieng,Kh,23,2301
+Camboya,Takéo,Takéo,Kh,24,2401
+Camerún,Adamawa,Ngaoundéré,Cm,01,0101
+Camerún,Centro,Yaoundé,Cm,02,0201
+Camerún,Este,Bertoua,Cm,03,0301
+Camerún,Extremo Norte,Maroua,Cm,04,0401
+Camerún,Litoral,Douala,Cm,05,0501
+Camerún,Norte,Garoua,Cm,06,0601
+Camerún,Noroeste,Bamenda,Cm,07,0701
+Camerún,Sur,Ebolowa,Cm,08,0801
+Camerún,Sudoeste,Buea,Cm,09,0901
+Camerún,Oeste,Bafoussam,Cm,10,1001
+Canadá, Ontario ,Toronto,Ca,01,0101
+Canadá, Quebec ,Ciudad de Quebec,Ca,02,0201
+Canadá, Nueva Escocia,Halifax,Ca,03,0301
+Canadá, Nuevo Brunswick ,Fredericton,Ca,04,0401
+Canadá, Manitoba,Winnipeg,Ca,05,0501
+Canadá, Columbia Británica,Victoria,Ca,06,0601
+Canadá, Isla del Príncipe Eduardo,Charlottetown,Ca,07,0701
+Canadá, Saskatchewan  ,Regina,Ca,08,0801
+Canadá, Alberta  ,Edmonton,Ca,09,0901
+Canadá, Terranova y Labrador,San Juan de Terranova,Ca,10,1001
+Canadá, Territorios del Noroeste,Yellowknife,Ca,11,1101
+Canadá, Yukón,Whitehorse,Ca,12,1201
+Canadá, Nunavut,Iqaluit,Ca,13,1301
+Chad,Batha,Ati,Td,01,0101
+Chad,Chari-Baguirmi,Massenya,Td,02,0201
+Chad,Hadjer-Lamis,Massakory,Td,03,0301
+Chad,Wadi Fira,Biltine,Td,04,0401
+Chad,Barh El Gazel,Moussoro,Td,05,0501
+Chad,Borkou,Faya-Largeau,Td,06,0601
+Chad,Ennedi,Fada,Td,07,0701
+Chad,Guéra,Mongo,Td,08,0801
+Chad,Kanem,Mao,Td,09,0901
+Chad,Lac,Bol,Td,10,1001
+Chad,Logone Occidental,Moundou,Td,11,1101
+Chad,Logone Oriental,Doba,Td,12,1201
+Chad,Mandoul,Koumra,Td,13,1301
+Chad,Mayo-Kebbi Este,Bongor,Td,14,1401
+Chad,Mayo-Kebbi Oeste,Pala,Td,15,1501
+Chad,Moyen-Chari,Sarh,Td,16,1601
+Chad,Ouadda,Abéché,Td,17,1701
+Chad,Salamat,Am Timan,Td,18,1801
+Chad,Sila,Bardai,Td,19,1901
+Chad,Tandjilé,La,Td,20,2001
+Chad,Tibesti,Goz Beda,Td,21,2101
+Chad,Yamena,Yamena,Td,22,2201
+Chile,Arica y Parinacota,Arica,Cl,01,0101
+Chile,Tarapacá,Iquique,Cl,02,0201
+Chile,Antofagasta,Antofagasta,Cl,03,0301
+Chile,Atacama,Copiapó,Cl,04,0401
+Chile,Coquimbo,La Serena,Cl,05,0501
+Chile,Valparaíso,Valparaíso,Cl,06,0601
+Chile,Metropolitana de Santiago,Santiago,Cl,07,0701
+Chile,Libertador General Bernardo OHiggins,Rancagua,Cl,08,0801
+Chile,Maule,Talca,Cl,09,0901
+Chile,Biobío,Concepción,Cl,10,1001
+Chile,La Araucanía,Temuco,Cl,11,1101
+Chile,Los Ríos,Valdivia,Cl,12,1201
+Chile,Los Lagos,Puerto Montt,Cl,13,1301
+Chile,Aysén del General Carlos Ibáñez del Campo,Coyhaique,Cl,14,1401
+Chile,Magallanes y Antártica Chilena,Punta Arenas,Cl,15,1501
+China,Xinjiang,Ürümqi,Cn,01,0101
+China,Mongolia Interior,Hohhot,Cn,02,0201
+China,Heilongjiang,Harbin,Cn,03,0301
+China,Jilin,Changchun,Cn,04,0401
+China,Liaoning,Shenyang,Cn,05,0501
+China,Tíbet,Lhasa,Cn,06,0601
+China,Qinghai,Xining,Cn,07,0701
+China,Gansu,Lanzhou,Cn,08,0801
+China,Ningxia,Yinchuan,Cn,09,0901
+China,Shaanxi,Xian,Cn,10,1001
+China,Shanxi,Taiyuan,Cn,11,1101
+China,Hebei,Shijiazhuang,Cn,12,1201
+China,Pekín,Pekín,Cn,13,1301
+China,Tianjin,Tianjin,Cn,14,1401
+China,Shandong,Jinan,Cn,15,1501
+China,Henan,Zhengzhou,Cn,16,1601
+China,Sichuan,Chengdú,Cn,17,1701
+China,Chongqing,Chongqing,Cn,18,1801
+China,Hubei,Wuhan,Cn,19,1901
+China,Anhui,Heféi,Cn,20,2001
+China,Jiangsu,Nankín,Cn,21,2101
+China,Yunnan,Kunming,Cn,22,2201
+China,Guizhou,Guiyang,Cn,23,2301
+China,Hunan,Changsha,Cn,24,2401
+China,Jiangxi,Nanchang,Cn,25,2501
+China,Zhejiang,Hangzhou,Cn,26,2601
+China,Shanghái,Shanghái,Cn,27,2701
+China,Guangxi,Nanning,Cn,28,2801
+China,Guangdong,Guangzhou,Cn,29,2901
+China,Fujian,Fuzhou,Cn,30,3001
+China,Macao,Macao,Cn,31,3101
+China,Hong Kong,Hong Kong,Cn,32,3201
+China,Hainan,Haikou,Cn,33,3301
+China,Taiwán,Taipéi,Cn,34,3401
+Chipre,Distrito de Famagusta,Famagusta,Cy,01,0101
+Chipre,Distrito de Kyrenia,Kyrenia,Cy,02,0201
+Chipre,Distrito de Lárnaca,Lárnaca,Cy,03,0301
+Chipre,Distrito de Limassol,Limasol,Cy,04,0401
+Chipre,Distrito de Nicosia,Nicosia,Cy,05,0501
+Chipre,Distrito de Pafos,Pafos,Cy,06,0601
+Comoras,Isla Autónoma de Gran Comora,Moroni,Km,01,0101
+Comoras,Isla Autónoma de Anjouan,Mutsamudu,Km,02,0201
+Comoras,Isla Autónoma de Mohéli,Fomboni,Km,03,0301
+Congo,Pool  ,Brazzaville,Cg,01,0101
+Congo,Pool  ,Kinkala,Cg,01,1001
+Congo,Bouenza  ,Madingou,Cg,02,0201
+Congo,Cuvette  ,Owando,Cg,03,0301
+Congo,Cuvette-Oeste  ,Ewo,Cg,04,0401
+Congo,Kouilou  ,Hinda,Cg,05,0501
+Congo,Lékoumou  ,Sibiti,Cg,06,0601
+Congo,Likouala  ,Impfondo,Cg,07,0701
+Congo,Niari  ,Loubomo,Cg,08,0801
+Congo,Plateaux  ,Djambala,Cg,09,0901
+Congo,Sangha  ,Ouésso,Cg,10,1101
+Corea Del Norte,Pionyang,Chung-guyok,Kp,01,0101
+Corea Del Norte,Rason,Rason,Kp,02,0201
+Corea Del Norte,Sinuiju,Sinuiju,Kp,03,0301
+Corea Del Norte,Kaesong,Kaesong,Kp,04,0401
+Corea Del Norte,Kumgangsan,Kumgangsan,Kp,05,0501
+Corea Del Norte,Pyongan Sur,Pyongsong,Kp,06,0601
+Corea Del Norte,Pyongan Norte,Sinuiju,Kp,07,0701
+Corea Del Norte,Chagang,Kanggye,Kp,08,0801
+Corea Del Norte,Hwanghae Sur,Haeju,Kp,09,0901
+Corea Del Norte,Hwanghae del Norte,Sariwon,Kp,10,1001
+Corea Del Norte,Kangwon,Wonsan,Kp,11,1101
+Corea Del Norte,Hamgyong Sur,Hamhung,Kp,12,1201
+Corea Del Norte,Hamgyong Norte,Chongjin,Kp,13,1301
+Corea Del Norte,Ryanggang,Hyesan,Kp,14,1401
+Corea Del Sur,Chungcheong del Sur,Hongseong,Kr,01,0101
+Corea Del Sur,Gangwon-do,Chuncheon,Kr,02,0201
+Corea Del Sur,Gyeonggi-do,Suwon,Kr,03,0301
+Corea Del Sur,Gyeongsangbuk-do,Andong,Kr,04,0401
+Corea Del Sur,Gyeongsangnam-do,Changwon,Kr,05,0501
+Corea Del Sur,Jeollabuk-do,Jeonju,Kr,06,0601
+Corea Del Sur,Jeollanam-do,Muan,Kr,07,0701
+Corea Del Sur,Ciudad especial,Seúl,Kr,08,0801
+Corea Del Sur,Ciudad autónoma especial,Ciudad de Sejong,Kr,09,0901
+Corea Del Sur,Ciudad metropolitana,Busan,Kr,10,1001
+Corea Del Sur,Ciudad metropolitana,Daegu,Kr,10,1002
+Corea Del Sur,Ciudad metropolitana,Daejeon,Kr,10,1003
+Corea Del Sur,Ciudad metropolitana,Gwangju,Kr,10,1004
+Corea Del Sur,Ciudad metropolitana,Incheon,Kr,10,1005
+Corea Del Sur,Ciudad metropolitana,Ulsan,Kr,10,1006
+Costa De Marfil,Denguélé,Odienné,Ci,01,0101
+Costa De Marfil,Savanes,Korhogo,Ci,02,0201
+Costa De Marfil,Bafing,Touba,Ci,03,0301
+Costa De Marfil,Worodougou,Séguéla,Ci,04,0401
+Costa De Marfil,Vallée du Bandama,Bouaké,Ci,05,0501
+Costa De Marfil,Zanzan,Bondoukou,Ci,06,0601
+Costa De Marfil,Dix-Huit Montagnes,Man,Ci,07,0701
+Costa De Marfil,Haut-Sassandra,Daloa,Ci,08,0801
+Costa De Marfil,Marahoué,Bouaflé,Ci,09,0901
+Costa De Marfil,Lacs,Yamusukro,Ci,10,1001
+Costa De Marfil,Nzi-Comoé,Dimbokro,Ci,11,1101
+Costa De Marfil,Moyen-Comoé,Abengourou,Ci,12,1201
+Costa De Marfil,Moyen-Cavally,Guiglo,Ci,13,1301
+Costa De Marfil,Fromager,Gagnoa,Ci,14,1401
+Costa De Marfil,Agnéby,Agboville,Ci,15,1501
+Costa De Marfil,Bas-Sassandra,San Pedro,Ci,16,1601
+Costa De Marfil,Sud-Bandama,Divo,Ci,17,1701
+Costa De Marfil,Lagunes,Abiyán,Ci,18,1801
+Costa De Marfil,Sud-Comoé,Aboisso,Ci,19,1901
+Costa Rica,San José,San José,Cr,01,0101
+Costa Rica,Alajuela,Alajuela,Cr,02,0201
+Costa Rica,Cartago,Cartago,Cr,03,0301
+Costa Rica,Heredia,Heredia,Cr,04,0401
+Costa Rica,Liberia,Liberia,Cr,05,0501
+Costa Rica,Puntarenas,Puntarenas,Cr,06,0601
+Costa Rica,Limón,Limón,Cr,07,0701
+Croacia, Condado de Zagreb,Zagreb,Hr,01,0101
+Croacia, Krapina-Zagorje,Krapina,Hr,02,0201
+Croacia, Sisak-Moslavina,Sisak,Hr,03,0301
+Croacia, Karlovac,Karlovac,Hr,04,0401
+Croacia, Varadin,Varadin,Hr,05,0501
+Croacia, Koprivnica-Krievci,Koprivnica,Hr,06,0601
+Croacia, Bjelovar-Bilogora,Bjelovar,Hr,07,0701
+Croacia, Medimurje,Cakovec,Hr,08,0801
+Croacia, Zagreb, Zagreb,Hr,09,0901
+Croacia, Primorje-Gorski Kotar,Rijeka,Hr,10,1001
+Croacia, Lika-Senj,Gospic,Hr,11,1101
+Croacia, Istria,Pazin,Hr,12,1201
+Croacia, Virovitica-Podravina,Virovitica,Hr,13,1301
+Croacia, Poega-Eslavonia,Poega,Hr,14,1401
+Croacia, Brod-Posavina,Slavonski Brod,Hr,15,1501
+Croacia, Osijek-Baranya,Osijek,Hr,16,1601
+Croacia, Vukovar-Sirmia,Vukovar,Hr,17,1701
+Croacia, Zadar,Zadar,Hr,18,1801
+Croacia,ibenik-Knin,ibenik,Hr,19,1901
+Croacia, Split-Dalmacia,Split,Hr,20,2001
+Croacia, Dubrovnik-Neretva,Dubrovnik,Hr,21,2101
+Cuba,Pinar del Río,Pinar del Río,Cu,01,0101
+Cuba,Artemisa,Artemisa,Cu,02,0201
+Cuba,La Habana,La Habana,Cu,03,0301
+Cuba,Mayabeque,Mayabeque,Cu,04,0401
+Cuba,Matanzas,Matanzas,Cu,05,0501
+Cuba,Cienfuegos,Cienfuegos,Cu,06,0601
+Cuba,Villa Clara,Villa Clara,Cu,07,0701
+Cuba,Sancti Spíritus,Sancti Spíritus,Cu,08,0801
+Cuba,Ciego de Ávila,Ciego de Ávila,Cu,09,0901
+Cuba,Camagüey,Camagüey,Cu,10,1001
+Cuba,Las Tunas,Las Tunas,Cu,11,1101
+Cuba,Granma,Granma,Cu,12,1201
+Cuba,Holguín,Holguín,Cu,13,1301
+Cuba,Santiago de Cuba,Santiago de Cuba,Cu,14,1401
+Cuba,Guantánamo,Guantánamo,Cu,15,1501
+Cuba,Municipio Especial Isla de la Juventud,Nueva Gerona,Cu,16,1601
+Curazao,Willemstad,Willemstad,Cw,01,0101
+Dinamarca,Jutlandia Central,Viborg,Dk,01,0101
+Dinamarca,Capital,Hillerd,Dk,02,0201
+Dinamarca,Dinamarca Meridional,Vejle,Dk,03,0301
+Dinamarca,Jutlandia Septentrional,Aalborg,Dk,04,0401
+Dinamarca,Región de Selandia,Sor,Dk,05,0501
+Dominica,Roseau,Roseau,Dm,01,0101
+Egipto,Alejandría,Alejandría,Eg,01,0101
+Egipto,Asuán,Asuán,Eg,02,0201
+Egipto,Asiut,Asiut,Eg,03,0301
+Egipto,Behera,Damanhur,Eg,04,0401
+Egipto,Beni Suef,Beni Suef,Eg,05,0501
+Egipto,El Cairo,El Cairo,Eg,06,0601
+Egipto,Dacalia,Mansura,Eg,07,0701
+Egipto,Damieta,Damieta,Eg,08,0801
+Egipto,Fayún,Fayún,Eg,09,0901
+Egipto,Occidental,Tanta,Eg,10,1001
+Egipto,Guiza,Guiza,Eg,11,1101
+Egipto,Ismailia,Ismailia,Eg,12,1201
+Egipto,Kafr el Sheij,Kafr el Sheij,Eg,13,1301
+Egipto,Matrú,Marsá Matrú,Eg,14,1401
+Egipto,Menia,Menia,Eg,15,1501
+Egipto,Menufia,Shibin el-qom,Eg,16,1601
+Egipto,Nuevo Valle,El Jariyá,Eg,17,1701
+Egipto,Sinaí del Norte,El Arish,Eg,18,1801
+Egipto,Puerto Saíd,Puerto Saíd,Eg,19,1901
+Egipto,Caliubia,Banha,Eg,20,2001
+Egipto,Quena,Quena,Eg,21,2101
+Egipto,Mar Rojo,Hurgada,Eg,22,2201
+Egipto,Oriental,Zaqaziq,Eg,23,2301
+Egipto,Suhag,Suhag,Eg,24,2401
+Egipto,Sinaí del Sur,El Tor,Eg,25,2501
+Egipto,Suez,Suez,Eg,26,2601
+Egipto,Luxor,Luxor,Eg,27,2701
+El Salvador,Ahuachapán,Ahuachapán,Sv,01,0101
+El Salvador,Cabañas,Sensuntepeque,Sv,02,0201
+El Salvador,Chalatenango,Chalatenango,Sv,03,0301
+El Salvador,Cuscatlán,Cojutepeque,Sv,04,0401
+El Salvador,La Libertad,Santa Tecla,Sv,05,0501
+El Salvador,La Paz,Zacatecoluca,Sv,06,0601
+El Salvador,La Unión,La Unión,Sv,07,0701
+El Salvador,Morazán,San Francisco,Sv,08,0801
+El Salvador,San Miguel,San Miguel,Sv,09,0901
+El Salvador,San Salvador,San Salvador,Sv,10,1001
+El Salvador,San Vicente,San Vicente,Sv,11,1101
+El Salvador,Santa Ana,Santa Ana,Sv,12,1201
+El Salvador,Sonsonate,Sonsonate,Sv,13,1301
+El Salvador,Usulután,Usulután,Sv,14,1401
+Emiratos Árabes Unidos,Abu Dabi,Abu Dabi,Ae,01,0101
+Emiratos Árabes Unidos,Ajmán,Ajmán,Ae,02,0201
+Emiratos Árabes Unidos,Dubái,Dubái,Ae,03,0301
+Emiratos Árabes Unidos,Fuyaira,Fuyaira,Ae,04,0401
+Emiratos Árabes Unidos,Ras al-Jaima,Ras al-Jaima,Ae,05,0501
+Emiratos Árabes Unidos,Sarja,Sarja,Ae,06,0601
+Emiratos Árabes Unidos,Umm al-Qaywayn,Umm al-Qaywayn,Ae,07,0701
+Emiratos Árabes Unidos,EAU,Abu Dabi,Ae,08,0801
+Eritrea,Maekel,Asmara,Er,01,0101
+Eritrea,Debub,Mendefera,Er,02,0201
+Eritrea,Gash-Barka,Zoba,Er,03,0301
+Eritrea,Anseba,Keren,Er,04,0401
+Eritrea,Semenawi Keyih Bahri,Massawa,Er,05,0501
+Eritrea,Debubawi Keyih Bahri,Assab,Er,06,0601
+Eslovaquia,Región de Trnava,Trnava,Sk,01,0101
+Eslovaquia,Región de Trencín,Trencín,Sk,02,0201
+Eslovaquia,Región de Nitra,Nitra,Sk,03,0301
+Eslovaquia,Región de ilina,ilina,Sk,04,0401
+Eslovaquia,Región de Banská Bystrica,Banská Bystrica,Sk,05,0501
+Eslovaquia,Región de Preov,Preov,Sk,06,0601
+Eslovaquia,Región de Koice,Koice,Sk,07,0701
+Eslovenia,Región del Mura,Murska Sobota,Si,01,0101
+Eslovenia,Región del Drava,Maribor,Si,02,0201
+Eslovenia,Carintia eslovena,Carintia eslovena,Si,03,0301
+Eslovenia,Savinia,Celje,Si,04,0401
+Eslovenia,Zasavie,Trbovlje,Si,05,0501
+Eslovenia,Posavina,Posavina,Si,06,0601
+Eslovenia,Eslovenia Sudoriental,Novo Mesto,Si,07,0701
+Eslovenia,Eslovenia Central,Liubliana,Si,08,0801
+Eslovenia,Alta Carniola,Kranj,Si,09,0901
+Eslovenia,Baja Carniola-Karst,Postojna,Si,10,1001
+Eslovenia,Región de Gorizia,Nova Gorica,Si,11,1101
+Eslovenia,Litoral-Karst,Koper,Si,12,1201
+España,Comunidad de Madrid,Madrid,Es,09,0101
+España,Cataluña,Barcelona,Es,08,0201
+España,Comunidad Valenciana,Valencia,Es,10,0301
+España,Andalucía,Sevilla,Es,01,0401
+España,Aragón,Zaragoza,Es,02,0501
+España,Andalucía,Málaga,Es,01,0601
+España,Región de Murcia,Murcia,Es,17,0701
+España,Islas Baleares,Palma de Mallorca,Es,13,0801
+España,Canarias,Las Palmas de Gran Canaria,Es,04,0901
+España,País Vasco,Bilbao,Es,16,1001
+España,Comunidad Valenciana,Alicante,Es,10,1101
+España,Andalucía,Córdoba,Es,01,1201
+España,Castilla y León,Valladolid,Es,06,1301
+España,Galicia,Vigo,Es,12,1401
+España,Asturias,Gijón,Es,03,1501
+España,Cataluña,Hospitalet de Llobregat,Es,08,1601
+España,País Vasco,Vitoria,Es,16,1701
+España,Galicia,La Coruña,Es,12,1801
+España,Andalucía,Granada,Es,01,1901
+España,Comunidad Valenciana,Elche,Es,10,2001
+España,Asturias,Oviedo,Es,03,2101
+España,Cataluña,Tarrasa,Es,08,2201
+España,Cataluña,Badalona,Es,08,2301
+España,Región de Murcia,Cartagena,Es,17,2401
+España,Andalucía,Jerez de la Frontera,Es,01,2501
+España,Cataluña,Sabadell,Es,08,2601
+España,Comunidad de Madrid,Móstoles,Es,09,2701
+España,Canarias,Santa Cruz de Tenerife,Es,04,2801
+España,Navarra,Pamplona,Es,15,2901
+España,Andalucía,Almería,Es,01,3001
+España,Comunidad de Madrid,Fuenlabrada,Es,09,3101
+España,Comunidad de Madrid,Alcalá de Henares,Es,09,3201
+España,Comunidad de Madrid,Leganés,Es,09,3301
+España,País Vasco,San Sebastián,Es,16,3401
+España,Comunidad de Madrid,Getafe,Es,09,3501
+España,Castilla y León,Burgos,Es,06,3601
+España,Castilla-La Mancha,Albacete,Es,07,3701
+España,Cantabria,Santander,Es,05,3801
+España,Comunidad Valenciana,Castellón de la Plana,Es,10,3901
+España,Comunidad de Madrid,Alcorcón,Es,09,4001
+España,Canarias,San Cristóbal de la Laguna,Es,04,4101
+España,La Rioja,Logroño,Es,14,4201
+España,Extremadura,Badajoz,Es,11,4301
+España,Andalucía,Huelva,Es,01,4401
+España,Castilla y León,Salamanca,Es,06,4501
+España,Andalucía,Marbella,Es,01,4601
+España,Cataluña,Lérida,Es,08,4701
+España,Andalucía,Dos Hermanas,Es,01,4801
+España,Cataluña,Tarragona,Es,08,4901
+España,Comunidad de Madrid,Torrejón de Ardoz,Es,09,5001
+España,Cataluña,Mataró,Es,08,5101
+España,Comunidad de Madrid,Parla,Es,09,5201
+España,Castilla y León,León,Es,06,5301
+España,Andalucía,Algeciras,Es,01,5401
+España,Andalucía,Cádiz,Es,01,5501
+España,Cataluña,Santa Coloma de Gramanet,Es,08,5601
+España,Comunidad de Madrid,Alcobendas,Es,09,5701
+España,Andalucía,Jaén,Es,01,5801
+España,Galicia,Orense,Es,12,5901
+España,Cataluña,Reus,Es,08,6001
+España,Canarias,Telde,Es,04,6101
+España,País Vasco,Baracaldo,Es,16,6201
+Estados Unidos,Arizona,Phoenix,Us,03,0301
+Estados Unidos,Florida,Tallahassee,Us,09,0901
+Estados Unidos,California,Sacramento,Us,05,0501
+Estados Unidos,Indiana,Indianápolis,Us,14,1401
+Estados Unidos,Alabama,Montgomery,Us,01,0101
+Estados Unidos,Alaska,Juneau,Us,02,0201
+Estados Unidos,Arkansas,Little Rock,Us,04,0401
+Estados Unidos,Colorado,Denver,Us,06,0601
+Estados Unidos,Connecticut,Hartford,Us,07,0701
+Estados Unidos,Delaware,Dover,Us,08,0801
+Estados Unidos,Georgia,Atlanta,Us,10,1001
+Estados Unidos,Hawaii,Honolulu,Us,11,1101
+Estados Unidos,Idaho,Boise,Us,12,1201
+Estados Unidos,Illinois,Springfield,Us,13,1301
+Estados Unidos,Iowa,Des Moines,Us,15,1501
+Estados Unidos,Kansas,Topeka,Us,16,1601
+Estados Unidos,Kentucky,Frankfort,Us,17,1701
+Estados Unidos,Louisiana,Baton Rouge,Us,18,1801
+Estados Unidos,Maine,Augusta,Us,19,1901
+Estados Unidos,Maryland,Annapolis,Us,20,2001
+Estados Unidos,Massachusetts,Boston,Us,21,2101
+Estados Unidos,Míchigan,Lansing,Us,22,2201
+Estados Unidos,Minnesota,Saint Paul,Us,23,2301
+Estados Unidos,Misisipi,Jackson,Us,24,2401
+Estados Unidos,Misuri,Jefferson City,Us,25,2501
+Estados Unidos,Montana,Helena,Us,26,2601
+Estados Unidos,Nebraska,Lincoln,Us,27,2701
+Estados Unidos,Nevada,Carson City,Us,28,2801
+Estados Unidos,New Hampshire,Concord,Us,29,2901
+Estados Unidos,Nueva Jersey,Trenton,Us,30,3001
+Estados Unidos,Nuevo México,Santa Fe,Us,31,3101
+Estados Unidos,Nueva York,Albany,Us,32,3201
+Estados Unidos,Carolina del Norte,Raleigh,Us,33,3301
+Estados Unidos,Dakota del Norte,Bismarck,Us,34,3401
+Estados Unidos,Ohio,Columbus,Us,35,3501
+Estados Unidos,Oklahoma,Oklahoma City,Us,36,3601
+Estados Unidos,Oregon,Salem,Us,37,3701
+Estados Unidos,Pensilvania,Harrisburg,Us,38,3801
+Estados Unidos,Rhode Island,Providence,Us,39,3901
+Estados Unidos,Carolina del Sur,Columbia,Us,40,4001
+Estados Unidos,Dakota del Sur,Pierre,Us,41,4101
+Estados Unidos,Tennessee,Nashville,Us,42,4201
+Estados Unidos,Texas,Austin,Us,43,4301
+Estados Unidos,Utah,Salt Lake City,Us,44,4401
+Estados Unidos,Vermont,Montpelier,Us,45,4501
+Estados Unidos,Virginia,Richmond,Us,46,4601
+Estados Unidos,Washington,Olympia,Us,47,4701
+Estados Unidos,Virginia Occidental,Charleston,Us,48,4801
+Estados Unidos,Wisconsin,Madison,Us,49,4901
+Estados Unidos,Wyoming,Cheyenne,Us,50,5001
+Estonia,Tallin,Harju,Ee,01,0101
+Estonia,Tartu,Tartu,Ee,02,0201
+Estonia,Narva,Ida-Viru,Ee,03,0301
+Estonia,Kohtla-Jrve,Ida-Viru,Ee,04,0401
+Estonia,Prnu,Prnu,Ee,05,0501
+Estonia,Viljandi,Viljandi,Ee,06,0601
+Estonia,Rakvere,Lne-Viru,Ee,07,0701
+Estonia,Sillame,Ida-Viru,Ee,08,0801
+Estonia,Maardu,Harju,Ee,09,0901
+Estonia,Kuressaare,Saare,Ee,10,1001
+Estonia,Vru,Vru,Ee,11,1101
+Estonia,Valga,Valga,Ee,12,1201
+Estonia,Haapsalu,Lne,Ee,13,1301
+Estonia,Jhvi,Ida-Viru,Ee,14,1401
+Estonia,Paide,Jrva,Ee,15,1501
+Estonia,Keila,Harju,Ee,16,1601
+Estonia,Kivili,Ida-Viru,Ee,17,1701
+Estonia,Tapa,Lne-Viru,Ee,18,1801
+Estonia,Plva,Plva,Ee,19,1901
+Estonia,Jgeva,Jgeva,Ee,20,2001
+Etiopía,Adís Abeba,Adís Abeba,Et,01,0101
+Etiopía,Afar,Semera,Et,02,0201
+Etiopía,Amhara,Bahir Dar,Et,03,0301
+Etiopía,Benishangul-Gumaz,Asosa,Et,04,0401
+Etiopía,Dire Dawa,Dire Dawa,Et,05,0501
+Etiopía,Gambela,Gambela,Et,06,0601
+Etiopía,Harar,Harar Jugol,Et,07,0701
+Etiopía,Oromía,Adís Abeba,Et,08,0801
+Etiopía,Somali Ogadén,Jijiga,Et,09,0901
+Etiopía,Naciones y pueblos del sur,Awasa,Et,10,1001
+Etiopía,Tigray,Mekele,Et,11,1101
+Filipinas,Ilocos,San Fernando,Ph,01,0101
+Filipinas,Región Administrativa de La Cordillera,Baguio,Ph,02,0201
+Filipinas,Valle del Cagayán,Tuguegarao,Ph,03,0301
+Filipinas,Luzón Central,San Fernando,Ph,04,0401
+Filipinas,Región de la Capital Nacional,Manila,Ph,05,0501
+Filipinas,Calabarzon,Calambá,Ph,06,0601
+Filipinas,Mimaropa,Calapán,Ph,07,0701
+Filipinas,Bicolandia,Legazpi,Ph,08,0801
+Filipinas,Bisayas Orientales,Tacloban,Ph,09,0901
+Filipinas,Bisayas Occidentales,Iloílo,Ph,10,1001
+Filipinas,Bisayas Centrales,Cebú,Ph,11,1101
+Filipinas,Península de Zamboanga,Pagadian,Ph,12,1201
+Filipinas,Mindanao del Norte,Cagayán de Oro,Ph,13,1301
+Filipinas,Caraga,Butuan,Ph,14,1401
+Filipinas,Región Autónoma del Mindanao Musulmán,Cotabato,Ph,15,1501
+Filipinas,Davao,Davao,Ph,16,1601
+Filipinas,Soccsksargen,Koronadal,Ph,17,1701
+Filipinas,RIN,Cabancalan-Mabinay,Ph,18,1801
+Finlandia,Finlandia Meridional,Hmeenlinna,Fi,01,0101
+Finlandia,Finlandia Occidental,Turku,Fi,02,0201
+Finlandia,Finlandia Oriental,Mikkeli,Fi,03,0301
+Finlandia,Oulu,Oulu,Fi,04,0401
+Finlandia,Laponia,Rovaniemi,Fi,05,0501
+Finlandia,land,Mariehamn,Fi,06,0601
+Finlandia,Uusimaa,Helsinki,Fi,07,0701
+Fiyi,División Central,Suva,Fj,01,0101
+Fiyi,División Norte,Labasa,Fj,02,0201
+Fiyi,División Oeste,Lautoka,Fj,03,0301
+Francia,Ain,Bourg-en-Bresse,Fr,01,0101
+Francia,Aisne,Laon,Fr,02,0201
+Francia,Allier,Moulins Allier,Fr,03,0301
+Francia,Alpes de Alta Provenza,Digne-les-Bains,Fr,04,0401
+Francia,Altos Alpes,Gap,Fr,05,0501
+Francia,Alpes-Marítimos,Niza,Fr,06,0601
+Francia,Ardèche,Privas,Fr,07,0701
+Francia,Ardenas,Charleville-Mézières,Fr,08,0801
+Francia,Ariège,Foix,Fr,09,0901
+Francia,Aube,Troyes,Fr,10,1001
+Francia,Aude,Carcasona,Fr,11,1101
+Francia,Aveyron,Rodez,Fr,12,1201
+Francia,Bocas del Ródano,Marsella,Fr,13,1301
+Francia,Calvados,Caen,Fr,14,1401
+Francia,Cantal,Aurillac,Fr,15,1501
+Francia,Charente,Angulema,Fr,16,1601
+Francia,Charente Marítimo,La Rochela,Fr,17,1701
+Francia,Cher,Bourges,Fr,18,1801
+Francia,Corrèze,Tulle,Fr,19,1901
+Francia,Córcega del Sur,Ajaccio,Fr,20,2001
+Francia,Alta Córcega,Bastia,Fr,21,2101
+Francia,Cte-dOr,Dijon,Fr,22,2201
+Francia,Ctes-dArmor,Saint-Brieuc,Fr,23,2301
+Francia,Creuse,Guéret,Fr,24,2401
+Francia,Dordoña,Périgueux,Fr,25,2501
+Francia,Doubs,Besanzón,Fr,26,2601
+Francia,Drme,Valence,Fr,27,2701
+Francia,Eure,Évreux,Fr,28,2801
+Francia,Eure y Loir,Chartres,Fr,29,2901
+Francia,Finisterre,Quimper,Fr,30,3001
+Francia,Gard,Nimes,Fr,31,3101
+Francia,Alto Garona,Toulouse,Fr,32,3201
+Francia,Gers,Auch,Fr,33,3301
+Francia,Gironda,Burdeos,Fr,34,3401
+Francia,Hérault,Montpellier,Fr,35,3501
+Francia,Ille y Vilaine,Rennes,Fr,36,3601
+Francia,Indre,Chteauroux,Fr,37,3701
+Francia,Indre y Loira,Tours,Fr,38,3801
+Francia,Isère,Grenoble,Fr,39,3901
+Francia,Jura,Lons-le-Saunier,Fr,40,4001
+Francia,Landas,Mont-de-Marsan,Fr,41,4101
+Francia,Loir y Cher,Blois,Fr,42,4201
+Francia,Loira,Saint-Étienne,Fr,43,4301
+Francia,Alto Loira,Le Puy-en-Velay,Fr,44,4401
+Francia,Loira Atlántico,Nantes,Fr,45,4501
+Francia,Loiret,Orleans,Fr,46,4601
+Francia,Lot,Cahors,Fr,47,4701
+Francia,Lot y Garona,Agen,Fr,48,4801
+Francia,Lozère,Mende,Fr,49,4901
+Francia,Maine y Loira,Angers,Fr,50,5001
+Francia,Mancha,Saint-L,Fr,51,5101
+Francia,Marne,Chlons-en-Champagne,Fr,52,5201
+Francia,Alto Marne,Chaumont,Fr,53,5301
+Francia,Mayenne,Laval,Fr,54,5401
+Francia,Meurthe y Mosela,Nancy,Fr,55,5501
+Francia,Mosa,Bar-le-Duc,Fr,56,5601
+Francia,Morbihan,Vannes,Fr,57,5701
+Francia,Mosela,Metz,Fr,58,5801
+Francia,Nièvre,Nevers,Fr,59,5901
+Francia,Norte,Lille,Fr,60,6001
+Francia,Oise,Beauvais,Fr,61,6101
+Francia,Orne,Alenon,Fr,62,6201
+Francia,Paso de Calais,Arrás,Fr,63,6301
+Francia,Puy-de-Dme,Clermont-Ferrand,Fr,64,6401
+Francia,Pirineos Atlánticos,Pau,Fr,65,6501
+Francia,Altos Pirineos,Tarbes,Fr,66,6601
+Francia,Pirineos Orientales,Perpiñán,Fr,67,6701
+Francia,Bajo Rin,Estrasburgo,Fr,68,6801
+Francia,Alto Rin,Colmar,Fr,69,6901
+Francia,Ródano,Lyon,Fr,70,7001
+Francia,Alto Saona,Vesoul,Fr,71,7101
+Francia,Saona y Loira,Mcon,Fr,72,7201
+Francia,Sarthe,Le Mans,Fr,73,7301
+Francia,Saboya,Chambéry,Fr,74,7401
+Francia,Alta Saboya,Annecy,Fr,75,7501
+Francia,París,París,Fr,76,7601
+Francia,Sena Marítimo,Ruán,Fr,77,7701
+Francia,Sena y Marne,Melun,Fr,78,7801
+Francia,Yvelines,Versalles,Fr,79,7901
+Francia,Deux-Sèvres,Niort,Fr,80,8001
+Francia,Somme,Amiens,Fr,81,8101
+Francia,Tarn,Albi,Fr,82,8201
+Francia,Tarn y Garona,Montauban,Fr,83,8301
+Francia,Var,Toulon,Fr,84,8401
+Francia,Vaucluse,Aviñón,Fr,85,8501
+Francia,Vendée,La Roche-sur-Yon,Fr,86,8601
+Francia,Vienne,Poitiers,Fr,87,8701
+Francia,Alto Vienne,Limoges,Fr,88,8801
+Francia,Vosgos,Épinal,Fr,89,8901
+Francia,Yonne,Auxerre,Fr,90,9001
+Francia,Territorio de Belfort,Belfort,Fr,91,9101
+Francia,Essonne,Évry,Fr,92,9201
+Francia,Altos del Sena,Nanterre,Fr,93,9301
+Francia,Sena-San Denis,Bobigny,Fr,94,9401
+Francia,Valle del Marne,Créteil,Fr,95,9501
+Francia,Valle del Oise,Pontoise,Fr,96,9601
+Gabón,Estuaire,Libreville,Ga,01,0101
+Gabón,Haut-Ogooué,Franceville,Ga,02,0201
+Gabón,Moyen-Ogooué,Lambaréné,Ga,03,0301
+Gabón,Ngounié,Mouila,Ga,04,0401
+Gabón,Nyanga,Tchibanga,Ga,05,0501
+Gabón,Ogooué-Ivindo,Makokou,Ga,06,0601
+Gabón,Ogooué-Lolo,Koulamoutou,Ga,07,0701
+Gabón,Ogooué-Maritime,Port-Gentil,Ga,08,0801
+Gabón,Woleu-Ntem,Oyem,Ga,09,0901
+Gambia,División Lower River,Mansa Konko,Gm,01,0101
+Gambia,División Central River,Janjanbureh,Gm,02,0201
+Gambia,División North Bank,Kerewan,Gm,03,0301
+Gambia,División Upper River,Basse Santa Su,Gm,04,0401
+Gambia,División Western,Brikama,Gm,05,0501
+Gambia,Banjul,Banjul,Gm,06,0601
+Georgia,Abjasia,Sujumi,Ge,01,0101
+Georgia,Samegrelo-Zemo Svaneti,Zugdidi,Ge,02,0201
+Georgia,Guria,Ozurgueti,Ge,03,0301
+Georgia,Ayaria,Batumi,Ge,04,0401
+Georgia,Racha-Lechjumi y Kvemo Svaneti,Ambrolauri,Ge,05,0501
+Georgia,Imereti,Kutaisi,Ge,06,0601
+Georgia,Samtsje-Yavajeti,Ajaltsije,Ge,07,0701
+Georgia,Shida Kartli,Gori,Ge,08,0801
+Georgia,Mtsjeta-Mtianeti,Mtsjeta,Ge,09,0901
+Georgia,Kvemo Kartli,Rustavi,Ge,10,1001
+Georgia,Kajeti,Telavi,Ge,11,1101
+Georgia,Tiflis,Tiflis,Ge,12,1201
+Ghana,Ashanti,Kumasi,Gh,01,0101
+Ghana,Brong-Ahafo,Sunyani,Gh,02,0201
+Ghana,Ghana Central,Cape Coast,Gh,03,0301
+Ghana,Ghana Oriental,Koforidua,Gh,04,0401
+Ghana,Gran Acra,Acra,Gh,05,0501
+Ghana,Ghana Septentrional,Tamale,Gh,06,0601
+Ghana,Alta Ghana Oriental,Bolgatanga,Gh,07,0701
+Ghana,Alta Ghana Occidental,Wa,Gh,08,0801
+Ghana,Volta,Ho,Gh,09,0901
+Ghana,Ghana Occidental,Sekondi-Takoradi,Gh,10,1001
+Grecia,Ática,Atenas,Gr,01,0101
+Grecia,Tesalónica,Macedonia-Tracia,Gr,02,0201
+Grecia,Ioánina,Epiro-Macedonia Occidental,Gr,03,0301
+Grecia,Lárisa,Tesalia-Grecia Central,Gr,04,0401
+Grecia,Patras,"Peloponeso, Grecia Occidental y Jónico",Gr,05,0501
+Grecia,El Pireo,Egeo,Gr,06,0601
+Grecia,Heraclión,Creta,Gr,07,0701
+Groenlandia,Sermersooq,Nuuk,Gl,01,0101
+Groenlandia,Qaasuitsup,Ilulissat,Gl,02,0201
+Groenlandia,Qeqqata,Sisimiut,Gl,03,0301
+Groenlandia,Kujalleq,Qaqortoq,Gl,04,0401
+Guadalupe,Basse-Terre,Basse-Terre,Gp,01,0101
+Guam,Agaña,Agaña,Gu,01,0101
+Guatemala,Petén,Flores,Gt,01,0101
+Guatemala,Huehuetenango,Huehuetenango,Gt,02,0201
+Guatemala,Quiché,Santa Cruz del Quiché,Gt,03,0301
+Guatemala,Alta Verapaz,Cobán,Gt,04,0401
+Guatemala,Izabal,Puerto Barrios,Gt,05,0501
+Guatemala,San Marcos,San Marcos,Gt,06,0601
+Guatemala,Quetzaltenango,Quetzaltenango,Gt,07,0701
+Guatemala,Totonicapán,Totonicapán,Gt,08,0801
+Guatemala,Sololá,Sololá,Gt,09,0901
+Guatemala,Chimaltenango,Chimaltenango,Gt,10,1001
+Guatemala,Sacatepéquez,Antigua Guatemala,Gt,11,1101
+Guatemala,Guatemala,Ciudad de Guatemala,Gt,12,1201
+Guatemala,Baja Verapaz,Salamá,Gt,13,1301
+Guatemala,El Progreso,Guastatoya,Gt,14,1401
+Guatemala,Jalapa,Jalapa,Gt,15,1501
+Guatemala,Zacapa,Zacapa,Gt,16,1601
+Guatemala,Chiquimula,Chiquimula,Gt,17,1701
+Guatemala,Retalhuleu,Retalhuleu,Gt,18,1801
+Guatemala,Suchitepéquez,Mazatenango,Gt,19,1901
+Guatemala,Escuintla,Escuintla,Gt,20,2001
+Guatemala,Santa Rosa,Cuilapa,Gt,21,2101
+Guatemala,Jutiapa,Jutiapa,Gt,22,2201
+Guayana Francesa,Distrito de Cayenne,Cayena,Gf,01,0101
+Guayana Francesa,Distrito de Saint-Laurent-du-Maroni,Saint-Laurent-du-Maroni,Gf,02,0201
+Guernsey,Saint-Pierre-Port,Saint-Pierre-Port,Gg,01,0101
+Guernsey,Le Valle,Le Valle,Gg,02,0201
+Guernsey,Sainte-Marie-du-Ctel,Sainte-Marie-du-Ctel,Gg,03,0301
+Guernsey,Saint-Samson,Saint-Samson,Gg,04,0401
+Guernsey,Saint-Martin-de-la-Bellouse,Saint-Martin-de-la-Bellouse,Gg,05,0501
+Guernsey,Saint-Sauveur,Saint-Sauveur,Gg,06,0601
+Guernsey,Saint-André-de-la-Pommeraye,Saint-André-de-la-Pommeraye,Gg,07,0701
+Guernsey,Saint-Pierre-du-Bois,Saint-Pierre-du-Bois,Gg,08,0801
+Guernsey,La Fort,La Fort,Gg,09,0901
+Guernsey,Torteval,Torteval,Gg,10,1001
+Guinea,Boké,Boké,Gn,01,0101
+Guinea,Faranah,Faranah,Gn,02,0201
+Guinea,Kankan,Kankan,Gn,03,0301
+Guinea,Kindia,Kindia,Gn,04,0401
+Guinea,Labé,Labé,Gn,05,0501
+Guinea,Mamou,Mamou,Gn,06,0601
+Guinea,Nzérékoré,Nzérékoré,Gn,07,0701
+Guinea,Conakri,Conakri,Gn,08,0801
+Guinea Ecuatorial,Annobón,San Antonio de Palé,Gq,01,0101
+Guinea Ecuatorial,Bioko del Norte,Malabo,Gq,02,0201
+Guinea Ecuatorial,Bioko del Sur,Luba,Gq,03,0301
+Guinea Ecuatorial,Centro Sur,Evinayong,Gq,04,0401
+Guinea Ecuatorial,Kié-Ntem,Ebebiyín,Gq,05,0501
+Guinea Ecuatorial,Litoral,Bata,Gq,06,0601
+Guinea Ecuatorial,Wele-Nzas,Mongomo,Gq,07,0701
+Guinea-Bisáu,Bafatá,Bafatá,Gw,01,0101
+Guinea-Bisáu,Biombo,Biombo,Gw,02,0201
+Guinea-Bisáu,Bisáu,Bisáu,Gw,03,0301
+Guinea-Bisáu,Bolama,Bolama,Gw,04,0401
+Guinea-Bisáu,Cacheu,Cacheu,Gw,05,0501
+Guinea-Bisáu,Gabu,Gabu,Gw,06,0601
+Guinea-Bisáu,Oio,Oio,Gw,07,0701
+Guinea-Bisáu,Quinara,Quinara,Gw,08,0801
+Guinea-Bisáu,Tombali,Tombali,Gw,09,0901
+Guyana,Barima-Waini,Mabaruma,Gy,01,0101
+Guyana,Pomeroon-Supenaam,Anna Regina,Gy,02,0201
+Guyana,Islas Esequibo-Demerara Occidental,Vreed en Hoop,Gy,03,0301
+Guyana,Demerara-Mahaica,Paradise,Gy,04,0401
+Guyana,Mahaica-Berbice,Fort Wellington,Gy,05,0501
+Guyana,Berbice Oriental-Corentyne,Nueva Ámsterdam,Gy,06,0601
+Guyana,Cuyuni-Mazaruni,Bartica,Gy,07,0701
+Guyana,Potaro-Siparuni,Mahdia,Gy,08,0801
+Guyana,Alto Tacutu-Alto Esequibo,Lethem,Gy,09,0901
+Guyana,Alto Demerara-Berbice,Linden,Gy,10,1001
+Haití,Artibonito,Gonaves,Ht,01,0101
+Haití,Centro,Hinche,Ht,02,0201
+Haití,GrandAnse,Jérémie,Ht,03,0301
+Haití,Nippes,Miragone,Ht,04,0401
+Haití,Norte,Cabo Haitiano,Ht,05,0501
+Haití,Nordeste,Fuerte Libertad,Ht,06,0601
+Haití,Noroeste,Port-de-Paix,Ht,07,0701
+Haití,Oeste,Puerto Príncipe,Ht,08,0801
+Haití,Sur,Les Cayes,Ht,09,0901
+Haití,Sudeste,Jacmel,Ht,10,1001
+Honduras,Islas de la Bahía,Roatán,Hn,01,0101
+Honduras,Cortés,San Pedro Sula,Hn,02,0201
+Honduras,Atlántida,La Ceiba,Hn,03,0301
+Honduras,Colón,Trujillo,Hn,04,0401
+Honduras,Gracias a Dios,Puerto Lempira,Hn,05,0501
+Honduras,Copán,Santa Rosa de Copán,Hn,06,0601
+Honduras,Santa Bárbara,Santa Bárbara,Hn,07,0701
+Honduras,Yoro,Yoro,Hn,08,0801
+Honduras,Olancho,Juticalpa,Hn,09,0901
+Honduras,Ocotepeque,Ocotepeque,Hn,10,1001
+Honduras,Lempira,Gracias,Hn,11,1101
+Honduras,Intibucá,La Esperanza,Hn,12,1201
+Honduras,Comayagua,Comayagua,Hn,13,1301
+Honduras,Francisco Morazán,Distrito Central,Hn,14,1401
+Honduras,El Paraíso,Yuscarán,Hn,15,1501
+Honduras,La Paz,La Paz,Hn,16,1601
+Honduras,Valle,Nacaome,Hn,17,1701
+Honduras,Choluteca,Choluteca,Hn,18,1801
+Hong Kong,Ciudad Victoria,Ciudad Victoria,Hk,01,0101
+Hong Kong,Distrito de las Islas, las Islas,Hk,02,0201
+Hong Kong,Distrito de Kwai Tsing,Kwai Tsing,Hk,03,0301
+Hong Kong,Distrito del Norte,Distrito del Norte,Hk,04,0401
+Hong Kong,Distrito de Sai Kung,Sai Kung,Hk,05,0501
+Hong Kong,Distrito de Sha Tin,Sha Tin,Hk,06,0601
+Hong Kong,Distrito de Tai Po,Tai Po,Hk,07,0701
+Hong Kong,Distrito de Tsuen Wan,Tsuen Wan,Hk,08,0801
+Hong Kong,Distrito de Tuen Mun,Tuen Mun,Hk,09,0901
+Hong Kong,Distrito de Yuen Long,Yuen Long,Hk,10,1001
+Hong Kong,Eistrito de Kowloon,Eistrito de Kowloon,Hk,11,1101
+Hong Kong,Distrito de Kwun Tong,Kwun Tong,Hk,12,1201
+Hong Kong,Distrito de Sham Shui Po,Sham Shui Po,Hk,13,1301
+Hong Kong,Distrito de Wong Tai Sin,Wong Tai Sin,Hk,14,1401
+Hong Kong,Distrito de Yau Tsim Mong,Yau Tsim Mong,Hk,15,1501
+Hong Kong,Distrito de la Central y Oeste,la Central y Oeste,Hk,16,1601
+Hong Kong,Distrito del Este,Distrito del Este,Hk,17,1701
+Hong Kong,Distrito del Sur,Distrito del Sur,Hk,18,1801
+Hong Kong,Distrito de Wan Chai,Wan Chai,Hk,19,1901
+Hungría,Bács-Kiskun,Kecskemét,Hu,01,0101
+Hungría,Baranya,Pécs,Hu,02,0201
+Hungría,Békés,Békéscsaba,Hu,03,0301
+Hungría,Borsod-Abaúj-Zemplén,Miskolc,Hu,04,0401
+Hungría,Csongrád,Szeged,Hu,05,0501
+Hungría,Fejér,Székesfehérvár,Hu,06,0601
+Hungría,Gyor-Moson-Sopron,Gyor,Hu,07,0701
+Hungría,Hajdú-Bihar,Debrecen,Hu,08,0801
+Hungría,Heves,Eger,Hu,09,0901
+Hungría,Jász-Nagykun-Szolnok,Szolnok,Hu,10,1001
+Hungría,Komárom-Esztergom,Tatabánya,Hu,11,1101
+Hungría,Nógrád,Salgótarján,Hu,12,1201
+Hungría,Pest,Budapest,Hu,13,1301
+Hungría,Somogy,Kaposvár,Hu,14,1401
+Hungría,Szabolcs-Szatmár-Bereg,Nyíregyháza,Hu,15,1501
+Hungría,Tolna,Szekszárd,Hu,16,1601
+Hungría,Vas,Szombathely,Hu,17,1701
+Hungría,Veszprém,Veszprém,Hu,18,1801
+Hungría,Zala,Zalaegerszeg,Hu,19,1901
+India,Andhra Pradesh,Hyderabad,In,01,0101
+India,Arunachal Pradesh,Itanagar,In,02,0201
+India,Assam,Dispur,In,03,0301
+India,Bihar,Patna,In,04,0401
+India,Chhattisgarh,Naya Raipur,In,05,0501
+India,Goa,Panaji,In,06,0601
+India,Guyarat,Gandhinagar,In,07,0701
+India,Haryana,Chandigarh,In,08,0801
+India,Himachal Pradesh,Shimla,In,09,0901
+India,Jammu y Cachemira,Srinagar,In,10,1001
+India,Jharkhand,Ranchi,In,11,1101
+India,Karnataka,Bangalore,In,12,1201
+India,Kerala,Thiruvananthapuram,In,13,1301
+India,Madhya Pradesh,Bhopal,In,14,1401
+India,Maharastra,Bombay,In,15,1501
+India,Manipur,Imphal,In,16,1601
+India,Megalaya,Shillong,In,17,1701
+India,Mizorán,Aizawl,In,18,1801
+India,Nagaland,Kohima,In,19,1901
+India,Odisha,Bhubaneshwar,In,20,2001
+India,Punyab,Chandigarh,In,21,2101
+India,Rajastán,Jaipur,In,22,2201
+India,Sikkim,Gangtok,In,23,2301
+India,Tamil Nadu,Chennai,In,24,2401
+India,Tripura,Agartala,In,25,2501
+India,Uttar Pradesh,Lucknow,In,26,2601
+India,Uttarakhand,Dehradun,In,27,2701
+India,Bengala Occidental,Calcuta,In,28,2801
+India,Telangana,l Hyderabad,In,29,2901
+Indonesia,Aceh Nanggroe Aceh Darussalam,Banda Aceh,Id,01,0101
+Indonesia,Sumatra Septentrional Sumatera Utara,Medan,Id,02,0201
+Indonesia,Sumatra Occidental Sumatera Barat,Padang,Id,03,0301
+Indonesia,Riau,Pekanbaru,Id,04,0401
+Indonesia,Islas Riau Kepulauan Riau,Tanjung Pinang,Id,05,0501
+Indonesia,Jambi,Jambi,Id,06,0601
+Indonesia,Bengkulu,Bengkulu,Id,07,0701
+Indonesia,Sumatra Meridional Sumatera Selatan,Palembang,Id,08,0801
+Indonesia,Bangka-Belitung,Pangkal Pinang,Id,09,0901
+Indonesia,Lampung,Bandar Lampung,Id,10,1001
+Indonesia,Región de Yakarta,Yakarta,Id,11,1101
+Indonesia,Bantén,Serang,Id,12,1201
+Indonesia,Java Occidental Jawa Barat,Bandung,Id,13,1301
+Indonesia,Java Central Jawa Tengah,Semarang,Id,14,1401
+Indonesia,Región de Yogyakarta,Yogyakarta,Id,15,1501
+Indonesia,Java Oriental Jawa Timur,Surabaya,Id,16,1601
+Indonesia,Bali,Denpasar,Id,17,1701
+Indonesia,Nusatenggara Occidental Nusa Tenggara Barat,Mataram,Id,18,1801
+Indonesia,Nusatenggara Oriental Nusa Tenggara Timur,Kupang,Id,19,1901
+Indonesia,Borneo Septentrional,Tanjung Selor,Id,20,2001
+Indonesia,Borneo Occidental,Pontianak,Id,21,2101
+Indonesia,Borneo Central Kalimantan Tengah,Palangkaraya,Id,22,2201
+Indonesia,Borneo Meridional Kalimantan Selatan,Banjarmasin,Id,23,2301
+Indonesia,Borneo Oriental Kalimantan Timur,Samarinda,Id,24,2401
+Indonesia,Célebes Septentrional,Manado,Id,25,2501
+Indonesia,Gorontalo,Gorontalo,Id,26,2601
+Indonesia,Célebes Central Sulawesi Tengah,Palu,Id,27,2701
+Indonesia,Célebes Suroriental Sulawesi Tenggara,Kendari,Id,28,2801
+Indonesia,Célebes Meridional Sulawesi Selatan,Makassar,Id,29,2901
+Indonesia,Célebes Occidental Sulawesi Barat,Mamuju,Id,30,3001
+Indonesia,Molucas,Ambon,Id,31,3101
+Indonesia,Molucas Septentrional Maluku Utara,Ternate,Id,32,3201
+Indonesia,Papúa,Jayapura,Id,33,3301
+Indonesia,Provincia de Papúa Occidental Papua Barat,Manokwari,Id,34,3401
+Irak,Ambar,Ramadi,Iq,01,0101
+Irak,Babilonia,Hilla,Iq,02,0201
+Irak,Bagdad,Bagdad,Iq,03,0301
+Irak,Basora,Basora,Iq,04,0401
+Irak,Di Car,Nasiriya,Iq,05,0501
+Irak,Cadisia,Diwaniya,Iq,06,0601
+Irak,Diala,Baquba,Iq,07,0701
+Irak,Duhok,Duhok,Iq,08,0801
+Irak,Erbil,Erbil,Iq,09,0901
+Irak,Kerbala,Kerbala,Iq,10,1001
+Irak,Kirkuk,Kirkuk,Iq,11,1101
+Irak,Mesena,Amara,Iq,12,1201
+Irak,Mutana,Samawa,Iq,13,1301
+Irak,Nayaf,Nayaf,Iq,14,1401
+Irak,Nínive,Mosul,Iq,15,1501
+Irak,Saladino,Tikrit,Iq,16,1601
+Irak,Solimania,Solimania,Iq,17,1701
+Irak,Wasit,Kut,Iq,18,1801
+Irán,Provincia de Azerbaiyán Oriental Azarbayjan-e Sha,Tabriz,Ir,01,0101
+Irán,Provincia de Azerbaiyán Occidental Azarbayjan-e G,Urmia,Ir,02,0201
+Irán,Provincia de Ardebil,Ardebil,Ir,03,0301
+Irán,Provincia de Isfahán,Isfahán,Ir,04,0401
+Irán,Provincia de Ilam,Ilam,Ir,05,0501
+Irán,Provincia de Bushehr,Bushehr,Ir,06,0601
+Irán,Provincia de Teherán,Teherán,Ir,07,0701
+Irán,Provincia de Chahar Mahal y Bajtiarí,Shahrekord,Ir,08,0801
+Irán,Provincia de Juzestán,Ahvaz,Ir,09,0901
+Irán,Provincia de Zanyán,Zanyán,Ir,10,1001
+Irán,Provincia de Semnán,Semnán,Ir,11,1101
+Irán,Provincia de Sistán y Baluchistán,Zahedán,Ir,12,1201
+Irán,Provincia de Fars,Shiraz,Ir,13,1301
+Irán,Provincia de Kermán,Kermán,Ir,14,1401
+Irán,Provincia de Kurdistán,Sanandaj,Ir,15,1501
+Irán,Provincia de Kermanshah,Kermanshah,Ir,16,1601
+Irán,Provincia de Kohkiluyeh y Buyer Ahmad,Yasuch,Ir,17,1701
+Irán,Provincia de Guilán,Rasht,Ir,18,1801
+Irán,Provincia de Lorestán,Jorramabad,Ir,19,1901
+Irán,Provincia de Mazandarán,Sarí,Ir,20,2001
+Irán,Provincia de Markazi,Arak,Ir,21,2101
+Irán,Provincia de Hormozgán,Bandar Abbás,Ir,22,2201
+Irán,Provincia de Hamadán,Hamadán,Ir,23,2301
+Irán,Provincia de Yazd,Yazd,Ir,24,2401
+Irán,Provincia de Qom,Qom,Ir,25,2501
+Irán,Provincia de Golestán,Gorgan,Ir,26,2601
+Irán,Provincia de Qazvín,Qazvín,Ir,27,2701
+Irán,Provincia de Jorasán del Sur  Khorasan-e Jonubi,Biryand,Ir,28,2801
+Irán,Provincia de Jorasán Razaví,Mashhad,Ir,29,2901
+Irán,Provincia de Jorasán del Norte Khorasan-e Shemali,Bochnurd,Ir,30,3001
+Irán,Provincia de Elburz,Karaj,Ir,31,3101
+Irlanda,Antrim,Antrim,Ie,01,0101
+Irlanda,Armagh,Armagh,Ie,02,0201
+Irlanda,Carlow,Carlow,Ie,03,0301
+Irlanda,Cavan,Cavan,Ie,04,0401
+Irlanda,Clare,Ennis,Ie,05,0501
+Irlanda,Cork,Cork,Ie,06,0601
+Irlanda,Donegal,Lifford,Ie,07,0701
+Irlanda,Down,Downpatrick,Ie,08,0801
+Irlanda,Dublín,Dublín,Ie,09,0901
+Irlanda,Fermanagh,Enniskillen,Ie,10,1001
+Irlanda,Galway,Galway,Ie,11,1101
+Irlanda,Kerry,Tralee,Ie,12,1201
+Irlanda,Kildare,Naas,Ie,13,1301
+Irlanda,Kilkenny,Kilkenny,Ie,14,1401
+Irlanda,Laois,Port Laoise,Ie,15,1501
+Irlanda,Leitrim,Carrick-on-Shannon,Ie,16,1601
+Irlanda,Limerick,Limerick,Ie,17,1701
+Irlanda,Londonderry,Coleraine,Ie,18,1801
+Irlanda,Longford,Longford,Ie,19,1901
+Irlanda,Louth,Dundalk,Ie,20,2001
+Irlanda,Mayo,Castlebar,Ie,21,2101
+Irlanda,Meath,Navan,Ie,22,2201
+Irlanda,Monaghan,Monaghan,Ie,23,2301
+Irlanda,Offaly,Tullamore,Ie,24,2401
+Irlanda,Roscommon,Roscommon,Ie,25,2501
+Irlanda,Sligo,Sligo,Ie,26,2601
+Irlanda,Tipperary,Clonmel y Nenagh,Ie,27,2701
+Irlanda,Tyrone,Omagh,Ie,28,2801
+Irlanda,Waterford,Dungarvan,Ie,29,2901
+Irlanda,Westmeath,Mullingar,Ie,30,3001
+Irlanda,Wexford,Wexford,Ie,31,3101
+Irlanda,Wicklow,Wicklow,Ie,32,3201
+Islandia,Árnesssla,Árnesssla,Is,01,0101
+Islandia,Austur-Barastrandarssla,Austur-Barastrandarssla,Is,02,0201
+Islandia,Austur-Húnavatnsssla,Austur-Húnavatnsssla,Is,03,0301
+Islandia,Austur-Skaftafellsssla,Austur-Skaftafellsssla,Is,04,0401
+Islandia,Borgarfjararssla,Borgarfjararssla,Is,05,0501
+Islandia,Dalassla,Dalassla,Is,06,0601
+Islandia,Eyjafjararssla,Eyjafjararssla,Is,07,0701
+Islandia,Gullbringussla,Gullbringussla,Is,08,0801
+Islandia,Kjósarssla,Kjósarssla,Is,09,0901
+Islandia,Mrassla,Mrassla,Is,10,1001
+Islandia,Norur-Ísafjararssla,Norur-Ísafjararssla,Is,11,1101
+Islandia,Norur-Múlassla,Norur-Múlassla,Is,12,1201
+Islandia,Norur-ingeyjarssla,Norur-ingeyjarssla,Is,13,1301
+Islandia,Rangárvallassla,Rangárvallassla,Is,14,1401
+Islandia,Skagafjararssla,Skagafjararssla,Is,15,1501
+Islandia,Snfellsnes-og Hnappadalsssla,Snfellsnes-og Hnappadalsssla,Is,16,1601
+Islandia,Strandassla,Strandassla,Is,17,1701
+Islandia,Suur-Múlassla,Suur-Múlassla,Is,18,1801
+Islandia,Suur-ingeyjarssla,Suur-ingeyjarssla,Is,19,1901
+Islandia,Vestur-Barastrandarssla,Vestur-Barastrandarssla,Is,20,2001
+Islandia,Vestur-Húnavatnsssla,Vestur-Húnavatnsssla,Is,21,2101
+Islandia,Vestur-Ísafjararssla,Vestur-Ísafjararssla,Is,22,2201
+Islandia,Vestur-Skaftafellsssla,Vestur-Skaftafellsssla,Is,23,2301
+Israel,Central,Ramla,Il,01,0101
+Israel,Haifa,Haifa,Il,02,0201
+Israel,Jerusalén,Jerusalén,Il,03,0301
+Israel,Meridional,Beerseba,Il,04,0401
+Israel,Norte,Nazaret,Il,05,0501
+Israel,Tel Aviv,Tel Aviv-Yafo,Il,06,0601
+Israel,Judea y Samaria,Ariel,Il,07,0701
+Italia,Valle de Aosta,Aosta,It,01,0101
+Italia, Piamonte,Turín,It,02,0201
+Italia,Liguria,Génova,It,03,0301
+Italia, Lombardía,Milán,It,04,0401
+Italia,Trentino-Alto Adigio,Trento,It,05,0501
+Italia,Véneto,Venecia,It,06,0601
+Italia,Friuli-Venecia Julia,Trieste,It,07,0701
+Italia,Emilia-Romaña,Bolonia,It,08,0801
+Italia,Toscana,Florencia,It,09,0901
+Italia,Umbría,Perugia,It,10,1001
+Italia,Marcas,Ancona,It,11,1101
+Italia,Lacio,Roma,It,12,1201
+Italia,Abruzos,LAquila,It,13,1301
+Italia,Molise,Campobasso,It,14,1401
+Italia,Campania,Nápoles,It,15,1501
+Italia,Apulia,Bari,It,16,1601
+Italia,Basilicata,Potenza,It,17,1701
+Italia,Calabria,Catanzaro,It,18,1801
+Italia, Sicilia,Palermo,It,19,1901
+Italia,Cerdeña,Cagliari,It,20,2001
+Jamaica,Parroquia de Hanover,Lucea,Jm,01,0101
+Jamaica,Parroquia de Saint Elizabeth,Black River,Jm,02,0201
+Jamaica,Parroquia de Saint James,Montego Bay,Jm,03,0301
+Jamaica,Parroquia de Trelawny,Falmouth,Jm,04,0401
+Jamaica,Parroquia de Westmoreland,Savanna-la-Mar,Jm,05,0501
+Jamaica,Parroquia de Clarendon,May Pen,Jm,06,0601
+Jamaica,Parroquia de Manchester,Mandeville,Jm,07,0701
+Jamaica,Parroquia de Saint Ann,Saint Anns Bay,Jm,08,0801
+Jamaica,Parroquia de Saint Catherine,Spanish Town,Jm,09,0901
+Jamaica,Parroquia de Saint Mary,Port Maria,Jm,10,1001
+Jamaica,Parroquia de Kingston,Kingston,Jm,11,1101
+Jamaica,Parroquia de Portland,Port Antonio,Jm,12,1201
+Jamaica,Parroquia de Saint Andrew,Half Way Tree,Jm,13,1301
+Jamaica,Parroquia de Saint Thomas,Morant Bay,Jm,14,1401
+Japón,Prefectura de Hokkaido,Sapporo,Jp,01,0101
+Japón,Prefectura de Aomori,Aomori,Jp,02,0201
+Japón,Prefectura de Iwate,Morioka,Jp,03,0301
+Japón,Prefectura de Miyagi,Sendai,Jp,04,0401
+Japón,Prefectura de Akita,Akita,Jp,05,0501
+Japón,Prefectura de Yamagata,Yamagata,Jp,06,0601
+Japón,Prefectura de Fukushima,Fukushima,Jp,07,0701
+Japón,Prefectura de Ibaraki,Mito,Jp,08,0801
+Japón,Prefectura de Tochigi,Utsunomiya,Jp,09,0901
+Japón,Prefectura de Gunma,Maebashi,Jp,10,1001
+Japón,Prefectura de Saitama,Saitama,Jp,11,1101
+Japón,Prefectura de Chiba,Chiba,Jp,12,1201
+Japón,Tokio,Shinjuku,Jp,13,1301
+Japón,Prefectura de Kanagawa,Yokohama,Jp,14,1401
+Japón,Prefectura de Niigata,Niigata,Jp,15,1501
+Japón,Prefectura de Toyama,Toyama,Jp,16,1601
+Japón,Prefectura de Ishikawa,Kanazawa,Jp,17,1701
+Japón,Prefectura de Fukui,Fukui,Jp,18,1801
+Japón,Prefectura de Yamanashi,Kofu,Jp,19,1901
+Japón,Prefectura de Nagano,Nagano,Jp,20,2001
+Japón,Prefectura de Gifu,Gifu,Jp,21,2101
+Japón,Prefectura de Shizuoka,Shizuoka,Jp,22,2201
+Japón,Prefectura de Aichi,Nagoya,Jp,23,2301
+Japón,Prefectura de Mie,Tsu,Jp,24,2401
+Japón,Prefectura de Shiga,Otsu,Jp,25,2501
+Japón,Prefectura de Kioto,Kioto,Jp,26,2601
+Japón,Prefectura de Osaka,Osaka,Jp,27,2701
+Japón,Prefectura de Hyogo,Kobe,Jp,28,2801
+Japón,Prefectura de Nara,Nara,Jp,29,2901
+Japón,Prefectura de Wakayama,Wakayama,Jp,30,3001
+Japón,Prefectura de Tottori,Tottori,Jp,31,3101
+Japón,Prefectura de Shimane,Matsue,Jp,32,3201
+Japón,Prefectura de Okayama,Okayama,Jp,33,3301
+Japón,Prefectura de Hiroshima,Hiroshima,Jp,34,3401
+Japón,Prefectura de Yamaguchi,Yamaguchi,Jp,35,3501
+Japón,Prefectura de Tokushima,Tokushima,Jp,36,3601
+Japón,Prefectura de Kagawa,Takamatsu,Jp,37,3701
+Japón,Prefectura de Ehime,Matsuyama,Jp,38,3801
+Japón,Prefectura de Kochi,Kochi,Jp,39,3901
+Japón,Prefectura de Fukuoka,Fukuoka,Jp,40,4001
+Japón,Prefectura de Saga,Saga,Jp,41,4101
+Japón,Prefectura de Nagasaki,Nagasaki,Jp,42,4201
+Japón,Prefectura de Kumamoto,Kumamoto,Jp,43,4301
+Japón,Prefectura de Oita,Oita,Jp,44,4401
+Japón,Prefectura de Miyazaki,Miyazaki,Jp,45,4501
+Japón,Prefectura de Kagoshima,Kagoshima,Jp,46,4601
+Japón,Prefectura de Okinawa,Naha,Jp,47,4701
+Jersey,Grouville,Grouville,Je,01,0101
+Jersey,Saint Brélade,Saint Brélade,Je,02,0201
+Jersey,Saint Clement,Saint Clement,Je,03,0301
+Jersey,Saint Helier,Saint Helier,Je,04,0401
+Jersey,Saint John,Saint John,Je,05,0501
+Jersey,Saint Lawrence,Saint Lawrence,Je,06,0601
+Jersey,Saint Martin,Saint Martin,Je,07,0701
+Jersey,Saint Mary,Saint Mary,Je,08,0801
+Jersey,Saint Ouen,Saint Ouen,Je,09,0901
+Jersey,Saint Peter,Saint Peter,Je,10,1001
+Jersey,Saint Saviour,Saint Saviour,Je,11,1101
+Jersey,Trinity,Trinity,Je,12,1201
+Jordania,Gobernación de Ammán,Ammán,Jo,01,0101
+Jordania,Gobernación de Irbid,Irbid,Jo,02,0201
+Jordania,Gobernación de Zarqa,Zarqa,Jo,03,0301
+Jordania,Gobernación de Al Balqa,Salt,Jo,04,0401
+Jordania,Gobernación de Al Mafraq,Mafraq,Jo,05,0501
+Jordania,Gobernación de Al Karak,Karak,Jo,06,0601
+Jordania,Gobernación de Jarash,Jarash,Jo,07,0701
+Jordania,Gobernación de Madaba,Madaba,Jo,08,0801
+Jordania,Gobernación de Ajlun,Ajlun,Jo,09,0901
+Jordania,Gobernación de Aqaba,Aqaba,Jo,10,1001
+Jordania,Gobernación de Maan,Maan,Jo,11,1101
+Jordania,Gobernación de At Tafilah,At Tafilah,Jo,12,1201
+Kazajistán,Akmola,Kokshetau,Kz,01,0101
+Kazajistán,Aktobé,Aktobé,Kz,02,0201
+Kazajistán,Almat,Almat,Kz,03,0301
+Kazajistán,Almat,Taldykorgan,Kz,03,0302
+Kazajistán,Astana,Astana,Kz,04,0401
+Kazajistán,Atyrau,Atirau,Kz,05,0501
+Kazajistán,Baikonur,Baikonur,Kz,06,0601
+Kazajistán,Karagandá,Karagandá,Kz,07,0701
+Kazajistán,Kazajistán Meridional,Shymkent,Kz,08,0801
+Kazajistán,Kazajistán Occidental,Oral,Kz,09,0901
+Kazajistán,Kazajistán Oriental,Oskemen,Kz,10,1001
+Kazajistán,Kazajistán Septentrional,Petropavl,Kz,11,1101
+Kazajistán,Kostanay,Kostanay,Kz,12,1201
+Kazajistán,Kyzylorda,Kyzylorda,Kz,13,1301
+Kazajistán,Mangystau,Aktau,Kz,14,1401
+Kazajistán,Pavlodar,Pavlodar,Kz,15,1501
+Kazajistán,Zhambyl,Taraz,Kz,16,1601
+Kenia,Provincia Central,Nyeri,Ke,01,0101
+Kenia,Provincia Costera,Mombasa,Ke,02,0201
+Kenia,Provincia Oriental,Embu,Ke,03,0301
+Kenia,Provincia de Nairobi,Nairobi,Ke,04,0401
+Kenia,Provincia Nororiental,Garissa,Ke,05,0501
+Kenia,Provincia de Nyanza,Kisumu,Ke,06,0601
+Kenia,Provincia del Valle del Rift,Nakuru,Ke,07,0701
+Kenia,Provincia Occidental,Kakamega,Ke,08,0801
+Kirguistán, Biskek - Chaar,Biskek,Kg,01,0101
+Kirguistán, Batken,Batken,Kg,02,0201
+Kirguistán,Chuy,Biskek,Kg,03,0301
+Kirguistán,Jalal-Abad,Jalal-Abad,Kg,04,0401
+Kirguistán,Naryn,Naryn,Kg,05,0501
+Kirguistán,Osh,Osh,Kg,06,0601
+Kirguistán,Talas,Talas,Kg,07,0701
+Kirguistán,Ysyk-Kol,Karakol,Kg,08,0801
+Kirguistán,Kirguistán,Biskek,Kg,09,0901
+Kuwait,Ahmadí,Al Ahmadí,Kw,01,0101
+Kuwait,Al Asimah,Al Asimah,Kw,02,0201
+Kuwait,Farwaniya,Al Farwaniya,Kw,03,0301
+Kuwait,Yahra,Al Yahra,Kw,04,0401
+Kuwait,Hawalli,Al Hawalli,Kw,05,0501
+Kuwait,Mubarak Al-Kabeer,Mubarak Al-Kabeer,Kw,06,0601
+Laos,Provincia de Attapeu,Attapeu,La,01,0101
+Laos,Provincia de Bokeo,Bokeo,La,02,0201
+Laos,Provincia de Bolikhamxai,Bolikhamxai,La,03,0301
+Laos,Provincia de Champasak,Champasak,La,04,0401
+Laos,Provincia de Houaphan,Houaphan,La,05,0501
+Laos,Provincia de Khammouan,Khammouan,La,06,0601
+Laos,Provincia de Luang Namtha,Luang Namtha,La,07,0701
+Laos,Provincia de Luang Prabang,Luang Prabang,La,08,0801
+Laos,Provincia de Oudomxai,Oudomxai,La,09,0901
+Laos,Provincia de Phongsali,Phongsali,La,10,1001
+Laos,Provincia de Sainyabuli,Sainyabuli,La,11,1101
+Laos,Provincia de Salavan,Salavan,La,12,1201
+Laos,Provincia de Savannakhet,Savannakhet,La,13,1301
+Laos,Provincia de Sekong,Sekong,La,14,1401
+Laos,Prefectura de Vientián,Prefectura de Vientián,La,15,1501
+Laos,Provincia de Vientián,Vientián,La,16,1601
+Laos,Provincia de Xiangkhoang,Xiangkhoang,La,17,1701
+Lesoto,Berea,Teyateyaneng,Ls,01,0101
+Lesoto,Butha-Buthe,Butha-Bethe,Ls,02,0201
+Lesoto,Leribe,Hlotse,Ls,03,0301
+Lesoto,Mafeteng,Mafeteng,Ls,04,0401
+Lesoto,Maseru,Maseru,Ls,05,0501
+Lesoto,Mohales Hoek,Mohales Hoek,Ls,06,0601
+Lesoto,Mokhotlong,Mokhotlong,Ls,07,0701
+Lesoto,Qachas Nek,Qachas Nek,Ls,08,0801
+Lesoto,Quthing,Quthing/Moyeni,Ls,09,0901
+Lesoto,Thaba-Tseka,Thaba-Tseka,Ls,10,1001
+Letonia,Riga,Tukums,Lv,01,0101
+Letonia,Daugavpils,Salaspils,Lv,02,0201
+Letonia,Liepaja,Cesis,Lv,03,0301
+Letonia,Jelgava,Kuldiga,Lv,04,0401
+Letonia,Jurmala,Olaine,Lv,05,0501
+Letonia,Ventspils,Saldus,Lv,06,0601
+Letonia,Rezekne,Sigulda,Lv,07,0701
+Letonia,Ogre,Talsi,Lv,08,0801
+Letonia,Valmiera,Dobele,Lv,09,0901
+Letonia,Jekabpils,Bauska,Lv,10,1001
+Líbano,Akkar,Halba,Lb,01,0101
+Líbano,Baalbek-Hermel,Baalbek,Lb,02,0201
+Líbano,Beirut,Beirut,Lb,03,0301
+Líbano,Monte Líbano,Baabda,Lb,04,0401
+Líbano,Norte,Trípoli,Lb,05,0501
+Líbano,Bekaa,Zahlé,Lb,06,0601
+Líbano,Nabatiye,Nabatiye,Lb,07,0701
+Líbano,Sur,Sidón,Lb,08,0801
+Liberia,Bomi,Tubmanburg,Lr,01,0101
+Liberia,Bong,Gbarnga,Lr,02,0201
+Liberia,Gbarpolu,Bopulu,Lr,03,0301
+Liberia,Grand Bassa,Buchanan,Lr,04,0401
+Liberia,Grand Cape Mount,Robertsport,Lr,05,0501
+Liberia,Grand Gedeh,Zwedru,Lr,06,0601
+Liberia,Grand Kru,Barclayville,Lr,07,0701
+Liberia,Lofa,Voinjama,Lr,08,0801
+Liberia,Margibi,Kakata,Lr,09,0901
+Liberia,Maryland,Harper,Lr,10,1001
+Liberia,Montserrado,Bensonville,Lr,11,1101
+Liberia,Nimba,Sanniquellie,Lr,12,1201
+Liberia,River Cess,River Cess,Lr,13,1301
+Liberia,River Gee,Fish Town,Lr,14,1401
+Liberia,Sinoe,Greenville,Lr,15,1501
+Libia,Al Butnan,Tobruk,Ly,01,0101
+Libia,Derna,Derna,Ly,02,0201
+Libia,Al Jabal al Akhdar,Al Baida,Ly,03,0301
+Libia,Al Marj,Al Marj,Ly,04,0401
+Libia,Bengasi,Bengasi,Ly,05,0501
+Libia,Al Wahat,Ajdabiya,Ly,06,0601
+Libia,Al Kufrah,Al Yauf,Ly,07,0701
+Libia,Sirte,Sirte,Ly,08,0801
+Libia,Misurata,Misurata,Ly,09,0901
+Libia,Al Murgub,Al Murgub,Ly,10,1001
+Libia,Trípoli,Trípoli,Ly,11,1101
+Libia,Al Jfara,Al Aziziya,Ly,12,1201
+Libia,Zauiya,Zauiya,Ly,13,1301
+Libia,An Nuqat al Khams,Zuara,Ly,14,1401
+Libia,Al Jabal al Gharbi,Garian,Ly,15,1501
+Libia,Nalut,Nalut,Ly,16,1601
+Libia,Al Jufrah,Hun,Ly,17,1701
+Libia,Wadi Al Shatii,Adiri,Ly,18,1801
+Libia,Sabha,Sabha,Ly,19,1901
+Libia,Wadi Al Hayaa,Awbari,Ly,20,2001
+Libia,Ghat,Ghat,Ly,21,2101
+Libia,Murzuq,Murzuq,Ly,22,2201
+Liechtenstein,Schaan,Schaan,Li,01,0101
+Liechtenstein,Planken,Planken,Li,02,0201
+Liechtenstein,Vaduz,Vaduz,Li,03,0301
+Liechtenstein,Triesenberg,Triesenberg,Li,04,0401
+Liechtenstein,Triesen,Triesen,Li,05,0501
+Liechtenstein,Balzers,Balzers,Li,06,0601
+Lituania,Condado de Alytus,Alytus,Lt,01,0101
+Lituania,Condado de Kaunas,Kaunas,Lt,02,0201
+Lituania,Condado de Klaipeda,Klaipeda,Lt,03,0301
+Lituania,Condado de Marijampole,Marijampole,Lt,04,0401
+Lituania,Condado de Paneveys,Paneveys,Lt,05,0501
+Lituania,Condado de iauliai,iauliai,Lt,06,0601
+Lituania,Condado de Taurage,Taurage,Lt,07,0701
+Lituania,Condado de Teliai,Teliai,Lt,08,0801
+Lituania,Condado de Utena,Utena,Lt,09,0901
+Lituania,Condado de Vilnius,Vilnius,Lt,10,1001
+Luxemburgo,Distrito de Diekirch,Diekirch,Lu,01,0101
+Luxemburgo,Distrito de Grevenmacher,Grevenmacher,Lu,02,0201
+Luxemburgo,Distrito de Luxemburgo,Luxemburgo,Lu,03,0301
+"Macedonia, La Antigua Republicayugoslava De",Skopie,Skopie,Mk,01,0101
+"Macedonia, La Antigua Republicayugoslava De",Pelagonia,Bitola,Mk,02,0201
+"Macedonia, La Antigua Republicayugoslava De",Pelagonia,Prilep,Mk,02,0401
+"Macedonia, La Antigua Republicayugoslava De",Noreste,Kumanovo,Mk,03,0301
+"Macedonia, La Antigua Republicayugoslava De",Polog,Tetovo,Mk,04,0501
+"Macedonia, La Antigua Republicayugoslava De",Polog,Gostivar,Mk,04,0901
+"Macedonia, La Antigua Republicayugoslava De",Vardar,Veles,Mk,05,0601
+"Macedonia, La Antigua Republicayugoslava De",Este,tip,Mk,06,0701
+"Macedonia, La Antigua Republicayugoslava De",Sudoeste,Ohrid,Mk,07,0801
+"Macedonia, La Antigua Republicayugoslava De",Sudeste,Strumica,Mk,08,1001
+Madagascar,Diana,Antsiranana,Mg,01,0101
+Madagascar,Sava,Sambava,Mg,02,0201
+Madagascar,Itasy,Miarinarivo,Mg,03,0301
+Madagascar,Analamanga,Antananarivo-Renivohitra,Mg,04,0401
+Madagascar,Vakinankaratra,Antsirabe I,Mg,05,0501
+Madagascar,Bongolava,Tsiroanomandidy,Mg,06,0601
+Madagascar,Sofía,Antsohihy,Mg,07,0701
+Madagascar,Boeny,Mahajanga I,Mg,08,0801
+Madagascar,Betsiboka,Maevatanana,Mg,09,0901
+Madagascar,Melaky,Maintirano,Mg,10,1001
+Madagascar,Alaotra-Mangoro,Ambatondrazaka,Mg,11,1101
+Madagascar,Atsinanana Este,Toamasina I,Mg,12,1201
+Madagascar,Analanjirofo,Fenerive Est,Mg,13,1301
+Madagascar,Amoroni Mania,Ambositra,Mg,14,1401
+Madagascar,Haute Matsiatra Alto Matsiatra,Fianarantsoa I,Mg,15,1501
+Madagascar,Vatovavy-Fitovinany,Manakara,Mg,16,1601
+Madagascar,Atsimo-Atsinanana Sureste,Farafangana,Mg,17,1701
+Madagascar,Ihorombe,Ihosy,Mg,18,1801
+Madagascar,Menabe,Morondava,Mg,19,1901
+Madagascar,Atsimo-Andrefana Suroeste,Toliara I,Mg,20,2001
+Madagascar,Androy,Ambovombe Androy,Mg,21,2101
+Madagascar,Anosy,Taolagnaro,Mg,22,2201
+Malasia,Sultanato de Johor,Johor Bahru,My,01,0101
+Malasia,Sultanato de Kedah,Alor Setar,My,02,0201
+Malasia,Sultanato de Kelantan,Kota Bharu,My,03,0301
+Malasia,Sultanato de Pahang,Kuantan,My,04,0401
+Malasia,Sultanato de Perak,Ipoh,My,05,0501
+Malasia,Sultanato de Selangor,Shah Alam,My,06,0601
+Malasia,Sultanato de Terengganu,Kuala Terengganu,My,07,0701
+Malasia,Monarquía de Negeri Sembilan,Seremban,My,08,0801
+Malasia,Reino de Perlis,Kangar,My,09,0901
+Malasia,Malaca,Bandar Melaka,My,10,1001
+Malasia,Pulau Pinang,George Town,My,11,1101
+Malasia,Territorio Federal de Putrajaya,Putrajaya,My,12,1201
+Malasia,Territorio Federal de Kuala Lumpur,Kuala Lumpur,My,13,1301
+Malasia,Sabah,Kota Kinabalu,My,14,1401
+Malasia,Sarawak,Kuching,My,15,1501
+Malasia,Territorio Federal de Labuan,Victoria,My,16,1601
+Malaui,Región Central,Lilongüe,Mw,01,0101
+Malaui,Región del Norte,Mzuzu,Mw,02,0201
+Malaui,Región del Sur,Blantyre,Mw,03,0301
+Maldivas,Haa Alif,Dhiddhoo,Mv,01,0101
+Maldivas,Haa Dhaalu,Kulhudhuffushi,Mv,02,0201
+Maldivas,Shaviyani,Funadhoo,Mv,03,0301
+Maldivas,Noonu,Manadhoo,Mv,04,0401
+Maldivas,Raa,Ungoofaaru,Mv,05,0501
+Maldivas,Baa,Eydhafushi,Mv,06,0601
+Maldivas,Lhaviyani,Naifaru,Mv,07,0701
+Maldivas,Kaafu,Thulusdhoo,Mv,08,0801
+Maldivas,Alif Alif,Rasdhoo,Mv,09,0901
+Maldivas,Alif Dhaal,Mahibadhoo,Mv,10,1001
+Maldivas,Vaavu,Felidhoo,Mv,11,1101
+Maldivas,Meemu,Muli,Mv,12,1201
+Maldivas,Faafu,Nilandhoo,Mv,13,1301
+Maldivas,Dhaalu,Kudahuvadhoo,Mv,14,1401
+Maldivas,Thaa,Veymandoo,Mv,15,1501
+Maldivas,Laamu,Fonadhoo,Mv,16,1601
+Maldivas,Gaafu Alif,Vilingili,Mv,17,1701
+Maldivas,Gaafu Dhaalu,Thinadhoo,Mv,18,1801
+Maldivas,Gnaviyani,Fuvahmulah,Mv,19,1901
+Maldivas,Seenu,Hithadhoo,Mv,20,2001
+Maldivas,Malé,Malé,Mv,21,2101
+Malí,Gao,Gao,Ml,01,0101
+Malí,Kayes,Kayes,Ml,02,0201
+Malí,Kidal,Kidal,Ml,03,0301
+Malí,Kulikoró,Kulikoró,Ml,04,0401
+Malí,Mopti,Mopti,Ml,05,0501
+Malí,Segú,Segú,Ml,06,0601
+Malí,Sikasso,Sikasso,Ml,07,0701
+Malí,Tombuctú,Tombuctú,Ml,08,0801
+Malí,Distrito de Bamako,Bamako,Ml,09,0901
+Malta,Isla Malta,La Valeta,Mt,01,0101
+Malta,Isla Gozo,Victoria,Mt,02,0201
+Marruecos,Tánger-Tetuán-Alhucemas,Tánger,Ma,01,0101
+Marruecos,La Oriental,Uchda,Ma,02,0201
+Marruecos,Fez-Mequinez,Fez,Ma,03,0301
+Marruecos,Rabat-Salé-Kenitra,Rabat,Ma,04,0401
+Marruecos,Beni Melal-Jenifra,Beni Melal,Ma,05,0501
+Marruecos,Casablanca-Settat,Casablanca,Ma,06,0601
+Marruecos,Marrakech-Safí,Marrakech,Ma,07,0701
+Marruecos,Draa-Tafilalet,Er-Rachidía,Ma,08,0801
+Marruecos,Sus-Masa,Agadir,Ma,09,0901
+Marruecos,Guelmim-Río Noun,Guelmim,Ma,10,1001
+Marruecos,El Aaiún-Saguía el-Hamra,El Aaiún,Ma,11,1101
+Marruecos,Dajla-Río de Oro,Dajla,Ma,12,1201
+Martinica,Distrito de La Trinité,La Trinité,Mq,01,0101
+Martinica,Distrito de Fort-de-France,Fuerte de Francia,Mq,02,0201
+Martinica,Distrito de Le Marin,Le Marin,Mq,03,0301
+Mauricio,Black River ,Tamarin,Mu,01,0101
+Mauricio,Flacq ,Centre de Flacq,Mu,02,0201
+Mauricio,Grand Port, Mahebourg,Mu,03,0301
+Mauricio,Moka, Moka,Mu,04,0401
+Mauricio,Pamplemousses, Triolet,Mu,05,0501
+Mauricio,Plaines Wilhems ,Rose-Hill,Mu,06,0601
+Mauricio,Port Louis ,Port Louis,Mu,07,0701
+Mauricio,Rivière du Rempart ,Poudre dOr,Mu,08,0801
+Mauricio,Savanne ,Souillac,Mu,09,0901
+Mauritania,Adrar Mauritania,Atar Mauritania,Mr,01,0101
+Mauritania,Assaba,Kiffa,Mr,02,0201
+Mauritania,Brakna,Aleg,Mr,03,0301
+Mauritania,Dajlet Nuadibú,Nuadibú,Mr,04,0401
+Mauritania,Gorgol,Kaédi,Mr,05,0501
+Mauritania,Guidimaka,Sélibaby,Mr,06,0601
+Mauritania,Hod Oriental,Néma,Mr,07,0701
+Mauritania,Hod Occidental,Aiún el Atrús,Mr,08,0801
+Mauritania,Inchiri,Akjoujt,Mr,09,0901
+Mauritania,Nuakchot,Distrito de la capital,Mr,10,1001
+Mauritania,Tagant,Tidjikja,Mr,11,1101
+Mauritania,Tiris Zemmur,Zuérate,Mr,12,1201
+Mauritania,Trarza,Rosso,Mr,13,1301
+Mayotte,Mamoudzou,Mamoudzou,Yt,01,0101
+México, Aguascalientes,Aguascalientes,Mx,01,0101
+México, Baja California,Mexicali,Mx,02,0201
+México, Baja California Sur,La Paz,Mx,03,0301
+México, Campeche,San Francisco de Campeche,Mx,04,0401
+México, Chiapas,Tuxtla Gutiérrez,Mx,05,0501
+México, Chihuahua,Chihuahua,Mx,06,0601
+México, Ciudad de México,Ciudad de México,Mx,07,0701
+México, Coahuila,Saltillo,Mx,08,0801
+México, Colima,Colima,Mx,09,0901
+México, Durango,Victoria de Durango,Mx,10,1001
+México, Guanajuato,Guanajuato,Mx,11,1101
+México, Guerrero,Chilpancingo de los Bravo,Mx,12,1201
+México, Hidalgo,Pachuca de Soto,Mx,13,1301
+México, Jalisco,Guadalajara,Mx,14,1401
+México, México,Toluca de Lerdo,Mx,15,1501
+México, Michoacán,Morelia,Mx,16,1601
+México, Morelos,Cuernavaca,Mx,17,1701
+México, Nayarit,Tepic,Mx,18,1801
+México, Nuevo León,Monterrey,Mx,19,1901
+México, Oaxaca,Oaxaca de Juárez,Mx,20,2001
+México, Puebla,Puebla de Zaragoza,Mx,21,2101
+México, Querétaro,Santiago de Querétaro,Mx,22,2201
+México, Quintana Roo,Chetumal,Mx,23,2301
+México, San Luis Potosí,San Luis Potosí,Mx,24,2401
+México, Sinaloa,Culiacán Rosales,Mx,25,2501
+México, Sonora,Hermosillo,Mx,26,2601
+México, Tabasco,Villahermosa,Mx,27,2701
+México, Tamaulipas,Ciudad Victoria,Mx,28,2801
+México, Tlaxcala,Tlaxcala de Xicohténcatl,Mx,29,2901
+México, Veracruz,Xalapa-Enríquez,Mx,30,3001
+México, Yucatán,Mérida,Mx,31,3101
+México, Zacatecas,Zacatecas,Mx,32,3201
+Moldavia,Anenii Noi,Anenii Noi,Md,01,0101
+Moldavia,Basarabeasca,Basarabeasca,Md,02,0201
+Moldavia,Briceni,Briceni,Md,03,0301
+Moldavia,Cahul,Cahul,Md,04,0401
+Moldavia,Cantemir,Cantemir,Md,05,0501
+Moldavia,Calarai,Calarai,Md,06,0601
+Moldavia,Caueni,Caueni,Md,07,0701
+Moldavia,Cimilia,Cimilia,Md,08,0801
+Moldavia,Criuleni,Criuleni,Md,09,0901
+Moldavia,Dondueni,Dondueni,Md,10,1001
+Moldavia,Drochia,Drochia,Md,11,1101
+Moldavia,Dubasari,Dubasari,Md,12,1201
+Moldavia,Edine,Edine,Md,13,1301
+Moldavia,Faleti,Faleti,Md,14,1401
+Moldavia,Floreti,Floreti,Md,15,1501
+Moldavia,Glodeni,Glodeni,Md,16,1601
+Moldavia,Hnceti,Hnceti,Md,17,1701
+Moldavia,Ialoveni,Ialoveni,Md,18,1801
+Moldavia,Leova,Leova,Md,19,1901
+Moldavia,Nisporeni,Nisporeni,Md,20,2001
+Moldavia,Ocnia,Ocnia,Md,21,2101
+Moldavia,Orhei,Orhei,Md,22,2201
+Moldavia,Rezina,Rezina,Md,23,2301
+Moldavia,Rcani,Rcani,Md,24,2401
+Moldavia,Sngerei,Sngerei,Md,25,2501
+Moldavia,Soroca,Soroca,Md,26,2601
+Moldavia,Straeni,Straeni,Md,27,2701
+Moldavia,oldaneti,oldaneti,Md,28,2801
+Moldavia,tefan Voda,tefan Voda,Md,29,2901
+Moldavia,Taraclia,Taraclia,Md,30,3001
+Moldavia,Teleneti,Teleneti,Md,31,3101
+Moldavia,Unghen,Unghen,Md,32,3201
+Mónaco,Mónaco,Mónaco,Mc,01,0101
+Mongolia,Arhangay,Tsetserleg,Mn,01,0101
+Mongolia,Bayan-lgiy,lgiy,Mn,02,0201
+Mongolia,Bayanhongor,Bayanhongor,Mn,03,0301
+Mongolia,Bulgan,Bulgan,Mn,04,0401
+Mongolia,Darhan-Uul,Darkhan,Mn,05,0501
+Mongolia,Dornod,Choybalsan,Mn,06,0601
+Mongolia,Dornogovi,Sainshand,Mn,07,0701
+Mongolia,Dundgovi,Mandalgobi,Mn,08,0801
+Mongolia,Govi-Altay,Altai,Mn,09,0901
+Mongolia,Govisümber,Choyr,Mn,10,1001
+Mongolia,Hentiy,ndrkhaan,Mn,11,1101
+Mongolia,Hovd,Hovd,Mn,12,1201
+Mongolia,Hvsgl,Mrn,Mn,13,1301
+Mongolia,mngovi,Dalanzadgad,Mn,14,1401
+Mongolia,Orhon,Erdenet,Mn,15,1501
+Mongolia,vrhangay,Arvaikheer,Mn,16,1601
+Mongolia,Selenge,Sukhbaatar,Mn,17,1701
+Mongolia,Sühbaatar,Baruun-Urt,Mn,18,1801
+Mongolia,Tv,Zuunmod,Mn,19,1901
+Mongolia,Uvs,Ulaangom,Mn,20,2001
+Mongolia,Zavhan,Uliastay,Mn,21,2101
+Montenegro,Municipio de Andrijevica,Andrijevica,Me,01,0101
+Montenegro,Municipio de Bar,Bar,Me,02,0201
+Montenegro,Municipio de Berane,Berane,Me,03,0301
+Montenegro,Municipio de Bijelo Polje,Bijelo Polje,Me,04,0401
+Montenegro,Municipio de Budva,Budva,Me,05,0501
+Montenegro,Municipio de Cetinje,Cetinje,Me,06,0601
+Montenegro,Municipio de Danilovgrad,Danilovgrad,Me,07,0701
+Montenegro,Municipio de Gusinje,Gusinje,Me,08,0801
+Montenegro,Municipio de Herceg Novi,Herceg Novi,Me,09,0901
+Montenegro,Municipio de Kolain,Kolain,Me,10,1001
+Montenegro,Municipio de Kotor,Kotor,Me,11,1101
+Montenegro,Municipio de Mojkovac,Mojkovac,Me,12,1201
+Montenegro,Municipio de Nikic,Nikic,Me,13,1301
+Montenegro,Municipio de Petnjica,Petnjica,Me,14,1401
+Montenegro,Municipio de Plav,Plav,Me,15,1501
+Montenegro,Municipio de Pluine,Pluine,Me,16,1601
+Montenegro,Municipio de Pljevlja,Pljevlja,Me,17,1701
+Montenegro,Municipio de Podgorica,Podgorica,Me,18,1801
+Montenegro,Municipio de Roaje,Roaje,Me,19,1901
+Montenegro,Municipio de avnik,avnik,Me,20,2001
+Montenegro,Municipio de Tivat,Tivat,Me,21,2101
+Montenegro,Municipio de Ulcinj,Ulcinj,Me,22,2201
+Montenegro,Municipio de abljak,abljak,Me,23,2301
+Mozambique,Cabo Delgado,Pemba,Mz,01,0101
+Mozambique,Gaza,Xai-xai,Mz,02,0201
+Mozambique,Inhambane,Inhambane,Mz,03,0301
+Mozambique,Manica,Chimoio,Mz,04,0401
+Mozambique,Maputo ciudad,Maputo,Mz,05,0501
+Mozambique,Maputo provincia,Matola,Mz,06,0601
+Mozambique,Nampula,Nampula,Mz,07,0701
+Mozambique,Niassa,Lichinga,Mz,08,0801
+Mozambique,Sofala,Beira,Mz,09,0901
+Mozambique,Tete,Tete,Mz,10,1001
+Mozambique,Zambezia,Quelimane,Mz,11,1101
+Namibia,Kunene,Opuwo,Na,01,0101
+Namibia,Omusati,Outapi,Na,02,0201
+Namibia,Oshana,Oshakati,Na,03,0301
+Namibia,Ohangwena,Eenhana,Na,04,0401
+Namibia,Oshikoto,Omuthiya,Na,05,0501
+Namibia,Kavango del Oeste,Nkurenkuru,Na,06,0601
+Namibia,Kavango del Este,Rundu,Na,07,0701
+Namibia,Zambezi,KatimaMulilo,Na,08,0801
+Namibia,Erongo,Swakopmund,Na,09,0901
+Namibia,Otjozondjupa,Otjiwarongo,Na,10,1001
+Namibia,Omaheke,Gobabis,Na,11,1101
+Namibia,Khomas,Windhoek,Na,12,1201
+Namibia,Hardap,Mariental,Na,13,1301
+Namibia,Karas,Keetmanshoop,Na,14,1401
+Nauru,Aiwo,Aiwo,Nr,01,0101
+Nauru,Anabar,Anabar,Nr,02,0201
+Nauru,Anetan,Anetan,Nr,03,0301
+Nauru,Anibare,Anibare,Nr,04,0401
+Nauru,Baiti,Baiti,Nr,05,0501
+Nauru,Boe,Boe,Nr,06,0601
+Nauru,Buada,Buada,Nr,07,0701
+Nauru,Denigomodu,Denigomodu,Nr,08,0801
+Nauru,Ewa,Ewa,Nr,09,0901
+Nauru,Ijuw,Ijuw,Nr,10,1001
+Nauru,Meneng,Meneng,Nr,11,1101
+Nauru,Nibok,Nibok,Nr,12,1201
+Nauru,Uaboe,Uaboe,Nr,13,1301
+Nauru,Yaren,Yaren,Nr,14,1401
+Nepal,Kosi,Biratnagar,Np,01,0101
+Nepal,Mechi,Ilam,Np,02,0201
+Nepal,Sagarmatha,Rajbiraj,Np,03,0301
+Nepal,Bagmati,Katmandú,Np,04,0401
+Nepal,Janakpur,Janakpur,Np,05,0501
+Nepal,Narayani,Birganj,Np,06,0601
+Nepal,Dhawalagiri,Baglung,Np,07,0701
+Nepal,Gandaki,Butwal,Np,08,0801
+Nepal,Lumbini,Butwal,Np,09,0901
+Nepal,Bheri,Nepalganj,Np,10,1001
+Nepal,Karnali,Chandannath,Np,11,1101
+Nepal,Rapti,Tulsipur,Np,12,1201
+Nepal,Mahakali,Bhim Datta,Np,13,1301
+Nepal,Seti,Dipayal Silgadhi,Np,14,1401
+Nicaragua,CaribeNorte,Bilwi,Ni,01,0101
+Nicaragua,CaribeSur,Bluefields,Ni,02,0201
+Nicaragua, Boaco,Boaco,Ni,03,0301
+Nicaragua,Carazo,Jinotepe,Ni,04,0401
+Nicaragua,Chinandega,Chinandega,Ni,05,0501
+Nicaragua,  Chontales,Juigalpa,Ni,06,0601
+Nicaragua,  Estelí,Esteli,Ni,07,0701
+Nicaragua,  Granada,Granada,Ni,08,0801
+Nicaragua,  Jinotega,Jinotega,Ni,09,0901
+Nicaragua,  León,León,Ni,10,1001
+Nicaragua,  Madriz,Somoto,Ni,11,1101
+Nicaragua,  Managua,Managua,Ni,12,1201
+Nicaragua,  Masaya,Masaya,Ni,13,1301
+Nicaragua,  Matagalpa,Matagalpa,Ni,14,1401
+Nicaragua,  NuevaSegovia,Ocotal,Ni,15,1501
+Nicaragua,  RíoSanJuan,San Carlos,Ni,16,1601
+Nicaragua,  Rivas,Rivas,Ni,17,1701
+Nicaragua, Nicaragua,Managua,Ni,18,1801
+Níger,Agadez,Agadez,Ne,01,0101
+Níger,Diffa,Diffa,Ne,02,0201
+Níger,Dosso,Dosso,Ne,03,0301
+Níger,Maradi,Maradi,Ne,04,0401
+Níger,Niamey,Niamey,Ne,05,0501
+Níger,Tahoua,Tahoua,Ne,06,0601
+Níger,Tillabéri,Tillabéri,Ne,07,0701
+Níger,Zinder,Zinder,Ne,08,0801
+Nigeria,Abia,Umuahia,Ng,01,0101
+Nigeria,Adamawa,Yola,Ng,02,0201
+Nigeria,Akwa Ibom,Uyo,Ng,03,0301
+Nigeria,Anambra,Awka,Ng,04,0401
+Nigeria,Bauchi,Bauchi,Ng,05,0501
+Nigeria,Bayelsa,Yenagoa,Ng,06,0601
+Nigeria,Benue,Makurdi,Ng,07,0701
+Nigeria,Borno,Maiduguri,Ng,08,0801
+Nigeria,Cross River,Calabar,Ng,09,0901
+Nigeria,Delta,Asaba,Ng,10,1001
+Nigeria,Ebonyi,Abakaliki,Ng,11,1101
+Nigeria,Edo,Benin City,Ng,12,1201
+Nigeria,Ekiti,Ado Ekiti,Ng,13,1301
+Nigeria,Enugu,Enugu,Ng,14,1401
+Nigeria,Gombe,Gombe,Ng,15,1501
+Nigeria,Imo,Owerri,Ng,16,1601
+Nigeria,Jigawa,Dutse,Ng,17,1701
+Nigeria,Kaduna,Kaduna,Ng,18,1801
+Nigeria,Kano,Kano,Ng,19,1901
+Nigeria,Katsina,Katsina,Ng,20,2001
+Nigeria,Kebbi,Birnin Kebbi,Ng,21,2101
+Nigeria,Kogi,Lokoja,Ng,22,2201
+Nigeria,Kwara,Ilorin,Ng,23,2301
+Nigeria,Lagos,Ikeja,Ng,24,2401
+Nigeria,Nasarawa,Lafia,Ng,25,2501
+Nigeria,Níger,Minna,Ng,26,2601
+Nigeria,Ogun,Abeokuta,Ng,27,2701
+Nigeria,Ondo,Akure,Ng,28,2801
+Nigeria,Osun,Osogbo,Ng,29,2901
+Nigeria,Oyo,Ibadán,Ng,30,3001
+Nigeria,Plateau,Jos,Ng,31,3101
+Nigeria,Rivers,Port Harcourt,Ng,32,3201
+Nigeria,Sokoto,Sokoto,Ng,33,3301
+Nigeria,Taraba,Jalingo,Ng,34,3401
+Nigeria,Yobe,Damaturu,Ng,35,3501
+Nigeria,Zamfara,Gusau,Ng,36,3601
+Niue,Alofi,Alofi,Nu,01,0101
+Noruega,Akershus,Oslonota,No,01,0101
+Noruega,Aust-Agder,Arendal,No,02,0201
+Noruega,Buskerud,Drammen,No,03,0301
+Noruega,Finnmark,Vads,No,04,0401
+Noruega,Hedmark,Hamar,No,05,0501
+Noruega,Hordaland,Bergen,No,06,0601
+Noruega,Mre og Romsdal,Molde,No,07,0701
+Noruega,Nord-Trndelag,Steinkjer,No,08,0801
+Noruega,Nordland,Bod,No,09,0901
+Noruega,Oppland,Lillehammer,No,10,1001
+Noruega,Oslo,Oslo,No,11,1101
+Noruega,Rogaland,Stavanger,No,12,1201
+Noruega,Sogn og Fjordane,Hermansverk,No,13,1301
+Noruega,Sr-Trndelag,Trondheim,No,14,1401
+Noruega,Telemark,Skien,No,15,1501
+Noruega,Troms,Troms,No,16,1601
+Noruega,Vest-Agder,Kristiansand,No,17,1701
+Noruega,Vestfold,Tnsberg,No,18,1801
+Noruega,stfold,Sarpsborg,No,19,1901
+Nueva Caledonia,Numea,Numea,Nc,01,0101
+Nueva Zelanda,Northland,Whangarei,Nz,01,0101
+Nueva Zelanda,Auckland,Auckland,Nz,02,0201
+Nueva Zelanda,Waikato,Hamilton,Nz,03,0301
+Nueva Zelanda,Bay of Plenty,Tauranga,Nz,04,0401
+Nueva Zelanda,Gisborne East Cape ,Gisborne,Nz,05,0501
+Nueva Zelanda,Hawkes Bay,Napier,Nz,06,0601
+Nueva Zelanda,Taranaki,Nueva Plymouth,Nz,07,0701
+Nueva Zelanda,Manawatu-Wanganui,Palmerston North,Nz,08,0801
+Nueva Zelanda,Wellington,Wellington,Nz,09,0901
+Nueva Zelanda,Tasman ,Richmond,Nz,10,1001
+Nueva Zelanda,Nelson ,Nelson,Nz,11,1101
+Nueva Zelanda,Marlborough ,Blenheim,Nz,12,1201
+Nueva Zelanda,West Coast,Greymouth,Nz,13,1301
+Nueva Zelanda,Canterbury,Christchurch,Nz,14,1401
+Nueva Zelanda,Otago,Dunedin,Nz,15,1501
+Nueva Zelanda,Southland,Invercargill,Nz,16,1601
+Omán,Interior ad-Dakhiliyah,Nizwa,Om,01,0101
+Omán,Batina,Suhar,Om,02,0201
+Omán,Central al-Wusta,Haima Hayma,Om,03,0301
+Omán,Oriental ash-Sharqiyah,Sur,Om,04,0401
+Omán,Dhahirah,Ibri,Om,05,0501
+Omán,Mascate,Sib,Om,06,0601
+Omán,Musandam,Jasab,Om,07,0701
+Omán,Dhofar,Salalah,Om,08,0801
+Omán,Buraimi,Buraimi,Om,09,0901
+Países Bajos,Brabante SeptentrionalNoord-Brabant,Bolduquen,Nl,01,0101
+Países Bajos,Drente Drenthe,Assen,Nl,02,0201
+Países Bajos,Flevoland,Lelystad,Nl,03,0301
+Países Bajos,"Frisia Friesland, frisio occidental: Frysln",Leeuwarden,Nl,04,0401
+Países Bajos,GüeldresGelderland,Arnhem,Nl,05,0501
+Países Bajos,"GroningaGroningen, groningués: Grnnen; frisio occ",Groninga,Nl,06,0601
+Países Bajos,Holanda Meridional Zuid-Holland,La Hayan,Nl,07,0701
+Países Bajos,Holanda SeptentrionalNoord-Holland,Haarlem,Nl,08,0801
+Países Bajos,LimburgoLimburg,Maastricht,Nl,09,0901
+Países Bajos,Overijssel,Zwolle,Nl,10,1001
+Países Bajos,Utrecht,Utrecht,Nl,11,1101
+Países Bajos,ZelandaZeeland,Middelburg,Nl,12,1201
+Pakistán,Baluchistán,Quetta,Pk,01,0101
+Pakistán,Jaiber Pajtunjuá,Peshawar,Pk,02,0201
+Pakistán,Panyab,Lahore,Pk,03,0301
+Pakistán,Sind,Karachi,Pk,04,0401
+Pakistán,Islamabad,Islamabad,Pk,05,0501
+Pakistán,Áreas tribales,Peshawar,Pk,06,0601
+Pakistán,Azad Cachemira,Muzaffarabad,Pk,07,0701
+Pakistán,Gilgit-Baltistán,Gilgit,Pk,08,0801
+Palaos,Aimeliik,Ulimang,Pw,01,0101
+Palaos,Airai,Ngetkib,Pw,02,0201
+Palaos,Angaur,Ngeremasch,Pw,03,0301
+Palaos,Hatohobei,Hatohobei,Pw,04,0401
+Palaos,Kayangel,Kayangel,Pw,05,0501
+Palaos,Koror,Koror,Pw,06,0601
+Palaos,Melekeok,Melekeok,Pw,07,0701
+Palaos,Ngaraard,Ulimang,Pw,08,0801
+Palaos,Ngarchelong,Imeong,Pw,09,0901
+Palaos,Ngardmau,Ngardmau,Pw,10,1001
+Palaos,Ngatpang,Oikuul,Pw,11,1101
+Palaos,Ngchesar,Galakasan,Pw,12,1201
+Palaos,Ngeremlengui,Ollei,Pw,13,1301
+Palaos,Ngiwal,Ngerkeai,Pw,14,1401
+Palaos,Peleliu,Kloulklubed,Pw,15,1501
+Palaos,Sonsora,Sonsora,Pw,16,1601
+Palestina,Gobernación de Yenín,Yenín,Ps,01,0101
+Palestina,Gobernación de Tubas,Tubas,Ps,02,0201
+Palestina,Gobernación de Tulkarem,Tulkarem,Ps,03,0301
+Palestina,Gobernación de Naplusa,Naplusa,Ps,04,0401
+Palestina,Gobernación de Qalqilya,Qalqilya,Ps,05,0501
+Palestina,Gobernación de Salfit,Salfit,Ps,06,0601
+Palestina,Gobernación de Ramala y Al Bireh,Ramala y Al Bireh,Ps,07,0701
+Palestina,Gobernación de Jericó,Jericó,Ps,08,0801
+Palestina,Gobernación de Jerusalén,Jerusalén,Ps,09,0901
+Palestina,Gobernación de Belén,Belén,Ps,10,1001
+Palestina,Gobernación de Hebrón,Hebrón,Ps,11,1101
+Panamá,Almirante,Almirante,Pa,01,0101
+Panamá,Bocas del Toro,Bocas del Toro,Pa,02,0201
+Panamá,Changuinola,Changuinola,Pa,03,0301
+Panamá,Chiriquí Grande,Chiriquí Grande,Pa,04,0401
+Papúa Nueva Guinea,Central,Port Moresby,Pg,01,0101
+Papúa Nueva Guinea,Simbu Chimbu,Kundiawa,Pg,02,0201
+Papúa Nueva Guinea,Tierras Altas Orientales,Goroka,Pg,03,0301
+Papúa Nueva Guinea,Nueva Bretaña del Este,Rabaul,Pg,04,0401
+Papúa Nueva Guinea,Sepik del Este,Wewak,Pg,05,0501
+Papúa Nueva Guinea,Enga,Webag,Pg,06,0601
+Papúa Nueva Guinea,Golfo,Kerema,Pg,07,0701
+Papúa Nueva Guinea,Madang,Madang,Pg,08,0801
+Papúa Nueva Guinea,Manus,Lorengau,Pg,09,0901
+Papúa Nueva Guinea,Milne Bay,Alotau,Pg,10,1001
+Papúa Nueva Guinea,Morobe,Lae,Pg,11,1101
+Papúa Nueva Guinea,Nueva Irlanda,Kavieng,Pg,12,1201
+Papúa Nueva Guinea,Oro,Popondetta,Pg,13,1301
+Papúa Nueva Guinea,Bougainville,Arawa,Pg,14,1401
+Papúa Nueva Guinea,Tierras Altas del Sur,Mendi,Pg,15,1501
+Papúa Nueva Guinea,Occidental,Daru,Pg,16,1601
+Papúa Nueva Guinea,Tierras Altas Occidentales,Mount Hagen,Pg,17,1701
+Papúa Nueva Guinea,Nueva Bretaña del Oeste,Kimbe,Pg,18,1801
+Papúa Nueva Guinea,Sandaun,Vanimo,Pg,19,1901
+Papúa Nueva Guinea,Distrito Capital Nacional,Port Moresby,Pg,20,2001
+Papúa Nueva Guinea,Hela,Tari,Pg,21,2101
+Papúa Nueva Guinea,Jiwaka,Minj,Pg,22,2201
+Paraguay,Alto Paraguay,Fuerte Olimpo,Py,01,0101
+Paraguay,Alto Paraná,Ciudad del Este,Py,02,0201
+Paraguay,Amambay,Pedro Juan Caballero,Py,03,0301
+Paraguay,Distrito Capital,Asunción,Py,04,0401
+Paraguay,Boquerón,Filadelfia,Py,05,0501
+Paraguay,Caaguazú,Coronel Oviedo,Py,06,0601
+Paraguay,Caazapá,Caazapá,Py,07,0701
+Paraguay,Canindeyú,Salto del Guairá,Py,08,0801
+Paraguay,Central,Areguá,Py,09,0901
+Paraguay,Concepción,Concepción,Py,10,1001
+Paraguay,Cordillera,Caacupé,Py,11,1101
+Paraguay,Guairá,Villarrica,Py,12,1201
+Paraguay,Itapúa,Encarnación,Py,13,1301
+Paraguay,Misiones,San Juan Bautista,Py,14,1401
+Paraguay,Ñeembucú,Pilar,Py,15,1501
+Paraguay,Paraguarí,Paraguarí,Py,16,1601
+Paraguay,Presidente Hayes,Villa Hayes,Py,17,1701
+Paraguay,San Pedro,San Pedro de Ycuamandiyú,Py,18,1801
+Pitcairn,Adamstown,Adamstown,Pn,01,0101
+Polinesia Francesa,Papeete,Papeete,Pf,01,0101
+Polinesia Francesa,La subdivisión de las Islas Marquesas,Islas Marquesas,Pf,02,0201
+Polinesia Francesa,La subdivisión del Tuamotu-Gambier,Tuamotu-Gambier,Pf,03,0301
+Polinesia Francesa,La subdivisión de las Islas de la Sociedad,Islas de la Sociedad,Pf,04,0401
+Polinesia Francesa,La subdivisión de las Islas Australes,Islas Australes,Pf,05,0501
+Polonia,Gran Polonia,Poznan,Pl,01,0101
+Polonia,Cuyavia y Pomerania,Bydgoszcz,Pl,02,0201
+Polonia,Pequeña Polonia,Cracovia,Pl,03,0301
+Polonia,Lódz,Lódz,Pl,04,0401
+Polonia,Baja Silesia,Breslavia,Pl,05,0501
+Polonia,Lublin,Lublin,Pl,06,0601
+Polonia,Lubusz,Gorzów Wielkopolski,Pl,07,0701
+Polonia,Mazovia,Varsovia,Pl,08,0801
+Polonia,Opole,Opole,Pl,09,0901
+Polonia,Podlaquia,Bialystok,Pl,10,1001
+Polonia,Pomerania,Gdansk,Pl,11,1101
+Polonia,Silesia,Katowice,Pl,12,1201
+Polonia,Subcarpacia,Rzeszów,Pl,13,1301
+Polonia,Santa Cruz,Kielce,Pl,14,1401
+Polonia,Varmia y Masuria,Olsztyn,Pl,15,1501
+Polonia,Pomerania Occidental,Szczecin,Pl,16,1601
+Portugal,Lisboa,Lisboa,Pt,01,0101
+Portugal,Leiria,Leiria,Pt,02,0201
+Portugal,Santarém,Santarém,Pt,03,0301
+Portugal,Setúbal,Setúbal,Pt,04,0401
+Portugal,Beja,Beja,Pt,05,0501
+Portugal,Faro,Faro,Pt,06,0601
+Portugal,Évora,Évora,Pt,07,0701
+Portugal,Portalegre,Portalegre,Pt,08,0801
+Portugal,Castelo Branco,Castelo Branco,Pt,09,0901
+Puerto Rico,San Juan,San Juan,Pr,01,0101
+Qatar,Doha,Doha,Qa,01,0101
+Qatar,Ad Dawhah,Ad Dawhah,Qa,02,0201
+Qatar,Al Ghuwariyah,Al Ghuwariyah,Qa,03,0301
+Qatar,Al Jumaliyah,Al Jumaliyah,Qa,04,0401
+Qatar,Al Khawr,Al Khawr,Qa,05,0501
+Qatar,Al Wakrah,Al Wakrah,Qa,06,0601
+Qatar,Ar Rayyan,Ar Rayyan,Qa,07,0701
+Qatar,Jariyan al Batnah,Jariyan al Batnah,Qa,08,0801
+Qatar,Madinat Ash Shamal,Madinat Ash Shamal,Qa,09,0901
+Qatar,Umm Salal,Umm Salal,Qa,10,1001
+Qatar,Mesaieed,Mesaieed,Qa,11,1101
+Reino Unido,Inglaterra,Londres,Gb,01,0101
+Reino Unido,Gales,Cardiff,Gb,02,0201
+Reino Unido,Irlanda del Norte,Belfast,Gb,03,0301
+República Centroafricana,Bangui,Bangui,Cf,01,0101
+República Centroafricana,Bamingui-Bangoran,Ndélé,Cf,02,0201
+República Centroafricana,Basse-Kotto ,Mobaye,Cf,03,0301
+República Centroafricana,Haute-Kotto,Bria,Cf,04,0401
+República Centroafricana,Haut-Mbomou,Obo,Cf,05,0501
+República Centroafricana,Kémo,Sibut,Cf,06,0601
+República Centroafricana,Lobaye,Mbaki,Cf,07,0701
+República Centroafricana,Mambéré-Kadé ,Berbérati,Cf,08,0801
+República Centroafricana,Mbomou ,Bangassou,Cf,09,0901
+República Centroafricana,Nana-Mambéré ,Bouar,Cf,10,1001
+República Centroafricana,Ombella-MPoko ,Bimbo,Cf,11,1101
+República Centroafricana,Ouaka ,Bambari,Cf,12,1201
+República Centroafricana,Ouham ,Bossangoa,Cf,13,1301
+República Centroafricana,Ouham-Pendé ,Bozoum,Cf,14,1401
+República Centroafricana,Vakaga ,Birao,Cf,15,1501
+República Checa,Praga,Praga,Cz,01,0101
+República Checa,Bohemia Meridional Jihocesk kraj,Ceské Budejovice,Cz,02,0201
+República Checa,Moravia Meridional Jihomoravsk kraj,Brno,Cz,03,0301
+República Checa,Karlovy Vary Karlovarsk kraj,Karlovy Vary,Cz,04,0401
+República Checa,Hradec Králové Královéhradeck kraj,Hradec Králové,Cz,05,0501
+República Checa,Liberec Libereck kraj,Liberec,Cz,06,0601
+República Checa,Moravia-Silesia Moravskoslezsk kraj,Ostrava,Cz,07,0701
+República Checa,Olomouc Olomouck kraj,Olomouc,Cz,08,0801
+República Checa,Pardubice Pardubick kraj,Pardubice,Cz,09,0901
+República Checa,Pilsen Plzensk kraj,Pilsen,Cz,10,1001
+República Checa,Bohemia Central Stredocesk kraj,Praga,Cz,11,1101
+República Checa,Ústí nad Labem Ústeck kraj,Ústí nad Labem,Cz,12,1201
+República Checa,Vysocina Kraj Vysocina,Jihlava,Cz,13,1301
+República Checa,Zlín Zlínsk kraj,Zlín,Cz,14,1401
+República Democrática Del Congo,Kinsasa,Kinsasa,Cd,01,0101
+República Democrática Del Congo,Kongo central,Matadi,Cd,02,0201
+República Democrática Del Congo,Kwango,Kenge,Cd,03,0301
+República Democrática Del Congo,Kwilu,Kikwit,Cd,04,0401
+República Democrática Del Congo,Mai-Ndombe,Inongo,Cd,05,0501
+República Democrática Del Congo,Kasa,Luebo,Cd,06,0601
+República Democrática Del Congo,Lulua,Kananga,Cd,07,0701
+República Democrática Del Congo,Kasa Oriental,Mbuji-Mayi,Cd,08,0801
+República Democrática Del Congo,Lomami,Kabinda,Cd,09,0901
+República Democrática Del Congo,Sankuru,Lodja,Cd,10,1001
+República Democrática Del Congo,Maniema,Kindu,Cd,11,1101
+República Democrática Del Congo,Kivu del Sur,Bukavu,Cd,12,1201
+República Democrática Del Congo,Kivu del Norte,Goma,Cd,13,1301
+República Democrática Del Congo,Ituri,Bunia,Cd,14,1401
+República Democrática Del Congo,Alto Uele,Isiro,Cd,15,1501
+República Democrática Del Congo,Tshopo,Kisangani,Cd,16,1601
+República Democrática Del Congo,Bajo Uele,Buta,Cd,17,1701
+República Democrática Del Congo,Ubangi del Norte,Gbadolite,Cd,18,1801
+República Democrática Del Congo,Mongala,Lisala,Cd,19,1901
+República Democrática Del Congo,Ubangi del Sur,Gemena,Cd,20,2001
+República Democrática Del Congo,Équateur,Mbandaka,Cd,21,2101
+República Democrática Del Congo,Tshuapa,Boende,Cd,22,2201
+República Democrática Del Congo,Tanganyika,Kalemie,Cd,23,2301
+República Democrática Del Congo,Alto Lomami,Kamina,Cd,24,2401
+República Democrática Del Congo,Lualaba,Kolwezi,Cd,25,2501
+República Democrática Del Congo,Alto Katanga,Lubumbashi,Cd,26,2601
+República Dominicana,Azua,Ciudad Azua de Compostela,Do,01,0101
+República Dominicana,Bahoruco,Neiba,Do,02,0201
+República Dominicana,Barahona,Santa Cruz de Barahona,Do,03,0301
+República Dominicana,Dajabón,Ciudad Dajabón,Do,04,0401
+República Dominicana,Distrito Nacional,Santo Domingo de Guzmán,Do,05,0501
+República Dominicana,Duarte,San Francisco de Macorís,Do,06,0601
+República Dominicana,Elías Piña,Comendador de Lares,Do,07,0701
+República Dominicana,El Seibo,Santa Cruz de El Seibo,Do,08,0801
+República Dominicana,Espaillat,Moca,Do,09,0901
+República Dominicana,Hato Mayor,Hato Mayor del Rey,Do,10,1001
+República Dominicana,Hermanas Mirabal,Salcedo,Do,11,1101
+República Dominicana,Independencia,Jimaní,Do,12,1201
+República Dominicana,La Altagracia,Salvaleón de Higüey,Do,13,1301
+República Dominicana,La Romana,Ciudad La Romana,Do,14,1401
+República Dominicana,La Vega,Concepción de La Vega,Do,15,1501
+República Dominicana,María Trinidad Sánchez,Trinidad Sánchez Nagua,Do,16,1601
+República Dominicana,Monseñor Nouel,Bonao,Do,17,1701
+República Dominicana,Monte Cristi,San Fernando de Monte Cristi,Do,18,1801
+República Dominicana,Monte Plata,Ciudad Monte Plata,Do,19,1901
+República Dominicana,Pedernales,Ciudad Pedernales,Do,20,2001
+República Dominicana,Peravia,Baní,Do,21,2101
+República Dominicana,Puerto Plata,San Felipe de Puerto Plata,Do,22,2201
+República Dominicana,Samaná,Santa Bárbara de Samaná,Do,23,2301
+República Dominicana,San Cristóbal,Ciudad San Cristóbal,Do,24,2401
+República Dominicana,San José de Ocoa,Ciudad San José de Ocoa,Do,25,2501
+República Dominicana,San Juan,San Juan de la Maguana,Do,26,2601
+República Dominicana,San Pedro de Macorís,Ciudad San Pedro de Macorís,Do,27,2701
+República Dominicana,Sánchez Ramírez,Cotuí,Do,28,2801
+República Dominicana,Santiago,Santiago de los Caballeros,Do,29,2901
+República Dominicana,Santiago Rodríguez,San Ignacio de Sabaneta,Do,30,3001
+República Dominicana,Santo Domingo,Santo Domingo Este,Do,31,3101
+República Dominicana,Valverde,Santa Cruz de Mao,Do,32,3201
+Ruanda,Provincia Norte,Byumba,Rw,01,0101
+Ruanda,Provincia Sur,Nyanza,Rw,02,0201
+Ruanda,Provincia Este,Rwamagana,Rw,03,0301
+Ruanda,Provincia Oeste,Kibuye,Rw,04,0401
+Ruanda,Provincia de Kigali capital,Kigali,Rw,05,0501
+Rumania,Alba Fehér,Alba Iulia,Ro,01,0101
+Rumania,Arad Arad,Arad,Ro,02,0201
+Rumania,Arge,Arge,Ro,03,0301
+Rumania,Bacau Bákó,Bacau,Ro,04,0401
+Rumania,Bihor,Bihor,Ro,05,0501
+Rumania,Bistria-Nasaud,Bistria-Nasaud,Ro,06,0601
+Rumania,Botoani,Botoani,Ro,07,0701
+Rumania,Braov,Braov,Ro,08,0801
+Rumania,Braila,Braila,Ro,09,0901
+Rumania,Buzau,Buzau,Ro,10,1001
+Rumania,Cara-Severin,Cara-Severin,Ro,11,1101
+Rumania,Calarai,Calarai,Ro,12,1201
+Rumania,Cluj,Cluj,Ro,13,1301
+Rumania,Constana,Constana,Ro,14,1401
+Rumania,Covasna,Covasna,Ro,15,1501
+Rumania,Dmbovia,Dmbovia,Ro,16,1601
+Rumania,Dolj,Dolj,Ro,17,1701
+Rumania,Galai,Galai,Ro,18,1801
+Rumania,Giurgiu,Giurgiu,Ro,19,1901
+Rumania,Gorj,Gorj,Ro,20,2001
+Rumania,Harghita,Harghita,Ro,21,2101
+Rumania,Hunedoara,Hunedoara,Ro,22,2201
+Rumania,Ialomia,Ialomia,Ro,23,2301
+Rumania,Iai,Iai,Ro,24,2401
+Rumania,Ilfov,Ilfov,Ro,25,2501
+Rumania,Maramure,Maramure,Ro,26,2601
+Rumania,Mehedini,Mehedini,Ro,27,2701
+Rumania,Mure,Mure,Ro,28,2801
+Rumania,Neam,Neam,Ro,29,2901
+Rumania,Olt,Olt,Ro,30,3001
+Rumania,Prahova,Prahova,Ro,31,3101
+Rumania,Satu Mare,Satu Mare,Ro,32,3201
+Rumania,Salaj,Salaj,Ro,33,3301
+Rumania,Sibiu,Sibiu,Ro,34,3401
+Rumania,Suceava,Suceava,Ro,35,3501
+Rumania,Teleorman,Teleorman,Ro,36,3601
+Rumania,Timi,Timi,Ro,37,3701
+Rumania,Tulcea,Tulcea,Ro,38,3801
+Rumania,Vaslui,Vaslui,Ro,39,3901
+Rumania,Vlcea,Vlcea,Ro,40,4001
+Rumania,Vrancea,Vrancea,Ro,41,4101
+Rusia,Adygea Adigueya ,Maikop ,Ru,01,0101
+Rusia,Bashkortostan Baskortostán ,Ufá ,Ru,02,0201
+Rusia,Buryatia Buriatia ,Ulán-Udé -,Ru,03,0301
+Rusia,Altai Republic Altái ,Gorno-Altaisk -,Ru,04,0401
+Rusia,Dagestan Daguestán ,Majachkalá ,Ru,05,0501
+Rusia,Ingushetia Ingusetia ,Magás ,Ru,06,0601
+Rusia,Kabardino-Balkaria Kabardia-Balkaria -,Nálchik ,Ru,07,0701
+Rusia,Kalmykia Kalmukia ,Elistá ,Ru,08,0801
+Rusia,Karachay-Cherkessia Karacháyevo-Cherkesia,Cherkessk ,Ru,09,0901
+Rusia,Karelia Carelia ,Petrozavodsk ,Ru,10,1001
+Rusia,Komi Komi ,Syktyvkar ,Ru,11,1101
+Rusia,Mari El Marí El -,Yoshkar-Olá -,Ru,12,1201
+Rusia,Mordovia Mordovia ,Saransk ,Ru,13,1301
+Rusia,Sakha Sajá Yakutia,Yakutsk ,Ru,14,1401
+Rusia,North Ossetia Osetia del Norte - Alania,Vladikavkaz ,Ru,15,1501
+Rusia,Tatarstan Tartaristán ,Kazán ,Ru,16,1601
+Rusia,Tuva Tuvá ,Kizil ,Ru,17,1701
+Rusia,Udmurtia Udmurtia ,Izhevsk ,Ru,18,1801
+Rusia,Khakassia Jakasia ,Abakán ,Ru,19,1901
+Rusia,the Chechen Republic Chechenia ,Grozni ,Ru,20,2001
+Rusia,Chuvashia Chuvasia ,Cheboksary ,Ru,21,2101
+Rusia,Altai Krai Altái ,Barnaúl ,Ru,22,2201
+Rusia,Krasnodar Krai Krasnodar ,Krasnodar ,Ru,23,2301
+Rusia,Krasnoyarsk Krai Krasnoyarsk ,Krasnoyarsk ,Ru,24,2401
+Rusia,Primorsky Krai Primorie ,Vladivostok ,Ru,25,2501
+Rusia,Stavropol Krai Stávropol ,Stávropol ,Ru,26,2601
+Rusia,Khabarovsk Krai Jabárovsk ,Jabárovsk ,Ru,27,2701
+Rusia,Kamchatka Oblast Kamchatka ,Petropavlovsk de Kamchatka-,Ru,28,2801
+Rusia,Perm Krai Perm ,Perm ,Ru,29,2901
+Rusia,Zabaykalsky Krai Zabaikalie ´,Chitá ,Ru,30,3001
+Rusia,Amur Oblast Amur ,Blagovéshchensk ,Ru,31,3101
+Rusia,Arcángel,Arcángel ,Ru,32,3201
+Rusia,Astrakhan Oblast Astracán ,Astracán ,Ru,33,3301
+Rusia,Belgorod Oblast Bélgorod ,Bélgorod ,Ru,34,3401
+Rusia,Bryansk Oblast Briansk ,Briansk ,Ru,35,3501
+Rusia,Vladimirskaya Oblast Vladímir ,Vladímir ,Ru,36,3601
+Rusia,Volgograd Oblast Volgogrado ,Volgogrado ,Ru,37,3701
+Rusia,Vologda oblast Vólogda ,Vólogda ,Ru,38,3801
+Rusia,Vorónezh,Vorónezh ,Ru,39,3901
+Rusia,Ivanovo Oblast Ivánovo ,Ivánovo ,Ru,40,4001
+Rusia,Irkutsk Oblast Irkutsk ,Irkutsk ,Ru,41,4101
+Rusia,Kaliningrad Oblast Kaliningrado ,Kaliningrado ,Ru,42,4201
+Rusia,Kaluga Oblast Kaluga ,Kaluga ,Ru,43,4301
+Rusia,Kemerovo oblast Kémerovo ,Kémerovo ,Ru,44,4401
+Rusia,Kirov Oblast Kírov ,Kírov ,Ru,45,4501
+Rusia,Kostromá ,Kostromá ,Ru,46,4601
+Rusia,Kurgan Oblast Kurgán ,Kurgán ,Ru,47,4701
+Rusia,Kursk Oblast Kursk ,Kursk ,Ru,48,4801
+Rusia,Leningrad Oblast Leningrado ,San Petersburgo -,Ru,49,4901
+Rusia,Lípetsk ,Lípetsk ,Ru,50,5001
+Rusia,Magadan Oblast Magadán ,Magadán ,Ru,51,5101
+Rusia,"Moscow oblast Moscú, Óblast ",Moscú ,Ru,52,5201
+Rusia,Murmansk Oblast Múrmansk ,Múrmansk ,Ru,53,5301
+Rusia,Nizhny Novgorod Region Nizhni Nóvgorod ,Nizhni Nóvgorod ,Ru,54,5401
+Rusia,Novgorod Oblast Nóvgorod ,Nóvgorod ,Ru,55,5501
+Rusia,Novosibirsk oblast Novosibirsk ,Novosibirsk ,Ru,56,5601
+Rusia,Omsk Oblast Omsk ,Omsk ,Ru,57,5701
+Rusia,Orenburg Oblast Oremburgo ,Oremburgo ,Ru,58,5801
+Rusia,Oryol Oblast Oriol ,Oriol ,Ru,59,5901
+Rusia,Penza Oblast Penza ,Penza ,Ru,60,6001
+Rusia,Pskov Pskov oblast Pskov ,Pskov ,Ru,61,6101
+Rusia,Rostov Oblast Rostov ,Rostov del Don ,Ru,62,6201
+Rusia,Ryazan Oblast Riazán ,Riazán ,Ru,63,6301
+Rusia,Samara Oblast Samara ,Samara ,Ru,64,6401
+Rusia,Saratov Oblast Sarátov ,Sarátov ,Ru,65,6501
+Rusia,Sakhalin Oblast Sajalín ,Yuzhno-Sajalinsk -,Ru,66,6601
+Rusia,Sverdlovsk Oblast Sverdlovsk ,Ekaterimburgo ,Ru,67,6701
+Rusia,Smolensk oblast Smolensk ,Smolensk ,Ru,68,6801
+Rusia,Tambov Oblast Tambov ,Tambov ,Ru,69,6901
+Rusia,Tver Oblast Tver ,Tver ,Ru,70,7001
+Rusia,Tomsk Oblast Tomsk ,Tomsk ,Ru,71,7101
+Rusia,Tula Oblast Tula ,Tula ,Ru,72,7201
+Rusia,Tyumen Oblast Tiumén ,Tiumén ,Ru,73,7301
+Rusia,Ulyanovsk Oblast Uliánovsk ,Uliánovsk ,Ru,74,7401
+Rusia,Chelyabinsk Oblast Cheliábinsk ,Cheliábinsk ,Ru,75,7501
+Rusia,Yaroslavl Oblast Yaroslavl ,Yaroslavl ,Ru,76,7601
+Rusia,Moscow Moscú ,"Moscú, ciudad ",Ru,77,7701
+Rusia,Saint Petersburg Russia San Petersburgo -,San Petersburgo -,Ru,78,7801
+Rusia,the Jewish Autonomous Oblast Hebreo ,Birobidján ,Ru,79,7901
+Rusia,Nenets Autonomous District Nenetsia ,Narian-Mar -,Ru,80,8001
+Rusia,Yugra Janti-Mansi -,Janti-Mansisk -,Ru,81,8101
+Rusia,Chukotka Chukotka ,Anádyr ,Ru,82,8201
+Rusia,Yamal-Nenets Autonomous District Yamalia-Nenetsia ,Salejard ,Ru,83,8301
+Sahara Occidental,Provincia de Auserd,La Güera,Eh,01,0101
+Sahara Occidental,Provincia de Assa-Zag,Assa-Zag,Eh,02,0201
+Sahara Occidental,Provincia de Bojador,Bojador,Eh,03,0301
+Sahara Occidental,Provincia de El Aaiún,El Aaiún,Eh,04,0401
+Sahara Occidental,Condado de Esmara,Esmara,Eh,05,0501
+Sahara Occidental,Condado de Oued Ed-Dahab,Dajla,Eh,06,0601
+Samoa,Tuamasaga,Afega,Ws,01,0101
+Samoa,Aana,Leulumoega,Ws,02,0201
+Samoa,Aiga-i-le-Tai,Mulifanua,Ws,03,0301
+Samoa,Atua,Lufilufi,Ws,04,0401
+Samoa,Vaa-o-Fonoti,Samamea,Ws,05,0501
+Samoa,Faasaleleaga,Safotulafai,Ws,06,0601
+Samoa,Gagaemauga,Saleaula,Ws,07,0701
+Samoa,Gagaifomauga,Aopo,Ws,08,0801
+Samoa,Vaisigano,Asau,Ws,09,0901
+Samoa,Satupaitea,Satupaitea,Ws,10,1001
+Samoa,Palauli,Vailoa,Ws,11,1101
+Samoa Americana,Pago Pago,Pago Pago,As,01,0101
+San Bartolome,Gustavia,Gustavia,Bl,01,0101
+San Cristóbal Y Nieves,Christ Church Nichola Town ,Nichola Town,Kn,01,0101
+San Cristóbal Y Nieves,Saint Anne Sandy Point ,Anne Sandy Point ,Kn,02,0201
+San Cristóbal Y Nieves,Saint George Basseterre ,George Basseterre ,Kn,03,0301
+San Cristóbal Y Nieves,Saint George Gingerland ,George Gingerland ,Kn,04,0401
+San Cristóbal Y Nieves,Saint James Windward ,James Windward ,Kn,05,0501
+San Cristóbal Y Nieves,Saint John Capisterre ,John Capisterre ,Kn,06,0601
+San Cristóbal Y Nieves,Saint John Figtree ,John Figtree ,Kn,07,0701
+San Cristóbal Y Nieves,Saint Mary Cayon ,Mary Cayon ,Kn,08,0801
+San Cristóbal Y Nieves,Saint Paul Capisterre ,Paul Capisterre ,Kn,09,0901
+San Cristóbal Y Nieves,Saint Paul Charlestown ,Paul Charlestown ,Kn,10,1001
+San Cristóbal Y Nieves,Saint Peter Basseterre ,Peter Basseterre ,Kn,11,1101
+San Cristóbal Y Nieves,Saint Thomas Lowland ,Thomas Lowland ,Kn,12,1201
+San Cristóbal Y Nieves,Saint Thomas Middle Island ,Thomas Middle Island ,Kn,13,1301
+San Cristóbal Y Nieves,Trinity Palmetto Point ,Trinity Palmetto Point ,Kn,14,1401
+San Marino,San Marino,San Marino,Sm,01,0101
+San Martin (Parte Francesa),Marigot,Marigot,Mf,01,0101
+San Pedro Y Miquelon,San Pedro,San Pedro,Pm,01,0101
+San Vicente Y Las Granadinas,Charlotte,Georgetown,Vc,01,0101
+San Vicente Y Las Granadinas,Grenadines,Port Elizabeth,Vc,02,0201
+San Vicente Y Las Granadinas,Saint Andrew,Layou,Vc,03,0301
+San Vicente Y Las Granadinas,Saint David,Chateaubelair,Vc,04,0401
+San Vicente Y Las Granadinas,Saint George,Kingstown,Vc,05,0501
+San Vicente Y Las Granadinas,Saint Patrick,Barrouallie,Vc,06,0601
+San Vicente Y Las Granadinas,Bandera de San Vicente y las Granadinas San Vicent,Kingstown,Vc,07,0701
+"Santa Helena, Ascension Y Tristan De Acuña",Jamestown,Jamestown,Sh,01,0101
+Santa Lucía,Anse La Raye,Anse La Raye,Lc,01,0101
+Santa Lucía,Castries,Castries,Lc,02,0201
+Santa Lucía,Choiseul,Choiseul,Lc,03,0301
+Santa Lucía,Dauphin,Dauphin,Lc,04,0401
+Santa Lucía,Dennery,Dennery,Lc,05,0501
+Santa Lucía,Gros Islet,Gros Islet,Lc,06,0601
+Santa Lucía,Laborie,Laborie,Lc,07,0701
+Santa Lucía,Micoud,Micoud,Lc,08,0801
+Santa Lucía,Praslin,Praslin,Lc,09,0901
+Santa Lucía,Soufrière,Soufrière,Lc,10,1001
+Santa Lucía,Vieux Fort,Vieux Fort,Lc,11,1101
+Santo Tomé Y Príncipe,Água Grande, Santo Tomé,St,01,0101
+Santo Tomé Y Príncipe,Cantagalo, Santana,St,02,0201
+Santo Tomé Y Príncipe,Caué ,So Joo dos Angolares,St,03,0301
+Santo Tomé Y Príncipe,Lembá ,Neves,St,04,0401
+Santo Tomé Y Príncipe,Lobata ,Guadalupe,St,05,0501
+Santo Tomé Y Príncipe,Mé-Zóchi, Trindade,St,06,0601
+Santo Tomé Y Príncipe,Pagué ,Santo António,St,07,0701
+Senegal,Dakar,Dakar,Sn,01,0101
+Senegal,Diourbel,Diourbel,Sn,02,0201
+Senegal,Fatick,Fatick,Sn,03,0301
+Senegal,Kaffrine,Kaffrine,Sn,04,0401
+Senegal,Kédougou,Kédougou,Sn,05,0501
+Senegal,Kolda,Kolda,Sn,06,0601
+Senegal,Louga,Louga,Sn,07,0701
+Senegal,Matam,Matam,Sn,08,0801
+Senegal,Saint-Louis,Saint-Louis,Sn,09,0901
+Senegal,Tambacounda,Tambacounda,Sn,10,1001
+Senegal,Kaolack,Kaolack,Sn,11,1101
+Senegal,Sédhiou,Sédhiou,Sn,12,1201
+Senegal,Thiès,Thiès,Sn,13,1301
+Senegal,Ziguinchor,Ziguinchor,Sn,14,1401
+Serbia,Belgrado,Belgrado,Rs,01,0101
+Seychelles,Victoria,Victoria,Sc,01,0101
+Sierra Leona,Provincia del Este,Kenema,Sl,01,0101
+Sierra Leona,Provincia del Norte,Makeni,Sl,02,0201
+Sierra Leona,Provincia del Sur,Bo,Sl,03,0301
+Sierra Leona,Área Occidental,Freetown,Sl,04,0401
+Singapur,Singapur,Singapur,Sg,01,0101
+Sint Maarten (Parte Neerlandesa),Philipsburg,Philipsburg,Sx,01,0101
+Siria,Dara,Daraa,Sy,01,0101
+Siria,Deir ez-Zor,Deir ez-Zor,Sy,02,0201
+Siria,Alepo,Alepo,Sy,03,0301
+Siria,Hama,Hama,Sy,04,0401
+Siria,Hasaka,Hasaka,Sy,05,0501
+Siria,Homs,Homs,Sy,06,0601
+Siria,Idlib,Idlib,Sy,07,0701
+Siria,Quneitra,Quneitra,Sy,08,0801
+Siria,Latakia,Latakia,Sy,09,0901
+Siria,Ar-Raqqa,Raqqa,Sy,10,1001
+Siria,Rif Damasco,Damasco,Sy,11,1101
+Siria,Sueida,As-Suwayda,Sy,12,1201
+Siria,Damasco,Damasco,Sy,13,1301
+Siria,Tartus,Tartus,Sy,14,1401
+Somalia,Awdal,Baki,So,01,0101
+Somalia,Bakool ,Xuddur,So,02,0201
+Somalia,Banaadir ,Mogadiscio,So,03,0301
+Somalia,Bari ,Bender Cassim,So,04,0401
+Somalia,Bay ,Baidoa,So,05,0501
+Somalia,Galguduud ,Dusa Mareb,So,06,0601
+Somalia,Gedo ,Garbahaarey,So,07,0701
+Somalia,Hiiraan ,Beledweyne,So,08,0801
+Somalia,Middle Juba, Buaale,So,09,0901
+Somalia,Lower Juba, Kismaayo,So,10,1001
+Somalia,Mudug ,Galcaio,So,11,1101
+Somalia,Nugaal ,Garoowe,So,12,1201
+Somalia,Sanaag ,Erigavo,So,13,1301
+Somalia,Shabeellaha Dhexe ,Giohar,So,14,1401
+Somalia,Shabeellaha Hoose ,Merka,So,15,1501
+Somalia,Sool ,Laascaanood,So,16,1601
+Somalia,Togdheer ,Burao,So,17,1701
+Somalia,Woqooyi Galbeed,Hargeysa,So,18,1801
+Sri Lanka,Central,Kandy,Lk,01,0101
+Sri Lanka,Este,Trincomalee,Lk,02,0201
+Sri Lanka,Central del Norte,Anuradhapura,Lk,03,0301
+Sri Lanka,Noroeste,Kurunegala,Lk,04,0401
+Sri Lanka,Norte,Jaffna,Lk,05,0501
+Sri Lanka,Sabaragamuwa,Ratnapura,Lk,06,0601
+Sri Lanka,Sur,Galle,Lk,07,0701
+Sri Lanka,Uva,Badulla,Lk,08,0801
+Sri Lanka,Oeste,Sri Jayawardenapura Kotte,Lk,09,0901
+Suazilandia,Hhohho,Mbabane,Sz,01,0101
+Suazilandia,Lubombo,Siteki,Sz,02,0201
+Suazilandia,Manzini,Manzini,Sz,03,0301
+Suazilandia,Shishelweni,Nhlangano,Sz,04,0401
+Sudáfrica,Cabo del Norte,Kimberley,Za,01,0101
+Sudáfrica,Cabo Occidental,Ciudad del Cabo,Za,02,0201
+Sudáfrica,Cabo Oriental,Bhisho,Za,03,0301
+Sudáfrica,Estado Libre,Bloemfontein,Za,04,0401
+Sudáfrica,Gauteng,Johannesburgo,Za,05,0501
+Sudáfrica,KwaZulu-Natal,Pietermaritzburg,Za,06,0601
+Sudáfrica,Limpopo,Polokwane,Za,07,0701
+Sudáfrica,Mpumalanga,Nelspruit,Za,08,0801
+Sudáfrica,Noroeste,Mafikeng,Za,09,0901
+Sudán,Jartum,Jartum,Sd,01,0101
+Sudán,Kordofán del Norte,Kordofán del Norte,Sd,02,0201
+Sudán,Norte,Norte,Sd,03,0301
+Sudán,Kassala,Kassala,Sd,04,0401
+Sudán,Nilo Azul,Nilo Azul,Sd,05,0501
+Sudán,Darfur del Norte,Darfur del Norte,Sd,06,0601
+Sudán,Darfur del Sur,Darfur del Sur,Sd,07,0701
+Sudán,Kordofán del Sur,Kordofán del Sur,Sd,08,0801
+Sudán,Gezira,Gezira,Sd,09,0901
+Sudán,Nilo Blanco,Nilo Blanco,Sd,10,1001
+Sudán,Río Nilo,Río Nilo,Sd,11,1101
+Sudán,Mar Rojo,Mar Rojo,Sd,12,1201
+Sudán,Gadarif,Gadarif,Sd,13,1301
+Sudán,Sennar,Sennar,Sd,14,1401
+Sudán,Darfur del Oeste,Darfur del Oeste,Sd,15,1501
+Sudán,Darfur Central,Darfur Central,Sd,16,1601
+Sudán,Darfur del Este,Darfur del Este,Sd,17,1701
+Sudán,Kordofán del Oeste,Kordofán del Oeste,Sd,18,1801
+Sudán Del Sur,Alto Nilo,Malakal,Ss,01,0101
+Sudán Del Sur,Bahr el-Ghazal Occidental,Wau,Ss,02,0201
+Sudán Del Sur,Bahr el-Ghazal del Norte,Uwail,Ss,03,0301
+Sudán Del Sur,Ecuatoria Central,Yuba,Ss,04,0401
+Sudán Del Sur,Ecuatoria Occidental,Yambio,Ss,05,0501
+Sudán Del Sur,Ecuatoria Oriental,Torit,Ss,06,0601
+Sudán Del Sur,Junqali,Bur,Ss,07,0701
+Sudán Del Sur,Lagos,Rumbek,Ss,08,0801
+Sudán Del Sur,Unidad,Bentiu,Ss,09,0901
+Sudán Del Sur,Warab,Kuajok,Ss,10,1001
+Suecia,Provincias Ln ,Lule,Se,01,0101
+Suecia,Provincia de Norrbotten,ln Ume,Se,02,0201
+Suecia,Provincia de Vsterbotten,Ume,Se,03,0301
+Suecia,Provincia de Jmtland,stersund,Se,04,0401
+Suecia,Provincia de Vsternorrland,Hrnsand,Se,05,0501
+Suecia,Provincia de Gvleborg,Gvle,Se,06,0601
+Suecia,Provincia de Dalarna,Falun,Se,07,0701
+Suecia,Provincia de Vrmland,Karlstad,Se,08,0801
+Suecia,Provincia de rebro,rebro,Se,09,0901
+Suecia,Provincia de Vstmanland,Vsters,Se,10,1001
+Suecia,Provincia de Upsala,Upsala,Se,11,1101
+Suecia,Provincia de Estocolmo,Estocolmo,Se,12,1201
+Suecia,Provincia de Sdermanland,Nykping,Se,13,1301
+Suecia,Provincia de Vstra Gtaland,Gotemburgo,Se,14,1401
+Suecia,Provincia de stergtland,Linkping,Se,15,1501
+Suecia,Provincia de Jnkping,Jnkping,Se,16,1601
+Suecia,Provincia de Kalmar,Kalmar,Se,17,1701
+Suecia,Provincia de Halland,Halmstad,Se,18,1801
+Suecia,Provincia de Kronoberg,Vxj,Se,19,1901
+Suecia,Provincia de Blekinge,Karlskrona,Se,20,2001
+Suecia,Provincia de Escania,Malm,Se,21,2101
+Suecia,Provincia de Gotland,Visby,Se,22,2201
+Suiza,Argovia,Nidwalden,Ch,01,0101
+Suiza,Appenzell Rodas Exteriores,Obwalden,Ch,02,0201
+Suiza,Appenzell Rodas Interiores,Schaffhausen,Ch,03,0301
+Suiza,Basilea-Ciudad,Schwyz,Ch,04,0401
+Suiza,Basilea-Campiña,Soleura,Ch,05,0501
+Suiza,Berna,San Galo,Ch,06,0601
+Suiza,Friburgo,Turgovia,Ch,07,0701
+Suiza,Ginebra,Tesino,Ch,08,0801
+Suiza,Glaris,Uri,Ch,09,0901
+Suiza,Grisones,Valais,Ch,10,1001
+Suiza,Jura,Vaud,Ch,11,1101
+Suiza,Lucerna,Zug,Ch,12,1201
+Suiza,Neuchtel,Zúrich,Ch,13,1301
+Surinam,Brokopondo,Brokopondo,Sr,01,0101
+Surinam,Commewijne,Nieuw Amsterdam,Sr,02,0201
+Surinam,Coronie,Totness,Sr,03,0301
+Surinam,Marowijne,Albina,Sr,04,0401
+Surinam,Nickerie,Nieuw Nickerie,Sr,05,0501
+Surinam,Para,Onverwacht,Sr,06,0601
+Surinam,Paramaribo,Paramaribo,Sr,07,0701
+Surinam,Saramacca,Groningen,Sr,08,0801
+Surinam,Sipaliwini,Sipaliwini,Sr,09,0901
+Surinam,Wanica,Lelydorp,Sr,10,1001
+Surinam,Bandera de Surinam Surinam,Paramaribo,Sr,11,1101
+Svalbard Y Jan Mayen,Svalbard ,Svalbard ,Sj,01,0101
+Tailandia,Chiang Mai,Chiang Mai,Th,01,0101
+Tailandia,Chiang Rai,Chiang Rai,Th,02,0201
+Tailandia,Kamphaeng Phet,Kamphaeng Phet,Th,03,0301
+Tailandia,Lampang,Lampang,Th,04,0401
+Tailandia,Lamphun,Lamphun,Th,05,0501
+Tailandia,Mae Hong Son,Mae Hong Son,Th,06,0601
+Tailandia,Nakhon Sawan,Nakhon Sawan,Th,07,0701
+Tailandia,Nan,Nan,Th,08,0801
+Tailandia,Phayao,Phayao,Th,09,0901
+Tailandia,Phetchabun,Phetchabun,Th,10,1001
+Tailandia,Phichit,Phichit,Th,11,1101
+Tailandia,Phitsanulok,Phitsanulok,Th,12,1201
+Tailandia,Phrae,Phrae,Th,13,1301
+Tailandia,Sukhothai,Sukhothai,Th,14,1401
+Tailandia,Tak,Tak,Th,15,1501
+Tailandia,Uthai Thani,Uthai Thani,Th,16,1601
+Tailandia,Uttaradit,Uttaradit,Th,17,1701
+Tailandia,Amnat Charoen,Amnat Charoen,Th,18,1801
+Tailandia,Buri Ram,Buri Ram,Th,19,1901
+Tailandia,Chaiyaphum,Chaiyaphum,Th,20,2001
+Tailandia,Kalasin,Kalasin,Th,21,2101
+Tailandia,Khon Kaen,Khon Kaen,Th,22,2201
+Tailandia,Loei ,Loei ,Th,23,2301
+Tailandia,Maha Sarakham,Maha Sarakham,Th,24,2401
+Tailandia,Mukdahan ,Mukdahan ,Th,25,2501
+Tailandia,Nakhon Phanom,Nakhon Phanom,Th,26,2601
+Tailandia,Nakhon Ratchasima,Nakhon Ratchasima,Th,27,2701
+Tailandia,Nong Bua Lam Phu,Nong Bua Lam Phu,Th,28,2801
+Tailandia,Nong Khai ,Nong Khai ,Th,29,2901
+Tailandia,Roi Et ,Roi Et ,Th,30,3001
+Tailandia,Sakon Nakhon ,Sakon Nakhon ,Th,31,3101
+Tailandia,Si Sa Ket,Si Sa Ket,Th,32,3201
+Tailandia,Surin ,Surin ,Th,33,3301
+Tailandia,Ubon Ratchathani ,Ubon Ratchathani ,Th,34,3401
+Tailandia,Udon Thani,Udon Thani,Th,35,3501
+Tailandia,Yasothon ,Yasothon ,Th,36,3601
+Tailandia,Bueng Kan,Bueng Kan,Th,37,3701
+Tailandia,Ang Thong,Ang Thong,Th,38,3801
+Tailandia,Phra Nakhon Si Ayutthaya ,Phra Nakhon Si Ayutthaya ,Th,39,3901
+Tailandia,Bangkok,Bangkok,Th,40,4001
+Tailandia,Chainat ,Chainat ,Th,41,4101
+Tailandia,Kanchanaburi ,Kanchanaburi ,Th,42,4201
+Tailandia,Lop Buri ,Lop Buri ,Th,43,4301
+Tailandia,Nakhon Nayok ,Nakhon Nayok ,Th,44,4401
+Tailandia,Nakhon Pathom ,Nakhon Pathom ,Th,45,4501
+Tailandia,Nonthaburi ,Nonthaburi ,Th,46,4601
+Tailandia,Pathum Thani,Pathum Thani,Th,47,4701
+Tailandia,Phetchaburi ,Phetchaburi ,Th,48,4801
+Tailandia,Prachuap Khiri Khan ,Prachuap Khiri Khan ,Th,49,4901
+Tailandia,Ratchaburi ,Ratchaburi ,Th,50,5001
+Tailandia,Samut Prakan ,Samut Prakan ,Th,51,5101
+Tailandia,Samut Sakhon ,Samut Sakhon ,Th,52,5201
+Tailandia,Samut Songkhram ,Samut Songkhram ,Th,53,5301
+Tailandia,Saraburi ,Saraburi ,Th,54,5401
+Tailandia,Sing Buri ,Sing Buri ,Th,55,5501
+Tailandia,Suphan Buri ,Suphan Buri ,Th,56,5601
+Tailandia,Chachoengsao ,Chachoengsao ,Th,57,5701
+Tailandia,Chanthaburi ,Chanthaburi ,Th,58,5801
+Tailandia,Chon Buri ,Chon Buri ,Th,59,5901
+Tailandia,Prachin Buri ,Prachin Buri ,Th,60,6001
+Tailandia,Rayong ,Rayong ,Th,61,6101
+Tailandia,Sa Kaeo ,Sa Kaeo ,Th,62,6201
+Tailandia,Trat ,Trat ,Th,63,6301
+Tailandia,Chumphon ,Chumphon ,Th,64,6401
+Tailandia,Krabi ,Krabi ,Th,65,6501
+Tailandia,Nakhon Si Thammarat ,Nakhon Si Thammarat ,Th,66,6601
+Tailandia,Narathiwat,Narathiwat,Th,67,6701
+Tailandia,Pattani ,Pattani ,Th,68,6801
+Tailandia,Phang Nga ,Phang Nga ,Th,69,6901
+Tailandia,Phatthalung ,Phatthalung ,Th,70,7001
+Tailandia,Phuket ,Phuket ,Th,71,7101
+Tailandia,Ranong ,Ranong ,Th,72,7201
+Tailandia,Satun ,Satun ,Th,73,7301
+Tailandia,Songkhla ,Songkhla ,Th,74,7401
+Tailandia,Surat Thani ,Surat Thani ,Th,75,7501
+Tailandia,Trang ,Trang ,Th,76,7601
+Tailandia,Yala ,Yala ,Th,77,7701
+Taiwán,Taipéi,Taipéi,Tw,01,0101
+Tanzania,Arusha,Arusha,Tz,01,0101
+Tanzania,Dar es Salaam,Dar es Salaam,Tz,02,0201
+Tanzania,Dodoma,Dodoma,Tz,03,0301
+Tanzania,Geita,Geita,Tz,04,0401
+Tanzania,Iringa,Iringa,Tz,05,0501
+Tanzania,Kagera,Bukoba,Tz,06,0601
+Tanzania,Katavi,Mpanda,Tz,07,0701
+Tanzania,Kigoma,Kigoma,Tz,08,0801
+Tanzania,Kilimanjaro,Moshi,Tz,09,0901
+Tanzania,Lindi,Lindi,Tz,10,1001
+Tanzania,Manyara,Babati,Tz,11,1101
+Tanzania,Mara,Musoma,Tz,12,1201
+Tanzania,Mbeya,Mbeya,Tz,13,1301
+Tanzania,Morogoro,Morogoro,Tz,14,1401
+Tanzania,Mtwara,Mtwara,Tz,15,1501
+Tanzania,Mwanza,Mwanza,Tz,16,1601
+Tanzania,Njombe,Njombe,Tz,17,1701
+Tanzania,Pwani,Kibaha,Tz,18,1801
+Tanzania,Pemba Norte,Wete,Tz,19,1901
+Tanzania,Pemba Sur,Mkoani,Tz,20,2001
+Tanzania,Rukwa,Sumbawanga,Tz,21,2101
+Tanzania,Ruvuma,Songea,Tz,22,2201
+Tanzania,Shinyanga,Shinyanga,Tz,23,2301
+Tanzania,Singida,Singida,Tz,24,2401
+Tanzania,Simiyu,Bariadi,Tz,25,2501
+Tanzania,Tabora,Tabora,Tz,26,2601
+Tanzania,Tanga,Tanga,Tz,27,2701
+Tanzania,Zanzíbar Central/Sur,Koani,Tz,28,2801
+Tanzania,Zanzíbar Norte,Mkokotoni,Tz,29,2901
+Tanzania,Zanzíbar Ciudad/Oeste,Zanzíbar,Tz,30,3001
+Tayikistán,Mastchoh,Buston,Tj,01,0101
+Tayikistán,Ghafurov,Ghafurov,Tj,02,0201
+Tayikistán,Asht,Shaydon,Tj,03,0301
+Tayikistán,Zafarobod,Zafarobod,Tj,04,0401
+Tayikistán,Spitamen,"Nov, Nau",Tj,05,0501
+Tayikistán,Rasulov,Proletarsk,Tj,06,0601
+Tayikistán,Konibodom,Konibodom,Tj,07,0701
+Tayikistán,Isfara,Isfara,Tj,08,0801
+Tayikistán,Istarawshan,Istaravshan,Tj,09,0901
+Tayikistán,Shahriston,Shahriston,Tj,10,1001
+Tayikistán,Ghonchi,Ghonchi,Tj,11,1101
+Tayikistán,Panjakent,Panjakent,Tj,12,1201
+Tayikistán,Aini,Aini,Tj,13,1301
+Tayikistán,Kuhistoni Mastchoh,Mehron,Tj,14,1401
+Territorio Britanico Del Oceano Indico,Camp Justice,Camp Justice,Io,01,0101
+Territorios Australes Franceses,San Pablo y Ámsterdam,Base Martin de Viviès,Tf,01,0101
+Territorios Australes Franceses,Islas Crozet,Base Alfred Faure,Tf,02,0201
+Territorios Australes Franceses,Islas Kerguelen,Port-aux-Franais,Tf,03,0301
+Territorios Australes Franceses,Tierra Adelia,Estación Dumont dUrville,Tf,04,0401
+Territorios Australes Franceses,Islas Dispersas,Saint-Pierre,Tf,05,0501
+Timor Oriental,Oecusse,Pante Macassar,Tl,01,0101
+Timor Oriental,Liquiá,Liquiá,Tl,02,0201
+Timor Oriental,Dili,Dili,Tl,03,0301
+Timor Oriental,Manatuto,Manatuto,Tl,04,0401
+Timor Oriental,Baucau,Baucau,Tl,05,0501
+Timor Oriental,Lautem,Lospalos,Tl,06,0601
+Timor Oriental,Bobonaro,Maliana,Tl,07,0701
+Timor Oriental,Ermera,Gleno,Tl,08,0801
+Timor Oriental,Aileu,Aileu,Tl,09,0901
+Timor Oriental,Viqueque,Viqueque,Tl,10,1001
+Timor Oriental,Cova-Lima,Suai,Tl,11,1101
+Timor Oriental,Ainaro,Ainaro,Tl,12,1201
+Timor Oriental,Manufahi,Same,Tl,13,1301
+Togo,Altiplano,Atakpamé,Tg,01,0101
+Togo,Central,Sokodé,Tg,02,0201
+Togo,Kara,Kara,Tg,03,0301
+Togo,Marítima,Lomé,Tg,04,0401
+Togo,Sabana,Dapaong,Tg,05,0501
+Togo,TOGO,LOMÉ,Tg,06,0601
+Tokelau,Atafu,Atafu,Tk,01,0101
+Tonga,Eua,Ohonua,To,01,0101
+Tonga,Haapai,Pangai,To,02,0201
+Tonga,Niuas,Hihifo,To,03,0301
+Tonga,Tongatapu,Nukualofa,To,04,0401
+Tonga,Vavau,Neiafu,To,05,0501
+Trinidad Y Tobago,Puerto España,Puerto España,Tt,01,0101
+Túnez,Ariana,Ariana,Tn,01,0101
+Túnez,Béja,Béja,Tn,02,0201
+Túnez,Ben Arous,Ben Arous,Tn,03,0301
+Túnez,Bizerta,Bizerta,Tn,04,0401
+Túnez,Gabes,Gabes,Tn,05,0501
+Túnez,Gafsa,Gafsa,Tn,06,0601
+Túnez,Jendouba,Jendouba,Tn,07,0701
+Túnez,Kairuán,Kairuán,Tn,08,0801
+Túnez,Kasserine,Kasserine,Tn,09,0901
+Túnez,Kebili,Kebili,Tn,10,1001
+Túnez,Kef,Kef,Tn,11,1101
+Túnez,Mahdia,Mahdia,Tn,12,1201
+Túnez,Manouba,Manouba,Tn,13,1301
+Túnez,Medenine,Medenine,Tn,14,1401
+Túnez,Monastir,Monastir,Tn,15,1501
+Túnez,Nabeul,Nabeul,Tn,16,1601
+Túnez,Sfax,Sfax,Tn,17,1701
+Túnez,Sidi Bou Said,Sidi Bou Said,Tn,18,1801
+Túnez,Siliana,Siliana,Tn,19,1901
+Túnez,Susa,Susa,Tn,20,2001
+Túnez,Tataouine,Tataouine,Tn,21,2101
+Túnez,Tozeur,Tozeur,Tn,22,2201
+Túnez,Túnez,Túnez,Tn,23,2301
+Túnez,Zaghouan,Zaghouan,Tn,24,2401
+Turkmenistán,Asjabad,Asjabad,Tm,01,0101
+Turkmenistán,Ahal,Annau,Tm,02,0201
+Turkmenistán,Balkan,Balkanabat,Tm,03,0301
+Turkmenistán,Dasoguz,Dasoguz,Tm,04,0401
+Turkmenistán,Lebap,Türkmenabat,Tm,05,0501
+Turkmenistán,Mary,Mary,Tm,06,0601
+Turquía,Provincia de Adana,Adana,Tr,01,0101
+Turquía,Provincia de Adiyaman,Adiyaman,Tr,02,0201
+Turquía,Provincia de Afyonkarahisar,Afyonkarahisar,Tr,03,0301
+Turquía,Provincia de Agri,Agri,Tr,04,0401
+Turquía,Provincia de Amasya,Amasya,Tr,05,0501
+Turquía,Provincia de Ankara,Ankara,Tr,06,0601
+Turquía,Provincia de Antalya,Antalya,Tr,07,0701
+Turquía,Provincia de Artvin,Artvin,Tr,08,0801
+Turquía,Provincia de Aydin,Aydin,Tr,09,0901
+Turquía,Provincia de Balikesir,Balikesir,Tr,10,1001
+Turquía,Provincia de Bilecik,Bilecik,Tr,11,1101
+Turquía,Provincia de Bingl,Bingl,Tr,12,1201
+Turquía,Provincia de Bitlis,Bitlis,Tr,13,1301
+Turquía,Provincia de Bolu,Bolu,Tr,14,1401
+Turquía,Provincia de Burdur,Burdur,Tr,15,1501
+Turquía,Provincia de Bursa,Bursa,Tr,16,1601
+Turquía,Provincia de anakkale,anakkale,Tr,17,1701
+Turquía,Provincia de Cankiri,ankiri,Tr,18,1801
+Turquía,Provincia de orum,orum,Tr,19,1901
+Turquía,Provincia de Denizli,Denizli,Tr,20,2001
+Turquía,Provincia de Diyarbakir,Diyarbakir,Tr,21,2101
+Turquía,Provincia de Edirne,Edirne,Tr,22,2201
+Turquía,Provincia de Elazig,Elazig,Tr,23,2301
+Turquía,Provincia de Erzincan,Erzincan,Tr,24,2401
+Turquía,Provincia de Erzurum,Erzurum,Tr,25,2501
+Turquía,Provincia de Eskisehir,Eskisehir,Tr,26,2601
+Turquía,Provincia de Gaziantep,Gaziantep,Tr,27,2701
+Turquía,Provincia de Giresun,Giresun,Tr,28,2801
+Turquía,Provincia de Gümüshane,Gümüshane,Tr,29,2901
+Turquía,Provincia de Hakkri,Hakkri,Tr,30,3001
+Turquía,Provincia de Hatay,Antioquía,Tr,31,3101
+Turquía,Provincia de Isparta,Isparta,Tr,32,3201
+Turquía,Provincia de Mersin,Mersin,Tr,33,3301
+Turquía,Provincia de Estambul,Estambul,Tr,34,3401
+Turquía,Provincia de Esmirna,Esmirna,Tr,35,3501
+Turquía,Provincia de Kars,Kars,Tr,36,3601
+Turquía,Provincia de Kastamonu,Kastamonu,Tr,37,3701
+Turquía,Provincia de Kayseri,Kayseri,Tr,38,3801
+Turquía,Provincia de Kirklareli,Kirklareli,Tr,39,3901
+Turquía,Provincia de Kirsehir,Kirsehir,Tr,40,4001
+Turquía,Provincia de Kocaeli,Izmit,Tr,41,4101
+Turquía,Provincia de Konya,Konya,Tr,42,4201
+Turquía,Provincia de Kütahya,Kütahya,Tr,43,4301
+Turquía,Provincia de Malatya,Malatya,Tr,44,4401
+Turquía,Provincia de Manisa,Manisa,Tr,45,4501
+Turquía,Provincia de Kahramanmaras,Kahramanmaras,Tr,46,4601
+Turquía,Provincia de Mardin,Mardin,Tr,47,4701
+Turquía,Provincia de Mugla,Mugla,Tr,48,4801
+Turquía,Provincia de Mus,Mus,Tr,49,4901
+Turquía,Provincia de Nevsehir,Nevsehir,Tr,50,5001
+Turquía,Provincia de Nigde,Nigde,Tr,51,5101
+Turquía,Provincia de Ordu,Ordu,Tr,52,5201
+Turquía,Provincia de Rize,Rize,Tr,53,5301
+Turquía,Provincia de Sakarya,Adapazari,Tr,54,5401
+Turquía,Provincia de Samsun,Samsun,Tr,55,5501
+Turquía,Provincia de Siirt,Siirt,Tr,56,5601
+Turquía,Provincia de Sinope,Sinope,Tr,57,5701
+Turquía,Provincia de Sivas,Sivas,Tr,58,5801
+Turquía,Provincia de Tekirdag,Tekirdag,Tr,59,5901
+Turquía,Provincia de Tokat,Tokat,Tr,60,6001
+Turquía,Provincia de Trebisonda,Trebisonda,Tr,61,6101
+Turquía,Provincia de Tunceli,Tunceli,Tr,62,6201
+Turquía,Provincia de Sanliurfa,Sanliurfa,Tr,63,6301
+Turquía,Provincia de Usak,Usak,Tr,64,6401
+Turquía,Provincia de Van,Van,Tr,65,6501
+Turquía,Provincia de Yozgat,Yozgat,Tr,66,6601
+Turquía,Provincia de Zonguldak,Zonguldak,Tr,67,6701
+Turquía,Provincia de Aksaray,Aksaray,Tr,68,6801
+Turquía,Provincia de Bayburt,Bayburt,Tr,69,6901
+Turquía,Provincia de Karaman,Karaman,Tr,70,7001
+Turquía,Provincia de Kirikkale,Kirikkale,Tr,71,7101
+Turquía,Provincia de Batman,Batman,Tr,72,7201
+Turquía,Provincia de Sirnak,Sirnak,Tr,73,7301
+Turquía,Provincia de Bartin,Bartin,Tr,74,7401
+Turquía,Provincia de Ardahan,Ardahan,Tr,75,7501
+Turquía,Provincia de Igdir,Igdir,Tr,76,7601
+Turquía,Provincia de Yalova,Yalova,Tr,77,7701
+Turquía,Provincia de Karabük,Karabük,Tr,78,7801
+Turquía,Provincia de Kilis,Kilis,Tr,79,7901
+Turquía,Provincia de Osmaniye,Osmaniye,Tr,80,8001
+Turquía,Provincia de Düzce,Düzce,Tr,81,8101
+Tuvalu,Funafuti,Funafuti,Tv,01,0101
+Ucrania, Cherkasy, Cherkasy,Ua,01,0101
+Ucrania, Chernihiv, Chernihiv,Ua,02,0201
+Ucrania, Chernivtsi, Chernivtsi,Ua,03,0301
+Ucrania,Dnipropetrovsk,Dnipropetrovsk,Ua,04,0401
+Ucrania, Donetsk, Donetsk,Ua,05,0501
+Ucrania, Ivano-Frankivsk, Ivano-Frankivsk,Ua,06,0601
+Ucrania, Járkov, Járkov,Ua,07,0701
+Ucrania, Jersón, Jersón,Ua,08,0801
+Ucrania, Jmelnitski, Jmelnitski,Ua,09,0901
+Ucrania,Kirovogrado,Kirovogrado,Ua,10,1001
+Ucrania, Kiev, Kiev,Ua,11,1101
+Ucrania, Lugansk, Lugansk,Ua,12,1201
+Ucrania, Leópolis, Leópolis,Ua,13,1301
+Ucrania, Mykolaiv, Mykolaiv,Ua,14,1401
+Ucrania, Odesa, Odesa,Ua,15,1501
+Ucrania, Poltava, Poltava,Ua,16,1601
+Ucrania, Rivne, Rivne,Ua,17,1701
+Ucrania, Sumy, Sumy,Ua,18,1801
+Ucrania, Ternópil, Ternópil,Ua,19,1901
+Ucrania, Transcarpacia, Transcarpacia,Ua,20,2001
+Ucrania, Volinia, Volinia,Ua,21,2101
+Ucrania, Vinnytsia, Vinnytsia,Ua,22,2201
+Ucrania, Zaporizhia, Zaporizhia,Ua,23,2301
+Ucrania, Zhytomyr, Zhytomyr,Ua,24,2401
+Ucrania, República Autónoma de Crimea,Simferópol,Ua,25,2501
+Uganda,Kampala,Kampala,Ug,01,0101
+Uruguay, Artigas,Artigas,Uy,01,0101
+Uruguay, Canelones,Canelones,Uy,02,0201
+Uruguay, Cerro Largo,Melo,Uy,03,0301
+Uruguay, Colonia,Colonia del Sacramento,Uy,04,0401
+Uruguay, Durazno,Durazno,Uy,05,0501
+Uruguay, Flores,Trinidad,Uy,06,0601
+Uruguay, Florida,Florida,Uy,07,0701
+Uruguay, Lavalleja,Minas,Uy,08,0801
+Uruguay, Maldonado,Maldonado,Uy,09,0901
+Uruguay, Montevideo,Montevideo,Uy,10,1001
+Uruguay, Paysandú,Paysandú,Uy,11,1101
+Uruguay, Río Negro,Fray Bentos,Uy,12,1201
+Uruguay, Rivera,Rivera,Uy,13,1301
+Uruguay, Rocha,Rocha,Uy,14,1401
+Uruguay, Salto,Salto,Uy,15,1501
+Uruguay, San José,San José de Mayo,Uy,16,1601
+Uruguay, Soriano,Mercedes,Uy,17,1701
+Uruguay, Tacuarembó,Tacuarembó,Uy,18,1801
+Uruguay, Treinta y Tres,Treinta y Tres,Uy,19,1901
+Uzbekistán,Andillán,Andillán,Uz,01,0101
+Uzbekistán,Bujará,Bujará,Uz,02,0201
+Uzbekistán,Ferganá,Ferganá,Uz,03,0301
+Uzbekistán,Djizaks,Djizaks,Uz,04,0401
+Uzbekistán,Corasmia,Urgench,Uz,05,0501
+Uzbekistán,Namangán,Namangán,Uz,06,0601
+Uzbekistán,Navoi,Navoi,Uz,07,0701
+Uzbekistán,Kashkadar,Qarshi,Uz,08,0801
+Uzbekistán,Rep Autónoma,Nukus,Uz,09,0901
+Uzbekistán,Karakalpakistán,Karakalpakistán,Uz,10,1001
+Uzbekistán,Samarcanda,Samarcanda,Uz,11,1101
+Uzbekistán,Sir Daria,Guliston,Uz,12,1201
+Uzbekistán,Surjandarín,Termez,Uz,13,1301
+Uzbekistán,Taskent,Taskent,Uz,14,1401
+Uzbekistán,Taskent ciudad,Taskent,Uz,15,1501
+Vanuatu,Port Vila,Port Vila,Vu,01,0101
+Vaticano,Vaticano,Vaticano,Va,01,0101
+Venezuela,Amazonas,Puerto Ayacucho,Ve,01,0101
+Venezuela,Anzoátegui,Barcelona,Ve,02,0201
+Venezuela,Apure,San Fernando de Apure,Ve,03,0301
+Venezuela,Aragua,Maracay,Ve,04,0401
+Venezuela,Barinas,Barinas,Ve,05,0501
+Venezuela,Bolívar,Ciudad Bolívar,Ve,06,0601
+Venezuela,Carabobo,Valencia,Ve,07,0701
+Venezuela,Cojedes,San Carlos,Ve,08,0801
+Venezuela,Delta Amacuro,Tucupita,Ve,09,0901
+Venezuela,Distrito Capital,Caracas,Ve,10,1001
+Venezuela,Falcón,Coro,Ve,11,1101
+Venezuela,Guárico,San Juan de Los Morros,Ve,12,1201
+Venezuela,Lara,Barquisimeto,Ve,13,1301
+Venezuela,Mérida,Mérida,Ve,14,1401
+Venezuela,Miranda,Los Teques,Ve,15,1501
+Venezuela,Monagas,Maturín,Ve,16,1601
+Venezuela,Nueva Esparta,La Asunción,Ve,17,1701
+Venezuela,Portuguesa,Guanare,Ve,18,1801
+Venezuela,Sucre,Cumaná,Ve,19,1901
+Venezuela,Táchira,San Cristóbal,Ve,20,2001
+Venezuela,Trujillo,Trujillo,Ve,21,2101
+Venezuela,Vargas,La Guaira,Ve,22,2201
+Venezuela,Yaracuy,San Felipe,Ve,23,2301
+Venezuela,Zulia,Maracaibo,Ve,24,2401
+Venezuela,Dependencias Federales,Gran Roque,Ve,25,2501
+Vietnam,Bc Ninh,Bc Ninh,Vn,01,0101
+Vietnam,H Nam,Phu Ly,Vn,02,0201
+Vietnam,Hai Duong,Hai Duong,Vn,03,0301
+Vietnam,Hung Yen,Hung Yen,Vn,04,0401
+Vietnam,Nam Dinh,Nam Dinh,Vn,05,0501
+Vietnam,Ninh Binh,Ninh Binh,Vn,06,0601
+Vietnam,Thai Binh,Thai Binh,Vn,07,0701
+Vietnam,Vinh Phuc,Vinh Yen,Vn,08,0801
+Vietnam,Ha Noi,Ha Noi,Vn,09,0901
+Vietnam,Hai Phong,Hai Phong,Vn,10,1001
+Vietnam,Ha Tinh,Ha Tinh,Vn,11,1101
+Vietnam,Nghe An,Vinh,Vn,12,1201
+Vietnam,Quang Binh,Dong Hoi,Vn,13,1301
+Vietnam,Quang Tri,Dong Ha,Vn,14,1401
+Vietnam,Thanh Hóa,Thanh Hóa,Vn,15,1501
+Vietnam,Thua Thien-Hue,Hu,Vn,16,1601
+Vietnam,Bac Giang,Bc Giang,Vn,17,1701
+Vietnam,Bac Kan,Bc Kn,Vn,18,1801
+Vietnam,Cao Bang,Cao Bang,Vn,19,1901
+Vietnam,H Giang,H Giang,Vn,20,2001
+Vietnam,Lang Son,Lang Son,Vn,21,2101
+Vietnam,Lao Cai,Lo Cai,Vn,22,2201
+Vietnam,Phu Tho,Viet Tri,Vn,23,2301
+Vietnam,Quang Ninh,Ha Long,Vn,24,2401
+Vietnam,Thai Nguyen,Thai Nguyen,Vn,25,2501
+Vietnam,Tuyen Quang,Tuyen Quang,Vn,26,2601
+Vietnam,Yen Bai,Yen Bai,Vn,27,2701
+Vietnam,Dien Bien,Dien Bien Phu,Vn,28,2801
+Vietnam,Hoa Binh,Hoa Binh,Vn,29,2901
+Vietnam,Lai Chu,Lai Chu,Vn,30,3001
+Vietnam,Son La,Son La,Vn,31,3101
+Vietnam,Dak Lak,Buon Ma Thuot,Vn,32,3201
+Vietnam,Dak Nong,Gia Nghia,Vn,33,3301
+Vietnam,Gia Lai,PleiKu,Vn,34,3401
+Vietnam,Kon Tum,Kon Tum,Vn,35,3501
+Vietnam,Lam Dong,Da Lat,Vn,36,3601
+Vietnam,Binh Dinh,Qui Nhon,Vn,37,3701
+Vietnam,Khanh Hoa,Nha Trang,Vn,38,3801
+Vietnam,Phu Yen,Tuy Hoa,Vn,39,3901
+Vietnam,Quang Nam,Tam Ky,Vn,40,4001
+Vietnam,Quang Ngai,Quang Ngai,Vn,41,4101
+Vietnam,Da Nang,Da Nang,Vn,42,4201
+Vietnam,Ba Ria-Vung Tau,Vung Tau,Vn,43,4301
+Vietnam,Binh Duong,Thu Dau Mot,Vn,44,4401
+Vietnam,Binh Phuoc,Dong Xoai,Vn,45,4501
+Vietnam,Binh Thuan,Phan Thiet,Vn,46,4601
+Vietnam,Dong Nai,Bien Hoa,Vn,47,4701
+Vietnam,Ninh Thuan,Phan Rang-Thap Cham,Vn,48,4801
+Vietnam,Ty Ninh,Ty Ninh,Vn,49,4901
+Vietnam,Ciudad Ho Chi Minh,Ciudad Ho Chi Minh,Vn,50,5001
+Vietnam,An Giang,Long Xuyn,Vn,51,5101
+Vietnam,Bc Liu,Bc Liu,Vn,52,5201
+Vietnam,Ben Tre,Ben Tre,Vn,53,5301
+Vietnam,Ca Mau,Ca Mau,Vn,54,5401
+Vietnam,Dong Thap,Cao Lanh,Vn,55,5501
+Vietnam,Hau Giang,Vi Thanh,Vn,56,5601
+Vietnam,Kien Giang,Rach Gia,Vn,57,5701
+Vietnam,Long An,Tan An,Vn,58,5801
+Vietnam,Soc Trang,Soc Trang,Vn,59,5901
+Vietnam,Tien Giang,My Tho,Vn,60,6001
+Vietnam,Tr Vinh,Tr Vinh,Vn,61,6101
+Vietnam,Vinh Long,Vinh Long,Vn,62,6201
+Vietnam,Can Tho,Can Tho,Vn,63,6301
+Wallis Y Futuna,Mata-Utu,Mata-Utu,Wf,01,0101
+Yemen,Abyan,Zinjibar,Ye,01,0101
+Yemen,Adén,Adén,Ye,02,0201
+Yemen,Ad Dali,Ad Dali,Ye,03,0301
+Yemen,Al Bayda,Al Bayda,Ye,04,0401
+Yemen,Al Hudayda,Al Hudayda,Ye,05,0501
+Yemen,Al Jawf,Al Hazm,Ye,06,0601
+Yemen,Al Mahrah,Al Ghaydah,Ye,07,0701
+Yemen,Al Mahwit,Al Mahwit,Ye,08,0801
+Yemen,Amanat Al Asimah,Saná,Ye,09,0901
+Yemen,Amran,Amran,Ye,10,1001
+Yemen,Dhamar,Dhamar,Ye,11,1101
+Yemen,Hadramaut,Al Mukalla,Ye,12,1201
+Yemen,Hajjah,Hajjah,Ye,13,1301
+Yemen,Ibb,Ibb,Ye,14,1401
+Yemen,Lahij,Lahij,Ye,15,1501
+Yemen,Marib,Marib,Ye,16,1601
+Yemen,Raymah,Raymah,Ye,17,1701
+Yemen,Sadah,Sadah,Ye,18,1801
+Yemen,Saná,Saná,Ye,19,1901
+Yemen,Shabwah,Ataq,Ye,20,2001
+Yemen,Socotra,Hadiboh,Ye,21,2101
+Yemen,Taiz,Taiz,Ye,22,2201
+Yibuti,Yibuti,Yibuti,Dj,01,0101
+Yibuti,Arta,Arta,Dj,02,0201
+Yibuti,Ali Sabieh,Ali Sabieh,Dj,03,0301
+Yibuti,Dikhil,Dikhil,Dj,04,0401
+Yibuti,Tadjoura,Tadjoura,Dj,05,0501
+Yibuti,Obock,Obock,Dj,06,0601
+Zambia,Central,Kabwe,Zm,01,0101
+Zambia,Copperbelt,Ndola,Zm,02,0201
+Zambia,Este,Chipata,Zm,03,0301
+Zambia,Luapula,Mansa,Zm,04,0401
+Zambia,Lusaka,Lusaka,Zm,05,0501
+Zambia,Muchinga,Chinsali,Zm,06,0601
+Zambia,Norte,Kasama,Zm,07,0701
+Zambia,Noroeste,Solwezi,Zm,08,0801
+Zambia,Oeste,Mongu,Zm,09,0901
+Zambia,Sur,Livingstone,Zm,10,1001
+Zimbabue,Bulawayo,Bulawayo,Zw,01,0101
+Zimbabue,Harare,Harare,Zw,02,0201
+Zimbabue,Manicalandia,Mutare,Zw,03,0301
+Zimbabue,Mashonalandia Central,Bindura,Zw,04,0401
+Zimbabue,Mashonalandia Oriental,Marondera,Zw,05,0501
+Zimbabue,Mashonalandia Occidental,Chinhoyi,Zw,06,0601
+Zimbabue,Masvingo,Masvingo,Zw,07,0701
+Zimbabue,Matabelelandia Septentrional,Lupane,Zw,08,0801
+Zimbabue,Matabelelandia Meridional,Gwanda,Zw,09,0901
+Zimbabue,Midlands,Gweru,Zw,10,1001
+Aruba,Noord,Noord,Aw,01,0101
+Aruba,Oranjestad,Oranjestad,Aw,02,0201
+Aruba,Paradera,Paradera,Aw,03,0301
+Aruba,Sint Nicolaas,Sint Nicolaas,Aw,04,0401
+Aruba,Santa Cruz,Santa Cruz,Aw,05,0501
+Aruba,Savaneta,Savaneta,Aw,06,0601
+Panamá,Ciudad de panamá,Ciudad de panamá,Pa,05,0501
+Reino Unido,Escocia,Bellshill,Gb,04,01
+Antigua y Barbuda,Saint George,Piggotts,AG,01,01
+Antigua y Barbuda,Saint John,Saint John,AG,02,02
+Antigua y Barbuda,Saint Mary,Bolands,AG,03,03
+Antigua y Barbuda,Saint Paul,Nelsons Dockyard,AG,04,04
+Antigua y Barbuda,Saint Peter,Parham,AG,05,05
+Antigua y Barbuda,Saint Philip,Carlisle,AG,06,06
+Panamá,Provincia de Colón,Provincia de Colón,Pa,06,0601
+Islas Caimán,Gran Caimán,George Town,KY,01,0101
+Estados Unidos,Nueva Jersey,Paramus,Us,30,3002
+Islas Vírgenes Británicas,Tórtola,Road Town,Vg,01,0101
+Estados Unidos,Massachusetts,Islas Vírgenes de los Estados Unidos,Us,21,0101
+Estados Unidos,Florida,Miami,Us,09,0902
+Estados Unidos,Florida,San Petersburgo,Us,09,0903
+Puerto Rico,Gurabo,Gurabo,Pr,02,0201
+Estados Unidos,Tennessee,Shelbyville,Us,42,5002
+Estados Unidos,Tennessee,Memphis,Us,42,5003
+Puerto Rico,Moca,Moca,Pr,03,0301
+China,Shandong,Dezhou,Cn,15, 253400
+Estados Unidos,Florida,Pembroke Pines,Us,09,33025
+Australia,Nueva Gales del Sur,Sidney,Au,01,2010
+Países Bajos,Holanda SeptentrionalNoord-Holland,Amsterdam,Nl,08,1012
+Estados Unidos,Kentuky,Bowling Green,Us,51,5101
+Procesado en: Junio 30 2023 10:40,,,,,
