@@ -19,6 +19,7 @@ import Prelude
   , ($)
   , (<>)
   , (>=)
+  , (<)
   , pure
   , bind
   , discard
@@ -26,6 +27,7 @@ import Prelude
   )
 import Control.Monad.Free (Free, foldFree, wrap, liftF, hoistFree)
 import Data.NaturalTransformation (type (~>))
+import Data.String (take)
 import Fetch (Response) as F
 import Fetch.Argonaut.Json (fromJson)
 import Effect.Aff (Aff)
@@ -66,7 +68,8 @@ awaitFetch :: forall @jsonError @json. DecodeJson json => DecodeJson jsonError =
 awaitFetch res = do
   res_ <- awaitAff res
   let status = res_.status
-  case status >= 200 of
+  liftLogger $ TL.debug $ "STATUS " <> show status
+  case status < 300 of
    true -> do
       j <- awaitAff $ fromJson res_.json
       liftLogger $ TL.debug $ "RES " <> show j
@@ -84,7 +87,7 @@ awaitFetch_ res = do
   case status >= 200 of
    true -> do
       j <- awaitAff $ res_.text
-      liftLogger $ TL.debug $ "RES " <> j
+      liftLogger $ TL.debug $ "RES " <> take 80 j <> "..."
       pure j
    _ -> do
       err <- awaitAff $ res_.text

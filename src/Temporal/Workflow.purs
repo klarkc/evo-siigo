@@ -12,6 +12,7 @@ module Temporal.Workflow
   , runActivity
   , liftExchange
   , liftLogger
+  , liftedMaybe
   , fromNullable
   , fromMaybe
   , defaultProxyOptions
@@ -23,6 +24,7 @@ import Prelude
   , (<$>)
   , (<<<)
   , (*>)
+  , (>>=)
   , pure
   , bind
   , show
@@ -60,6 +62,7 @@ import Temporal.Logger
   , Logger
   , runLogger
   , liftEither
+  , liftMaybe
   ) as TL
 
 type ActivityJson = Fn1 Json (Promise Json)
@@ -98,6 +101,9 @@ liftExchange = hoistFree LiftExchange
 
 liftLogger :: forall act inp out. TL.Logger ~> Workflow act inp out
 liftLogger = hoistFree LiftLogger
+
+liftedMaybe :: forall a act inp out. String -> Workflow act inp out (DM.Maybe a) -> Workflow act inp out a
+liftedMaybe e m = m >>= liftLogger <<< TL.liftMaybe e
 
 fromNullable :: forall act inp out a. a -> TL.Logger Unit -> Nullable a -> Workflow act inp out  a
 fromNullable d log n = let m = toMaybe n

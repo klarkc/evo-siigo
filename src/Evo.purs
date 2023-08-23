@@ -26,10 +26,12 @@ type EvoSale
 type EvoMember
   = { idMember :: EvoMemberID
     , firstName :: String
+    , lastName :: String
     , document :: String
     , contacts :: Array EvoContact
     , city :: String
     , state :: String
+    , address :: String
     }
 
 type EvoContact

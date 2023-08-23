@@ -8,7 +8,7 @@ import Prelude
   ( (==)
   , ($)
   , (<$>)
-  , (>=)
+  , (>)
   , (&&)
   , (/=)
   , bind
@@ -20,6 +20,7 @@ import Promise (Promise)
 import Data.Maybe (Maybe(Just, Nothing))
 import Data.Array (filter, length, head)
 import Data.DateTime(DateTime(DateTime))
+import Data.String (toUpper)
 import Temporal.Workflow
   ( ActivityJson
   , useInput
@@ -29,6 +30,7 @@ import Temporal.Workflow
   , runActivity
   , fromMaybe
   , liftLogger
+  , liftedMaybe
   )
 import Temporal.Workflow.Unsafe (unsafeRunWorkflow)
 import Temporal.Exchange (ISO(ISO), ExchangeI, ExchangeO)
@@ -41,6 +43,10 @@ import Siigo
   , SiigoDate(SiigoDate)
   , SiigoResponse
   , SiigoAddress
+  , SiigoPersonType(Person)
+  , SiigoIdenType(CedulaDeCiudadania13)
+  , SiigoCustomer
+  , SiigoNewCustomer
   )
 
 type ActivitiesJson = ActivitiesI_ ActivityJson
@@ -53,7 +59,8 @@ type ActivitiesI_ actFr =
   , loadSiigoAuthHeaders :: actFr
   , searchSiigoCustomers :: actFr
   , createSiigoInvoice :: actFr
-  , searchSiigoAddresses :: actFr
+  , searchSiigoAddress :: actFr
+  , createSiigoCustomer :: actFr
   )
 
 type ActivitiesI = ActivitiesI_ (ExchangeI -> Promise ExchangeO)
@@ -79,30 +86,63 @@ processSale i = unsafeRunWorkflow @ActivitiesJson @String @(Maybe SiigoInvoice) 
        { iden: evoMember.document
        , headers: siigoHeaders
        }
-      let isRegistered = siigoCustomers.pagination.total_results >= 0
+      let isRegistered = siigoCustomers.pagination.total_results > 0
       iden <- case isRegistered of
            true -> do
               liftLogger $ info "Customer already registered on Siigo, skipping registration"
               pure $ evoMember.document
            false -> do
               liftLogger $ info "Customer not registered on Siigo, registering"
-              cellphone <- liftLogger $ liftMaybe
+              { description: cellphone } <- liftLogger $ liftMaybe
                 "Evo member does not have valid Cellphone"
                 $ head
                 $ filter
                     (\c -> c.contactType == "Cellphone" && c.description /= "")
                     evoMember.contacts
-              addresses :: Array SiigoAddress <- runActivity act.searchSiigoAddresses
-                { cityName: evoMember.city
-                , stateName: evoMember.state
-                , countryName: "Colombia"
-                , countryCode : "CO"
-                }
-              address <- liftLogger $ liftMaybe
-                "Could not find a corresponding address for the given Evo address"
+              { description: email } <- liftLogger $ liftMaybe
+                "Evo member does not have valid Email"
                 $ head
-                $ addresses
-              pure $ evoMember.document
+                $ filter
+                    (\c -> c.contactType == "E-mail" && c.description /= "")
+                    evoMember.contacts
+              address :: SiigoAddress <- liftedMaybe
+                "Could not find a corresponding address for the given Evo address"
+                $ runActivity act.searchSiigoAddress
+                  { cityName: evoMember.city
+                  , stateName: evoMember.state
+                  , countryName: "Colombia"
+                  , countryCode: "CO"
+                  }
+              customer :: SiigoCustomer <- runActivity act.createSiigoCustomer
+                { customer:
+                    { person_type: Person
+                    , id_type: CedulaDeCiudadania13
+                    , identification: evoMember.document
+                    , name:
+                        [ evoMember.firstName
+                        , evoMember.lastName
+                        ]
+                    , address:
+                        { address: evoMember.address
+                        , city:
+                          { country_code: toUpper $ address.countryCode
+                          , state_code: address.stateCode
+                          , city_code: address.cityCode
+                          }
+                        }
+                    , phones: [ { number: cellphone } ] 
+                    , contacts:
+                        [ { first_name: evoMember.firstName
+                          , last_name: evoMember.lastName
+                          , email
+                          , phone: { number: cellphone }
+                          }
+                        ]
+                    , comments: "Imported from EVO"
+                    } :: SiigoNewCustomer
+                , headers: siigoHeaders
+                }
+              pure customer.identification
       saleItem <- liftLogger $ liftMaybe
         "Evo sale does not have any sale itens"
         $ head

@@ -60,6 +60,7 @@
                 [
                   debug
                   prelude
+                  stringutils
                   console
                   effect
                   aff

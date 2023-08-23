@@ -2,26 +2,28 @@ module Node.Siigo.Activities
   ( searchSiigoCustomers
   , loadSiigoAuthHeaders
   , createSiigoInvoice
-  , searchSiigoAddresses
+  , searchSiigoAddress
+  , createSiigoCustomer
   ) where
 
 import Prelude
   ( ($)
   , (<>)
-  , (<<<)
   , bind
   , discard
   , pure
   , show
+  , eq
   )
 import Control.Alt ((<|>))
 import Control.Alternative (guard)
 import Data.Maybe (Maybe)
-import Data.Array ((!!), mapMaybe)
+import Data.Array ((!!))
 import Data.Bifunctor (lmap)
 import Data.Argonaut.Encode (toJsonString)
-import Data.String (toUpper)
-import Data.String.Unicode (caselessMatch)
+import Data.String (toLower, toUpper)
+import Data.String.Utils (startsWith)
+import Data.Foldable (oneOfMap)
 import Effect.Exception (error)
 import Promise (Promise)
 import Record (union)
@@ -45,13 +47,15 @@ import Siigo
   , SiigoResponse
   , SiigoNewInvoice
   , SiigoAddress
+  , SiigoNewCustomer
+  , SiigoCustomer
   )
 
 type SiigoError
-  = { "Code" :: String
-    , "Message" :: String
-    , "Params" :: Array String
-    , "Detail" :: String
+  = { "Code" :: Maybe String
+    , "Message" :: Maybe String
+    , "Params" :: Maybe (Array String)
+    , "Detail" :: Maybe String
     }
 
 type SiigoErrorResponse
@@ -60,6 +64,20 @@ type SiigoErrorResponse
 
 type SiigoInput
   = ( headers :: SiigoAuthHeaders )
+
+createSiigoCustomer :: ExchangeI -> Promise ExchangeO
+createSiigoCustomer i = unsafeRunActivity @{ customer :: SiigoNewCustomer | SiigoInput } @SiigoCustomer do
+    input <- useInput i
+    let
+      url = buildURL $ "customers"
+      method = POST
+      body = toJsonString input.customer
+      headers = union input.headers { "Content-Type": "application/json" }
+      options = { method, headers, body }
+    res <- liftOperation do
+       liftLogger $ info $ "POST " <> url
+       awaitFetch @SiigoError $ fetch url options
+    output res
 
 createSiigoInvoice :: ExchangeI -> Promise ExchangeO
 createSiigoInvoice i = unsafeRunActivity @{ invoice :: SiigoNewInvoice | SiigoInput } @SiigoInvoice do
@@ -104,39 +122,45 @@ loadSiigoAuthHeaders _ = unsafeRunActivity @{} @SiigoAuthHeaders do
         pure { authorization: "Bearer " <> access_token }
     output authHeaders
 
-type SearchSiigoAddressesParams = SiigoAddress
+type SearchSiigoAddressesParams
+  = { cityName :: String
+    , stateName :: String
+    , countryName :: String
+    , countryCode :: String
+    }
 
 addrFromCsvRow :: SearchSiigoAddressesParams -> Array String -> Maybe SiigoAddress 
-addrFromCsvRow p r = let eq_ s = guard <<< caselessMatch s in do
- cityName <- r !! 2
- cityName `eq_` p.cityName
- stateName <- r !! 1
- stateName `eq_` p.stateName
- countryName <- r !! 0 
- countryCode <- r !! 3
- (   countryName `eq_` p.countryName
- <|> countryCode `eq_` p.countryCode
- )
- stateCode <- r !! 4
- cityCode <- r !! 5
- pure { cityName
-      , stateName
-      , countryName
-      , countryCode: toUpper countryCode
-      , stateCode
-      , cityCode
-      }
+addrFromCsvRow p r = let cmp op a b = guard $ toLower b `op` toLower a in do
+   cityName <- r !! 2
+   cityName `cmp eq` p.cityName
+   stateName <- r !! 1
+   stateName `cmp startsWith` p.stateName
+   countryName <- r !! 0 
+   countryCode <- r !! 3
+   (   countryName `cmp eq` p.countryName
+   <|> countryCode `cmp eq` p.countryCode
+   )
+   stateCode <- r !! 4
+   cityCode <- r !! 5
+   pure { cityName
+        , stateName
+        , countryName
+        , countryCode: toUpper countryCode
+        , stateCode
+        , cityCode
+        }
 
-searchSiigoAddresses :: ExchangeI -> Promise ExchangeO
-searchSiigoAddresses i = unsafeRunActivity @SearchSiigoAddressesParams @(Array SiigoAddress) do
+searchSiigoAddress :: ExchangeI -> Promise ExchangeO
+searchSiigoAddress i = unsafeRunActivity @SearchSiigoAddressesParams @(Maybe SiigoAddress) do
     p <- useInput i
-    csv<- liftOperation do
+    csv <- liftOperation do
+       liftLogger $ info $ "Looking up for " <> show p
        url <- lookupEnv "SIIGO_ADDRESS_CSV_URL"
        res <- awaitFetch_ $ fetch url {}
        liftLogger
         $ liftEither
         $ (\err -> LoggerE $ error $ "CSV parsing failed with: " <> show err ) `lmap` parse res
-    output $ mapMaybe (addrFromCsvRow p) csv
+    output $ oneOfMap (addrFromCsvRow p) csv
 
 buildURL :: String -> String
 buildURL path = baseUrl <> "/v1/" <> path

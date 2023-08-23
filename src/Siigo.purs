@@ -13,10 +13,15 @@ module Siigo
   , SiigoSellerID 
   , SiigoPaymentID
   , SiigoAddress
+  , SiigoPersonType(..)
+  , SiigoIdenType(..)
+  , SiigoCustomer
+  , SiigoCustomerR
+  , SiigoNewCustomer
   ) where
 
 import Prelude (($), bind, pure, bottom)
-import Control.Monad.Error.Class (liftEither)
+import Control.Monad.Error.Class (liftEither, throwError)
 import Data.Bifunctor (lmap)
 import Data.List (List(Nil), (:))
 import Data.Formatter.DateTime
@@ -29,7 +34,7 @@ import Data.DateTime (DateTime(DateTime))
 import Data.Argonaut
   ( class EncodeJson
   , class DecodeJson
-  , JsonDecodeError(TypeMismatch)
+  , JsonDecodeError(TypeMismatch, UnexpectedValue)
   )
 import Data.Argonaut.Decode.Decoders (decodeString)
 import Data.Argonaut.Encode.Encoders (encodeString)
@@ -115,4 +120,59 @@ type SiigoAddress
     , countryCode :: String
     , stateCode :: String
     , cityCode :: String
+    }
+
+data SiigoPersonType = Person | Company
+
+instance EncodeJson SiigoPersonType where
+  encodeJson Person = encodeString "Person"
+  encodeJson Company = encodeString "Company"
+
+instance DecodeJson SiigoPersonType where
+  decodeJson json = do
+     s <- decodeString json
+     case s of
+          "Person" -> pure Person
+          "Company" -> pure Company
+          _ -> throwError $ UnexpectedValue json
+
+data SiigoIdenType = CedulaDeCiudadania13
+
+instance EncodeJson SiigoIdenType where
+  encodeJson CedulaDeCiudadania13 = encodeString "13"
+
+instance DecodeJson SiigoIdenType where
+  decodeJson json = do
+     s <- decodeString json
+     case s of
+          "13" -> pure CedulaDeCiudadania13
+          _ -> throwError $ UnexpectedValue json
+
+type SiigoCustomerR
+  = ( identification :: SiigoIden
+    )
+type SiigoCustomer
+  = Record SiigoCustomerR
+
+type SiigoNewCustomer 
+  = { person_type :: SiigoPersonType
+    , id_type :: SiigoIdenType
+    , name :: Array String
+    , address ::
+        { address :: String
+        , city ::
+          { country_code :: String
+          , state_code :: String
+          , city_code :: String
+          }
+        }
+    , phones :: Array { number :: String }
+    , contacts :: Array
+        { first_name :: String
+        , last_name :: String
+        , email :: String
+        , phone :: { number :: String }
+        }
+    , comments :: String
+    | SiigoCustomerR
     }
