@@ -47,7 +47,7 @@ type SiigoPagination
     }
 
 type SiigoInvoice
-  = {}
+  = { id :: String }
 
 type SiigoAuthHeaders
   = { authorization :: String }
