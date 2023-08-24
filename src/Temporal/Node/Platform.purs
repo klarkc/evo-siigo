@@ -6,6 +6,7 @@ module Temporal.Node.Platform
   , liftLogger
   , lookupEnv
   , base64
+  , uid
   , awaitFetch
   , awaitFetch_
   ) where
@@ -20,6 +21,7 @@ import Prelude
   , (<>)
   , (>=)
   , (<)
+  , (<<<)
   , pure
   , bind
   , discard
@@ -30,6 +32,7 @@ import Data.NaturalTransformation (type (~>))
 import Data.String (take)
 import Fetch (Response) as F
 import Fetch.Argonaut.Json (fromJson)
+import Ulid (ulid, toString) as U
 import Effect.Aff (Aff)
 import Effect.Class (liftEffect)
 import Data.Argonaut (class DecodeJson)
@@ -48,6 +51,7 @@ data OperationF n
   = LiftLogger (TL.LoggerF n)
   | LookupEnv String (String -> n)
   | Base64 String (String -> n)
+  | Uid (String -> n)
   | AwaitAff (Aff n)
 
 type Operation n = Free OperationF n
@@ -63,6 +67,9 @@ lookupEnv s = wrap $ LookupEnv s pure
 
 base64 :: String -> Operation String
 base64 s = wrap $ Base64 s pure
+
+uid :: Operation String
+uid = wrap $ Uid pure
 
 awaitFetch :: forall @jsonError @json. DecodeJson json => DecodeJson jsonError => Show json => Show jsonError => Aff F.Response -> Operation json
 awaitFetch res = do
@@ -100,6 +107,7 @@ operate = case _ of
   LiftLogger logF -> liftEffect $ TL.runLogger $ liftF logF
   LookupEnv s reply -> reply <$> (liftEffect $ PN.lookupEnv s)
   Base64 s reply -> reply <$> (liftEffect $ PN.base64 s)
+  Uid reply -> reply <<< U.toString <$> liftEffect U.ulid
   AwaitAff aff -> aff
 
 runOperation :: Operation ~> Aff

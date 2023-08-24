@@ -10,6 +10,7 @@ module Evo
   , EvoSaleItem
   , EvoReceivableID
   , EvoContact
+  , EvoSaleItemID
   ) where
 
 import Data.Maybe (Maybe)
@@ -68,8 +69,14 @@ type EvoReceivable
     , dueDate :: EvoDate
     }
 
+type EvoSaleItemID
+  = Int
+
 type EvoSaleItem
-  = { quantity :: Int
+  = { idSaleItem :: EvoSaleItemID
+    , item :: String
+    , description :: String
+    , quantity :: Int
     , itemValue :: Number
     , discount :: Maybe Number
     }

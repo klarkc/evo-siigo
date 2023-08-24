@@ -18,6 +18,10 @@ module Siigo
   , SiigoCustomer
   , SiigoCustomerR
   , SiigoNewCustomer
+  , SiigoNewProduct
+  , SiigoProductCode
+  , SiigoProductType(..)
+  , SiigoProduct
   ) where
 
 import Prelude (($), bind, pure, bottom)
@@ -175,4 +179,30 @@ type SiigoNewCustomer
         }
     , comments :: String
     | SiigoCustomerR
+    }
+
+type SiigoProductCode
+  = String
+
+data SiigoProductType = Service
+
+instance EncodeJson SiigoProductType where
+  encodeJson Service = encodeString "Service"
+
+instance DecodeJson SiigoProductType where
+  decodeJson json = do
+     s <- decodeString json
+     case s of
+          "Service" -> pure Service
+          _ -> throwError $ UnexpectedValue json
+
+type SiigoNewProduct 
+  = { name :: String 
+    , description :: String
+    , account_group :: Int
+    , "type" :: SiigoProductType
+    }
+
+type SiigoProduct
+  = { code :: SiigoProductCode
     }

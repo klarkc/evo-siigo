@@ -4,6 +4,7 @@ module Node.Siigo.Activities
   , createSiigoInvoice
   , searchSiigoAddress
   , createSiigoCustomer
+  , createSiigoProduct
   ) where
 
 import Prelude
@@ -39,6 +40,7 @@ import Temporal.Node.Platform
   , awaitFetch
   , awaitFetch_
   , liftLogger
+  , uid
   )
 import Siigo
   ( SiigoAuthHeaders
@@ -49,6 +51,8 @@ import Siigo
   , SiigoAddress
   , SiigoNewCustomer
   , SiigoCustomer
+  , SiigoProduct
+  , SiigoNewProduct 
   )
 
 type SiigoError
@@ -72,6 +76,21 @@ createSiigoCustomer i = unsafeRunActivity @{ customer :: SiigoNewCustomer | Siig
       url = buildURL $ "customers"
       method = POST
       body = toJsonString input.customer
+      headers = union input.headers { "Content-Type": "application/json" }
+      options = { method, headers, body }
+    res <- liftOperation do
+       liftLogger $ info $ "POST " <> url
+       awaitFetch @SiigoError $ fetch url options
+    output res
+
+createSiigoProduct :: ExchangeI -> Promise ExchangeO
+createSiigoProduct i = unsafeRunActivity @{ product :: SiigoNewProduct | SiigoInput } @SiigoProduct do
+    input <- useInput i
+    code <- liftOperation uid
+    let
+      url = buildURL $ "products"
+      method = POST
+      body = toJsonString $ union { code } input.product
       headers = union input.headers { "Content-Type": "application/json" }
       options = { method, headers, body }
     res <- liftOperation do

@@ -47,6 +47,9 @@ import Siigo
   , SiigoIdenType(CedulaDeCiudadania13)
   , SiigoCustomer
   , SiigoNewCustomer
+  , SiigoNewProduct
+  , SiigoProductType(Service)
+  , SiigoProduct
   )
 
 type ActivitiesJson = ActivitiesI_ ActivityJson
@@ -61,6 +64,7 @@ type ActivitiesI_ actFr =
   , createSiigoInvoice :: actFr
   , searchSiigoAddress :: actFr
   , createSiigoCustomer :: actFr
+  , createSiigoProduct :: actFr
   )
 
 type ActivitiesI = ActivitiesI_ (ExchangeI -> Promise ExchangeO)
@@ -157,6 +161,15 @@ processSale i = unsafeRunWorkflow @ActivitiesJson @String @(Maybe SiigoInvoice) 
             due_date: SiigoDate d,
             value
           }) <$> evoSale.receivables
+      product :: SiigoProduct <- runActivity act.createSiigoProduct 
+        { product:
+            { name: saleItem.item
+            , description: saleItem.description
+            , account_group: 620
+            , type: Service
+            } :: SiigoNewProduct
+          , headers: siigoHeaders
+        }
       siigoInvoice :: SiigoInvoice <- runActivity act.createSiigoInvoice 
         { invoice:
             { document: { id: 12083 }
@@ -164,7 +177,7 @@ processSale i = unsafeRunWorkflow @ActivitiesJson @String @(Maybe SiigoInvoice) 
             , customer: { identification: iden }
             , seller: 312
             , items:
-              [ { code: "c-10032124-2023-07-11-12-00-32"
+              [ { code: product.code
                 , quantity: saleItem.quantity
                 , price: saleItem.itemValue
                 , discount
