@@ -73,6 +73,7 @@
                   parallel
                   node-path
                   httpurple
+                  httpurple-argonaut
                   argonaut
                   fetch
                   fetch-argonaut

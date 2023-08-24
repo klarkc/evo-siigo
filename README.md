@@ -18,4 +18,4 @@ nix develop
 
 ## Endpoints
 
-- `http://0.0.0.0/process-sale`: Process a Evo sale event, add a webhook in evo pointing to this address for `AlterReceivables`, `ClearedDebt` and `NewSale` events.
+- `/process-sale`: Process a Evo sale event, add a webhook in evo pointing to this address for `AlterReceivables`, `ClearedDebt` and `NewSale` events.

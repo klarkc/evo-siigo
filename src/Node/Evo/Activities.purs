@@ -10,6 +10,7 @@ import Prelude
   , bind
   , pure
   , discard
+  , show
   )
 import Promise (Promise)
 import Temporal.Node.Activity
@@ -31,7 +32,8 @@ import Temporal.Node.Platform
   , liftLogger
   )
 import Evo
-  ( EvoAuthHeaders
+  ( EvoSaleID
+  , EvoAuthHeaders
   , EvoSale
   , EvoMember
   )
@@ -58,10 +60,10 @@ loadEvoAuthHeaders _ = unsafeRunActivity @{} @EvoAuthHeaders do
     output authHeaders
 
 readEvoSale :: ExchangeI -> Promise ExchangeO
-readEvoSale i = unsafeRunActivity @{ id :: String | EvoInput }  @EvoSale do
+readEvoSale i = unsafeRunActivity @{ id :: EvoSaleID | EvoInput }  @EvoSale do
     { id, headers } <- useInput i
     let
-      url = buildURL $ "sales/" <> id
+      url = buildURL $ "sales/" <> show id
       options = { headers }
     evoSale <- liftOperation do
       liftLogger $ info $ "GET " <> url

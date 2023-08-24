@@ -35,7 +35,12 @@ import Temporal.Workflow
 import Temporal.Workflow.Unsafe (unsafeRunWorkflow)
 import Temporal.Exchange (ISO(ISO), ExchangeI, ExchangeO)
 import Temporal.Logger (info, warn, liftMaybe)
-import Evo (EvoAuthHeaders, EvoSale, EvoMember)
+import Evo
+  ( EvoSaleID
+  , EvoAuthHeaders
+  , EvoSale
+  , EvoMember
+  )
 import Siigo 
   ( SiigoAuthHeaders
   , SiigoNewInvoice
@@ -70,7 +75,7 @@ type ActivitiesI_ actFr =
 type ActivitiesI = ActivitiesI_ (ExchangeI -> Promise ExchangeO)
 
 processSale :: ExchangeI -> Promise ExchangeO
-processSale i = unsafeRunWorkflow @ActivitiesJson @String @(Maybe SiigoInvoice) do
+processSale i = unsafeRunWorkflow @ActivitiesJson @EvoSaleID @(Maybe SiigoInvoice) do
   act <- proxyActivities defaultProxyOptions
   evoHeaders :: EvoAuthHeaders <- runActivity act.loadEvoAuthHeaders {}
   siigoHeaders :: SiigoAuthHeaders <- runActivity act.loadSiigoAuthHeaders {}

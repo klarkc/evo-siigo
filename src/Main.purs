@@ -29,12 +29,17 @@ import HTTPurple
   ( class Generic
   , RouteDuplex'
   , ServerM
+  , Method(Post)
   , (/)
   , serve
-  , segment
   , mkRoute
   , noContent
+  , notFound
+  , fromJson
+  , noArgs
+  , usingCont
   )
+import HTTPurple.Json.Argonaut (jsonDecoder)
 import Dotenv (loadFile)
 
 taskQueue :: String
@@ -65,7 +70,7 @@ getResults wfHandler con = do
   close con
   liftEffect $ log "done"
 
-runTemporal :: String -> Effect Unit
+runTemporal :: Int -> Effect Unit
 runTemporal saleID =
   launchAff_ do
     con <- connect defaultConnectionOptions
@@ -78,18 +83,23 @@ runTemporal saleID =
         }
     (startWorker <> getResults wfHandler con)
 
-data Route = ProcessSale String
+data Route = ProcessSale
 
 derive instance Generic Route _
 
 route :: RouteDuplex' Route
 route = mkRoute
-  { "ProcessSale": "process-sale" / segment
+  { "ProcessSale": "process-sale" / noArgs
   }
+
+type ProcessSaleRequest
+  = { "IdRecord" :: Int }
 
 main :: ServerM
 main = serve { port: 8080 } { route, router }
   where
-  router { route: ProcessSale saleID } = do
+  router { route: ProcessSale, method: Post, body } = usingCont do
+    { "IdRecord": saleID } :: ProcessSaleRequest <- fromJson jsonDecoder body
     liftEffect $ runTemporal saleID
     noContent
+  router _ = notFound
