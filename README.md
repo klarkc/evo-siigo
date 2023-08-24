@@ -15,3 +15,7 @@ SIIGO_ADDRESS_CSV_URL="https://raw.githubusercontent.com/klarkc/evo-siigo/main/S
 ```bash
 nix develop
 ```
+
+## Endpoints
+
+- `http://0.0.0.0/process-sale`: Process a Evo sale event, add a webhook in evo pointing to this address for `AlterReceivables`, `ClearedDebt` and `NewSale` events.
