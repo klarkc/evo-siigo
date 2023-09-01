@@ -8,13 +8,19 @@
     npmlock2nix.flake = false;
     simple-csv.url = "github:smartermaths/purescript-simple-csv";
     simple-csv.flake = false;
+    generators.url = "github:nix-community/nixos-generators";
+    generators.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, utils, ... }@inputs:
     let
+      linux = "linux";
+      x64 = "x86_64";
       # TODO add missing arm to match standard systems
       #  right now purs-nix is only compatible with x86_64-linux
-      systems = [ "x86_64-linux" ];
+      platform = x64;
+      os = linux;
+      systems = [ "${platform}-${os}" ];
       make-pkgs = system: import inputs.nixpkgs {
         inherit system;
         # required by npmlock2nix
@@ -22,8 +28,45 @@
           "nodejs-16.20.1"
         ];
       };
+      nixosModules =
+        let
+          inherit (inputs.nixpkgs.lib) mkDefault;
+          inherit (inputs.generators.nixosModules) all-formats;
+          worker = {
+            imports = [ all-formats ];
+            networking.hostName = "worker";
+            users = {
+              users.klarkc = {
+                isNormalUser = true;
+                home = "/home/klarkc";
+                extraGroups = [ "wheel" ];
+                openssh.authorizedKeys.keys = [ "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDWeydIZ5mbqS+RFDrdL2aFkCWaYbRxHW6zwgDq77ucEm6MYSjt2ssn1VxDpODfEV5Zktst1JAfc9iiuwQuHiCo9ejBqYVCoT3nP4PqtaIvaArMT/leKpnU03ANkJ0um75GOyE0Td+0O4bzHmz4KTZdpIKygJ/sKfa5KEjAWNXuBXMu85hZ6zqecnqGAMmC+8R3gy6H2iTgUDfS3hiKqJajKunXO/OYOolQB1SywdgfmB11LgDA75FIJW1uOJEiJE+90a1ZTnG1xiI4zA4nGcdXvfMg7bappes/Ts5B5dn7dKkMA+ParCgOjeKY7AxtRdmw4ME1ok/nOzFepJzIBvTPfpea9Ga70LWqhfgaLG9MOcmIVOwWCFgYtE+c3HSbTXU+Ijcq25bf4SBATd7NF3VyZFqnn/UXsQYyKbl7xGJEtKnspmTsSoeNVErZ+Pwf7zGMCPGuWxG2F2q8PxdSd0NhicUsWgw0+22O6WHqlDtp66s6irMvoe05Lpy0t0peDAM= klarkc@ssdinarch" ];
+              };
+              mutableUsers = false;
+            };
+            services.openssh.enable = true;
+            formatConfigs.vm-nogui = {
+              virtualisation.forwardPorts = [
+                { from = "host"; host.port = 2222; guest.port = 22; }
+              ];
+            };
+          };
+        in
+        { inherit worker; };
+
+      nixosConfigurations =
+        let
+          inherit (inputs.nixpkgs.lib) nixosSystem;
+          inherit (self.nixosModules) worker;
+        in
+        {
+          worker = nixosSystem {
+            system = "${x64}-${linux}";
+            modules = [ worker ];
+          };
+        };
     in
-    utils.apply-systems
+    { inherit nixosModules nixosConfigurations; } // utils.apply-systems
       { inherit inputs systems make-pkgs; }
       ({ system, pkgs, ps-tools, ... }:
         let
@@ -135,6 +178,13 @@
               "temporalite start --namespace default"
             '';
           };
+          worker-vm = pkgs.writeShellApplication {
+            name = "worker-vm";
+            text = ''
+              export USE_TMPDIR=0
+              ${self.nixosConfigurations.worker.config.formats.vm-nogui}
+            '';
+          };
         in
         {
           apps.default =
@@ -160,6 +210,7 @@
                 ps-command
                 dev
                 dev-debug
+                worker-vm
                 purescript
                 purs-tidy
                 purescript-language-server
@@ -169,7 +220,7 @@
               alias log_='printf "\033[1;32m%s\033[0m\n" "$@"'
               alias info_='printf "\033[1;34m[INFO] %s\033[0m\n" "$@"'
               log_ "Welcome to evo-siigo shell."
-              info_ "Available commands: dev, dev-debug."
+              info_ "Available commands: dev, dev-debug, worker-vm."
             '';
           };
         });

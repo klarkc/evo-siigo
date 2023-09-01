@@ -9,3 +9,4 @@
 /.psa*
 /result
 /.env
+/.worker-vm
