@@ -54,10 +54,14 @@
               services.evo-siigo.enable = lib.mkEnableOption "evo-siigo";
             };
             config.systemd.services.evo-siigo = {
+              description = "Evo-siigo worker";
+              wantedBy = [ "multi-user.target" ];
               script = self.apps.${linux-x64}.default.program;
+              startLimitIntervalSec = 60;
+              startLimitBurst = 3;
             };
           };
-          worker = { config, ... }: {
+          worker = { config, ... }: rec {
             imports = [
               all-formats
               evo-siigo
@@ -83,7 +87,7 @@
               evo-siigo.enable = true;
             };
             formatConfigs.vm-nogui = {
-              imports = [ logger ];
+              imports = imports ++ [ logger ];
               services.logger.enable = true;
               virtualisation.forwardPorts = [
                 { from = "host"; host.port = 2222; guest.port = 22; }
