@@ -16,6 +16,7 @@
     let
       linux = "linux";
       x64 = "x86_64";
+      linux-x64 = "${x64}-${linux}";
       # TODO add missing arm to match standard systems
       #  right now purs-nix is only compatible with x86_64-linux
       platform = x64;
@@ -30,29 +31,67 @@
       };
       nixosModules =
         let
-          inherit (inputs.nixpkgs.lib) mkDefault;
+          inherit (inputs.nixpkgs.lib) mkDefault version;
           inherit (inputs.generators.nixosModules) all-formats;
-          worker = {
-            imports = [ all-formats ];
+          logger = { lib, ... }: {
+            options = {
+              services.logger.enable = lib.mkEnableOption "logger";
+            };
+            config.systemd.services.logger = {
+              description = "Monitor systemd journal in real-time";
+              wantedBy = [ "multi-user.target" ];
+              script = "journalctl -b -f";
+              serviceConfig = {
+                StandardOutput = "tty";
+                StandardError = "tty";
+                TTYPath = "/dev/console";
+                Restart = "always";
+              };
+            };
+          };
+          evo-siigo = { lib, ... }: {
+            options = {
+              services.evo-siigo.enable = lib.mkEnableOption "evo-siigo";
+            };
+            config.systemd.services.evo-siigo = {
+              script = self.apps.${linux-x64}.default.program;
+            };
+          };
+          worker = { config, ... }: {
+            imports = [
+              all-formats
+              evo-siigo
+            ];
+            system.stateVersion = version;
+            fileSystems."/".device = "none";
+            boot.loader.grub.device = "nodev";
             networking.hostName = "worker";
+            security.sudo.wheelNeedsPassword = false;
             users = {
               users.klarkc = {
                 isNormalUser = true;
                 home = "/home/klarkc";
                 extraGroups = [ "wheel" ];
-                openssh.authorizedKeys.keys = [ "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDWeydIZ5mbqS+RFDrdL2aFkCWaYbRxHW6zwgDq77ucEm6MYSjt2ssn1VxDpODfEV5Zktst1JAfc9iiuwQuHiCo9ejBqYVCoT3nP4PqtaIvaArMT/leKpnU03ANkJ0um75GOyE0Td+0O4bzHmz4KTZdpIKygJ/sKfa5KEjAWNXuBXMu85hZ6zqecnqGAMmC+8R3gy6H2iTgUDfS3hiKqJajKunXO/OYOolQB1SywdgfmB11LgDA75FIJW1uOJEiJE+90a1ZTnG1xiI4zA4nGcdXvfMg7bappes/Ts5B5dn7dKkMA+ParCgOjeKY7AxtRdmw4ME1ok/nOzFepJzIBvTPfpea9Ga70LWqhfgaLG9MOcmIVOwWCFgYtE+c3HSbTXU+Ijcq25bf4SBATd7NF3VyZFqnn/UXsQYyKbl7xGJEtKnspmTsSoeNVErZ+Pwf7zGMCPGuWxG2F2q8PxdSd0NhicUsWgw0+22O6WHqlDtp66s6irMvoe05Lpy0t0peDAM= klarkc@ssdinarch" ];
+                openssh.authorizedKeys.keys = [
+                  "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFYlM/N+ZY5j5ddzyWWoEsYwnhhDiTGlmprZscFapgWt"
+                ];
               };
               mutableUsers = false;
             };
-            services.openssh.enable = true;
+            services = {
+              openssh.enable = true;
+              evo-siigo.enable = true;
+            };
             formatConfigs.vm-nogui = {
+              imports = [ logger ];
+              services.logger.enable = true;
               virtualisation.forwardPorts = [
                 { from = "host"; host.port = 2222; guest.port = 22; }
               ];
             };
           };
         in
-        { inherit worker; };
+        { inherit evo-siigo logger worker; };
 
       nixosConfigurations =
         let
@@ -61,7 +100,7 @@
         in
         {
           worker = nixosSystem {
-            system = "${x64}-${linux}";
+            system = linux-x64;
             modules = [ worker ];
           };
         };
