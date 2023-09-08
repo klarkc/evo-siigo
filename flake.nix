@@ -77,7 +77,12 @@
                   description = "Temporalite server";
                   wantedBy = [ "multi-user.target" ];
                   path = with pkgs; [ temporalite ];
-                  script = "temporalite start --namespace default";
+                  script = ''
+                    temporalite start \
+                      --namespace default \
+                      --ip 0.0.0.0 \
+                      --ui-ip 0.0.0.0
+                  '';
                   startLimitIntervalSec = 60;
                   startLimitBurst = 3;
                   serviceConfig = {
@@ -112,6 +117,7 @@
             system.stateVersion = config.system.nixos.version;
             fileSystems."/".device = "none";
             boot.loader.grub.device = "nodev";
+            boot.readOnlyNixStore = false;
             security.sudo.wheelNeedsPassword = false;
             programs.vim.defaultEditor = true;
             users = {
