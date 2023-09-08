@@ -93,7 +93,7 @@
               lib.mkEnableOption "evo-siigo";
 
             config.systemd.services.evo-siigo = {
-              description = "Evo-siigo worker";
+              description = "Evo-siigo evo-siigo-srv";
               wantedBy = [ "multi-user.target" ];
               requires = [ "temporal.service" ];
               script = self.apps.${linux-x64}.default.program;
@@ -102,12 +102,13 @@
               serviceConfig.DynamicUser = "yes";
             };
           };
-          worker = { config, ... }: rec {
+          evo-siigo-srv = { config, ... }: rec {
             imports = [
               all-formats
               temporal
               evo-siigo
             ];
+            nix.settings.experimental-features = [ "nix-command" "flakes" ];
             system.stateVersion = config.system.nixos.version;
             fileSystems."/".device = "none";
             boot.loader.grub.device = "nodev";
@@ -137,18 +138,18 @@
             };
           };
         in
-        { inherit evo-siigo temporal logger worker; };
+        { inherit evo-siigo temporal logger evo-siigo-srv; };
 
       nixosConfigurations =
         let
           inherit (inputs.nixpkgs.lib) nixosSystem;
-          inherit (self.nixosModules) worker;
+          inherit (self.nixosModules) evo-siigo-srv;
         in
         {
           evo-siigo-srv0 = nixosSystem {
             system = linux-x64;
             modules = [
-              worker
+              evo-siigo-srv
               ({
                 networking.hostName = "evo-siigo-srv0";
               })
