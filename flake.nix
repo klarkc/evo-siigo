@@ -31,12 +31,11 @@
       };
       nixosModules =
         let
-          inherit (inputs.nixpkgs.lib) mkDefault version;
+          inherit (inputs.nixpkgs.lib) types mkDefault;
           inherit (inputs.generators.nixosModules) all-formats;
           logger = { lib, ... }: {
-            options = {
-              services.logger.enable = lib.mkEnableOption "logger";
-            };
+            options.services.logger.enable =
+              lib.mkEnableOption "logger";
             config.systemd.services.logger = {
               description = "Monitor systemd journal in real-time";
               wantedBy = [ "multi-user.target" ];
@@ -49,28 +48,71 @@
               };
             };
           };
-          evo-siigo = { lib, ... }: {
-            options = {
-              services.evo-siigo.enable = lib.mkEnableOption "evo-siigo";
+          temporal = { lib, pkgs, config, ... }:
+            let
+              inherit (lib) mkIf mkEnableOption;
+              cfg = config.services.temporal;
+              user = "temporal";
+              group = "temporal";
+            in
+            {
+              options.services.temporal = {
+                enable = mkEnableOption "temporal";
+              };
+              config = {
+                environment.defaultPackages = with pkgs; [
+                  temporalite
+                ];
+                users = {
+                  users.${user} = {
+                    inherit group;
+                    isSystemUser = true;
+                    description = "Temporalite Daemon";
+                    home = "/var/temporal";
+                    createHome = true;
+                  };
+                  groups.${group} = { };
+                };
+                systemd.services.temporal = {
+                  description = "Temporalite server";
+                  wantedBy = [ "multi-user.target" ];
+                  path = with pkgs; [ temporalite ];
+                  script = "temporalite start --namespace default";
+                  startLimitIntervalSec = 60;
+                  startLimitBurst = 3;
+                  serviceConfig = {
+                    User = user;
+                    Group = group;
+                    WorkingDirectory = "~";
+                  };
+                };
+              };
             };
+          evo-siigo = { config, lib, ... }: {
+            options.services.evo-siigo.enable =
+              lib.mkEnableOption "evo-siigo";
+
             config.systemd.services.evo-siigo = {
               description = "Evo-siigo worker";
               wantedBy = [ "multi-user.target" ];
+              requires = [ "temporal.service" ];
               script = self.apps.${linux-x64}.default.program;
               startLimitIntervalSec = 60;
               startLimitBurst = 3;
+              serviceConfig.DynamicUser = "yes";
             };
           };
           worker = { config, ... }: rec {
             imports = [
               all-formats
+              temporal
               evo-siigo
             ];
-            system.stateVersion = version;
+            system.stateVersion = config.system.nixos.version;
             fileSystems."/".device = "none";
             boot.loader.grub.device = "nodev";
-            networking.hostName = "worker";
             security.sudo.wheelNeedsPassword = false;
+            programs.vim.defaultEditor = true;
             users = {
               users.klarkc = {
                 isNormalUser = true;
@@ -82,20 +124,20 @@
               };
               mutableUsers = false;
             };
-            services = {
-              openssh.enable = true;
-              evo-siigo.enable = true;
-            };
+            services.openssh.enable = true;
+            networking.firewall.enable = false;
             formatConfigs.vm-nogui = {
               imports = imports ++ [ logger ];
               services.logger.enable = true;
               virtualisation.forwardPorts = [
                 { from = "host"; host.port = 2222; guest.port = 22; }
+                { from = "host"; host.port = 8233; guest.port = 8233; }
+                { from = "host"; host.port = 8080; guest.port = 8080; }
               ];
             };
           };
         in
-        { inherit evo-siigo logger worker; };
+        { inherit evo-siigo temporal logger worker; };
 
       nixosConfigurations =
         let
@@ -103,9 +145,14 @@
           inherit (self.nixosModules) worker;
         in
         {
-          worker = nixosSystem {
+          evo-siigo-srv0 = nixosSystem {
             system = linux-x64;
-            modules = [ worker ];
+            modules = [
+              worker
+              ({
+                networking.hostName = "evo-siigo-srv0";
+              })
+            ];
           };
         };
     in
@@ -222,11 +269,11 @@
               "temporalite start --namespace default"
             '';
           };
-          worker-vm = pkgs.writeShellApplication {
-            name = "worker-vm";
+          vm = name: pkgs.writeShellApplication {
+            inherit name;
             text = ''
               export USE_TMPDIR=0
-              ${self.nixosConfigurations.worker.config.formats.vm-nogui}
+              ${self.nixosConfigurations.${name}.config.formats.vm-nogui}
             '';
           };
         in
@@ -254,7 +301,7 @@
                 ps-command
                 dev
                 dev-debug
-                worker-vm
+                (vm "evo-siigo-srv0")
                 purescript
                 purs-tidy
                 purescript-language-server
@@ -264,7 +311,7 @@
               alias log_='printf "\033[1;32m%s\033[0m\n" "$@"'
               alias info_='printf "\033[1;34m[INFO] %s\033[0m\n" "$@"'
               log_ "Welcome to evo-siigo shell."
-              info_ "Available commands: dev, dev-debug, worker-vm."
+              info_ "Available commands: dev, dev-debug, evo-siigo-srv0."
             '';
           };
         });

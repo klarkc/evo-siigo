@@ -10,4 +10,4 @@
 /result
 /.env
 /.worker-vm
-/worker.qcow2
+/*.qcow2
