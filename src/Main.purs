@@ -7,11 +7,16 @@ import Prelude
   , bind
   , discard
   )
+import Data.String
+  ( Pattern(Pattern)
+  , Replacement(Replacement)
+  )
+import Data.String.Common (replace)
 import Effect.Aff (Aff, launchAff_)
 import Effect (Effect)
 import Effect.Class (liftEffect)
 import Effect.Console (log)
-import Node.Path (resolve)
+import Node.EsModule (resolve)
 import Node.Activities (createActivities)
 import Temporal.Client
   ( WorkflowHandle
@@ -47,12 +52,14 @@ taskQueue = "sales"
 
 startWorker :: Aff Unit
 startWorker = do
-  workflowsPath <-
-    liftEffect
-      $ resolve [ "." ] "output/Workflows/index.js"
+  workflowsPath <-  resolve "../Workflows/index.js"
   workflowBundle <-
     bundleWorkflowCode
-      { workflowsPath
+      -- TODO use Node.URL href in workflowsPath
+      { workflowsPath: replace
+          (Pattern "file://")
+          (Replacement "")
+          workflowsPath
       }
   loadFile
   worker <-

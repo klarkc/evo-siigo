@@ -167,8 +167,19 @@
       { inherit inputs systems make-pkgs; }
       ({ system, pkgs, ps-tools, ... }:
         let
-          inherit (pkgs) nodejs;
           inherit (ps-tools.for-0_15) purescript purs-tidy purescript-language-server;
+          nodejs = pkgs.runCommand
+            "nodejs-flags"
+            {
+              inherit (pkgs.nodejs) meta version src;
+              nativeBuildInputs = [ pkgs.makeWrapper ];
+              NODE_OPTIONS = "--experimental-import-meta-resolve";
+            }
+            ''
+              cp -r --no-preserve=ownership --reflink=auto ${pkgs.nodejs} $out
+              chmod -R +w $out
+              wrapProgram $out/bin/node --set NODE_OPTIONS $NODE_OPTIONS
+            '';
           npmlock2nix = import inputs.npmlock2nix { inherit pkgs; };
           purs-nix = inputs.purs-nix { inherit system; };
           node_modules = npmlock2nix.v2.node_modules { src = ./.; inherit nodejs; } + /node_modules;
@@ -295,7 +306,7 @@
             with ps;
             {
               default = pkgs.writeScript "evo-siigo" ''
-                #!${pkgs.nodejs}/bin/node
+                #!${nodejs}/bin/node
                 import("${self.packages.${system}.output}/Main/index.js").then(m=>m.main())
               '';
               output = output { };
@@ -312,7 +323,7 @@
                 purescript
                 purs-tidy
                 purescript-language-server
-                pkgs.nodejs
+                nodejs
               ];
             shellHook = ''
               alias log_='printf "\033[1;32m%s\033[0m\n" "$@"'
