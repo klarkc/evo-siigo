@@ -18,4 +18,10 @@ nix develop
 
 ## Endpoints
 
-- `/process-sale`: Process a Evo sale event, add a webhook in evo pointing to this address for `AlterReceivables`, `ClearedDebt` and `NewSale` events.
+## POST `/process-sale`
+
+Process a Evo sale event, add a webhook in evo pointing to this address for `AlterReceivables`, `ClearedDebt` and `NewSale` events.
+
+```bash
+curl --data '{ "IdRecord": 49 }' "http://localhost:8080/process-sale"
+```
