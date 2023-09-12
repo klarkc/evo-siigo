@@ -243,6 +243,7 @@
               foreign."Temporal.Client.Connection" = { inherit node_modules; };
               foreign."Temporal.Node.Worker" = { inherit node_modules; };
               foreign."Temporal.Workflow" = { inherit node_modules; };
+              foreign."Workflows" = { inherit node_modules; };
               # compiler
               inherit purescript nodejs;
             };
