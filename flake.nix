@@ -10,6 +10,8 @@
     simple-csv.flake = false;
     generators.url = "github:nix-community/nixos-generators";
     generators.inputs.nixpkgs.follows = "nixpkgs";
+    agenix.url = "github:ryantm/agenix";
+    agenix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, utils, ... }@inputs:
@@ -31,8 +33,55 @@
       };
       nixosModules =
         let
-          inherit (inputs.nixpkgs.lib) types mkDefault;
+          inherit (inputs.nixpkgs.lib) types mkDefault mkOption;
           inherit (inputs.generators.nixosModules) all-formats;
+          env = { config, ... }:
+            {
+              imports = [ inputs.agenix.nixosModules.default ];
+              options.env = {
+                service = mkOption {
+                  type = types.str;
+                };
+                file = mkOption {
+                  type = types.path;
+                };
+              };
+              config =
+                let cfg = config.env; in
+                {
+                  age.secrets.env.file = cfg.file;
+                  systemd.services.${cfg.service}.serviceConfig.EnvironmentFile =
+                    config.age.secrets.env.path;
+                };
+            };
+
+          host-keys = { config, ... }:
+            {
+              options.host-keys.dir = mkOption {
+                type = types.str;
+                default = "/var/keys";
+              };
+              config =
+                let cfg = config.host-keys; in
+                {
+                  environment.etc =
+                    {
+                      "ssh/ssh_host_ed25519_key" = {
+                        mode = "0600";
+                        source = "${cfg.dir}/ssh_host_ed25519_key";
+                      };
+                      "ssh/ssh_host_ed25519_key.pub" = {
+                        mode = "0644";
+                        source = "${cfg.dir}/ssh_host_ed25519_key.pub";
+                      };
+                    };
+                  virtualisation.sharedDirectories.keys = {
+                    source = "/etc/ssh";
+                    target = cfg.dir;
+                  };
+                };
+            };
+
           logger = { lib, ... }: {
             options.services.logger.enable =
               lib.mkEnableOption "logger";
@@ -93,7 +142,7 @@
                 };
               };
             };
-          evo-siigo = { config, lib, ... }: {
+          evo-siigo = { config, lib, pkgs, ... }: {
             options.services.evo-siigo.enable =
               lib.mkEnableOption "evo-siigo";
 
@@ -126,15 +175,19 @@
                 home = "/home/klarkc";
                 extraGroups = [ "wheel" ];
                 openssh.authorizedKeys.keys = [
-                  "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFYlM/N+ZY5j5ddzyWWoEsYwnhhDiTGlmprZscFapgWt"
+                  (builtins.readFile ./secrets/klarkc.pub)
                 ];
               };
               mutableUsers = false;
             };
             services.openssh.enable = true;
             networking.firewall.enable = false;
-            formatConfigs.vm-nogui = {
-              imports = imports ++ [ logger ];
+            formatConfigs.vm-nogui = { config, ... }: {
+              imports = imports ++ [ host-keys env logger ];
+              env = {
+                service = "evo-siigo";
+                file = ./secrets/env.age;
+              };
               services.logger.enable = true;
               virtualisation.forwardPorts = [
                 { from = "host"; host.port = 2222; guest.port = 22; }
@@ -165,7 +218,7 @@
     in
     { inherit nixosModules nixosConfigurations; } // utils.apply-systems
       { inherit inputs systems make-pkgs; }
-      ({ system, pkgs, ps-tools, ... }:
+      ({ system, pkgs, ps-tools, agenix, ... }:
         let
           inherit (ps-tools.for-0_15) purescript purs-tidy purescript-language-server;
           nodejs = pkgs.runCommand
@@ -325,12 +378,13 @@
                 purs-tidy
                 purescript-language-server
                 nodejs
+                agenix
               ];
             shellHook = ''
               alias log_='printf "\033[1;32m%s\033[0m\n" "$@"'
               alias info_='printf "\033[1;34m[INFO] %s\033[0m\n" "$@"'
               log_ "Welcome to evo-siigo shell."
-              info_ "Available commands: dev, dev-debug, evo-siigo-srv0."
+              info_ "Available commands: dev, dev-debug, evo-siigo-srv0, agenix."
             '';
           };
         });
