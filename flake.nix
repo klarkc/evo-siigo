@@ -49,7 +49,9 @@
               config =
                 let cfg = config.env; in
                 {
-                  age.secrets.env.file = cfg.file;
+                  age = {
+                    secrets.env.file = cfg.file;
+                  };
                   systemd.services.${cfg.service}.serviceConfig.EnvironmentFile =
                     config.age.secrets.env.path;
                 };
@@ -57,9 +59,14 @@
 
           host-keys = { config, ... }:
             {
-              options.host-keys.dir = mkOption {
-                type = types.str;
-                default = "/var/keys";
+              options.host-keys = {
+                dir = mkOption {
+                  type = types.str;
+                  default = "/var/keys";
+                };
+                source = mkOption {
+                  type = types.str;
+                };
               };
               config =
                 let cfg = config.host-keys; in
@@ -68,15 +75,15 @@
                     {
                       "ssh/ssh_host_ed25519_key" = {
                         mode = "0600";
-                        source = "${cfg.dir}/ssh_host_ed25519_key";
+                        source = "${cfg.dir}/id_ed25519";
                       };
                       "ssh/ssh_host_ed25519_key.pub" = {
                         mode = "0644";
-                        source = "${cfg.dir}/ssh_host_ed25519_key.pub";
+                        source = "${cfg.dir}/id_ed25519.pub";
                       };
                     };
                   virtualisation.sharedDirectories.keys = {
-                    source = "/etc/ssh";
+                    source = cfg.source;
                     target = cfg.dir;
                   };
                 };
@@ -156,46 +163,52 @@
               serviceConfig.DynamicUser = "yes";
             };
           };
-          evo-siigo-srv = { config, ... }: rec {
-            imports = [
-              all-formats
-              temporal
-              evo-siigo
-            ];
-            nix.settings.experimental-features = [ "nix-command" "flakes" ];
-            system.stateVersion = config.system.nixos.version;
-            fileSystems."/".device = "none";
-            boot.loader.grub.device = "nodev";
-            boot.readOnlyNixStore = false;
-            security.sudo.wheelNeedsPassword = false;
-            programs.vim.defaultEditor = true;
-            users = {
-              users.klarkc = {
-                isNormalUser = true;
-                home = "/home/klarkc";
-                extraGroups = [ "wheel" ];
-                openssh.authorizedKeys.keys = [
-                  (builtins.readFile ./secrets/klarkc.pub)
+          evo-siigo-srv = { config, ... }:
+            let home = "/home/klarkc"; in
+            rec
+            {
+              imports = [
+                all-formats
+                temporal
+                evo-siigo
+              ];
+              nix.settings.experimental-features = [ "nix-command" "flakes" ];
+              system.stateVersion = config.system.nixos.version;
+              fileSystems."/".device = "none";
+              boot.loader.grub.device = "nodev";
+              boot.readOnlyNixStore = false;
+              security.sudo.wheelNeedsPassword = false;
+              programs.vim.defaultEditor = true;
+              users = {
+                users.klarkc = {
+                  isNormalUser = true;
+                  inherit home;
+                  extraGroups = [ "wheel" ];
+                  openssh.authorizedKeys.keys = [
+                    (builtins.readFile ./secrets/klarkc.pub)
+                  ];
+                };
+                mutableUsers = false;
+              };
+              services.openssh.enable = true;
+              networking.firewall.enable = false;
+              formatConfigs.vm-nogui = { config, ... }: {
+                imports = imports ++ [ host-keys env logger ];
+                host-keys.source = "${home}/.ssh";
+                env = {
+                  service = "evo-siigo";
+                  file = ./secrets/env.age;
+                };
+                # TODO remove workaround ryantm/agenix#45
+                age.identityPaths = [ "/var/keys/id_ed25519" ];
+                services.logger.enable = true;
+                virtualisation.forwardPorts = [
+                  { from = "host"; host.port = 2222; guest.port = 22; }
+                  { from = "host"; host.port = 8233; guest.port = 8233; }
+                  { from = "host"; host.port = 8080; guest.port = 8080; }
                 ];
               };
-              mutableUsers = false;
             };
-            services.openssh.enable = true;
-            networking.firewall.enable = false;
-            formatConfigs.vm-nogui = { config, ... }: {
-              imports = imports ++ [ host-keys env logger ];
-              env = {
-                service = "evo-siigo";
-                file = ./secrets/env.age;
-              };
-              services.logger.enable = true;
-              virtualisation.forwardPorts = [
-                { from = "host"; host.port = 2222; guest.port = 22; }
-                { from = "host"; host.port = 8233; guest.port = 8233; }
-                { from = "host"; host.port = 8080; guest.port = 8080; }
-              ];
-            };
-          };
         in
         { inherit evo-siigo temporal logger evo-siigo-srv; };
 

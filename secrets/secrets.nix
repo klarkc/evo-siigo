@@ -1,4 +1,4 @@
-let ssdinarch = builtins.readFile ./ssdinarch.pub; in
+let klarkc = builtins.readFile ./klarkc.pub; in
 {
-  "env.age".publicKeys = [ ssdinarch ];
+  "env.age".publicKeys = [ klarkc ];
 }
