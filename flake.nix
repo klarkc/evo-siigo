@@ -12,6 +12,7 @@
     generators.inputs.nixpkgs.follows = "nixpkgs";
     agenix.url = "github:ryantm/agenix";
     agenix.inputs.nixpkgs.follows = "nixpkgs";
+    everyday.url = "github:klarkc/nixos-everyday";
   };
 
   outputs = { self, utils, ... }@inputs:
@@ -89,21 +90,6 @@
                 };
             };
 
-          logger = { lib, ... }: {
-            options.services.logger.enable =
-              lib.mkEnableOption "logger";
-            config.systemd.services.logger = {
-              description = "Monitor systemd journal in real-time";
-              wantedBy = [ "multi-user.target" ];
-              script = "journalctl -b -f";
-              serviceConfig = {
-                StandardOutput = "tty";
-                StandardError = "tty";
-                TTYPath = "/dev/console";
-                Restart = "always";
-              };
-            };
-          };
           temporal = { lib, pkgs, config, ... }:
             let
               inherit (lib) mkIf mkEnableOption;
@@ -192,25 +178,29 @@
               };
               services.openssh.enable = true;
               networking.firewall.enable = false;
-              formatConfigs.vm-nogui = { config, ... }: {
-                imports = imports ++ [ host-keys env logger ];
-                host-keys.source = "${home}/.ssh";
-                env = {
-                  service = "evo-siigo";
-                  file = ./secrets/env.age;
+              formatConfigs.vm-nogui = { config, ... }:
+                {
+                  imports =
+                    let
+                      inherit (inputs.everyday.nixosModules) logger;
+                    in
+                    imports ++ [ host-keys env logger ];
+                  host-keys.source = "${home}/.ssh";
+                  env = {
+                    service = "evo-siigo";
+                    file = ./secrets/env.age;
+                  };
+                  # TODO remove workaround ryantm/agenix#45
+                  age.identityPaths = [ "/var/keys/id_ed25519" ];
+                  virtualisation.forwardPorts = [
+                    { from = "host"; host.port = 2222; guest.port = 22; }
+                    { from = "host"; host.port = 8233; guest.port = 8233; }
+                    { from = "host"; host.port = 8080; guest.port = 8080; }
+                  ];
                 };
-                # TODO remove workaround ryantm/agenix#45
-                age.identityPaths = [ "/var/keys/id_ed25519" ];
-                services.logger.enable = true;
-                virtualisation.forwardPorts = [
-                  { from = "host"; host.port = 2222; guest.port = 22; }
-                  { from = "host"; host.port = 8233; guest.port = 8233; }
-                  { from = "host"; host.port = 8080; guest.port = 8080; }
-                ];
-              };
             };
         in
-        { inherit evo-siigo temporal logger evo-siigo-srv; };
+        { inherit evo-siigo temporal evo-siigo-srv; };
 
       nixosConfigurations =
         let

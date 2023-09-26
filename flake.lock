@@ -81,6 +81,21 @@
         "type": "github"
       }
     },
+    "everyday": {
+      "locked": {
+        "lastModified": 1695760763,
+        "narHash": "sha256-qs825ClA7nlrOA2gvWEqyK/zppZYFQjnycvG6BPKUUE=",
+        "owner": "klarkc",
+        "repo": "nixos-everyday",
+        "rev": "df81c72fb086849f07ae953978544d1fbee69047",
+        "type": "github"
+      },
+      "original": {
+        "owner": "klarkc",
+        "repo": "nixos-everyday",
+        "type": "github"
+      }
+    },
     "fenix": {
       "inputs": {
         "nixpkgs": "nixpkgs_3",
@@ -438,6 +453,7 @@
     "root": {
       "inputs": {
         "agenix": "agenix",
+        "everyday": "everyday",
         "generators": "generators",
         "nixpkgs": "nixpkgs",
         "npmlock2nix": "npmlock2nix",
